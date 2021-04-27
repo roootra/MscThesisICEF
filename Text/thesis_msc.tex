@@ -1,0 +1,256 @@
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_GB
+\documentclass[12pt, a4paper]{extarticle}
+
+%\usepackage{showframe}
+
+\usepackage{cmap}					% поиск в PDF
+%\usepackage{mathtext} 				% русские буквы в формулах
+%\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english]{babel}			% локализация и переносы
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{indentfirst}
+\usepackage{setspace}
+\frenchspacing % добаляет большой пробел между предложениями
+%\onehalfspacing
+\linespread{1.5}
+%\usepackage{helvet}
+%\usepackage{newcent}
+%\usepackage{lmodern}
+\usepackage{calligra}
+\DeclareFontFamily{OT1}{pzc}{}
+\DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [1.10] pzcmi7t}{}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+
+%БЛОК СООТВЕТСТВИЯ ПРАВИЛАМ
+%\renewcommand{\rmdefault}{ftm}
+\usepackage{times}
+
+%without babel
+\renewcommand{\contentsname}{CONTENTS}
+\renewcommand{\refname}{REFERENCES}
+
+\makeatletter
+% запрещаем переносы в названиях секций
+%\renewcommand{\section}{\@startsection{section}{1}{0pt}%
+%	{-3.5ex plus -1ex minus -.2ex}%
+%	{2.3ex plus .2ex}%
+%	{\centering\hyphenpenalty=10000\normalfont\bfseries}}
+
+% chapter
+\usepackage{titlesec}
+\titleformat{\chapter}{\thispagestyle{myheadings}\centering\hyphenpenalty=10000\normalfont\huge\bfseries}{
+	\thechapter. }{0pt}{\large}
+\makeatother
+
+%section
+%\titleformat{\section}[block]{\bfseries\large\filcenter}{SECTION \thesection.}{.5em}{}
+\titleformat{\section}[block]{\bfseries\filcenter}{}{.5em}{}
+
+% subsection
+\titleformat{\subsection}[block]{\bfseries\filcenter}{\thesubsection.}{.5em}{}
+
+%subsubsection
+\titleformat{\subsubsection}[block]{\bfseries\filcenter}{\thesubsubsection.}{.5em}{}
+
+%math font size (textfont-disp-script-scriptscript)
+\makeatletter
+\DeclareMathSizes{\f@size}{12}{10}{9}
+\makeatother
+
+%to show current font size in log (14pt = 14.4pt)
+\makeatletter
+\show\f@size
+\makeatother
+
+%toc depth
+\setcounter{tocdepth}{2}
+
+%TOC section cap
+%\addto\captionsenglish{
+%	\renewcommand{\contentsname}{\hfill\bfseriesCONTENTS\hfill} 
+%}
+%\makeatletter
+%\renewcommand{\tableofcontents}{%
+%	\vspace*{-4mm}% reduce space before
+%    \noindent{\contentsname}%
+%	\vspace{2mm}% space between title and rule
+%	\hrule
+%	\vspace{2mm}% space below rule
+%	\@starttoc{toc}}
+%\makeatother
+
+%bib section cap
+%\DefineBibliographyStrings{english}{%
+%	bibliography = {BIBLIOGRAPHY},
+%	references = {REFERENCES},
+%}
+
+
+% КОНЕЦ БЛОКА СООТВЕТСТВИЯ ПРАВИЛАМ
+
+
+
+
+%работа с библиографией
+%style=authoryear
+%sorting=nyt,
+\usepackage[bibstyle=gost-authoryear-min,
+			citestyle=authoryear,
+			maxcitenames=3,
+			backend=biber]{biblatex}
+\addbibresource{../Sources/lit.bib}
+%Убрать тире из библиографического списка
+%\renewcommand*{\newblockpunct}{\addperiod\space\bibsentence}.:
+%Для возврата к прежнему значению (установленному по умолчанию):
+%\renewcommand*{\newblockpunct}{\addperiod\addnbspace\textemdash\space\bibsentence}.
+
+
+
+%Дополнительные пакеты
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} %математика
+\usepackage{indentfirst} %отступ первого абзаца
+\usepackage{graphicx} %вставка рисунков
+\usepackage{wrapfig} %обтекание рисунков текстом
+\usepackage{geometry} %установка полей
+\geometry{top=25mm} 
+\geometry{bottom=35mm}
+\geometry{left=35mm}
+\geometry{right=20mm}
+\usepackage{soul} %модификаторы начертания
+\usepackage{csquotes}
+%\usepackage{titling}
+\usepackage{enumitem}
+\usepackage[toc,page]{appendix}
+\usepackage{tocloft}
+\usepackage{siunitx}
+\usepackage{multicol}
+
+\renewcommand{\appendixtocname}{Appendix}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixpagename}{Appendix}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\makeatletter
+\newcommand{\mathleft}{\@fleqntrue\@mathmargin0pt}
+\newcommand{\mathcenter}{\@fleqnfalse}
+\makeatother
+
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{				% Гиперссылки
+	unicode=true,           % русские буквы в раздела PDF
+	pdftitle={Determining Exchange Rate Pass-through in Russia},   % Заголовок
+	pdfauthor={Artur N. Zmanovskii},      % Автор
+	pdfsubject={Macroeconomerics, Macroeconomics},      % Тема
+	pdfcreator={}, % Создатель
+	pdfproducer={}, % Производитель
+	pdfkeywords={Pass-through} {ERPT} {PERR}, % Ключевые слова
+	colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
+	linkcolor=black,          % внутренние ссылки
+	citecolor=black,        % на библиографию
+	filecolor=black,      % на файлы
+	urlcolor=black           % на URL
+}
+
+%колонтитулы
+\usepackage{fancyhdr} %загрузим пакет
+\pagestyle{fancyplain} %применим колонтитул
+\fancyhead{} %очистим header на всякий случай
+%\fancyhead[LE,RO]{\thepage} %номер страницы слева сверху на четных и справа на нечетных
+%\fancyhead[CO]{текст-центр-нечетные}
+%\fancyhead[LO]{текст-слева-нечетные} 
+%\fancyhead[CE]{текст-центр-четные} 
+\fancyfoot{}
+%\fancyfoot[RE,RO]{\thepage}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setcounter{page}{2}
+
+%шапка
+\title{{\large DETERMINING EXCHANGE RATE PASS-THROUGH IN RUSSIA}}
+\author{Artur N. Zmanovskii\footnote{National Research University `Higher School of Economics'}}
+\date{}
+
+%\renewcommand{\appendixname}{Appendix}
+
+\begin{document}
+	
+\tableofcontents
+\newpage
+%\maketitle
+\linespread{1.5}
+\setcounter{page}{0}
+\begin{abstract}
+\textit{tbd}
+\end{abstract}
+
+\newpage
+%\tableofcontents
+%\newpage
+\linespread{1.5}
+\setcounter{page}{3}
+\section*{INTRODUCTION}
+\addcontentsline{toc}{section}{INTRODUCTION}
+
+
+\section*{SECTION 2. DATA}
+
+\setcounter{section}{2}
+\addcontentsline{toc}{section}{SECTION 2. DATA}
+
+
+\section*{SECTION 3. METHODS}
+\setcounter{section}{3}
+\addcontentsline{toc}{section}{SECTION 3. METHODS}
+
+
+\section*{SECTION 4. RESULTS}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\addcontentsline{toc}{section}{SECTION 4. RESULTS}
+
+\clearpage
+
+\section*{DISCUSSION}
+\addcontentsline{toc}{section}{DISCUSSION}
+
+
+%%%%%%%%%%%%%%%%%%%%
+\renewcommand*{\newblockpunct}{\addperiod\space\bibsentence}
+\newpage
+\linespread{1.3}
+
+\printbibliography
+\addcontentsline{toc}{section}{References}
+\newpage
+%counters in captions
+\setcounter{figure}{1}
+\setcounter{table}{1}
+\makeatletter
+\renewcommand*{\thetable}{\alph{table}}
+\renewcommand*{\thefigure}{\alph{figure}}
+\let\c@table\c@figure
+\makeatother 
+
+\normalsize
+\linespread{0.5}
+\section*{Appendix A: }
+\label{app:a}
+
+~\\
+\clearpage
+\newpage
+\pagebreak
+
+\end{document}

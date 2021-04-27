@@ -1,0 +1,22 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'thesis_msc.blg'
+[84] biber-darwin:322> INFO - === Wed Apr 28, 2021, 01:51:08
+[103] Biber.pm:415> INFO - Reading 'thesis_msc.bcf'
+[258] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[277] Biber.pm:4256> INFO - Processing section 0
+[278] Utils.pm:75> INFO - Globbing data source '../Sources/lit.bib'
+[278] Utils.pm:91> INFO - Globbed data source '../Sources/lit.bib' to ../Sources/lit.bib
+[288] Biber.pm:4455> INFO - Looking for bibtex format file '../Sources/lit.bib' for section 0
+[291] bibtex.pm:1653> INFO - LaTeX decoding ...
+[346] bibtex.pm:1471> INFO - Found BibTeX data source '../Sources/lit.bib'
+[373] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[373] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[373] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[374] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[379] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[379] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[379] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[379] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[381] bbl.pm:652> INFO - Writing 'thesis_msc.bbl' with encoding 'UTF-8'
+[382] bbl.pm:755> INFO - Output to thesis_msc.bbl
+[383] Biber.pm:128> INFO - WARNINGS: 4
