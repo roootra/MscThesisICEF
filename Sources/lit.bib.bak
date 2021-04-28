@@ -9,7 +9,7 @@
   pages     = {359--380},
   volume    = {23},
   doi       = {10.2139/ssrn.3480284},
-  file      = {:An2020.pdf:PDF},
+  file      = {:An2020 - Shock Dependent Exchange Rate Pass Through_ Evidence Based on a Narrative Sign Approach.pdf:PDF},
   groups    = {Methods},
   publisher = {Elsevier {BV}},
 }
@@ -22,7 +22,7 @@
   issn    = {1556-5068},
   volume  = {32},
   doi     = {10.2139/ssrn.3577352},
-  file    = {:Comunale_2020.pdf:PDF},
+  file    = {:Comunale2020 - Shock Dependence of Exchange Rate Pass Through_ a Comparative Analysis of BVARs and DSGEs.pdf:PDF},
   groups  = {Methods},
 }
 
@@ -32,7 +32,7 @@
   title   = {Non-linear exchange rate pass-through to euro area inflation: a local projection approach},
   year    = {2019},
   volume  = {138},
-  file    = {:Colavecchio_2020.pdf:PDF},
+  file    = {:Colavecchio2019 - Non Linear Exchange Rate Pass through to Euro Area Inflation_ a Local Projection Approach.pdf:PDF},
   groups  = {Methods},
 }
 
@@ -46,7 +46,7 @@
   editor    = {Karadeloglou P., Terraza V.},
   pages     = {115--138},
   doi       = {10.1057/9780230582699_5},
-  file      = {:Karadeloglou P., Terraza V. (eds.) Exchange rates and macroeconomic dynamics (Palgrave, 2008)(ISBN 0230500625)(258s)_GI_.pdf:PDF},
+  file      = {:Dobrynskaya2008 - Exchange Rate Pass through Effect and Monetary Policy in Russia.pdf:PDF},
   groups    = {Russia and CIS},
 }
 
@@ -58,7 +58,7 @@
   issn    = {1456-5889
 978-952-323-130-6},
   volume  = {14},
-  file    = {:Faryna2016.pdf:PDF},
+  file    = {:Faryna2016 - Exchange Rate Pass through and Cross Country Spillovers_ Some Evidence from Ukraine and Russia.pdf:PDF},
   groups  = {Russia and CIS},
 }
 
@@ -70,7 +70,7 @@
   pages   = {255--275},
   volume  = {114},
   doi     = {10.3386/w24773},
-  file    = {:Forbes_2018.pdf:PDF},
+  file    = {:Forbes2018 - The Shocks Matter_ Improving Our Estimates of Exchange Rate Pass through.pdf:PDF},
   groups  = {Methods},
 }
 
@@ -80,7 +80,7 @@
   title   = {Pass-through of external shocks to euro area inflation},
   year    = {2003},
   volume  = {243},
-  file    = {:Hahn_2003.pdf:PDF},
+  file    = {:Hahn2003 - Pass through of External Shocks to Euro Area Inflation.pdf:PDF},
   groups  = {Methods},
 }
 
@@ -93,7 +93,7 @@
   pages   = {44-62},
   volume  = {53},
   doi     = {10.32609/0042-8736-2010-1-44-62},
-  file    = {:Kataranova2010.pdf:PDF},
+  file    = {:Kataranova2010 - Relationship between Exchange Rate and Inflation in Russia.pdf:PDF},
   groups  = {Russia and CIS},
 }
 
@@ -103,7 +103,7 @@
   title   = {Shock-Dependent Exchange Rate Pass-Through in Russia},
   year    = {2020},
   address = {Note},
-  file    = {:analytic_note_20200609_dip.pdf:PDF},
+  file    = {:Khotulev2020 - Shock Dependent Exchange Rate Pass through in Russia.pdf:PDF},
   groups  = {Russia and CIS},
 }
 
@@ -114,7 +114,7 @@
   year    = {2020},
   issn    = {1556-5068},
   doi     = {10.2139/ssrn.3618946},
-  file    = {:2020 ECB ERPT.pdf:PDF},
+  file    = {:Ortega2020 - Exchange Rate Pass through in the Euro Area and EU Countries.pdf:PDF},
   groups  = {Methods},
 }
 
@@ -127,7 +127,7 @@
   pages   = {54--72},
   volume  = {58},
   doi     = {10.1080/10611991.2016.1162046},
-  file    = {:Ponomarev2016.pdf:PDF},
+  file    = {:Ponomarev2016 - Exchange Rate Pass through in Russia.pdf:PDF},
   groups  = {Russia and CIS},
 }
 
@@ -137,7 +137,7 @@
   title     = {Exchange Rate Shocks and Inflation Comovement in the Euro Area},
   year      = {2019},
   doi       = {10.2139/ssrn.3470112},
-  file      = {:Leiva-Leon_2019.pdf:PDF},
+  file      = {:LeivaLeon2019 - Exchange Rate Shocks and Inflation Comovement in the Euro Area.pdf:PDF},
   groups    = {Methods},
   publisher = {Elsevier {BV}},
 }
@@ -149,7 +149,7 @@
   year    = {2017},
   number  = {2003},
   doi     = {10.2866/743801},
-  file    = {:Comunale_2017.pdf:PDF},
+  file    = {:Comunale2017 - Exchange Rate Pass through in the Euro Area.pdf:PDF},
   groups  = {Methods},
 }
 
@@ -163,7 +163,7 @@
   pages     = {560--591},
   volume    = {27},
   doi       = {10.1016/j.jimonfin.2008.01.009},
-  file      = {:Shambaugh2008.pdf:PDF},
+  file      = {:Shambaugh2008 - A New Look at Pass through.pdf:PDF},
   groups    = {Methods},
   publisher = {Elsevier},
 }
@@ -192,7 +192,7 @@
   pages     = {1202--1213},
   volume    = {34},
   doi       = {10.1016/j.jedc.2010.01.014},
-  file      = {:/Users/rutra/ВШЭ/Магистратура/Thesis/Sources/Amstad2010.pdf:PDF},
+  file      = {:Amstad2010 - Monthly Pass through Ratios.pdf:PDF},
   groups    = {Methods},
   publisher = {Elsevier},
 }
@@ -218,7 +218,7 @@
   volume     = {127},
   abstract   = {A large literature estimates the exchange rate pass-through to prices (ERPT) using reduced-form approaches, whose results are an important input for Central Banks. We show two shortcomings of these empirical measures for monetary policy analysis, which are quantitatively important and may lead to imprecise and biased inflation predictions. First, while the literature describes a single ERPT, which we will label unconditional, there are different ERPT conditional on each shock that hits the economy. Second, these crucially depend on expected monetary policy, so that empirical ERPT measures should not be taken as given in evaluating policy actions. We use a simple model of a small and open economy to understand the intuition behind these two critiques, showing that these results seem to hold under many alternative specifications. We then highlight the quantitative relevance of these distinctions using a large-scale DSGE model of a small open economy.},
   doi        = {10.1016/j.jinteco.2020.103389},
-  file       = {:Garcia2020.pdf:PDF},
+  file       = {:GarciaCicco2020 - Revisiting the Exchange Rate Pass Through_ a General Equilibrium Perspective.pdf:PDF},
   groups     = {Methods},
   keywords   = {Pass-through, Exchange rates, Inflation, Monetary policy, DSGE},
   language   = {en},
@@ -239,7 +239,7 @@
   volume   = {20},
   abstract = {We assess the extent and speed of exchange rate pass-through in the countries of Commonwealth of Independent States (CIS). We do this in the framework of vector autoregressive regressions, utilising impulse functions and variance decompositions with monthly data that starts in 1999 in order to avoid the periods of very high inflation and the Russian crisis. We find that exchange rate movements have a clear impact on price developments in the CIS countries. Speed of pass-through is also fairly high, in most cases the full effect is transmitted into domestic prices in less than 12 months. Unlike in many other emerging market countries, an additional effect from US prices on to domestic prices is not significant. The extent of exchange rate pass-through is usually much higher than in our benchmark group of emerging market countries. Variance decomposition shows that the relative share of exchange rates in explaining changes in domestic prices is higher in the CIS countries than in the benchmark group. Our results indicate that policy-makers in the CIS countries need to pay more attention to exchange rate movements than in many other emerging market countries.},
   doi      = {10.1016/j.ribaf.2005.09.006},
-  file     = {:Korhonen2005.pdf:PDF},
+  file     = {:Korhonen2006 - A Note on Exchange Rate Pass through in CIS Countries.pdf:PDF},
   groups   = {Russia and CIS},
   keywords = {Exchange rate pass-through, Inflation, Exchange rate regime, Transition countries},
   language = {en},
@@ -255,7 +255,7 @@
   year    = {2018},
   pages   = {1--46},
   volume  = {17},
-  file    = {:Faryna2018.pdf:PDF},
+  file    = {:Faryna2018 - The Transmission of International Shocks to CIS Economies_ a Global VAR Approach.pdf:PDF},
   groups  = {Russia and CIS},
 }
 
@@ -271,7 +271,7 @@
   volume     = {34},
   abstract   = {The aim of this paper is to investigate the asymmetric effect of exchange rate variations on prices over the short- and long-run in four major developed countries. To this end, we estimate a mark-up model for prices using a novel and simple asymmetric cointegrating model, with positive and negative partial sum decomposition of the nominal exchange rates. Our results show that prices react differently to appreciations and depreciations over the long-run, an effect that was previously ignored in the literature. In particular, we provide evidence that depreciations are passed through prices more than appreciations, a result that might suggest weak competition structures. This result has important implications for the proper conduct of monetary policy.},
   doi        = {10.1016/j.jmacro.2012.03.003},
-  file       = {:Delatte2012.pdf:PDF},
+  file       = {:Delatte2012a - Asymmetric Exchange Rate Pass Through_ Evidence from Major Countries.pdf:PDF},
   groups     = {Methods},
   keywords   = {Exchange rate pass-through, Inflation, Asymmetry, ARDL},
   language   = {en},
@@ -291,7 +291,7 @@
   volume   = {33},
   abstract = {As the Chinese economy becomes more open and the authorities scrapped the peg to the U.S. dollar in July 2005, exchange rate movements start to influence the price inflation in China in a significant way. This paper estimates a structural vector autoregression (SVAR) model to investigate the impact of exchange rate changes on prices in the presence of domestic monetary policy influence for China. We find that (i) the exchange rate pass-through (ERPT) to the producer price index (PPI) and retail price index (RPI) are generally incomplete; (ii) the ERPT to the PPI is higher than that to the RPI; (iii) the ERPT to the PPI and the RPI are relatively rapid. The SVAR evidence suggests that exchange rate stability plays a unique and significant role for price stability in China.},
   doi      = {10.1016/j.econmod.2013.05.021},
-  file     = {:Jiang2013.pdf:PDF},
+  file     = {:Jiang2013 - Exchange Rate Pass through to Inflation in China.pdf:PDF},
   groups   = {Methods},
   keywords = {Exchange rate pass-through, Monetary policy, Inflation, Structural VAR},
   language = {en},
@@ -323,7 +323,7 @@
   title     = {Nonlinear exchange rate pass-through to domestic prices in {Ukraine}},
   year      = {2016},
   number    = {236},
-  file      = {:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF;:Faryna2016a.pdf:PDF},
+  file      = {:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF;:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF},
   groups    = {Russia and CIS},
   publisher = {National Bank of Ukraine},
 }
@@ -340,10 +340,9 @@
   volume   = {55},
   abstract = {We analyze exchange rate pass-through in seven CIS countries using monthly data from 1999 to 2010. In the short run, VAR models estimates show that exchange rate movements in the US dollar affect consumer prices to a relatively high degree (about 50\%), while the Euro exchange rate is less important. Moreover, short-run exchange rate pass-through is very heterogeneous across countries. In particular, countries with high-energy imports from Russia generally have higher exchange rate pass-through. In the long run, panel cointegration results show pass-through rates of 60\% and above for both the US dollar and Euro exchange rates.},
   doi      = {10.1057/ces.2013.8},
-  file     = {:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF;:Beckmann2013.pdf:PDF},
+  file     = {:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF;:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF},
   groups   = {Russia and CIS},
   language = {en},
-  url      = {https://doi.org/10.1057/ces.2013.8},
   urldate  = {2021-04-28},
 }
 
@@ -356,7 +355,7 @@
   pages     = {186--217},
   volume    = {44},
   doi       = {10.1016/j.ribaf.2017.07.076},
-  file      = {:/Users/rutra/ВШЭ/Магистратура/Thesis/Sources/Comunale2018.pdf:PDF},
+  file      = {:Comunale2018 - The Pass through to Consumer Prices in CIS Economies_ the Role of Exchange Rates, Commodities and Other Common Factors.pdf:PDF},
   groups    = {Russia and CIS},
   publisher = {Elsevier {BV}},
 }
@@ -373,11 +372,10 @@
   volume    = {9},
   abstract  = {Abstract. The resilience of trade balances of the major industrialized economies to changes in their exchange rates has evoked interest in the exchange rate pass-through relationship. So far, there has not been a comprehensive survey of this literature. The paper aims to fill this gap in two ways. First, it pieces together the theoretical literature on exchange rate pass-through. Second, it provides a critical survey of the empirical literature on exchange rate pass-through. Emphasis is placed on the data and methodology employed in previous work. This is done in order to guide future work in this growing area of research.},
   doi       = {10.1111/j.1467-6419.1995.tb00114.x},
-  file      = {:Menon1995 - Exchange Rate Pass through.pdf:PDF;:Menon1995.pdf:PDF},
+  file      = {:Menon1995 - Exchange Rate Pass through.pdf:PDF;:Menon1995 - Exchange Rate Pass through.pdf:PDF},
   keywords  = {exchange rate pass-through, exchange rates and prices},
   language  = {en},
   publisher = {Wiley},
-  url       = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-6419.1995.tb00114.x},
   urldate   = {2021-04-29},
 }
 
@@ -394,7 +392,6 @@
   abstract = {We provide cross-country and time series evidence on the extent of exchange rate pass-through into the import prices of 23 OECD countries. We find compelling evidence of partial pass-through in the short run, especially within manufacturing industries. Over the long run, producer-currency pricing is more prevalent for many types of imported goods. Countries with higher rates of exchange rate volatility have higher pass-through elasticities, although macroeconomic variables have played a minor role in the evolution of pass-through elasticities over time. Far more important for pass-through changes in these countries have been the dramatic shifts in the composition of country import bundles.},
   doi      = {10.1162/003465305775098189},
   file     = {:Campa2005 - Exchange Rate Pass through into Import Prices.pdf:PDF},
-  url      = {https://doi.org/10.1162/003465305775098189},
   urldate  = {2021-04-29},
 }
 
@@ -409,11 +406,10 @@
   volume    = {9},
   abstract  = {The pass-through of exchange rate changes into domestic inflation appears to have declined in many countries since the 1980s. We develop a theoretical model that attributes the change in the rate of pass-through to increased emphasis on inflation stabilization by many central banks. This hypothesis is tested on 20 industrial countries between 1971 and 2003. We find widespread evidence of a robust and statistically significant link between estimated rates of pass-through and inflation variability. We also find evidence that observed monetary policy behaviour may be a factor in the declining rate of pass-through. Published in 2004 by John Wiley \& Sons, Ltd.},
   copyright = {This article is a U.S. Government work and is in the public domain in the U.S.A. Published in 2004 by John Wiley \& Sons, Ltd.},
-  doi       = {https://doi.org/10.1002/ijfe.253},
-  file      = {:Gagnon2004 - Monetary Policy and Exchange Rate Pass through.pdf:PDF;:Gagnon2004.pdf:PDF},
+  doi       = {10.1002/ijfe.253},
+  file      = {:Gagnon2004 - Monetary Policy and Exchange Rate Pass through.pdf:PDF;:Gagnon2004 - Monetary Policy and Exchange Rate Pass through.pdf:PDF},
   keywords  = {Inflation targeting, Taylor rule, exchange rate pass-through},
   language  = {en},
-  url       = {https://onlinelibrary.wiley.com/doi/abs/10.1002/ijfe.253},
   urldate   = {2021-04-29},
 }
 
@@ -448,6 +444,7 @@
   volume   = {49},
   abstract = {This paper analyses the implications of imperfect exchange rate pass-through for optimal monetary policy in a linearised open-economy dynamic general equilibrium model calibrated to euro area data. Imperfect exchange rate pass through is modelled by assuming sticky import price behaviour. The degree of domestic and import price stickiness is estimated by reproducing the empirical identified impulse response of a monetary policy and exchange rate shock conditional on the response of output, net trade and the exchange rate. It is shown that a central bank that wants to minimise the resource costs of staggered price setting will aim at minimising a weighted average of domestic and import price inflation.},
   doi      = {10.1016/S0304-3932(02)00126-5},
+  file     = {:Smets2002.pdf:PDF},
   keywords = {Monetary policy, Open economies, Exchange rate pass-through},
   language = {en},
   url      = {https://www.sciencedirect.com/science/article/pii/S0304393202001265},
@@ -576,7 +573,74 @@
   year    = {2014},
   issn    = {1556-5068},
   doi     = {10.2139/ssrn.2580264},
-  file    = {:Arias2014.pdf:PDF},
+  file    = {:Arias2014 - Inference Based on SVARs Identified with Sign and Zero Restrictions_ Theory and Applications.pdf:PDF},
+}
+
+@Article{Khosla1989,
+  author     = {Khosla, Anil and Teranishi, Juro},
+  journal    = {Hitotsubashi Journal of Economics},
+  title      = {Exchange Rate Pass-through in Export Prices: An International Comparison},
+  year       = {1989},
+  issn       = {0018-280X},
+  number     = {1},
+  pages      = {31--48},
+  volume     = {30},
+  file       = {:Khosla1989 - EXCHANGE RATE PASS tHROUGH iN EXPORT PRICES_ aN INTERNATIONAL COMPARISON.html:URL;:Khosla1989.pdf:PDF},
+  publisher  = {Hitotsubashi University},
+  shorttitle = {{EXCHANGE} {RATE} {PASS}-{THROUGH} {IN} {EXPORT} {PRICES}},
+  url        = {https://www.jstor.org/stable/43295889},
+  urldate    = {2021-04-29},
+}
+
+@Article{Menon1993,
+  author     = {Menon, Professor Jayant},
+  journal    = {International Economic Journal},
+  title      = {Exchange {Rate} {Pass}-{Through}: {Australian} {Imports} of {Motor} {Vehicles}},
+  year       = {1993},
+  issn       = {1016-8737},
+  month      = sep,
+  number     = {3},
+  pages      = {93--109},
+  volume     = {7},
+  abstract   = {The study examines the pass-through relationship of exchange rate changes to prices of Australian imports of passenger motor vehicles (PMVs) for the period 1981. 3 to 1990. 2. A model that relates the import pricing decision to changes in the exchange rate, production costs and competing prices is estimated. Having identified a cointegrating relationship, the Engle-Granger two-step procedure is employed to estimate the model. Unlike previous findings, our results suggests that the pass through of exchange rate changes to import prices is incomplete in the long run. The presence of quantitative restrictions (QRs) and the pricing practices on intra-firm sales of multinational firms are put forward as possible explanations for the incomplete pass-through finding. [F 14]},
+  doi        = {10.1080/10168739300000008},
+  file       = {:Menon1993 - Exchange Rate Pass Through_ Australian Imports of Motor Vehicles.pdf:PDF;:Menon1993.pdf:PDF},
+  publisher  = {Routledge},
+  shorttitle = {Exchange {Rate} {Pass}-{Through}},
+  url        = {https://www.tandfonline.com/doi/abs/10.1080/10168739300000008},
+  urldate    = {2021-04-29},
+}
+
+@Misc{Menon1993a,
+  author     = {Menon, Jayant},
+  month      = jul,
+  title      = {Exchange {Rate} {Pass}-through: {Theory} and {Evidence}},
+  year       = {1993},
+  abstract   = {The resilience of trade balances of the major industrialised economies to changes in their exchange rates has evoked interest in the exchange rate pass-through relationship. So far, there has not been a comprehensive survey of this literature. The paper aims to fill this gap in two ways. First, it pieces together the theoretical literature on exchange rate pass-through. Second, it provides a critical survey of the empirical literature on exchange rate passthrough. Emphasis is placed on the data and methodology employed in previous work. This is done in order to guide future work in this growing area of research.},
+  doi        = {10.22004/ag.econ.266332},
+  file       = {:Menon1993a - Exchange Rate Pass Through_ Theory and Evidence.pdf:PDF},
+  journal    = {AgEcon Search},
+  language   = {en},
+  shorttitle = {Exchange {Rate} {Pass}-through},
+  url        = {https://ageconsearch.umn.edu/record/266332},
+  urldate    = {2021-04-29},
+}
+
+@Article{Athukorala1994,
+  author   = {Athukorala, Premachandra and Menon, Jayant},
+  journal  = {The Economic Journal},
+  title    = {Pricing to {Market} {Behaviour} and {Exchange} {Rate} {Pass}-{Through} in {Japanese} {Exports}},
+  year     = {1994},
+  issn     = {0013-0133},
+  month    = mar,
+  number   = {423},
+  pages    = {271--281},
+  volume   = {104},
+  abstract = {This paper examines the relationship between exchange rate changes and Japanese export pricing behaviour employing a methodology which permits the separate measurement of pricing to market behaviour and the cost impact of exchange rate changes. The results suggest that incomplete pass-through of exchange rate changes is a pervasive phenomenon, but rejects the widely held view that Japanese export firms have relied more heavily on pricing to market strategies during the period of yen appreciation in order to maintain market shares. There is also evidence that estimates which capture only pricing to market behaviour may over-emphasise the degree of pass-through to the extent that cost of production is sensitive to exchange rate changes.},
+  doi      = {10.2307/2234748},
+  file     = {:Athukorala1994.pdf:PDF},
+  url      = {https://doi.org/10.2307/2234748},
+  urldate  = {2021-04-29},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

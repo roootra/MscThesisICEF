@@ -16,5 +16,65 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Khosla1989}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2ec70b32f8ba496ab36297b6ffde31f0}{%
+           family={Khosla},
+           familyi={K\bibinitperiod},
+           given={Anil},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af164635481eb1bfb8a3fa0a0714afb9}{%
+           family={Teranishi},
+           familyi={T\bibinitperiod},
+           given={Juro},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hitotsubashi University}%
+      }
+      \strng{namehash}{6073c9be0ece4b1f390a2f45f9140ba3}
+      \strng{fullhash}{456dbb4b2cd69f76d926ab4f67db5564}
+      \strng{bibnamehash}{456dbb4b2cd69f76d926ab4f67db5564}
+      \strng{authorbibnamehash}{456dbb4b2cd69f76d926ab4f67db5564}
+      \strng{authornamehash}{6073c9be0ece4b1f390a2f45f9140ba3}
+      \strng{authorfullhash}{456dbb4b2cd69f76d926ab4f67db5564}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0018-280X}
+      \field{journaltitle}{Hitotsubashi Journal of Economics}
+      \field{shorttitle}{{EXCHANGE} {RATE} {PASS}-{THROUGH} {IN} {EXPORT} {PRICES}}
+      \field{title}{Exchange Rate Pass-through in Export Prices: An International Comparison}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1989}
+      \field{urldateera}{ce}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{31\bibrangedash 48}
+      \range{pages}{18}
+      \field{volume}{30}
+      \range{volume}{1}
+      \verb{file}
+      \verb :Khosla1989 - EXCHANGE RATE PASS tHROUGH iN EXPORT PRICES_ aN INTERNATIONAL COMPARISON.html:URL;:Khosla1989.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/43295889
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/43295889
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
