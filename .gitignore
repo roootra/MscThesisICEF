@@ -1,0 +1,122 @@
+.DS_Store
+ERPT/Conference/figs/hd_bins.png
+ERPT/Conference/figs/irf_2lag_choldec.png
+ERPT/Conference/figs/irf_threeeq.png
+ERPT/Conference/figs/policy_frontier.pdf
+ERPT/Conference/HSE-theme/beamerthemeHSE-en.sty
+ERPT/Conference/HSE-theme/HSE-main-en.pdf
+ERPT/Conference/HSE-theme/HSE-small.pdf
+ERPT/Conference/Pres_meeting.aux
+ERPT/Conference/Pres_meeting.log
+ERPT/Conference/Pres_meeting.nav
+ERPT/Conference/Pres_meeting.out
+ERPT/Conference/Pres_meeting.pdf
+ERPT/Conference/Pres_meeting.snm
+ERPT/Conference/Pres_meeting.synctex.gz
+ERPT/Conference/Pres_meeting.tex
+ERPT/Conference/Pres_meeting.toc
+Old/Projection Methods/Literature/Chen_2015.pdf
+Old/Projection Methods/Literature/Judd_1992.pdf
+Old/Projection Methods/Literature/Judd_2014.pdf
+Old/Projection Methods/Literature/Parra-Alvarez_2013.pdf
+Old/Projection Methods/Literature/Pichler_2010.pdf
+Old/Projection Methods/Literature/Seleznev_2015.pdf
+Old/Projection Methods/Scripts/First Try/.ipynb_checkpoints/Dynare_example1_deterministic_try-checkpoint.ipynb
+Old/Projection Methods/Scripts/First Try/Dynare_example1_deterministic_try.ipynb
+Old/Projection Methods/Slides/Lecture_Cristiano_2012.pdf
+Old/ZLB/Adjemian_2010.pdf
+Old/ZLB/Binning_2016.pdf
+Old/ZLB/FV_2015_ZLB.pdf
+Old/ZLB/Hirose_2016.pdf
+Old/ZLB/Holden_2012.pdf
+Old/ZLB/Sims_zlb_2017.pdf
+Old/ZLB/Sims_zlb_slides_sp2018.pdf
+Old/ZLB/Sunakawa_2017r.pdf
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/driver.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g1.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g1_nz.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g1_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g2.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g2_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g3.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_g3_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_resid.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_resid_g1.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_resid_g1_g2.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_resid_g1_g2_g3.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_resid_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/dynamic_set_auxiliary_series.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/set_auxiliary_variables.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_g1.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_g1_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_g2.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_g2_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_g3.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_g3_tt.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_resid.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_resid_g1.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_resid_g1_g2.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_resid_g1_g2_g3.m
+Old/ZLB/SW2003/model/+EA_SW03_unconstrained/static_resid_tt.m
+Old/ZLB/SW2003/model/EA_SW03_constrained.m
+Old/ZLB/SW2003/model/EA_SW03_constrained.mod
+Old/ZLB/SW2003/model/EA_SW03_constrained/checksum
+Old/ZLB/SW2003/model/EA_SW03_constrained_dynamic.m
+Old/ZLB/SW2003/model/EA_SW03_constrained_results.mat
+Old/ZLB/SW2003/model/EA_SW03_constrained_set_auxiliary_variables.m
+Old/ZLB/SW2003/model/EA_SW03_constrained_static.m
+Old/ZLB/SW2003/model/EA_SW03_unconstrained.log
+Old/ZLB/SW2003/model/EA_SW03_unconstrained.m
+Old/ZLB/SW2003/model/EA_SW03_unconstrained.mod
+Old/ZLB/SW2003/model/EA_SW03_unconstrained/checksum
+Old/ZLB/SW2003/model/EA_SW03_unconstrained_dynamic.m
+Old/ZLB/SW2003/model/EA_SW03_unconstrained_results.mat
+Old/ZLB/SW2003/model/EA_SW03_unconstrained_set_auxiliary_variables.m
+Old/ZLB/SW2003/model/EA_SW03_unconstrained_static.m
+Old/ZLB/SW2003/model/occbin_sw03.m
+Old/ZLB/SW2003/model/zlb=0.fig
+Old/ZLB/SW2003/model/zlb=0.png
+Old/ZLB/SW2003/occbin/bluwstein2017.pdf
+Old/ZLB/SW2003/occbin/guerrieri2015.pdf
+Old/ZLB/SW2003/occbin/guerrieri2017.pdf
+Old/ZLB/SW2003/occbin/Implementing_OccBinDynare.pdf
+Old/ZLB/SW2003/occbin/multi-period-loans-occasionally-binding-constraints-and-monetary-policy-a-quantitative-evaluation.pdf
+Paperwork/Application for the diploma paper Msc Zmanovskii (in Russian).docx
+Paperwork/Application for the diploma paper Msc Zmanovskii.docx
+Paperwork/Application for the diploma paper Msc Zmanovskii.pdf
+Paperwork/application_for_the_diploma_paper_msc_zmanovskii.pdf
+Paperwork/Lastest Zmanovskii Application Topic Change.pdf
+Paperwork/Правила подготовки и защиты ВКР магистров МИЭФ.pdf
+Sources/2020 ECB ERPT.pdf
+Sources/Amstad2010.pdf
+Sources/An2012 - Exchange Rate Pass Through_ Evidence Based on Vector Autoregression with Sign Restrictions.pdf
+Sources/An2020.pdf
+Sources/An_2011.pdf
+Sources/analytic_note_20200609_dip.pdf
+Sources/Beckmann2013.pdf
+Sources/Ca'Zorzi_2007.pdf
+Sources/Colavecchio_2020.pdf
+Sources/Comunale_2017.pdf
+Sources/Comunale_2020.pdf
+Sources/Corsetti_2005.pdf
+Sources/Delatte2012.pdf
+Sources/Faryna2016.pdf
+Sources/Faryna2016a.pdf
+Sources/Faryna2018.pdf
+Sources/Forbes_2018.pdf
+Sources/G_2004.pdf
+Sources/Garcia2020.pdf
+Sources/Hahn_2003.pdf
+Sources/Jasova2016 - Exchange Rate Pass Through_ What Has Changed since the Crisis_.pdf
+Sources/Jiang2013.pdf
+Sources/Karadeloglou P., Terraza V. (eds.) Exchange rates and macroeconomic dynamics (Palgrave, 2008)(ISBN 0230500625)(258s)_GI_.pdf
+Sources/Kataranova2010.pdf
+Sources/Korhonen2005.pdf
+Sources/Leiva-Leon_2019.pdf
+Sources/Leiva-Martinez-Ortega-2020.pdf
+Sources/Ponomarev2016.pdf
+Sources/Shambaugh2008.pdf
+Sources/Sinyakov2019 - Estimating the Exchange Rate Pass through Effect on Producer Prices of Final Products Based on Micro Data of Russian Companies.pdf
+Sources/Comunale2018.pdf

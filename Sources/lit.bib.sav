@@ -335,6 +335,19 @@
   urldate  = {2021-04-28},
 }
 
+@Article{Comunale2018,
+  author    = {Mariarosaria Comunale and Heli Simola},
+  journal   = {Research in International Business and Finance},
+  title     = {The pass-through to consumer prices in {CIS} economies: The role of exchange rates, commodities and other common factors},
+  year      = {2018},
+  month     = {apr},
+  pages     = {186--217},
+  volume    = {44},
+  doi       = {10.1016/j.ribaf.2017.07.076},
+  file      = {:/Users/rutra/ВШЭ/Магистратура/Thesis/Sources/Comunale2018.pdf:PDF},
+  publisher = {Elsevier {BV}},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

@@ -307,6 +307,34 @@
   urldate   = {2021-04-28},
 }
 
+@Article{Faryna2016a,
+  author    = {Faryna, Oleksandr},
+  journal   = {Visnyk of the National Bank of Ukraine},
+  title     = {Nonlinear exchange rate pass-through to domestic prices in {Ukraine}},
+  year      = {2016},
+  number    = {236},
+  file      = {:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF;:Faryna2016a.pdf:PDF},
+  publisher = {National Bank of Ukraine},
+}
+
+@Article{Beckmann2013,
+  author   = {Beckmann, Elisabeth and Fidrmuc, Jarko},
+  journal  = {Comparative Economic Studies},
+  title    = {Exchange {Rate} {Pass}-{Through} in {CIS} {Countries}},
+  year     = {2013},
+  issn     = {1478-3320},
+  month    = dec,
+  number   = {4},
+  pages    = {705--720},
+  volume   = {55},
+  abstract = {We analyze exchange rate pass-through in seven CIS countries using monthly data from 1999 to 2010. In the short run, VAR models estimates show that exchange rate movements in the US dollar affect consumer prices to a relatively high degree (about 50\%), while the Euro exchange rate is less important. Moreover, short-run exchange rate pass-through is very heterogeneous across countries. In particular, countries with high-energy imports from Russia generally have higher exchange rate pass-through. In the long run, panel cointegration results show pass-through rates of 60\% and above for both the US dollar and Euro exchange rates.},
+  doi      = {10.1057/ces.2013.8},
+  file     = {:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF;:Beckmann2013.pdf:PDF},
+  language = {en},
+  url      = {https://doi.org/10.1057/ces.2013.8},
+  urldate  = {2021-04-28},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
