@@ -16,54 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{nyt/global//global/global}
-    \entry{An2012}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=699565020ec2d7bfa341b066c02269f8}{%
-           family={An},
-           familyi={A\bibinitperiod},
-           given={Lian},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c33641e67eeaefc87b7821dc9b51ff90}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Jian},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{95019ad15b3afbada2987ae57e57cd20}
-      \strng{fullhash}{95019ad15b3afbada2987ae57e57cd20}
-      \strng{bibnamehash}{95019ad15b3afbada2987ae57e57cd20}
-      \strng{authorbibnamehash}{95019ad15b3afbada2987ae57e57cd20}
-      \strng{authornamehash}{95019ad15b3afbada2987ae57e57cd20}
-      \strng{authorfullhash}{95019ad15b3afbada2987ae57e57cd20}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{journaltitle}{Open Economies Review}
-      \field{shorttitle}{Exchange rate pass-through}
-      \field{title}{Exchange rate pass-through: {Evidence} based on vector autoregression with sign restrictions}
-      \field{year}{2012}
-      \field{number}{2}
-      \range{number}{1}
-      \field{pages}{359\bibrangedash 380}
-      \range{pages}{22}
-      \field{volume}{23}
-      \range{volume}{1}
-      \verb{file}
-      \verb :An2012 - Exchange Rate Pass Through_ Evidence Based on Vector Autoregression with Sign Restrictions.pdf:PDF
-      \endverb
-    \endentry
-  \enddatalist
-\endrefsection
 \endinput
 

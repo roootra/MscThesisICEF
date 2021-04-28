@@ -3,6 +3,7 @@
 \contentsline {section}{INTRODUCTION}{3}{Doc-Start}%
 \contentsline {section}{SECTION 2. DATA}{3}{Doc-Start}%
 \contentsline {section}{SECTION 3. METHODS}{3}{Doc-Start}%
+\contentsline {section}{SECTION 2. DATA}{3}{Doc-Start}%
 \contentsline {section}{SECTION 4. RESULTS}{3}{Doc-Start}%
 \contentsline {section}{DISCUSSION}{4}{Doc-Start}%
 \contentsline {section}{References}{5}{Doc-Start}%
