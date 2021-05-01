@@ -19,8 +19,535 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{Khosla1989}{article}{}
+    \entry{Adolfson2001}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=05aa324baa6f01f47b66241a295c7466}{%
+           family={Adolfson},
+           familyi={A\bibinitperiod},
+           given={Malin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Stockholm: Sveriges Riksbank}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{05aa324baa6f01f47b66241a295c7466}
+      \strng{fullhash}{05aa324baa6f01f47b66241a295c7466}
+      \strng{bibnamehash}{05aa324baa6f01f47b66241a295c7466}
+      \strng{authorbibnamehash}{05aa324baa6f01f47b66241a295c7466}
+      \strng{authornamehash}{05aa324baa6f01f47b66241a295c7466}
+      \strng{authorfullhash}{05aa324baa6f01f47b66241a295c7466}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The central bank's optimal reaction to foreign and domestic shocks is analyzed in an inflation targeting model allowing for incomplete exchange rate pass-through. Limited pass-through is incorporated through nominal rigidities in an aggregate supply-aggregate demand model derived from some microfoundations. Three main results are obtained. First, the results suggest that the interest rate response to foreign shocks is smaller when pass-through is low. Second, the inflation-output variability trade-off becomes more favourable as pass-through decreases. Third, lower pass-through, that is larger nominal rigidity, leads to higher exchange rate volatility. With exogenous nominal price stickiness, part of the required relative price adjustment is provided through larger movements in the endogenously determined exchange rate.}
+      \field{title}{Monetary {Policy} with {Incomplete} {Exchange} {Rate} {Pass}-{Through}}
+      \field{type}{techreport}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb :Adolfson2001 - Monetary Policy with Incomplete Exchange Rate Pass through.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.econstor.eu/handle/10419/82469
+      \endverb
+      \verb{url}
+      \verb https://www.econstor.eu/handle/10419/82469
+      \endverb
+    \endentry
+    \entry{Athukorala1991}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=059e1a87a38ecc04552358e5b50e2e32}{%
+           family={Athukorala},
+           familyi={A\bibinitperiod},
+           given={Premachandra},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{059e1a87a38ecc04552358e5b50e2e32}
+      \strng{fullhash}{059e1a87a38ecc04552358e5b50e2e32}
+      \strng{bibnamehash}{059e1a87a38ecc04552358e5b50e2e32}
+      \strng{authorbibnamehash}{059e1a87a38ecc04552358e5b50e2e32}
+      \strng{authornamehash}{059e1a87a38ecc04552358e5b50e2e32}
+      \strng{authorfullhash}{059e1a87a38ecc04552358e5b50e2e32}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The pass-through relationship between exchange rate and prices of manufactured exports is examined for Korea. It is found that exporters take competitors' prices at the prime mover of price setting and let profits bear the brunt of adjustment to the exchange rate changes.}
+      \field{issn}{0165-1765}
+      \field{journaltitle}{Economics Letters}
+      \field{month}{1}
+      \field{shorttitle}{Exchange rate pass-through}
+      \field{title}{Exchange Rate Pass-through: {The} Case of {Korean} Exports of Manufactures}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{79\bibrangedash 84}
+      \range{pages}{6}
+      \field{volume}{35}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/0165-1765(91)90108-W
+      \endverb
+      \verb{file}
+      \verb :Athukorala1991 - Exchange Rate Pass Through_ the Case of Korean Exports of Manufactures.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/016517659190108W
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/016517659190108W
+      \endverb
+    \endentry
+    \entry{Athukorala1994}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=0,uniquepart=base,hash=059e1a87a38ecc04552358e5b50e2e32}{%
+           family={Athukorala},
+           familyi={A\bibinitperiod},
+           given={Premachandra},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7767692f87df70d10bbdfd39483a5be}{%
+           family={Menon},
+           familyi={M\bibinitperiod},
+           given={Jayant},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{fullhash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{bibnamehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{authorbibnamehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{authornamehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{authorfullhash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines the relationship between exchange rate changes and Japanese export pricing behaviour employing a methodology which permits the separate measurement of pricing to market behaviour and the cost impact of exchange rate changes. The results suggest that incomplete pass-through of exchange rate changes is a pervasive phenomenon, but rejects the widely held view that Japanese export firms have relied more heavily on pricing to market strategies during the period of yen appreciation in order to maintain market shares. There is also evidence that estimates which capture only pricing to market behaviour may over-emphasise the degree of pass-through to the extent that cost of production is sensitive to exchange rate changes.}
+      \field{issn}{0013-0133}
+      \field{journaltitle}{The Economic Journal}
+      \field{month}{3}
+      \field{title}{Pricing to {Market} {Behaviour} and {Exchange} {Rate} {Pass}-{Through} in {Japanese} {Exports}}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1994}
+      \field{urldateera}{ce}
+      \field{number}{423}
+      \range{number}{1}
+      \field{pages}{271\bibrangedash 281}
+      \range{pages}{11}
+      \field{volume}{104}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.2307/2234748
+      \endverb
+      \verb{file}
+      \verb :Athukorala1994.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/2234748
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/2234748
+      \endverb
+    \endentry
+    \entry{Baldwin1988}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f923bf5fba7af4af14e45957ecc62b0a}{%
+           family={Baldwin},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f923bf5fba7af4af14e45957ecc62b0a}
+      \strng{fullhash}{f923bf5fba7af4af14e45957ecc62b0a}
+      \strng{bibnamehash}{f923bf5fba7af4af14e45957ecc62b0a}
+      \strng{authorbibnamehash}{f923bf5fba7af4af14e45957ecc62b0a}
+      \strng{authornamehash}{f923bf5fba7af4af14e45957ecc62b0a}
+      \strng{authorfullhash}{f923bf5fba7af4af14e45957ecc62b0a}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.}
+      \field{journaltitle}{NBER Working Paper}
+      \field{month}{1}
+      \field{title}{Some {Empirical} {Evidence} on {Hysteresis} in {Aggregate} {US} {Import} {Prices}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1988}
+      \field{urldateera}{ce}
+      \field{volume}{2483}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.3386/w2483
+      \endverb
+      \verb{file}
+      \verb :Baldwin1988 - Some Empirical Evidence on Hysteresis in Aggregate US Import Prices.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w2483
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w2483
+      \endverb
+    \endentry
+    \entry{Cowling1989}{article}{}
       \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a630dc1ce6e7b8a423767220d01432de}{%
+           family={Cowling},
+           familyi={C\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=526c2fd78ca5a352646cc750a1714b1a}{%
+           family={Sugden},
+           familyi={S\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{0449f14269006af6fba89c05de8074db}
+      \strng{fullhash}{e2c7ec207fdbd8e66395fea6d4d3e0f8}
+      \strng{bibnamehash}{e2c7ec207fdbd8e66395fea6d4d3e0f8}
+      \strng{authorbibnamehash}{e2c7ec207fdbd8e66395fea6d4d3e0f8}
+      \strng{authornamehash}{0449f14269006af6fba89c05de8074db}
+      \strng{authorfullhash}{e2c7ec207fdbd8e66395fea6d4d3e0f8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0309-166X}
+      \field{journaltitle}{Cambridge Journal of Economics}
+      \field{title}{Exchange Rate Adjustment and Oligopoly Pricing Behaviour}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1989}
+      \field{urldateera}{ce}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{373\bibrangedash 393}
+      \range{pages}{21}
+      \field{volume}{13}
+      \range{volume}{1}
+      \verb{file}
+      \verb :https\://www.jstor.org/stable/pdfplus/10.2307/23598123.pdf?acceptTC=true:application/pdf;:Cowling1989.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/23598123
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/23598123
+      \endverb
+    \endentry
+    \entry{Deravi1995}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=268c714f368c85dd705aa10c0837ccd5}{%
+           family={Deravi},
+           familyi={D\bibinitperiod},
+           given={Keivan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9ce7f00ce99ebaaebb1fa68a481d5c5}{%
+           family={Gregorowicz},
+           familyi={G\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1dc7187ac577319d0a5724cf3173b0c}{%
+           family={Hegji},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{3ace223aae5c58d583a9bd126ce2c707}
+      \strng{fullhash}{abdd266f8fe270b9dba245ae6381a4a3}
+      \strng{bibnamehash}{abdd266f8fe270b9dba245ae6381a4a3}
+      \strng{authorbibnamehash}{abdd266f8fe270b9dba245ae6381a4a3}
+      \strng{authornamehash}{3ace223aae5c58d583a9bd126ce2c707}
+      \strng{authorfullhash}{abdd266f8fe270b9dba245ae6381a4a3}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quarterly Journal of Business and Economics}
+      \field{title}{Exchange rates and the inflation rate}
+      \field{year}{1995}
+      \field{pages}{42\bibrangedash 54}
+      \range{pages}{13}
+      \verb{file}
+      \verb :Deravi1995 - Exchange Rates and the Inflation Rate.html:URL;:Deravi1995.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Devereux2002}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=242c6e9f66f64d54b204375305e8dd12}{%
+           family={Devereux},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d0fbc8c1d29b9b90b626d27018dc6d7}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{862ea698d8492d9ad197b680563ab2cc}
+      \strng{fullhash}{8fc010ac3988d408e5aa8caecbdfb412}
+      \strng{bibnamehash}{8fc010ac3988d408e5aa8caecbdfb412}
+      \strng{authorbibnamehash}{8fc010ac3988d408e5aa8caecbdfb412}
+      \strng{authornamehash}{862ea698d8492d9ad197b680563ab2cc}
+      \strng{authorfullhash}{8fc010ac3988d408e5aa8caecbdfb412}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explores the hypothesis that high volatility of real and nominal exchange rates may be due to the fact that local currency pricing eliminates the pass-through from changes in exchange rates to consumer prices. Exchange rates may be highly volatile because in a sense they have little effect on macroeconomic variables. The paper shows the ingredients necessary to construct such an explanation for exchange rate volatility. In addition to the presence of local currency pricing, we need (a) incomplete international financial markets, (b) a structure of international pricing and product distribution such that wealth effects of exchange rate changes are minimized, and (c) stochastic deviations from uncovered interest rate parity. Together, it is shown that these elements can produce exchange rate volatility that is much higher than shocks to economic fundamentals, and ‘disconnected’ from the rest of the economy in the sense that the volatility of all other macroeconomic aggregates are of the same order as that of fundamentals.}
+      \field{issn}{0304-3932}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{month}{7}
+      \field{title}{Exchange rate pass-through, exchange rate volatility, and exchange rate disconnect}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{number}{5}
+      \range{number}{1}
+      \field{pages}{913\bibrangedash 940}
+      \range{pages}{28}
+      \field{volume}{49}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/S0304-3932(02)00130-7
+      \endverb
+      \verb{file}
+      \verb :Devereux2002 - Exchange Rate Pass Through, Exchange Rate Volatility, and Exchange Rate Disconnect.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393202001307
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393202001307
+      \endverb
+      \keyw{Exchange rate pass-through,Exchange rate volatility,Exchange rate disconnect,Local currency pricing,Noise traders}
+    \endentry
+    \entry{Feenstra1989}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ef1a7d4018465ef4e3e1c6e8e76851cc}{%
+           family={Feenstra},
+           familyi={F\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ef1a7d4018465ef4e3e1c6e8e76851cc}
+      \strng{fullhash}{ef1a7d4018465ef4e3e1c6e8e76851cc}
+      \strng{bibnamehash}{ef1a7d4018465ef4e3e1c6e8e76851cc}
+      \strng{authorbibnamehash}{ef1a7d4018465ef4e3e1c6e8e76851cc}
+      \strng{authornamehash}{ef1a7d4018465ef4e3e1c6e8e76851cc}
+      \strng{authorfullhash}{ef1a7d4018465ef4e3e1c6e8e76851cc}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper examines the effect of tariffs and exchange rates on U.S. prices of Japanese cars, trucks and motorcycles. In particular, we test whether the long-run pass-through of tariffs and exchange rates are identical: the symmetry hypothesis. We find that this hypothesis is easily accepted in our sample. We also find that the pass-through relation varies across products, ranging from about 0.6 for trucks to unity for motorcycles. These coefficients have very different implications for trade policy. We explain the results based on demand, cost and institutional conditions in each industry.}
+      \field{issn}{0022-1996}
+      \field{journaltitle}{Journal of International Economics}
+      \field{month}{8}
+      \field{shorttitle}{Symmetric pass-through of tariffs and exchange rates under imperfect competition}
+      \field{title}{Symmetric pass-through of tariffs and exchange rates under imperfect competition: {An} empirical test}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1989}
+      \field{urldateera}{ce}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{25\bibrangedash 45}
+      \range{pages}{21}
+      \field{volume}{27}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/0022-1996(89)90076-7
+      \endverb
+      \verb{file}
+      \verb :Feenstra1989 - Symmetric Pass through of Tariffs and Exchange Rates under Imperfect Competition_ an Empirical Test.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0022199689900767
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0022199689900767
+      \endverb
+    \endentry
+    \entry{Hooper1989}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f3c0e8d17934907f2996182fa4335141}{%
+           family={Hooper},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=629d39181388641b3ed12a1d8e912863}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Catherine\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Brookings Institution Press}%
+      }
+      \strng{namehash}{95dc20e53c2fc88fa1ecc6530036efa5}
+      \strng{fullhash}{40dcd6046b63984fc21ccfacb4ca3214}
+      \strng{bibnamehash}{40dcd6046b63984fc21ccfacb4ca3214}
+      \strng{authorbibnamehash}{40dcd6046b63984fc21ccfacb4ca3214}
+      \strng{authornamehash}{95dc20e53c2fc88fa1ecc6530036efa5}
+      \strng{authorfullhash}{40dcd6046b63984fc21ccfacb4ca3214}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0007-2303}
+      \field{journaltitle}{Brookings Papers on Economic Activity}
+      \field{shorttitle}{Exchange {Rate} {Pass}-{Through} in the 1980s}
+      \field{title}{Exchange {Rate} {Pass}-{Through} in the 1980s: {The} {Case} of {U}.{S}. {Imports} of {Manufactures}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1989}
+      \field{urldateera}{ce}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{297\bibrangedash 337}
+      \range{pages}{41}
+      \field{volume}{1989}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.2307/2534500
+      \endverb
+      \verb{file}
+      \verb :Hooper1989 - Exchange Rate Pass through in the 1980s_ the Case of U.S. Imports of Manufactures.html:URL;:Hooper1989.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/2534500
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/2534500
+      \endverb
+    \endentry
+    \entry{Khosla1991}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ec70b32f8ba496ab36297b6ffde31f0}{%
+           family={Khosla},
+           familyi={K\bibinitperiod},
+           given={Anil},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2ec70b32f8ba496ab36297b6ffde31f0}
+      \strng{fullhash}{2ec70b32f8ba496ab36297b6ffde31f0}
+      \strng{bibnamehash}{2ec70b32f8ba496ab36297b6ffde31f0}
+      \strng{authorbibnamehash}{2ec70b32f8ba496ab36297b6ffde31f0}
+      \strng{authornamehash}{2ec70b32f8ba496ab36297b6ffde31f0}
+      \strng{authorfullhash}{2ec70b32f8ba496ab36297b6ffde31f0}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is an empirical investigation of the less-than-full pass-through phenomenon using Japanese data at a disaggregate industry level and tests the validity of some of the received explanations. The overall cost unadjusted pass-through for the Japanese economy was found to be 0.43 for the 1975:1–1987:4 period though it varied substantially among industries. Materials industries, characterized by product homogeneity, had low pass-through ratios while final goods industries, where product differentiation is pervasive, revealed high ratios. Results, controlled for cost changes, indicate a rise in pass-through ratios generally with improvement more pronounced in materials industries than in final goods industries though the former still had a lower pass-through. Finally, the Japanese export price data do not lend support to the hysteresis phenomenon that has found wide acceptance in recent years. J. Japan. Int. Econ., March 1991, 5(1), pp. 41–59. Japan Center for Economic Research, Nikkei Kayabacho Bekkan, 2-6-1, Kayabacho Nihombashi, Chuo-ku, Tokyo 103, Japan.}
+      \field{issn}{0889-1583}
+      \field{journaltitle}{Journal of the Japanese and International Economies}
+      \field{month}{3}
+      \field{title}{Exchange Rate Pass-through and Export Pricing Evidence from the {Japanese} {Economy}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{41\bibrangedash 59}
+      \range{pages}{19}
+      \field{volume}{5}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/S0889-1583(05)80004-8
+      \endverb
+      \verb{file}
+      \verb :Khosla1991 - Exchange Rate Pass through and Export Pricing Evidence from the Japanese Economy.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0889158305800048
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0889158305800048
+      \endverb
+    \endentry
+    \entry{Khosla1989}{article}{}
+      \name{author}{2}{ul=2}{%
         {{un=0,uniquepart=base,hash=2ec70b32f8ba496ab36297b6ffde31f0}{%
            family={Khosla},
            familyi={K\bibinitperiod},
@@ -37,11 +564,11 @@
       \list{publisher}{1}{%
         {Hitotsubashi University}%
       }
-      \strng{namehash}{6073c9be0ece4b1f390a2f45f9140ba3}
+      \strng{namehash}{456dbb4b2cd69f76d926ab4f67db5564}
       \strng{fullhash}{456dbb4b2cd69f76d926ab4f67db5564}
       \strng{bibnamehash}{456dbb4b2cd69f76d926ab4f67db5564}
       \strng{authorbibnamehash}{456dbb4b2cd69f76d926ab4f67db5564}
-      \strng{authornamehash}{6073c9be0ece4b1f390a2f45f9140ba3}
+      \strng{authornamehash}{456dbb4b2cd69f76d926ab4f67db5564}
       \strng{authorfullhash}{456dbb4b2cd69f76d926ab4f67db5564}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
@@ -73,6 +600,443 @@
       \verb{url}
       \verb https://www.jstor.org/stable/43295889
       \endverb
+    \endentry
+    \entry{Kim1998}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=3e296e4548c915144545712d54341c02}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Ki-Ho},
+           giveni={K\bibinithyphendelim H\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{3e296e4548c915144545712d54341c02}
+      \strng{fullhash}{3e296e4548c915144545712d54341c02}
+      \strng{bibnamehash}{3e296e4548c915144545712d54341c02}
+      \strng{authorbibnamehash}{3e296e4548c915144545712d54341c02}
+      \strng{authornamehash}{3e296e4548c915144545712d54341c02}
+      \strng{authorfullhash}{3e296e4548c915144545712d54341c02}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Many studies investigating the relation between inflation and exchange rates have found that exchange rates influenced inflation, while other studies have failed to do so or reported mixed results. These findings, however, might be spurious as the majority of the earlier investigations suffered from misspecifications of one kind or another. The current paper addresses the problem by employing an up-to-date and powerful cointegration method developed by Johansen (1988). In a system of five-equation vector error correction model, this paper finds that the US inflation, exchange rate, money supply, income, and interest rate are cointegrated. The cointegration analysis of the data covering the 1973-95 period reveals that the dollar exchange rate has a significant negative impact on the inflation measured by the producer price index. It is further established that the exchange rate Granger causes the inflation.}
+      \field{issn}{0003-6846}
+      \field{journaltitle}{Applied Economics}
+      \field{month}{5}
+      \field{shorttitle}{{US} inflation and the dollar exchange rate}
+      \field{title}{{US} inflation and the dollar exchange rate: a vector error correction model}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{number}{5}
+      \range{number}{1}
+      \field{pages}{613\bibrangedash 619}
+      \range{pages}{7}
+      \field{volume}{30}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1080/000368498325606
+      \endverb
+      \verb{file}
+      \verb :Kim1998 - US Inflation and the Dollar Exchange Rate_ a Vector Error Correction Model.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/000368498325606
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/000368498325606
+      \endverb
+    \endentry
+    \entry{Kim1990}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=592d764f057c35012d34391e2b8b03b0}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Yoonbai},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{592d764f057c35012d34391e2b8b03b0}
+      \strng{fullhash}{592d764f057c35012d34391e2b8b03b0}
+      \strng{bibnamehash}{592d764f057c35012d34391e2b8b03b0}
+      \strng{authorbibnamehash}{592d764f057c35012d34391e2b8b03b0}
+      \strng{authornamehash}{592d764f057c35012d34391e2b8b03b0}
+      \strng{authorfullhash}{592d764f057c35012d34391e2b8b03b0}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article estimates the import-price function in the United States using a varying-parameter model. The results show that the short-run nonoil import-price changes have become relatively less responsive to exchange-rate changes than to foreign-cost changes since the generalized floating began in the early 1970s. Concomitantly, the markup has varied significantly, falling when the dollar fell and rising when it rose. Thus “pricing to market” is confirmed even for overall U.S. imports.}
+      \field{issn}{0735-0015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{month}{7}
+      \field{shorttitle}{Exchange {Rates} and {Import} {Prices} in the {United} {States}}
+      \field{title}{Exchange {Rates} and {Import} {Prices} in the {United} {States}: {A} {Varying}-{Parameter} {Estimation} of {Exchange}-{Rate} {Pass}-{Through}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1990}
+      \field{urldateera}{ce}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{305\bibrangedash 315}
+      \range{pages}{11}
+      \field{volume}{8}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1080/07350015.1990.10509801
+      \endverb
+      \verb{file}
+      \verb :Kim1990 - Exchange Rates and Import Prices in the United States_ a Varying Parameter Estimation of Exchange Rate Pass through.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/07350015.1990.10509801
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/07350015.1990.10509801
+      \endverb
+      \keyw{Kalman filtering,Price markup,Pricing to market}
+    \endentry
+    \entry{Menon1992}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b7767692f87df70d10bbdfd39483a5be}{%
+           family={Menon},
+           familyi={M\bibinitperiod},
+           given={Jayant},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{fullhash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{bibnamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authorbibnamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authornamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authorfullhash}{b7767692f87df70d10bbdfd39483a5be}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wechselkurse und Preise australischer Industriegüterexporte.- Die Beziehung zwischen Wechselkursbewegungen und den Preisen für handelbare Güter steht im Mittelpunkt der gegenwärtigen Debatte darüber, wie wirksam die Wechselkurspolitik für die Anpassung der Leistungsbilanz ist. Diese Beziehung ist Wechselkurs-“Durchlauf” (pass-through) genannt worden und betrifft das Ausmaß, in dem die Preise handelbarer Güter auf Veränderungen des Wechselkurses reagieren. In diesem Artikel werden die Durchlauf-Koeffizienten für die Industriegüterexporte Australiens in den 80er Jahren geschätzt, und zwar disaggregiert nach den Bereichen der zweistelligen ASIC. Die Untersuchung betont die strukturellen Merkmale und den institutionellen Rahmen, in dem der Handel der einzelnen Industriezweige stattfindet.}
+      \field{issn}{1610-2886}
+      \field{journaltitle}{Weltwirtschaftliches Archiv}
+      \field{month}{12}
+      \field{title}{Exchange Rates and Prices of {Australian} Manufactured Exports}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1992}
+      \field{urldateera}{ce}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{695\bibrangedash 710}
+      \range{pages}{16}
+      \field{volume}{128}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1007/BF02707300
+      \endverb
+      \verb{file}
+      \verb :Menon1992 - Exchange Rates and Prices of Australian Manufactured Exports.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF02707300
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02707300
+      \endverb
+    \endentry
+    \entry{Menon1993}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b7767692f87df70d10bbdfd39483a5be}{%
+           family={Menon},
+           familyi={M\bibinitperiod},
+           given={Jayant},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{fullhash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{bibnamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authorbibnamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authornamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authorfullhash}{b7767692f87df70d10bbdfd39483a5be}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The study examines the pass-through relationship of exchange rate changes to prices of Australian imports of passenger motor vehicles (PMVs) for the period 1981. 3 to 1990. 2. A model that relates the import pricing decision to changes in the exchange rate, production costs and competing prices is estimated. Having identified a cointegrating relationship, the Engle-Granger two-step procedure is employed to estimate the model. Unlike previous findings, our results suggests that the pass through of exchange rate changes to import prices is incomplete in the long run. The presence of quantitative restrictions (QRs) and the pricing practices on intra-firm sales of multinational firms are put forward as possible explanations for the incomplete pass-through finding. [F 14]}
+      \field{issn}{1016-8737}
+      \field{journaltitle}{International Economic Journal}
+      \field{month}{9}
+      \field{shorttitle}{Exchange {Rate} {Pass}-{Through}}
+      \field{title}{Exchange {Rate} {Pass}-{Through}: {Australian} {Imports} of {Motor} {Vehicles}}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{93\bibrangedash 109}
+      \range{pages}{17}
+      \field{volume}{7}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1080/10168739300000008
+      \endverb
+      \verb{file}
+      \verb :Menon1993 - Exchange Rate Pass Through_ Australian Imports of Motor Vehicles.pdf:PDF;:Menon1993.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/10168739300000008
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/10168739300000008
+      \endverb
+    \endentry
+    \entry{Menon1995}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b7767692f87df70d10bbdfd39483a5be}{%
+           family={Menon},
+           familyi={M\bibinitperiod},
+           given={Jayant},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{fullhash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{bibnamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authorbibnamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authornamehash}{b7767692f87df70d10bbdfd39483a5be}
+      \strng{authorfullhash}{b7767692f87df70d10bbdfd39483a5be}
+      \field{extraname}{3}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. The resilience of trade balances of the major industrialized economies to changes in their exchange rates has evoked interest in the exchange rate pass-through relationship. So far, there has not been a comprehensive survey of this literature. The paper aims to fill this gap in two ways. First, it pieces together the theoretical literature on exchange rate pass-through. Second, it provides a critical survey of the empirical literature on exchange rate pass-through. Emphasis is placed on the data and methodology employed in previous work. This is done in order to guide future work in this growing area of research.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{month}{6}
+      \field{title}{Exchange {Rate} {Pass}-{Through}}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1995}
+      \field{urldateera}{ce}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{197\bibrangedash 231}
+      \range{pages}{35}
+      \field{volume}{9}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1111/j.1467-6419.1995.tb00114.x
+      \endverb
+      \verb{file}
+      \verb :Menon1995 - Exchange Rate Pass through.pdf:PDF;:Menon1995 - Exchange Rate Pass through.pdf:PDF
+      \endverb
+      \keyw{exchange rate pass-through,exchange rates and prices}
+    \endentry
+    \entry{Obstfeld2002}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0c923601596f623c2abb75d6ce9e3d84}{%
+           family={Obstfeld},
+           familyi={O\bibinitperiod},
+           given={Maurice},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dfacefa9dbd5b7bedeeb1764cc5fd084}{%
+           family={Rogoff},
+           familyi={R\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{832ab56cf8ab06d59b790da70f358e55}
+      \strng{fullhash}{bf7e62bfc73dca6855e3dd1cd3d370d5}
+      \strng{bibnamehash}{bf7e62bfc73dca6855e3dd1cd3d370d5}
+      \strng{authorbibnamehash}{bf7e62bfc73dca6855e3dd1cd3d370d5}
+      \strng{authornamehash}{832ab56cf8ab06d59b790da70f358e55}
+      \strng{authorfullhash}{bf7e62bfc73dca6855e3dd1cd3d370d5}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is well-known that if international linkages are relatively small, the potential gains to international monetary policy coordination are typically quite limited. But when goods and financial markets are tightly linked, is it problematic if countries unilaterally design their monetary policy rules? Are the stabilization gains from having separate currencies largely squandered in the absence of effective international monetary coordination? We argue that under plausible assumptions the answer is no. Unless risk aversion is very high, lack of coordination in rule setting is a second-order problem compared with the overall gains from macroeconomic stabilization.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{5}
+      \field{title}{Global {Implications} of {Self}-{Oriented} {National} {Monetary} {Rules}*}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{503\bibrangedash 535}
+      \range{pages}{33}
+      \field{volume}{117}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1162/003355302753650319
+      \endverb
+      \verb{file}
+      \verb :Obstfeld2002.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/003355302753650319
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/003355302753650319
+      \endverb
+    \endentry
+    \entry{Schembri1985}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=afc83d4c663e8563b9ff149099533711}{%
+           family={Schembri},
+           familyi={S\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{afc83d4c663e8563b9ff149099533711}
+      \strng{fullhash}{afc83d4c663e8563b9ff149099533711}
+      \strng{bibnamehash}{afc83d4c663e8563b9ff149099533711}
+      \strng{authorbibnamehash}{afc83d4c663e8563b9ff149099533711}
+      \strng{authornamehash}{afc83d4c663e8563b9ff149099533711}
+      \strng{authorfullhash}{afc83d4c663e8563b9ff149099533711}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{6 Export Prices and Exchange Rates: An Industry Approach was published in Trade Policies for International Competitiveness on page 185.}
+      \field{chapter}{Trade Policies for International Competitiveness}
+      \field{isbn}{9780226239507}
+      \field{journaltitle}{Trade Policies for International Competitiveness}
+      \field{month}{4}
+      \field{shorttitle}{6 {Export} {Prices} and {Exchange} {Rates}}
+      \field{title}{6 {Export} {Prices} and {Exchange} {Rates}: {An} {Industry} {Approach}}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{1985}
+      \field{urldateera}{ce}
+      \field{pages}{185\bibrangedash 216}
+      \range{pages}{32}
+      \verb{file}
+      \verb :Schembri2008.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.degruyter.com/document/doi/10.7208/9780226239507-008/html
+      \endverb
+      \verb{url}
+      \verb https://www.degruyter.com/document/doi/10.7208/9780226239507-008/html
+      \endverb
+    \endentry
+    \entry{Smets2002}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f78e4957877432f887653cd776f7ec8b}{%
+           family={Smets},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b431dc947861523c71d9fb860ecd9479}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={Raf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{8b1fe321171b6741353a138d85f7e07f}
+      \strng{fullhash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{bibnamehash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{authorbibnamehash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{authornamehash}{8b1fe321171b6741353a138d85f7e07f}
+      \strng{authorfullhash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper analyses the implications of imperfect exchange rate pass-through for optimal monetary policy in a linearised open-economy dynamic general equilibrium model calibrated to euro area data. Imperfect exchange rate pass through is modelled by assuming sticky import price behaviour. The degree of domestic and import price stickiness is estimated by reproducing the empirical identified impulse response of a monetary policy and exchange rate shock conditional on the response of output, net trade and the exchange rate. It is shown that a central bank that wants to minimise the resource costs of staggered price setting will aim at minimising a weighted average of domestic and import price inflation.}
+      \field{issn}{0304-3932}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{month}{7}
+      \field{title}{Openness, imperfect exchange rate pass-through and monetary policy}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{number}{5}
+      \range{number}{1}
+      \field{pages}{947\bibrangedash 981}
+      \range{pages}{35}
+      \field{volume}{49}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/S0304-3932(02)00126-5
+      \endverb
+      \verb{file}
+      \verb :Smets2002.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393202001265
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304393202001265
+      \endverb
+      \keyw{Monetary policy,Open economies,Exchange rate pass-through}
     \endentry
   \enddatalist
 \endrefsection

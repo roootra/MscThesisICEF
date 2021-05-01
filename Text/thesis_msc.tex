@@ -123,10 +123,10 @@
 \usepackage{graphicx} %вставка рисунков
 \usepackage{wrapfig} %обтекание рисунков текстом
 \usepackage{geometry} %установка полей
-\geometry{top=25mm} 
-\geometry{bottom=35mm}
-\geometry{left=35mm}
-\geometry{right=20mm}
+\geometry{top=25mm} % >29
+\geometry{bottom=25mm} % >20
+\geometry{left=35mm} % =35
+\geometry{right=20mm} % >15
 \usepackage{soul} %модификаторы начертания
 \usepackage{csquotes}
 %\usepackage{titling}
@@ -186,30 +186,58 @@
 %\renewcommand{\appendixname}{Appendix}
 
 \begin{document}
-	
-\tableofcontents
+\setcounter{page}{2}
+\begin{abstract}
+	\textit{tbd}
+\end{abstract}
 \newpage
+
+\tableofcontents
 %\maketitle
 \linespread{1.5}
-\setcounter{page}{0}
-\begin{abstract}
-\textit{tbd}
-\end{abstract}
 
 \newpage
 %\tableofcontents
 %\newpage
 \linespread{1.5}
-\setcounter{page}{3}
+
 \section*{SECTION 1. INTRODUCTION}
 \addcontentsline{toc}{section}{SECTION 1. INTRODUCTION}
 
+\newpage
 \section*{SECTION 2. LITERATURE REVIEW}
 \setcounter{section}{2}
 \addcontentsline{toc}{section}{SECTION 2. DATA}
-The pioneering works' goals in exchange rate pass through estimation area was mainly in determining industry-specific effects in specific economies %add from menon1995
+The goal of pioneering works in exchange rate pass through estimation area was mainly in determining industry-specific effects in specific economies: among others, (\cite{Schembri1985}) examines Canadian exports, (\cite{Menon1992, Menon1993}) --- Australian exports and Imports of Motor Vehicles, (\cite{Khosla1991, Athukorala1994}) --- Japanese exports, (\cite{Cowling1989} --- UK and West German car market, \cite{Athukorala1991} --- Korean exports, \cite{Baldwin1988, Feenstra1989, Hooper1989}) --- US imports. These papers show that there is a heterogeneity in pass-through across industries as well as countries though challenging data measurement errors and model misspecifications. A huge contribution to review these attempts is made in (\cite{Menon1993, Menon1995}).
+
+Looking for exchange rate pass-through for whole economies, \autocite{Khosla1989} estimate shock-independent ERPT to export prices for 23 countries using calculated quarterly nominal effective exchange rate for each economy and fitting OLS regressions. They find that pass-through effect varies drastically across countries: for developed economies this value is high, meanwhile developing ones experience low pass-through.
+
+A more advanced methods are used in (\cite{Kim1990}) --- author examines pass-through to US import prices and influence of exchange rate to mark-up using a model with time-varying parameters. It is shown that a mark-up negatively correlates with US dollar exchange rate, though a direct effect of the latter to prices fell from 1980s. 
+
+In (\cite{Deravi1995}) a vector autoregression (VAR) is applied to fit US broad money aggregate, dollar exchange rate and consumer price index (CPI) with a main emphasis on monetary supply shock. Via causality test It is underlined that there is a significant causality effect of broad money to other macrovariables. Variance analysis suggests the effects to CPI from innovations to other two variables are nearly equal after four years.
  
-One of the pioneering work in exchange rate pass-through estimation is \autocite{Khosla1989}. Authors estimate shock-independent ERPT to export prices for 23 countries using calculated quarterly nominal effective exchange rate for each economy. They find that pass-through effect varies drastically across countries: for developed economies this value is high, meanwhile developing ones experience low pass-through.
+(\cite{Kim1998}) employs vector error-correction model (VECM) in order to study pass-through to US import prices. This paper reveals a significant negative effect of US exchange rate appreciation to producer price index (PPI) and conducts causality test for this dependency, which confirms an influence of exchange rate. Moreover, author argues that previous works were using inefficient methods to examine ERPT. 
+ 
+%DSGE-like papers
+Another approach of examining exchange rate pass-through is contained in literature based on general equilibrium models, although there are few ones specially structured for studies in this particular field. Mainly based on purely statistical approach, this particular paper refers only to several works of this kind, leaving the rest to the reader.
+
+One of the works is \cite{Adolfson2001}, where author examines optimal policy of monetary authority under different completeness of pass-through. The main consequence of this study is that the lower pass-through is, the less important nominal economy is, as interest rate response to shocks from outside is lower and exchange rate fluctuations are higher.
+
+The seminal paper in this field is \cite{Obstfeld2002}. It does not directly touch the pass-through problem, however, it is a starting point for many papers in this field. In the paper, a cooperation of monetary authorities in a two-country model is examined. The main result of this paper is that even if monetary authorities do not coordinate with each other, benefits from macroeconomic stabilization can outweigh lack of coordination, and coordination under fixed exchange rate is more preferred than one under the floating rate.
+
+Looking for effects of exchange rate volatility, (\cite{Devereux2002}) develop a multi-economy new-Keynesian general equilibrium model based on the model from aforementioned paper. Authors show that fluctuations in nominal exchange rate appear to compensate pass-through to prices nominated in local currencies. It is argued that even if there is a little volatility in fundamental macroeconomic variables, fluctuations of exchange rate may be quite high. This model lacks empirical research though, constrained only by simulations with different parametrisation.
+
+A quite strong attempt to make an empirical research based on DSGE model is done in \cite{Smets2002}, where Euro area data is used to calibrate a model and estimate exchange rate pass-through in an economy with optimal monetary policy. As a result, authors claim that under an assumption of presence of import price stickiness in the economy, its effect is similar as stickiness of domestic prices.
+
+
+
+
+
+
+
+
+ 
+
 
 %%%
 \section*{SECTION 3. METHODS}

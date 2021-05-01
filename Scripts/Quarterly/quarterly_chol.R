@@ -38,7 +38,7 @@ plot(dat_unseas$date, dat_unseas$real_gdp_gap)
 data_chol <- dat_unseas[,c("oil_USD_qoq", 
                            "imp_price_qoq", 
                            "miacr_31",
-                           "reserves_USD_qoq",
+                           #"reserves_USD_qoq",
                            "neer_qoq",
                            "gdp_nominal_qoq", 
                            "cpi_all_qoq")]

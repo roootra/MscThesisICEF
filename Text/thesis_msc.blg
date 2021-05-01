@@ -1,22 +1,95 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'thesis_msc.blg'
-[93] biber-darwin:322> INFO - === Thu Apr 29, 2021, 02:03:02
-[117] Biber.pm:415> INFO - Reading 'thesis_msc.bcf'
-[290] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[309] Biber.pm:4256> INFO - Processing section 0
-[309] Utils.pm:75> INFO - Globbing data source '../Sources/lit.bib'
-[309] Utils.pm:91> INFO - Globbed data source '../Sources/lit.bib' to ../Sources/lit.bib
-[321] Biber.pm:4455> INFO - Looking for bibtex format file '../Sources/lit.bib' for section 0
-[326] bibtex.pm:1653> INFO - LaTeX decoding ...
-[448] bibtex.pm:1471> INFO - Found BibTeX data source '../Sources/lit.bib'
-[483] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
-[483] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
-[484] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
-[484] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
-[490] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[490] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[490] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[490] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[499] bbl.pm:652> INFO - Writing 'thesis_msc.bbl' with encoding 'UTF-8'
-[500] bbl.pm:755> INFO - Output to thesis_msc.bbl
-[500] Biber.pm:128> INFO - WARNINGS: 4
+[90] biber-darwin:322> INFO - === Sun May  2, 2021, 03:04:41
+[111] Biber.pm:415> INFO - Reading 'thesis_msc.bcf'
+[278] Biber.pm:943> INFO - Found 19 citekeys in bib section 0
+[295] Biber.pm:4256> INFO - Processing section 0
+[296] Utils.pm:75> INFO - Globbing data source '../Sources/lit.bib'
+[296] Utils.pm:91> INFO - Globbed data source '../Sources/lit.bib' to ../Sources/lit.bib
+[306] Biber.pm:4455> INFO - Looking for bibtex format file '../Sources/lit.bib' for section 0
+[312] bibtex.pm:1653> INFO - LaTeX decoding ...
+[463] bibtex.pm:1471> INFO - Found BibTeX data source '../Sources/lit.bib'
+[547] Utils.pm:304> WARN - month field 'jun' in entry 'Menon1995' is not an integer - this will probably not sort properly.
+[607] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[607] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[607] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[607] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[608] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[608] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[608] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[608] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[609] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[609] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[609] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[609] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[610] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[610] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[610] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[610] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[610] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[611] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[611] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[611] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[611] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[611] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[612] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[612] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[612] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[612] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[612] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[612] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[613] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[613] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[613] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[613] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[614] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[614] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[614] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[614] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[615] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[615] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[615] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[615] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[616] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[616] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[616] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[616] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[617] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[617] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[617] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[617] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[617] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[617] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[618] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[618] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[618] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[618] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[618] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[619] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[619] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[619] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[619] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[619] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[620] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[620] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[620] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[620] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[621] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[621] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[621] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[621] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[622] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[622] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[622] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[622] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[622] Utils.pm:304> WARN - Unknown field 'volume' found in sorting template
+[623] Utils.pm:304> WARN - Unknown field 'book' found in sorting template
+[623] Utils.pm:304> WARN - Unknown field 'part' found in sorting template
+[623] Utils.pm:304> WARN - Unknown field 'issue' found in sorting template
+[628] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[628] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[628] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[628] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[658] bbl.pm:652> INFO - Writing 'thesis_msc.bbl' with encoding 'UTF-8'
+[670] bbl.pm:755> INFO - Output to thesis_msc.bbl
+[671] Biber.pm:128> INFO - WARNINGS: 77
