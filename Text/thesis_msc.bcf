@@ -3550,7 +3550,22 @@
     <bcf:citekey order="18">Hahn2003</bcf:citekey>
     <bcf:citekey order="19">Gagnon2004</bcf:citekey>
     <bcf:citekey order="20">Campa2005</bcf:citekey>
-    <bcf:citekey order="21">Shambaugh2008</bcf:citekey>
+    <bcf:citekey order="21">CaZorzi2007</bcf:citekey>
+    <bcf:citekey order="22">McCarthy2007</bcf:citekey>
+    <bcf:citekey order="23">Hahn2003</bcf:citekey>
+    <bcf:citekey order="24">McCarthy2007</bcf:citekey>
+    <bcf:citekey order="25">Shambaugh2008</bcf:citekey>
+    <bcf:citekey order="26">Amstad2010</bcf:citekey>
+    <bcf:citekey order="27">An2012</bcf:citekey>
+    <bcf:citekey order="28">Delatte2012</bcf:citekey>
+    <bcf:citekey order="29">BrunAguerre2012</bcf:citekey>
+    <bcf:citekey order="30">Lin2012</bcf:citekey>
+    <bcf:citekey order="31">Jiang2013</bcf:citekey>
+    <bcf:citekey order="32">Yamada2013</bcf:citekey>
+    <bcf:citekey order="33">Bandt2014</bcf:citekey>
+    <bcf:citekey order="34">Jasova2016</bcf:citekey>
+    <bcf:citekey order="35">Comunale2017</bcf:citekey>
+    <bcf:citekey order="36">Forbes2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

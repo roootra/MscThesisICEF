@@ -2,8 +2,8 @@
 \babel@toc {english}{}
 \contentsline {section}{SECTION 1. INTRODUCTION}{4}{Doc-Start}%
 \contentsline {section}{SECTION 2. DATA}{5}{Doc-Start}%
-\contentsline {section}{SECTION 3. METHODS}{7}{Doc-Start}%
-\contentsline {section}{SECTION 4. DATA}{7}{Doc-Start}%
-\contentsline {section}{SECTION 5. RESULTS}{7}{Doc-Start}%
-\contentsline {section}{DISCUSSION}{8}{Doc-Start}%
-\contentsline {section}{References}{10}{Doc-Start}%
+\contentsline {section}{SECTION 3. METHODS}{10}{Doc-Start}%
+\contentsline {section}{SECTION 4. DATA}{10}{Doc-Start}%
+\contentsline {section}{SECTION 5. RESULTS}{10}{Doc-Start}%
+\contentsline {section}{DISCUSSION}{11}{Doc-Start}%
+\contentsline {section}{References}{14}{Doc-Start}%
