@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  2 MAY 2021 03:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  3 MAY 2021 03:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1105,14 +1105,14 @@ Package biblatex Info: Reference segment=0 on input line 188.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(99.58464pt, 441.01773pt, 56.9055pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 702.78308pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=441.01773pt
 * \textheight=702.78308pt
 * \oddsidemargin=27.31465pt
 * \evensidemargin=27.31465pt
-* \topmargin=-38.1381pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1185,47 +1185,47 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \tf@toc=\write5
 \openout5 = `thesis_msc.toc'.
 
- [3] [4] [5] [6] [7
+ [3] [4] [5] [6] [7] [8
 
-]
-Overfull \hbox (15.58827pt too wide) in paragraph at lines 271--271
+] [9]
+Overfull \hbox (15.58827pt too wide) in paragraph at lines 281--281
 [][]\OT1/ptm/m/it/12 Menon J. \OT1/ptm/m/n/12 Ex-change Rates and Prices of Aus
 -tralian Man-u-fac-tured Ex-ports [] Weltwirtschaftliches
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./thesis_msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `thesis_msc.out' has not changed.
-(rerunfilecheck)             Checksum: A5D17B28431DA9CD164CD9026A0606EF;876.
+(rerunfilecheck)             Checksum: 48EB4E273AACEC26E429E1E0F2893C37;876.
 Package logreq Info: Writing requests to 'thesis_msc.run.xml'.
 \openout1 = `thesis_msc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25146 strings out of 480608
- 446244 string characters out of 5903629
- 1294768 words of memory out of 5000000
- 40607 multiletter control sequences out of 15000+600000
+ 25182 strings out of 480608
+ 447117 string characters out of 5903629
+ 1295065 words of memory out of 5000000
+ 40637 multiletter control sequences out of 15000+600000
  549358 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,56p,1189b,2591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,56p,1485b,2591s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis_msc.pdf (9 pages, 62167 bytes).
+Output written on thesis_msc.pdf (10 pages, 65860 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

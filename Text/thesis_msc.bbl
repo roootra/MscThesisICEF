@@ -222,6 +222,56 @@
       \verb https://www.nber.org/papers/w2483
       \endverb
     \endentry
+    \entry{Campa2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b4760f699aaebc1451f33a84d357d377}{%
+           family={Campa},
+           familyi={C\bibinitperiod},
+           given={José\bibnamedelima Manuel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b97b2d0e479308de0cc17a459ae4429}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Linda\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc0602d71939d2135028d0994638feb0}
+      \strng{fullhash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \strng{bibnamehash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \strng{authorbibnamehash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \strng{authornamehash}{cc0602d71939d2135028d0994638feb0}
+      \strng{authorfullhash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide cross-country and time series evidence on the extent of exchange rate pass-through into the import prices of 23 OECD countries. We find compelling evidence of partial pass-through in the short run, especially within manufacturing industries. Over the long run, producer-currency pricing is more prevalent for many types of imported goods. Countries with higher rates of exchange rate volatility have higher pass-through elasticities, although macroeconomic variables have played a minor role in the evolution of pass-through elasticities over time. Far more important for pass-through changes in these countries have been the dramatic shifts in the composition of country import bundles.}
+      \field{issn}{0034-6535}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{month}{11}
+      \field{title}{Exchange {Rate} {Pass}-{Through} into {Import} {Prices}}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{679\bibrangedash 690}
+      \range{pages}{12}
+      \field{volume}{87}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1162/003465305775098189
+      \endverb
+      \verb{file}
+      \verb :Campa2005 - Exchange Rate Pass through into Import Prices.pdf:PDF
+      \endverb
+    \endentry
     \entry{Cowling1989}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=a630dc1ce6e7b8a423767220d01432de}{%
@@ -433,6 +483,89 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0022199689900767
+      \endverb
+    \endentry
+    \entry{Gagnon2004}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d32b8cdeef571f3961722241fa434b6c}{%
+           family={Gagnon},
+           familyi={G\bibinitperiod},
+           given={Joseph\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=433f003e55ff3b3f7a9d4690639c8df4}{%
+           family={Ihrig},
+           familyi={I\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2e46a73f9f8c445479c84c40b196bae2}
+      \strng{fullhash}{9de4810d41d3acb2807a1facba9cee05}
+      \strng{bibnamehash}{9de4810d41d3acb2807a1facba9cee05}
+      \strng{authorbibnamehash}{9de4810d41d3acb2807a1facba9cee05}
+      \strng{authornamehash}{2e46a73f9f8c445479c84c40b196bae2}
+      \strng{authorfullhash}{9de4810d41d3acb2807a1facba9cee05}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The pass-through of exchange rate changes into domestic inflation appears to have declined in many countries since the 1980s. We develop a theoretical model that attributes the change in the rate of pass-through to increased emphasis on inflation stabilization by many central banks. This hypothesis is tested on 20 industrial countries between 1971 and 2003. We find widespread evidence of a robust and statistically significant link between estimated rates of pass-through and inflation variability. We also find evidence that observed monetary policy behaviour may be a factor in the declining rate of pass-through. Published in 2004 by John Wiley \& Sons, Ltd.}
+      \field{issn}{1099-1158}
+      \field{journaltitle}{International Journal of Finance \& Economics}
+      \field{title}{Monetary policy and exchange rate pass-through}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{315\bibrangedash 338}
+      \range{pages}{24}
+      \field{volume}{9}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1002/ijfe.253
+      \endverb
+      \verb{file}
+      \verb :Gagnon2004 - Monetary Policy and Exchange Rate Pass through.pdf:PDF;:Gagnon2004 - Monetary Policy and Exchange Rate Pass through.pdf:PDF
+      \endverb
+      \keyw{Inflation targeting,Taylor rule,exchange rate pass-through}
+    \endentry
+    \entry{Hahn2003}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a13aff922a90d2858398db578827d4d}{%
+           family={Hahn},
+           familyi={H\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a13aff922a90d2858398db578827d4d}
+      \strng{fullhash}{7a13aff922a90d2858398db578827d4d}
+      \strng{bibnamehash}{7a13aff922a90d2858398db578827d4d}
+      \strng{authorbibnamehash}{7a13aff922a90d2858398db578827d4d}
+      \strng{authornamehash}{7a13aff922a90d2858398db578827d4d}
+      \strng{authorfullhash}{7a13aff922a90d2858398db578827d4d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ECB Working Paper}
+      \field{title}{Pass-through of external shocks to euro area inflation}
+      \field{year}{2003}
+      \field{volume}{243}
+      \range{volume}{1}
+      \verb{file}
+      \verb :Hahn2003 - Pass through of External Shocks to Euro Area Inflation.pdf:PDF
       \endverb
     \endentry
     \entry{Hooper1989}{article}{}
@@ -978,6 +1111,47 @@
       \verb https://www.degruyter.com/document/doi/10.7208/9780226239507-008/html
       \endverb
     \endentry
+    \entry{Shambaugh2008}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d380f814b4eb41e8a227ce5b22f5975}{%
+           family={Shambaugh},
+           familyi={S\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0d380f814b4eb41e8a227ce5b22f5975}
+      \strng{fullhash}{0d380f814b4eb41e8a227ce5b22f5975}
+      \strng{bibnamehash}{0d380f814b4eb41e8a227ce5b22f5975}
+      \strng{authorbibnamehash}{0d380f814b4eb41e8a227ce5b22f5975}
+      \strng{authornamehash}{0d380f814b4eb41e8a227ce5b22f5975}
+      \strng{authorfullhash}{0d380f814b4eb41e8a227ce5b22f5975}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0261-5606}
+      \field{journaltitle}{Journal of International Money and Finance}
+      \field{title}{A New Look at Pass-through}
+      \field{year}{2008}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{560\bibrangedash 591}
+      \range{pages}{32}
+      \field{volume}{27}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/j.jimonfin.2008.01.009
+      \endverb
+      \verb{file}
+      \verb :Shambaugh2008 - A New Look at Pass through.pdf:PDF
+      \endverb
+    \endentry
     \entry{Smets2002}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f78e4957877432f887653cd776f7ec8b}{%
@@ -1037,6 +1211,60 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0304393202001265
       \endverb
       \keyw{Monetary policy,Open economies,Exchange rate pass-through}
+    \endentry
+    \entry{Taylor2000}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e3dff114993f65bbf7693ec3251eab42}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{fullhash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{bibnamehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{authorbibnamehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{authornamehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{authorfullhash}{e3dff114993f65bbf7693ec3251eab42}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently there has been a significant decline in the degree to which firms ‘pass through’ changes in costs to prices, a decline that is frequently characterized as a reduction in the ‘pricing power’ of firms. The decline appears to be associated with the decline in inflation in many countries. The decline has important implications for monetary policy because it affects both forecasts of inflation and the effects of changes in monetary policy on inflation. Some have argued that the decline in pricing power helped to keep inflation low in the face of apparently strong demand pressures in the United States in the late 1990s. This paper puts forth the view that the decline in pass-through or pricing power is due to the low inflation environment that has recently been achieved in many countries. First, a microeconomic model of price setting is used to show that lower pass-through is caused by lower perceived persistence of cost changes. Evidence is then presented showing that inflation is positively correlated with persistence of inflation, suggesting that the low inflation itself has caused the low pass-through. An economy-wide model consistent with the micromodel is then presented to illustrate how such changes in pricing power affect output and inflation dynamics in favorable ways, but can disappear quickly if monetary policy and expectations change.}
+      \field{issn}{0014-2921}
+      \field{journaltitle}{European Economic Review}
+      \field{month}{6}
+      \field{title}{Low inflation, pass-through, and the pricing power of firms}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \field{number}{7}
+      \range{number}{1}
+      \field{pages}{1389\bibrangedash 1408}
+      \range{pages}{20}
+      \field{volume}{44}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/S0014-2921(00)00037-4
+      \endverb
+      \verb{file}
+      \verb :Taylor2000 - Low Inflation, Pass Through, and the Pricing Power of Firms.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0014292100000374
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0014292100000374
+      \endverb
+      \keyw{Pass-through,Exchange rates,Monopolistic competition,Staggered price setting,Pricing power,Persistence,Inflation}
     \endentry
   \enddatalist
 \endrefsection

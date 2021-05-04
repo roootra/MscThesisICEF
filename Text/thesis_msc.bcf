@@ -3541,10 +3541,16 @@
     <bcf:citekey order="9">Kim1990</bcf:citekey>
     <bcf:citekey order="10">Deravi1995</bcf:citekey>
     <bcf:citekey order="11">Kim1998</bcf:citekey>
-    <bcf:citekey order="12">Adolfson2001</bcf:citekey>
-    <bcf:citekey order="13">Obstfeld2002</bcf:citekey>
-    <bcf:citekey order="14">Devereux2002</bcf:citekey>
-    <bcf:citekey order="15">Smets2002</bcf:citekey>
+    <bcf:citekey order="12">Taylor2000</bcf:citekey>
+    <bcf:citekey order="13">Adolfson2001</bcf:citekey>
+    <bcf:citekey order="14">Obstfeld2002</bcf:citekey>
+    <bcf:citekey order="15">Devereux2002</bcf:citekey>
+    <bcf:citekey order="16">Smets2002</bcf:citekey>
+    <bcf:citekey order="17">Gagnon2004</bcf:citekey>
+    <bcf:citekey order="18">Hahn2003</bcf:citekey>
+    <bcf:citekey order="19">Gagnon2004</bcf:citekey>
+    <bcf:citekey order="20">Campa2005</bcf:citekey>
+    <bcf:citekey order="21">Shambaugh2008</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
