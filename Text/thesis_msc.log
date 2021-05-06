@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  5 MAY 2021 01:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  7 MAY 2021 03:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,6 +71,8 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fundus-calligra/calligra.sty
 Package: calligra 2012/04/10 v1.9 LaTeX package calligra
 )
+   defining Unicode char U+0301 (decimal 769)
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
@@ -166,7 +168,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 )
 > \f@size=macro:
 ->12.
-l.73 \show\f@size
+l.75 \show\f@size
                  
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -975,14 +977,14 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 165.
+Package hyperref Info: Option `unicode' set `true' on input line 167.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 165.
+Package hyperref Info: Option `colorlinks' set `true' on input line 167.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -1000,7 +1002,7 @@ s
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 188.
+(biblatex)                Setting 'uniquename=init' on input line 190.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1009,41 +1011,41 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./thesis_msc.aux)
 \openout1 = `thesis_msc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 190.
+LaTeX Font Info:    ... okay on input line 190.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-88.
+90.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )<<ot1.cmap>>
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 188.
-Package gensymb Info: Math companion symbols declared on input line 188.
-LaTeX Info: Redefining \degree on input line 188.
-LaTeX Info: Redefining \celsius on input line 188.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 190.
+Package gensymb Info: Math companion symbols declared on input line 190.
+LaTeX Info: Redefining \degree on input line 190.
+LaTeX Info: Redefining \celsius on input line 190.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 188.
-LaTeX Info: Redefining \ohm on input line 188.
-Package gensymb Info: Using \textohm for \ohm on input line 188.
-Package gensymb Info: Using \textmu for \micro on input line 188.
+erthousand on input line 190.
+LaTeX Info: Redefining \ohm on input line 190.
+Package gensymb Info: Using \textohm for \ohm on input line 190.
+Package gensymb Info: Using \textmu for \micro on input line 190.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1092,9 +1094,16 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis_msc.bbl' found.
 
-(./thesis_msc.bbl)
-Package biblatex Info: Reference section=0 on input line 188.
-Package biblatex Info: Reference segment=0 on input line 188.
+(./thesis_msc.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'GarciaCicco2020':
+(biblatex)                - Overwriting field 'month' with month value from fie
+ld 'date' for entry 'GarciaCicco2020'.
+
+)
+Package biblatex Info: Reference section=0 on input line 190.
+Package biblatex Info: Reference segment=0 on input line 190.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1139,7 +1148,7 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 \AtBeginShipoutBox=\box110
-Package hyperref Info: Link coloring ON on input line 188.
+Package hyperref Info: Link coloring ON on input line 190.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1152,28 +1161,28 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count480
 )
-LaTeX Info: Redefining \ref on input line 188.
-LaTeX Info: Redefining \pageref on input line 188.
-LaTeX Info: Redefining \nameref on input line 188.
+LaTeX Info: Redefining \ref on input line 190.
+LaTeX Info: Redefining \pageref on input line 190.
+LaTeX Info: Redefining \nameref on input line 190.
  (./thesis_msc.out) (./thesis_msc.out)
 \@outlinefile=\write4
 \openout4 = `thesis_msc.out'.
 
 <<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 188
+LaTeX Font Info:    Trying to load font information for U+msa on input line 190
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 188
+LaTeX Font Info:    Trying to load font information for U+msb on input line 190
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-88.
+90.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1185,31 +1194,31 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \tf@toc=\write5
 \openout5 = `thesis_msc.toc'.
 
- [3] [4] [5] [6] [7] [8] [9] [10] [11
+ [3] [4] [5] [6] [7] [8] [9] [10] [11] [12
 
-] [12]
-Overfull \hbox (0.36195pt too wide) in paragraph at lines 301--301
+] [13] [14]
+Overfull \hbox (0.36195pt too wide) in paragraph at lines 320--320
 \OT1/ptm/m/n/12 Some In-dus-tri-al-ized Economies [] East-ern Eco-nomic Jour-na
 l. 2007. Vol. 33, no. 4. P. 511{
  []
 
 
-Overfull \hbox (15.58827pt too wide) in paragraph at lines 301--301
+Overfull \hbox (15.58827pt too wide) in paragraph at lines 320--320
 [][]\OT1/ptm/m/it/12 Menon J. \OT1/ptm/m/n/12 Ex-change Rates and Prices of Aus
 -tralian Man-u-fac-tured Ex-ports [] Weltwirtschaftliches
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
+[16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (./thesis_msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `thesis_msc.out' has not changed.
 (rerunfilecheck)             Checksum: 48EB4E273AACEC26E429E1E0F2893C37;876.
 Package logreq Info: Writing requests to 'thesis_msc.run.xml'.
@@ -1217,10 +1226,10 @@ Package logreq Info: Writing requests to 'thesis_msc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25275 strings out of 480608
- 449291 string characters out of 5903629
- 1295846 words of memory out of 5000000
- 40713 multiletter control sequences out of 15000+600000
+ 25326 strings out of 480608
+ 450617 string characters out of 5903629
+ 1296343 words of memory out of 5000000
+ 40755 multiletter control sequences out of 15000+600000
  549358 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,56p,1485b,2591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1228,10 +1237,10 @@ Here is how much of TeX's memory you used:
 exlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis_msc.pdf (14 pages, 75837 bytes).
+Output written on thesis_msc.pdf (15 pages, 81621 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 61 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

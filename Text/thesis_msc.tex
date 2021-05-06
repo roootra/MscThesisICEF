@@ -25,6 +25,8 @@
 \DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [1.10] pzcmi7t}{}
 \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
 
+\DeclareUnicodeCharacter{0301}{} %workaround
+
 \usepackage{gensymb}
 \usepackage{textcomp}
 \usepackage{booktabs}
@@ -260,7 +262,7 @@ Another work observing Asian economy is (\cite{Jiang2013}). Authors estimate SVA
 
 (\cite{Yamada2013}) paper is devoted to study exchange rate regime effect to inflation among developing and emerging economies. Author fit treatment effects model with propensity score matching based on GDP and geographical characteristics in order to calculate between inflation targeting regime and other ones. The conclusion is that inflation targeting exchange rate regime performs at least not worse than fixed regime in terms of inflation lowering.
 
-Multi-currency study for 17 countries of Euro area is done by \textcite{Bandt2014} to estimate effect of exchange rate fluctuations to import prices for multiple trade partners. Currencies chosen are US dollar, UK pound-sterling and Chinese Renminbi. Authors estimate FE model in order to calculate ERPT and find out that in the short run pass-through is incomplete, but it is complete in the long run.
+Multi-currency study for 17 countries of Euro area is done by \textcite{Bandt2014} to estimate effect of exchange rate fluctuations to import prices for multiple trade partners. Currencies chosen are US dollar, UK pound-sterling and Chinese Renminbi. Authors estimate FE model in order to calculate ERPT and find out that in the short run pass-through is incomplete, but its completeness is confirmed fore the long run.
 
 In order to look for the changes in pass-through after 2008 financial crisis, \textcite{Jasova2016} estimate 6-year rolling ERPT for both developing (11) and advanced (22 countries) economies completing their study by fitting two-way FE model. Authors assert that pass-through declined during financial crisis for developing economies, meanwhile ERPT of developed countries remained on a relatively stable level.
 
@@ -268,7 +270,22 @@ In (\cite{Comunale2017}) paper data for four Euro area countries --- France, Ger
 
 Both FE model and sign and zero restricted SVAR are estimated in (\cite{Forbes2017}), where authors try to analyse time- and country-specific differences in pass-through on the sample of 26 countries. It is argued that structural variables, like the first two statistical moments of inflation and exchange rate are important for time and country effect explanation, while structural shocks are crucial for explanation of macro-variable variation in time.
 
-A quite remarkable paper of the same collective is (\cite{Forbes2018})
+A quite remarkable paper of the same collective is (\cite{Forbes2018}). Authors study UK economy pass-through before and during Brexit using SVAR model with sign and zero restrictions. The study shows that pound-sterling's depreciation periods during 2008 financial crisis and Brexit have different ground and discrepancy in inflation rates are caused by different shocks affecting the economy. Authors admit that set up in this fashion, a model cannot capture all the complexity of pass-through nature, although identification of shocks can help to improve relevant policy by monetary authority.
+
+Another work employing the same method is (\cite{An2020}), though \textit{narrative} sign restrictions (simply put, signs dictated by historical events) are added. The main drivers of Japanese pass-through are examined in this study. Authors argue that narrative sign approach is more promising in terms of shock identification procedure.
+
+Time-varying ERPT is examined in (\cite{LeivaLeon2019}), where authors estimate time-varying parameters (TVP) dynamic factor model and SVAR with sign restrictions for Euro area. A TVP approach is quite innovative in pass-through literature, as it is highly likely to solve problems of non-linear ERPT estimation. The paper's conclusion is that inflation is mostly driven by exogenous exchange rate shocks, though core inflation are less exposed to these fluctuations.
+
+\textcite{Colavecchio2019} use local projection method in order to capture non-linear pass-through effects for the 19 countries in Euro area. Plainly speaking, local projections are \textit{h}-ahead forecasts on the basis of current data. The results show that there is no complete pass-through for all the countries neither after a one year nor two years. Authors also find there is a sign and exchange rate shock size non-linearity for some countries.
+
+The recent work of \textcite{Comunale2020} is devoted to a comparison of Bayesian SVARs and DSGEs for the purposes of PERR estimation. This particular work is important in the sense that SVAR and DSGE models can give controversial results; hence, a policymaker needs to distinguish an appropriate aims for both setups. Author finds out that just after a shock PERR's are identical for both models, although in the long-run estimates from DSGE are higher due to endogenous response of macrovariables. 
+
+DSGE is also employed in (\cite{GarciaCicco2020}), where comparison of shock-independent ERPT's and PERR's is done on Chilean data. It is argued throughout the work that pass-through conditional on shocks gives a full picture of macroeconomic variables' relations and that DSGE models are helpful to generate prudent monetary policy. 
+
+In their latest work, \textcite{Forbes2020} estimate both SVAR and FE model for a set of 26 countries in order to review \textit{''shocks vs. structure''} dilemma. Authors claim that both structural characteristics and shocks are important for better understanding pass-through. Also they find an evidence that monetary shocks are associated with large PERR, which made a big contribution to price fluctuations in advanced economies that are not close to the lower bound.
+
+All in all, there has been a shift in the literature from industry-specific studies to understanding of shock importance during exchange rate pass-through estimation. This drift is dictated not only by an evolution of methodology (this point is prevalent though), but data availability and, what is the most important, a switch to macroprudential policy. The intervention of vector autoregressions and Bayesian estimation techniques, especially sign restrictions, have given, in some sense, the second breath to the research. On the other hand, further development of DSGE models and acceptance of them by central banks globally gave an idea of how shock-dependent ERPT should look like for each country. The idea of SVAR being guided by DSGE (at least for a signs) is given in (\cite{Ortega2020}), which is a brilliant review on the topic of exchange rate pass-through estimation with a focus on Euro area and the US.
+
 
 
 %%%
