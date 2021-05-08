@@ -769,6 +769,51 @@
       \verb :Comunale2020 - Shock Dependence of Exchange Rate Pass Through_ a Comparative Analysis of BVARs and DSGEs.pdf:PDF
       \endverb
     \endentry
+    \entry{Comunale2018}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=1,uniquepart=given,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
+           family={Comunale},
+           familyi={C\bibinitperiod},
+           given={Mariarosaria},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=0c10e70af5cc3f2acaf4c7d829bf31c2}{%
+           family={Simola},
+           familyi={S\bibinitperiod},
+           given={Heli},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{fullhash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{bibnamehash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{authorbibnamehash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{authornamehash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{authorfullhash}{3112488b664a7dd44ccb15f051626a64}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research in International Business and Finance}
+      \field{month}{4}
+      \field{title}{The pass-through to consumer prices in {CIS} economies: The role of exchange rates, commodities and other common factors}
+      \field{year}{2018}
+      \field{pages}{186\bibrangedash 217}
+      \range{pages}{32}
+      \field{volume}{44}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/j.ribaf.2017.07.076
+      \endverb
+      \verb{file}
+      \verb :Comunale2018 - The Pass through to Consumer Prices in CIS Economies_ the Role of Exchange Rates, Commodities and Other Common Factors.pdf:PDF
+      \endverb
+    \endentry
     \entry{Cowling1989}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=a630dc1ce6e7b8a423767220d01432de}{%
@@ -1044,14 +1089,49 @@
       \verb :Dobrynskaya2008 - Exchange Rate Pass through Effect and Monetary Policy in Russia.pdf:PDF
       \endverb
     \endentry
+    \entry{Faryna2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=9f38146cca8246d0fe10419d38a6c5a8}{%
+           family={Faryna},
+           familyi={F\bibinitperiod},
+           given={Heli},
+           giveni={H\bibinitperiod},
+           givenun=1,
+           suffix={Oleksandr;\bibnamedelima Simola},
+           suffixi={O\bibinitperiod\bibinitdelim S\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{9f38146cca8246d0fe10419d38a6c5a8}
+      \strng{fullhash}{9f38146cca8246d0fe10419d38a6c5a8}
+      \strng{bibnamehash}{9f38146cca8246d0fe10419d38a6c5a8}
+      \strng{authorbibnamehash}{9f38146cca8246d0fe10419d38a6c5a8}
+      \strng{authornamehash}{9f38146cca8246d0fe10419d38a6c5a8}
+      \strng{authorfullhash}{9f38146cca8246d0fe10419d38a6c5a8}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BOFIT Discussion Papers}
+      \field{title}{The transmission of international shocks to CIS economies: A Global VAR approach}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 46}
+      \range{pages}{46}
+      \field{volume}{17}
+      \range{volume}{1}
+      \verb{file}
+      \verb :Faryna2018 - The Transmission of International Shocks to CIS Economies_ a Global VAR Approach.pdf:PDF
+      \endverb
+    \endentry
     \entry{Faryna2016}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a2cb4f1bfbe60f8483b08fdccbbe6581}{%
+        {{un=1,uniquepart=given,hash=a2cb4f1bfbe60f8483b08fdccbbe6581}{%
            family={Faryna},
            familyi={F\bibinitperiod},
            given={O},
            giveni={O\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
       \strng{fullhash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
@@ -1079,12 +1159,12 @@
     \endentry
     \entry{Faryna2016a}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b2df9da39f5984c7c18063f065154abe}{%
+        {{un=1,uniquepart=given,hash=b2df9da39f5984c7c18063f065154abe}{%
            family={Faryna},
            familyi={F\bibinitperiod},
            given={Oleksandr},
            giveni={O\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{publisher}{1}{%
         {National Bank of Ukraine}%
@@ -1798,6 +1878,37 @@
       \verb https://www.jstor.org/stable/43295889
       \endverb
     \endentry
+    \entry{Khotulev2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=368f06babf0183815069bf8fd33307cd}{%
+           family={Khotulev},
+           familyi={K\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Note}%
+      }
+      \strng{namehash}{368f06babf0183815069bf8fd33307cd}
+      \strng{fullhash}{368f06babf0183815069bf8fd33307cd}
+      \strng{bibnamehash}{368f06babf0183815069bf8fd33307cd}
+      \strng{authorbibnamehash}{368f06babf0183815069bf8fd33307cd}
+      \strng{authornamehash}{368f06babf0183815069bf8fd33307cd}
+      \strng{authorfullhash}{368f06babf0183815069bf8fd33307cd}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bank of Russia Analytical Paper}
+      \field{title}{Shock-Dependent Exchange Rate Pass-Through in Russia}
+      \field{year}{2020}
+      \verb{file}
+      \verb :Khotulev2020 - Shock Dependent Exchange Rate Pass through in Russia.pdf:PDF
+      \endverb
+    \endentry
     \entry{Kim1998}{article}{}
       \name{author}{1}{}{%
         {{un=1,uniquepart=given,hash=3e296e4548c915144545712d54341c02}{%
@@ -2440,6 +2551,54 @@
       \verb :Ortega2020 - Exchange Rate Pass through in the Euro Area and EU Countries.pdf:PDF
       \endverb
     \endentry
+    \entry{Ponomarev2016}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=43f75efe85605d9119c2a161f8a06bce}{%
+           family={Ponomarev},
+           familyi={P\bibinitperiod},
+           given={Iu.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef11f2f5d68394f8190a4495adff7929}{%
+           family={Trunin},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c1efdf23293018e82e5ee9a84d5ba1f}{%
+           family={Ulyukaev},
+           familyi={U\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cd314751b22756b43c26e2ccaebbbdc}
+      \strng{fullhash}{78d0f9cedfafcc68b216bbb23f71032a}
+      \strng{bibnamehash}{78d0f9cedfafcc68b216bbb23f71032a}
+      \strng{authorbibnamehash}{78d0f9cedfafcc68b216bbb23f71032a}
+      \strng{authornamehash}{6cd314751b22756b43c26e2ccaebbbdc}
+      \strng{authorfullhash}{78d0f9cedfafcc68b216bbb23f71032a}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1061-1991}
+      \field{journaltitle}{Problems of Economic Transition}
+      \field{title}{Exchange Rate Pass-Through in Russia}
+      \field{year}{2016}
+      \field{pages}{54\bibrangedash 72}
+      \range{pages}{19}
+      \field{volume}{58}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1080/10611991.2016.1162046
+      \endverb
+      \verb{file}
+      \verb :Ponomarev2016 - Exchange Rate Pass through in Russia.pdf:PDF
+      \endverb
+    \endentry
     \entry{Schembri1985}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=afc83d4c663e8563b9ff149099533711}{%
@@ -2531,6 +2690,67 @@
       \verb{file}
       \verb :Shambaugh2008 - A New Look at Pass through.pdf:PDF
       \endverb
+    \endentry
+    \entry{Sinyakov2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3315299e3515eb2946c95a9aa6625cf6}{%
+           family={Sinyakov},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32787fc523407f4462d884eef7b3a052}{%
+           family={Chernyadyev},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03a94363cdbbb00603e73b238f1b2202}{%
+           family={Sapova},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{499278ff8aea1fe2a58bd6e3eed5c183}
+      \strng{fullhash}{e65cbae172a87d8964a1eb331b221443}
+      \strng{bibnamehash}{e65cbae172a87d8964a1eb331b221443}
+      \strng{authorbibnamehash}{e65cbae172a87d8964a1eb331b221443}
+      \strng{authornamehash}{499278ff8aea1fe2a58bd6e3eed5c183}
+      \strng{authorfullhash}{e65cbae172a87d8964a1eb331b221443}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we directly estimate exchange rate pass-through (ERPT) to producer prices in some industries of final goods. For this we use survey data on import content of firms' costs according to the survey conducted by the Bank of Russia in yearly 2017. Thus, we contribute to existing ERPT estimates for Russia based on aggregate industry- or economy-wide data. In addition, to account for possible strategic complementarities and variable markups in the estimate of ERPT, we use the survey data and other industry data to calibrate the model by (Amiti, Itskhoki, Konings, 2016). Our results show, first, that ERPT of final goods' producers is around 0,18. Second, according to the survey data, ERPT is asymmetric. It is twice as lower for rouble appreciations as for its depreciations. Third, strategic complementarities in the agriculture and the food producing industry cause ERPT relatively stronger deviate from its direct estimate based on import content in production costs comparing to other industries. The results have important implications for estimating inflation volatility of food products in the consumer basket and for financial well-being of companies in the industries with high strategic complementarity.}
+      \field{journaltitle}{Journal of the New Economic Association}
+      \field{title}{Estimating the {Exchange} {Rate} {Pass}-{Through} {Effect} on {Producer} {Prices} of {Final} {Products} {Based} on {Micro}-{Data} of {Russian} {Companies}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{128\bibrangedash 157}
+      \range{pages}{30}
+      \field{volume}{41}
+      \range{volume}{1}
+      \verb{file}
+      \verb :Sinyakov2019 - Estimating the Exchange Rate Pass through Effect on Producer Prices of Final Products Based on Micro Data of Russian Companies.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/nea/journl/y2019i41p128-157.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/nea/journl/y2019i41p128-157.html
+      \endverb
+      \keyw{exchange rate pass-through,inflation,strategic complementarities,markups,imports content of production cost,survey data}
     \endentry
     \entry{Smets2002}{article}{}
       \name{author}{2}{}{%
@@ -2758,6 +2978,7 @@
       \keyw{Inflation,Exchange rate regime,Inflation targeting}
     \endentry
   \enddatalist
+  \missing{Ponomarev2014}
 \endrefsection
 \endinput
 

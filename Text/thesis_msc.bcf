@@ -3582,6 +3582,20 @@
     <bcf:citekey order="50">Beckmann2013</bcf:citekey>
     <bcf:citekey order="51">Faryna2016</bcf:citekey>
     <bcf:citekey order="52">Faryna2016a</bcf:citekey>
+    <bcf:citekey order="53">Faryna2018</bcf:citekey>
+    <bcf:citekey order="54">Ponomarev2016</bcf:citekey>
+    <bcf:citekey order="55">Comunale2018</bcf:citekey>
+    <bcf:citekey order="56">Sinyakov2019</bcf:citekey>
+    <bcf:citekey order="57">Khotulev2020</bcf:citekey>
+    <bcf:citekey order="58">Oomes2005</bcf:citekey>
+    <bcf:citekey order="59">Korhonen2006</bcf:citekey>
+    <bcf:citekey order="60">Dobrynskaya2008</bcf:citekey>
+    <bcf:citekey order="61">Kataranova2010</bcf:citekey>
+    <bcf:citekey order="62">Beckmann2013</bcf:citekey>
+    <bcf:citekey order="63">Ponomarev2016</bcf:citekey>
+    <bcf:citekey order="64">Faryna2016</bcf:citekey>
+    <bcf:citekey order="65">Sinyakov2019</bcf:citekey>
+    <bcf:citekey order="66">Khotulev2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
