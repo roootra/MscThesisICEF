@@ -333,7 +333,7 @@
   title     = {Nonlinear exchange rate pass-through to domestic prices in {Ukraine}},
   year      = {2016},
   number    = {236},
-  file      = {:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF;:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF},
+  file      = {:Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF},
   groups    = {Russia and CIS},
   publisher = {National Bank of Ukraine},
 }
@@ -350,7 +350,7 @@
   volume   = {55},
   abstract = {We analyze exchange rate pass-through in seven CIS countries using monthly data from 1999 to 2010. In the short run, VAR models estimates show that exchange rate movements in the US dollar affect consumer prices to a relatively high degree (about 50\%), while the Euro exchange rate is less important. Moreover, short-run exchange rate pass-through is very heterogeneous across countries. In particular, countries with high-energy imports from Russia generally have higher exchange rate pass-through. In the long run, panel cointegration results show pass-through rates of 60\% and above for both the US dollar and Euro exchange rates.},
   doi      = {10.1057/ces.2013.8},
-  file     = {:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF;:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF},
+  file     = {:Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF},
   groups   = {Russia and CIS},
   language = {en},
   urldate  = {2021-04-28},
@@ -402,7 +402,6 @@
   abstract = {We provide cross-country and time series evidence on the extent of exchange rate pass-through into the import prices of 23 OECD countries. We find compelling evidence of partial pass-through in the short run, especially within manufacturing industries. Over the long run, producer-currency pricing is more prevalent for many types of imported goods. Countries with higher rates of exchange rate volatility have higher pass-through elasticities, although macroeconomic variables have played a minor role in the evolution of pass-through elasticities over time. Far more important for pass-through changes in these countries have been the dramatic shifts in the composition of country import bundles.},
   doi      = {10.1162/003465305775098189},
   file     = {:Campa2005 - Exchange Rate Pass through into Import Prices.pdf:PDF},
-  groups   = {Russia and CIS},
   urldate  = {2021-04-29},
 }
 
@@ -1013,10 +1012,50 @@
   urldate    = {2021-05-07},
 }
 
+@Article{Sosunov2006,
+  author   = {Sosunov, Kirill and Zamulin, Oleg A.},
+  title    = {The {Inflationary} {Consequences} of {Real} {Exchange} {Rate} {Targeting} {Via} {Accumulation} of {Reserves}},
+  year     = {2006},
+  month    = aug,
+  number   = {ID 931908},
+  abstract = {The paper investigates the ability of monetary authorities to keep the real exchange rate undervalued over the long run by implementing a policy of accumulating foreign exchange reserves. We consider a model of a three-sector, small, open economy, where the central bank continuously purchases foreign currency reserves and compare them to Russian and Chinese economies in recent years. Both countries appear to pursue reserve accumulation policies. We find a clear trade-off between the steady state levels of the real exchange rate and inflation. After calibration, the model predicts an 8.5\% real undervaluation of the Russian currency and a 13.7\% undervaluation of the Chinese currency. Predicted inflation is found to match observed levels.},
+  address  = {Rochester, NY},
+  doi      = {10.2139/ssrn.931908},
+  file     = {:Sosunov2006.pdf:PDF},
+  groups   = {Russia and CIS},
+  keywords = {real exchange rate targeting, foreign exchange reserves, Dutch disease},
+  language = {en},
+  type     = {{SSRN} {Scholarly} {Paper}},
+  url      = {https://papers.ssrn.com/abstract=931908},
+  urldate  = {2021-05-08},
+}
+
+@Article{Oomes2005,
+  author     = {Oomes, Nienke and Ohnsorge, Franziska},
+  journal    = {Journal of Comparative Economics},
+  title      = {Money demand and inflation in dollarized economies: {The} case of {Russia}},
+  year       = {2005},
+  issn       = {0147-5967},
+  month      = sep,
+  number     = {3},
+  pages      = {462--483},
+  volume     = {33},
+  abstract   = {Money demand in dollarized economies often appears to be highly unstable, making it difficult to forecast and control inflation. In this paper, we show that a stable money demand function can be found for Russia by using effective broad money, which includes an estimate of foreign cash holdings. Moreover, we show that an excess supply of effective broad money is inflationary, while other excess money measures are not. Finally, we demonstrate that effective broad money growth has the strongest and most persistent effect on short-run inflation. Journal of Comparative Economics 33 (3) (2005) 462–483.},
+  doi        = {10.1016/j.jce.2005.05.007},
+  file       = {:Oomes2005 - Money Demand and Inflation in Dollarized Economies_ the Case of Russia.pdf:PDF},
+  groups     = {Russia and CIS},
+  keywords   = {Money demand, Inflation, Dollarization, Currency substitution, Russia},
+  language   = {en},
+  series     = {Symposium: {Monetary} and {Exchange} {Rate} {Policies} in the {CIS} {Countries}: {Between} the {EU} and {Russia}},
+  shorttitle = {Money demand and inflation in dollarized economies},
+  url        = {https://www.sciencedirect.com/science/article/pii/S0147596705000478},
+  urldate    = {2021-05-08},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Methods\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Russia and CIS\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Methods\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Russia and CIS\;0\;0\;0x8a8a8aff\;\;\;;
 }

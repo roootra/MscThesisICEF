@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  7 MAY 2021 03:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  8 MAY 2021 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1194,31 +1194,32 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \tf@toc=\write5
 \openout5 = `thesis_msc.toc'.
 
- [3] [4] [5] [6] [7] [8] [9] [10] [11] [12
+ [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14
 
-] [13] [14]
-Overfull \hbox (0.36195pt too wide) in paragraph at lines 320--320
+]
+[15] [16]
+Overfull \hbox (0.36195pt too wide) in paragraph at lines 342--342
 \OT1/ptm/m/n/12 Some In-dus-tri-al-ized Economies [] East-ern Eco-nomic Jour-na
 l. 2007. Vol. 33, no. 4. P. 511{
  []
 
 
-Overfull \hbox (15.58827pt too wide) in paragraph at lines 320--320
+Overfull \hbox (15.58827pt too wide) in paragraph at lines 342--342
 [][]\OT1/ptm/m/it/12 Menon J. \OT1/ptm/m/n/12 Ex-change Rates and Prices of Aus
 -tralian Man-u-fac-tured Ex-ports [] Weltwirtschaftliches
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+[19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
  (./thesis_msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 Package rerunfilecheck Info: File `thesis_msc.out' has not changed.
 (rerunfilecheck)             Checksum: 48EB4E273AACEC26E429E1E0F2893C37;876.
 Package logreq Info: Writing requests to 'thesis_msc.run.xml'.
@@ -1226,10 +1227,10 @@ Package logreq Info: Writing requests to 'thesis_msc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25326 strings out of 480608
- 450617 string characters out of 5903629
- 1296343 words of memory out of 5000000
- 40755 multiletter control sequences out of 15000+600000
+ 25382 strings out of 480608
+ 452026 string characters out of 5903629
+ 1297843 words of memory out of 5000000
+ 40800 multiletter control sequences out of 15000+600000
  549358 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,56p,1485b,2591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1237,10 +1238,10 @@ Here is how much of TeX's memory you used:
 exlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis_msc.pdf (15 pages, 81621 bytes).
+Output written on thesis_msc.pdf (18 pages, 87912 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

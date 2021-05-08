@@ -3574,6 +3574,14 @@
     <bcf:citekey order="42">GarciaCicco2020</bcf:citekey>
     <bcf:citekey order="43">Forbes2020</bcf:citekey>
     <bcf:citekey order="44">Ortega2020</bcf:citekey>
+    <bcf:citekey order="45">Korhonen2006</bcf:citekey>
+    <bcf:citekey order="46">Oomes2005</bcf:citekey>
+    <bcf:citekey order="47">Sosunov2006</bcf:citekey>
+    <bcf:citekey order="48">Dobrynskaya2008</bcf:citekey>
+    <bcf:citekey order="49">Kataranova2010</bcf:citekey>
+    <bcf:citekey order="50">Beckmann2013</bcf:citekey>
+    <bcf:citekey order="51">Faryna2016</bcf:citekey>
+    <bcf:citekey order="52">Faryna2016a</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

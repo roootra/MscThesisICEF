@@ -428,6 +428,59 @@
       \endverb
       \keyw{Pass-through,Currency invoicing,Global crisis of 2008}
     \endentry
+    \entry{Beckmann2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=04b52ee657bdd23272b2ecdf070abf82}{%
+           family={Beckmann},
+           familyi={B\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87c54f517d110dccad5079c49f6b4e4f}{%
+           family={Fidrmuc},
+           familyi={F\bibinitperiod},
+           given={Jarko},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{045ac96cbbc8bd0832916b7e00bd7a49}
+      \strng{fullhash}{e7cd624257d3fa87acae61220359160a}
+      \strng{bibnamehash}{e7cd624257d3fa87acae61220359160a}
+      \strng{authorbibnamehash}{e7cd624257d3fa87acae61220359160a}
+      \strng{authornamehash}{045ac96cbbc8bd0832916b7e00bd7a49}
+      \strng{authorfullhash}{e7cd624257d3fa87acae61220359160a}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We analyze exchange rate pass-through in seven CIS countries using monthly data from 1999 to 2010. In the short run, VAR models estimates show that exchange rate movements in the US dollar affect consumer prices to a relatively high degree (about 50\%), while the Euro exchange rate is less important. Moreover, short-run exchange rate pass-through is very heterogeneous across countries. In particular, countries with high-energy imports from Russia generally have higher exchange rate pass-through. In the long run, panel cointegration results show pass-through rates of 60\% and above for both the US dollar and Euro exchange rates.}
+      \field{issn}{1478-3320}
+      \field{journaltitle}{Comparative Economic Studies}
+      \field{month}{12}
+      \field{title}{Exchange {Rate} {Pass}-{Through} in {CIS} {Countries}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{705\bibrangedash 720}
+      \range{pages}{16}
+      \field{volume}{55}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1057/ces.2013.8
+      \endverb
+      \verb{file}
+      \verb :Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF
+      \endverb
+    \endentry
     \entry{BrunAguerre2012}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=445d6243b48819cc626c6510cd8178ba}{%
@@ -935,6 +988,129 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0304393202001307
       \endverb
       \keyw{Exchange rate pass-through,Exchange rate volatility,Exchange rate disconnect,Local currency pricing,Noise traders}
+    \endentry
+    \entry{Dobrynskaya2008}{incollection}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=632a7e4286fcf9eb490ca098379b85d6}{%
+           family={Dobrynskaya},
+           familyi={D\bibinitperiod},
+           given={Victoria\bibnamedelima V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c4612e500bbc8ec00619c15b20e480c}{%
+           family={Levando},
+           familyi={L\bibinitperiod},
+           given={Dmitry\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=cce0f711df9d24c401cca422ce696b18}{%
+           family={Karadeloglou\bibnamedelima P.},
+           familyi={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Terraza\bibnamedelima V.},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Palgrave Macmillan, London}%
+      }
+      \strng{namehash}{05f501812b7bf326b14b7ea5455affcc}
+      \strng{fullhash}{0308df3864578d8e9a13a90f60241de4}
+      \strng{bibnamehash}{0308df3864578d8e9a13a90f60241de4}
+      \strng{authorbibnamehash}{0308df3864578d8e9a13a90f60241de4}
+      \strng{authornamehash}{05f501812b7bf326b14b7ea5455affcc}
+      \strng{authorfullhash}{0308df3864578d8e9a13a90f60241de4}
+      \strng{editorbibnamehash}{cce0f711df9d24c401cca422ce696b18}
+      \strng{editornamehash}{cce0f711df9d24c401cca422ce696b18}
+      \strng{editorfullhash}{cce0f711df9d24c401cca422ce696b18}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Exchange Rates and Macroeconomic Dynamics}
+      \field{title}{Exchange Rate Pass-Through Effect and Monetary Policy in Russia}
+      \field{year}{2008}
+      \field{pages}{115\bibrangedash 138}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1057/9780230582699_5
+      \endverb
+      \verb{file}
+      \verb :Dobrynskaya2008 - Exchange Rate Pass through Effect and Monetary Policy in Russia.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Faryna2016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a2cb4f1bfbe60f8483b08fdccbbe6581}{%
+           family={Faryna},
+           familyi={F\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \strng{fullhash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \strng{bibnamehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \strng{authorbibnamehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \strng{authornamehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \strng{authorfullhash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1456-5889 978-952-323-130-6}
+      \field{journaltitle}{BOFIT Discussion Papers}
+      \field{title}{Exchange rate pass-through and cross-country spillovers: Some evidence from Ukraine and Russia}
+      \field{year}{2016}
+      \field{volume}{14}
+      \range{volume}{1}
+      \verb{file}
+      \verb :Faryna2016 - Exchange Rate Pass through and Cross Country Spillovers_ Some Evidence from Ukraine and Russia.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Faryna2016a}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b2df9da39f5984c7c18063f065154abe}{%
+           family={Faryna},
+           familyi={F\bibinitperiod},
+           given={Oleksandr},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Bank of Ukraine}%
+      }
+      \strng{namehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{fullhash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{bibnamehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{authorbibnamehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{authornamehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{authorfullhash}{b2df9da39f5984c7c18063f065154abe}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Visnyk of the National Bank of Ukraine}
+      \field{title}{Nonlinear exchange rate pass-through to domestic prices in {Ukraine}}
+      \field{year}{2016}
+      \field{number}{236}
+      \range{number}{1}
+      \verb{file}
+      \verb :Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF
+      \endverb
     \endentry
     \entry{Feenstra1989}{article}{}
       \name{author}{1}{}{%
@@ -1478,6 +1654,42 @@
       \endverb
       \keyw{Exchange rate pass-through,Monetary policy,Inflation,Structural VAR}
     \endentry
+    \entry{Kataranova2010}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e0cc2729f78525fde08b09cf8826693}{%
+           family={Kataranova},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2e0cc2729f78525fde08b09cf8826693}
+      \strng{fullhash}{2e0cc2729f78525fde08b09cf8826693}
+      \strng{bibnamehash}{2e0cc2729f78525fde08b09cf8826693}
+      \strng{authorbibnamehash}{2e0cc2729f78525fde08b09cf8826693}
+      \strng{authornamehash}{2e0cc2729f78525fde08b09cf8826693}
+      \strng{authorfullhash}{2e0cc2729f78525fde08b09cf8826693}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0042-8736}
+      \field{journaltitle}{Problems of Economic Transition}
+      \field{title}{Relationship between Exchange Rate and Inflation in Russia}
+      \field{year}{2010}
+      \field{pages}{44\bibrangedash 62}
+      \range{pages}{19}
+      \field{volume}{53}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.32609/0042-8736-2010-1-44-62
+      \endverb
+      \verb{file}
+      \verb :Kataranova2010 - Relationship between Exchange Rate and Inflation in Russia.pdf:PDF
+      \endverb
+    \endentry
     \entry{Khosla1991}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2ec70b32f8ba496ab36297b6ffde31f0}{%
@@ -1694,6 +1906,67 @@
       \verb https://www.tandfonline.com/doi/abs/10.1080/07350015.1990.10509801
       \endverb
       \keyw{Kalman filtering,Price markup,Pricing to market}
+    \endentry
+    \entry{Korhonen2006}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f303e1766a6290f5b2d68c56bed0563f}{%
+           family={Korhonen},
+           familyi={K\bibinitperiod},
+           given={Iikka},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74dbcb70676d5887a78a21f40375a852}{%
+           family={Wachtel},
+           familyi={W\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{30ed6181406f427f491ee5de9597b5c9}
+      \strng{fullhash}{1de86106e108af85661c28e6b1320358}
+      \strng{bibnamehash}{1de86106e108af85661c28e6b1320358}
+      \strng{authorbibnamehash}{1de86106e108af85661c28e6b1320358}
+      \strng{authornamehash}{30ed6181406f427f491ee5de9597b5c9}
+      \strng{authorfullhash}{1de86106e108af85661c28e6b1320358}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We assess the extent and speed of exchange rate pass-through in the countries of Commonwealth of Independent States (CIS). We do this in the framework of vector autoregressive regressions, utilising impulse functions and variance decompositions with monthly data that starts in 1999 in order to avoid the periods of very high inflation and the Russian crisis. We find that exchange rate movements have a clear impact on price developments in the CIS countries. Speed of pass-through is also fairly high, in most cases the full effect is transmitted into domestic prices in less than 12 months. Unlike in many other emerging market countries, an additional effect from US prices on to domestic prices is not significant. The extent of exchange rate pass-through is usually much higher than in our benchmark group of emerging market countries. Variance decomposition shows that the relative share of exchange rates in explaining changes in domestic prices is higher in the CIS countries than in the benchmark group. Our results indicate that policy-makers in the CIS countries need to pay more attention to exchange rate movements than in many other emerging market countries.}
+      \field{issn}{0275-5319}
+      \field{journaltitle}{Research in International Business and Finance}
+      \field{month}{6}
+      \field{series}{Beyond the euro area: {Monetary} {Policy} in selected {CIS} countries}
+      \field{title}{A note on exchange rate pass-through in {CIS} countries}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{215\bibrangedash 226}
+      \range{pages}{12}
+      \field{volume}{20}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/j.ribaf.2005.09.006
+      \endverb
+      \verb{file}
+      \verb :Korhonen2006 - A Note on Exchange Rate Pass through in CIS Countries.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S027553190500070X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S027553190500070X
+      \endverb
+      \keyw{Exchange rate pass-through,Inflation,Exchange rate regime,Transition countries}
     \endentry
     \entry{LeivaLeon2019}{article}{}
       \name{author}{3}{}{%
@@ -2067,6 +2340,68 @@
       \verb https://doi.org/10.1162/003355302753650319
       \endverb
     \endentry
+    \entry{Oomes2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b73dc0df28a6d983404ed202a6d0f631}{%
+           family={Oomes},
+           familyi={O\bibinitperiod},
+           given={Nienke},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee165a78aff2b0ed28026be0b175a5c7}{%
+           family={Ohnsorge},
+           familyi={O\bibinitperiod},
+           given={Franziska},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{91bcce412382dcef86bb9894b5da88bb}
+      \strng{fullhash}{87814fb51df9494181b3a34e5f94b2d6}
+      \strng{bibnamehash}{87814fb51df9494181b3a34e5f94b2d6}
+      \strng{authorbibnamehash}{87814fb51df9494181b3a34e5f94b2d6}
+      \strng{authornamehash}{91bcce412382dcef86bb9894b5da88bb}
+      \strng{authorfullhash}{87814fb51df9494181b3a34e5f94b2d6}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Money demand in dollarized economies often appears to be highly unstable, making it difficult to forecast and control inflation. In this paper, we show that a stable money demand function can be found for Russia by using effective broad money, which includes an estimate of foreign cash holdings. Moreover, we show that an excess supply of effective broad money is inflationary, while other excess money measures are not. Finally, we demonstrate that effective broad money growth has the strongest and most persistent effect on short-run inflation. Journal of Comparative Economics 33 (3) (2005) 462–483.}
+      \field{issn}{0147-5967}
+      \field{journaltitle}{Journal of Comparative Economics}
+      \field{month}{9}
+      \field{series}{Symposium: {Monetary} and {Exchange} {Rate} {Policies} in the {CIS} {Countries}: {Between} the {EU} and {Russia}}
+      \field{shorttitle}{Money demand and inflation in dollarized economies}
+      \field{title}{Money demand and inflation in dollarized economies: {The} case of {Russia}}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{462\bibrangedash 483}
+      \range{pages}{22}
+      \field{volume}{33}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.1016/j.jce.2005.05.007
+      \endverb
+      \verb{file}
+      \verb :Oomes2005 - Money Demand and Inflation in Dollarized Economies_ the Case of Russia.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0147596705000478
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0147596705000478
+      \endverb
+      \keyw{Money demand,Inflation,Dollarization,Currency substitution,Russia}
+    \endentry
     \entry{Ortega2020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=4f2ee78e56cd9b915b6024456449b4d5}{%
@@ -2256,6 +2591,64 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0304393202001265
       \endverb
       \keyw{Monetary policy,Open economies,Exchange rate pass-through}
+    \endentry
+    \entry{Sosunov2006}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=acabcf0e13a69f41e6c258c78efc8ad2}{%
+           family={Sosunov},
+           familyi={S\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c47e94cbfc6b1a78e8c1ee1e4d677963}{%
+           family={Zamulin},
+           familyi={Z\bibinitperiod},
+           given={Oleg\bibnamedelima A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{98f208c1c0d2cdc21d4e36c3a268d1c8}
+      \strng{fullhash}{63a6a87ecb7575153cd9d050c506ae16}
+      \strng{bibnamehash}{63a6a87ecb7575153cd9d050c506ae16}
+      \strng{authorbibnamehash}{63a6a87ecb7575153cd9d050c506ae16}
+      \strng{authornamehash}{98f208c1c0d2cdc21d4e36c3a268d1c8}
+      \strng{authorfullhash}{63a6a87ecb7575153cd9d050c506ae16}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The paper investigates the ability of monetary authorities to keep the real exchange rate undervalued over the long run by implementing a policy of accumulating foreign exchange reserves. We consider a model of a three-sector, small, open economy, where the central bank continuously purchases foreign currency reserves and compare them to Russian and Chinese economies in recent years. Both countries appear to pursue reserve accumulation policies. We find a clear trade-off between the steady state levels of the real exchange rate and inflation. After calibration, the model predicts an 8.5\% real undervaluation of the Russian currency and a 13.7\% undervaluation of the Chinese currency. Predicted inflation is found to match observed levels.}
+      \field{month}{8}
+      \field{title}{The {Inflationary} {Consequences} of {Real} {Exchange} {Rate} {Targeting} {Via} {Accumulation} of {Reserves}}
+      \field{type}{{SSRN} {Scholarly} {Paper}}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{number}{ID 931908}
+      \range{number}{-1}
+      \verb{doi}
+      \verb 10.2139/ssrn.931908
+      \endverb
+      \verb{file}
+      \verb :Sosunov2006.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=931908
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=931908
+      \endverb
+      \keyw{real exchange rate targeting,foreign exchange reserves,Dutch disease}
     \endentry
     \entry{Taylor2000}{article}{}
       \name{author}{1}{}{%
