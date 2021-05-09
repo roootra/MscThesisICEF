@@ -9,7 +9,7 @@ library(tsDyn)
 library(ggplot2)
 library(mFilter)
 
-dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Quarterly.xlsx", sheet=4)
+dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Quarterly.xlsx", sheet=3)
 dat <- na.omit(dat[dat$date > as.Date("2005-05-01"),])
 dat <- dat[NROW(dat):1,]
 
@@ -37,9 +37,10 @@ plot(dat_unseas$date, dat_unseas$real_gdp_gap)
 #Cholesky decomposition
 data_chol <- dat_unseas[,c("oil_USD_qoq", 
                            "imp_price_qoq", 
-                           "miacr_31",
-                           #"reserves_USD_qoq",
                            "neer_qoq",
+                           "reserves_USD_qoq",
+                           "broad_money_SA",
+                           "miacr_31",
                            "gdp_nominal_qoq", 
                            "cpi_all_qoq")]
 #data_chol <- dat_unseas[,c("oil_USD_qoq", "imp_price_qoq", "reserves_USD_qoq", 
@@ -47,7 +48,7 @@ data_chol <- dat_unseas[,c("oil_USD_qoq",
 data_chol$neer_qoq <- data_chol$neer_qoq * -1
 data_chol$real_usd_qoq <- data_chol$real_usd_qoq * -1
 data_chol$nom_usd_qoq <- data_chol$nom_usd_qoq * -1
-VARselect(data_chol, lag.max=6)$selection
+VARselect(data_chol, lag.max=4)$selection
 model_VAR <- VAR(data_chol, p = 1, type = "const")
 choldec <- id.chol(model_VAR)
 irf_choldec <- irf(choldec, n.ahead = 4, ortho=TRUE)
@@ -68,6 +69,9 @@ sum(irf_choldec$irf$`epsilon[ neer_qoq ] %->% cpi_all_qoq`) /
 #Output
 sum(irf_choldec$irf$`epsilon[ gdp_nominal_qoq ] %->% cpi_all_qoq`) /
   sum(irf_choldec$irf$`epsilon[ gdp_nominal_qoq ] %->% neer_qoq`)
+#Broad money
+sum(irf_choldec$irf$`epsilon[ broad_money_SA ] %->% cpi_all_qoq`) /
+  sum(irf_choldec$irf$`epsilon[ broad_money_SA ] %->% neer_qoq`)
 
 #Cholesky decomposition (dollars as exchange rate)
 data_chol_usd <- dat_unseas[,c("oil_USD_qoq", "imp_price_qoq", "reserves_USD_qoq",
@@ -96,23 +100,26 @@ sum(irf_choldec_usd$irf$`epsilon[ gdp_nominal_qoq ] %->% cpi_all_qoq`) /
 
 
 #Smooth transition
-model_cv <- id.st(model_VAR, c_lower=0.1, c_upper=0.9, c_step=3, nc=8)
+model_cv <- id.st(model_VAR, c_lower=0.2, c_upper=0.8, c_step=3, nc=8, c_fix=25)#!!!
 irf_cv <- irf(model_cv, n.ahead = 4, ortho=TRUE)
 #plot(irf_cv)
 #Reserves
-sum(irf_choldec$irf$`epsilon[ reserves_USD_qoq ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ reserves_USD_qoq ] %->% neer_qoq`)
+sum(irf_cv$irf$`epsilon[ reserves_USD_qoq ] %->% cpi_all_qoq`) /
+  sum(irf_cv$irf$`epsilon[ reserves_USD_qoq ] %->% neer_qoq`)
 #Oil
-sum(irf_choldec$irf$`epsilon[ oil_USD_qoq ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ oil_USD_qoq ] %->% neer_qoq`)
+sum(irf_cv$irf$`epsilon[ oil_USD_qoq ] %->% cpi_all_qoq`) /
+  sum(irf_cv$irf$`epsilon[ oil_USD_qoq ] %->% neer_qoq`)
 #MIACR 31
-sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% neer_qoq`)
+sum(irf_cv$irf$`epsilon[ miacr_31 ] %->% cpi_all_qoq`) /
+  sum(irf_cv$irf$`epsilon[ miacr_31 ] %->% neer_qoq`)
 #NEER
-sum(irf_choldec$irf$`epsilon[ neer_qoq ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ neer_qoq ] %->% neer_qoq`)
+sum(irf_cv$irf$`epsilon[ neer_qoq ] %->% cpi_all_qoq`) /
+  sum(irf_cv$irf$`epsilon[ neer_qoq ] %->% neer_qoq`)
 #Output
-sum(irf_choldec$irf$`epsilon[ gdp_nominal_qoq ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ gdp_nominal_qoq ] %->% neer_qoq`)
+sum(irf_cv$irf$`epsilon[ gdp_nominal_qoq ] %->% cpi_all_qoq`) /
+  sum(irf_cv$irf$`epsilon[ gdp_nominal_qoq ] %->% neer_qoq`)
+#Broad money
+sum(irf_cv$irf$`epsilon[ broad_money_SA ] %->% cpi_all_qoq`) /
+  sum(irf_cv$irf$`epsilon[ broad_money_SA ] %->% neer_qoq`)
 
 
