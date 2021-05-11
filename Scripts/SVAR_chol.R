@@ -9,7 +9,7 @@ library(tsDyn)
 library(ggplot2)
 library(mFilter)
 
-dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Monthly.xlsx", sheet=3)
+dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Monthly.xlsx", sheet=5)
 dat <- dat[NROW(dat):1,]
 
 #Deseasonalization
@@ -25,11 +25,11 @@ for(colname in to_deseasonalize){
 }
 
 #Cholesky decomposition
-data_chol <- dat_unseas[,c("oil_USD", "imp_price_mom", "reserves_USD_mln",
-                           "miacr_31", "reer_mom", "ind_output_yoy", "cpi_all_mom")]
-data_chol$reer_mom <- data_chol$reer_mom * -1
+data_chol <- dat_unseas[,c("oil_USD", "imp_price_mom", 
+                           "miacr_31", "neer_mom", "gdp_per_cap_SA", "cpi_all_mom")]
+data_chol$neer_mom <- data_chol$neer_mom * -1
 VARselect(data_chol)$selection
-model_VAR <- VAR(data_chol, p = 1, type = "const")
+model_VAR <- VAR(data_chol, p = 4, type = "const")
 choldec <- id.chol(model_VAR)
 irf_choldec <- irf(choldec, n.ahead = 12, ortho=TRUE)
 plot(irf_choldec)
@@ -50,7 +50,7 @@ sum(irf_choldec$irf$`epsilon[ ind_output_yoy ] %->% cpi_all_mom`) /
   sum(irf_choldec$irf$`epsilon[ ind_output_yoy ] %->% reer_mom`)
 
 #Smooth transition
-model_cv <- id.st(model_VAR, c_lower=0.05, c_upper=0.95, c_step=3, nc=8)
+model_cv <- id.st(model_VAR, c_lower=0.05, c_upper=0.95, c_step=3, nc=8, c_fix=71)
 irf_cv <- irf(model_cv, n.ahead = 12, ortho=TRUE)
 plot(irf_cv)
 #Reserves
@@ -58,14 +58,14 @@ sum(irf_cv$irf$`epsilon[ reserves_USD_mln ] %->% cpi_all_mom`) /
   sum(irf_cv$irf$`epsilon[ reserves_USD_mln ] %->% reer_mom`)
 #Oil
 sum(irf_cv$irf$`epsilon[ oil_USD ] %->% cpi_all_mom`) /
-  sum(irf_cv$irf$`epsilon[ oil_USD ] %->% reer_mom`)
+  sum(irf_cv$irf$`epsilon[ oil_USD ] %->% neer_mom`)
 #MIACR 31
 sum(irf_cv$irf$`epsilon[ miacr_31 ] %->% cpi_all_mom`) /
-  sum(irf_cv$irf$`epsilon[ miacr_31 ] %->% reer_mom`)
-#REER
-sum(irf_cv$irf$`epsilon[ reer_mom ] %->% cpi_all_mom`) /
-  sum(irf_cv$irf$`epsilon[ reer_mom ] %->% reer_mom`)
+  sum(irf_cv$irf$`epsilon[ miacr_31 ] %->% neer_mom`)
+#NEER
+sum(irf_cv$irf$`epsilon[ neer_mom ] %->% cpi_all_mom`) /
+  sum(irf_cv$irf$`epsilon[ neer_mom ] %->% neer_mom`)
 #Output
-sum(irf_cv$irf$`epsilon[ ind_output_yoy ] %->% cpi_all_mom`) /
-  sum(irf_cv$irf$`epsilon[ ind_output_yoy ] %->% reer_mom`)
+sum(irf_cv$irf$`epsilon[ gdp_per_cap_SA ] %->% cpi_all_mom`) /
+  sum(irf_cv$irf$`epsilon[ gdp_per_cap_SA ] %->% neer_mom`)
 
