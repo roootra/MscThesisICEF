@@ -1,0 +1,6 @@
+                             Model name:              Model_PERR_M
+                      Estimation Method:                       OLS
+                         number of lags:                         4
+    Transform only until match is found:                       YES
+       overall number of models checked:                       126
+                           Models found:                         1
