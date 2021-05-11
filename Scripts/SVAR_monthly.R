@@ -33,24 +33,24 @@ model_VAR <- VAR(data_chol, p = 4, type = "const")
 choldec <- id.chol(model_VAR)
 irf_choldec <- irf(choldec, n.ahead = 12, ortho=TRUE)
 plot(irf_choldec)
-#Reserves
-sum(irf_choldec$irf$`epsilon[ reserves_USD_mln ] %->% cpi_all_mom`) /
-  sum(irf_choldec$irf$`epsilon[ reserves_USD_mln ] %->% reer_mom`)
+#Import prices
+sum(irf_choldec$irf$`epsilon[ imp_price_mom ] %->% cpi_all_mom`) /
+  sum(irf_choldec$irf$`epsilon[ imp_price_mom ] %->% neer_mom`)
 #Oil
 sum(irf_choldec$irf$`epsilon[ oil_USD ] %->% cpi_all_mom`) /
-  sum(irf_choldec$irf$`epsilon[ oil_USD ] %->% reer_mom`)
+  sum(irf_choldec$irf$`epsilon[ oil_USD ] %->% neer_mom`)
 #MIACR 31
 sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% cpi_all_mom`) /
-  sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% reer_mom`)
-#REER
-sum(irf_choldec$irf$`epsilon[ reer_mom ] %->% cpi_all_mom`) /
-  sum(irf_choldec$irf$`epsilon[ reer_mom ] %->% reer_mom`)
+  sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% neer_mom`)
+#NEER
+sum(irf_choldec$irf$`epsilon[ neer_mom ] %->% cpi_all_mom`) /
+  sum(irf_choldec$irf$`epsilon[ neer_mom ] %->% neer_mom`)
 #Output
-sum(irf_choldec$irf$`epsilon[ ind_output_yoy ] %->% cpi_all_mom`) /
-  sum(irf_choldec$irf$`epsilon[ ind_output_yoy ] %->% reer_mom`)
+sum(irf_choldec$irf$`epsilon[ gdp_per_cap_SA ] %->% cpi_all_mom`) /
+  sum(irf_choldec$irf$`epsilon[ gdp_per_cap_SA ] %->% neer_mom`)
 
 #Smooth transition
-model_cv <- id.st(model_VAR, c_lower=0.05, c_upper=0.95, c_step=3, nc=8, c_fix=71)
+model_cv <- id.st(model_VAR, c_lower=0.05, c_upper=0.95, c_step=3, nc=8, c_fix=70) #70
 irf_cv <- irf(model_cv, n.ahead = 12, ortho=TRUE)
 plot(irf_cv)
 #Reserves
