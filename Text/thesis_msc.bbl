@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global}
+  \datalist[entry]{apa/global//global/global}
     \entry{Adolfson2001}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=05aa324baa6f01f47b66241a295c7466}{%
@@ -44,6 +44,7 @@
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The central bank's optimal reaction to foreign and domestic shocks is analyzed in an inflation targeting model allowing for incomplete exchange rate pass-through. Limited pass-through is incorporated through nominal rigidities in an aggregate supply-aggregate demand model derived from some microfoundations. Three main results are obtained. First, the results suggest that the interest rate response to foreign shocks is smaller when pass-through is low. Second, the inflation-output variability trade-off becomes more favourable as pass-through decreases. Third, lower pass-through, that is larger nominal rigidity, leads to higher exchange rate volatility. With exogenous nominal price stickiness, part of the required relative price adjustment is provided through larger movements in the endogenously determined exchange rate.}
@@ -52,10 +53,9 @@
       \field{urlday}{2}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{127}
       \field{year}{2001}
       \field{urldateera}{ce}
-      \field{volume}{127}
-      \range{volume}{1}
       \verb{file}
       \verb :Adolfson2001 - Monetary Policy with Incomplete Exchange Rate Pass through.pdf:PDF
       \endverb
@@ -94,18 +94,17 @@
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0165-1889}
       \field{journaltitle}{Journal of Economic Dynamics and Control}
-      \field{title}{Monthly pass-through ratios}
-      \field{year}{2010}
       \field{number}{7}
-      \range{number}{1}
+      \field{title}{Monthly pass-through ratios}
+      \field{volume}{34}
+      \field{year}{2010}
       \field{pages}{1202\bibrangedash 1213}
       \range{pages}{12}
-      \field{volume}{34}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jedc.2010.01.014
       \endverb
@@ -114,7 +113,7 @@
       \endverb
     \endentry
     \entry{An2012}{article}{}
-      \name{author}{2}{ul=2}{%
+      \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=699565020ec2d7bfa341b066c02269f8}{%
            family={An},
            familyi={A\bibinitperiod},
@@ -131,12 +130,13 @@
       \list{publisher}{1}{%
         {Springer}%
       }
-      \strng{namehash}{95019ad15b3afbada2987ae57e57cd20}
+      \strng{namehash}{102f6ab9d64556a1bf3500d834e3d1c0}
       \strng{fullhash}{95019ad15b3afbada2987ae57e57cd20}
       \strng{bibnamehash}{95019ad15b3afbada2987ae57e57cd20}
       \strng{authorbibnamehash}{95019ad15b3afbada2987ae57e57cd20}
-      \strng{authornamehash}{95019ad15b3afbada2987ae57e57cd20}
+      \strng{authornamehash}{102f6ab9d64556a1bf3500d834e3d1c0}
       \strng{authorfullhash}{95019ad15b3afbada2987ae57e57cd20}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
@@ -144,21 +144,19 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Open Economies Review}
+      \field{number}{2}
       \field{shorttitle}{Exchange rate pass-through}
       \field{title}{Exchange rate pass-through: {Evidence} based on vector autoregression with sign restrictions}
+      \field{volume}{23}
       \field{year}{2012}
-      \field{number}{2}
-      \range{number}{1}
       \field{pages}{359\bibrangedash 380}
       \range{pages}{22}
-      \field{volume}{23}
-      \range{volume}{1}
       \verb{file}
       \verb :An2012 - Exchange Rate Pass Through_ Evidence Based on Vector Autoregression with Sign Restrictions.pdf:PDF
       \endverb
     \endentry
     \entry{An2020}{article}{}
-      \name{author}{3}{ul=2}{%
+      \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=699565020ec2d7bfa341b066c02269f8}{%
            family={An},
            familyi={A\bibinitperiod},
@@ -181,12 +179,13 @@
       \list{publisher}{1}{%
         {Elsevier {BV}}%
       }
-      \strng{namehash}{5b83036e16c2576b6eaef2c616934263}
+      \strng{namehash}{102f6ab9d64556a1bf3500d834e3d1c0}
       \strng{fullhash}{9bfdf5612fdfd0cb7876c409f8b164ac}
       \strng{bibnamehash}{9bfdf5612fdfd0cb7876c409f8b164ac}
       \strng{authorbibnamehash}{9bfdf5612fdfd0cb7876c409f8b164ac}
-      \strng{authornamehash}{5b83036e16c2576b6eaef2c616934263}
+      \strng{authornamehash}{102f6ab9d64556a1bf3500d834e3d1c0}
       \strng{authorfullhash}{9bfdf5612fdfd0cb7876c409f8b164ac}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
@@ -196,16 +195,60 @@
       \field{issn}{1556-5068}
       \field{journaltitle}{Open Economies Review}
       \field{title}{Shock-Dependent Exchange Rate Pass-Through: Evidence Based on a Narrative Sign Approach}
+      \field{volume}{23}
       \field{year}{2020}
       \field{pages}{359\bibrangedash 380}
       \range{pages}{22}
-      \field{volume}{23}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.2139/ssrn.3480284
       \endverb
       \verb{file}
       \verb :An2020 - Shock Dependent Exchange Rate Pass Through_ Evidence Based on a Narrative Sign Approach.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Arias2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=606a6c97a04212229158f05d424a880c}{%
+           family={Arias},
+           familyi={A\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51121cd891e6e7a290912858d58adefd}{%
+           family={Rubio-Ramirez},
+           familyi={R\bibinithyphendelim R\bibinitperiod},
+           given={Juan\bibnamedelima Francisco},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c3dc008eec2cbe6d06155aa2fb22c4e}{%
+           family={Waggoner},
+           familyi={W\bibinitperiod},
+           given={Daniel\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bbc2b092216845736488203b4ce43d15}
+      \strng{fullhash}{64e1e67820f0c3985786a1bf22592d9e}
+      \strng{bibnamehash}{64e1e67820f0c3985786a1bf22592d9e}
+      \strng{authorbibnamehash}{64e1e67820f0c3985786a1bf22592d9e}
+      \strng{authornamehash}{bbc2b092216845736488203b4ce43d15}
+      \strng{authorfullhash}{64e1e67820f0c3985786a1bf22592d9e}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1556-5068}
+      \field{journaltitle}{Board of Governors of the Federal Reserve System: International Finance Discussion Papers}
+      \field{title}{Inference Based on SVARs Identified with Sign and Zero Restrictions: Theory and Applications}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.2139/ssrn.2580264
+      \endverb
+      \verb{file}
+      \verb :Arias2014 - Inference Based on SVARs Identified with Sign and Zero Restrictions_ Theory and Applications.pdf:PDF
       \endverb
     \endentry
     \entry{Athukorala1991}{article}{}
@@ -236,19 +279,17 @@
       \field{issn}{0165-1765}
       \field{journaltitle}{Economics Letters}
       \field{month}{1}
+      \field{number}{1}
       \field{shorttitle}{Exchange rate pass-through}
       \field{title}{Exchange Rate Pass-through: {The} Case of {Korean} Exports of Manufactures}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{35}
       \field{year}{1991}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{79\bibrangedash 84}
       \range{pages}{6}
-      \field{volume}{35}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/0165-1765(91)90108-W
       \endverb
@@ -263,7 +304,7 @@
       \endverb
     \endentry
     \entry{Athukorala1994}{article}{}
-      \name{author}{2}{ul=2}{%
+      \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=059e1a87a38ecc04552358e5b50e2e32}{%
            family={Athukorala},
            familyi={A\bibinitperiod},
@@ -277,11 +318,11 @@
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{namehash}{375d9de9679b852360c22a7dd9ae314c}
       \strng{fullhash}{c7d0f6cf69e1f831e85ebc4456a983b0}
       \strng{bibnamehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
       \strng{authorbibnamehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
-      \strng{authornamehash}{c7d0f6cf69e1f831e85ebc4456a983b0}
+      \strng{authornamehash}{375d9de9679b852360c22a7dd9ae314c}
       \strng{authorfullhash}{c7d0f6cf69e1f831e85ebc4456a983b0}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
@@ -293,18 +334,16 @@
       \field{issn}{0013-0133}
       \field{journaltitle}{The Economic Journal}
       \field{month}{3}
+      \field{number}{423}
       \field{title}{Pricing to {Market} {Behaviour} and {Exchange} {Rate} {Pass}-{Through} in {Japanese} {Exports}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{104}
       \field{year}{1994}
       \field{urldateera}{ce}
-      \field{number}{423}
-      \range{number}{1}
       \field{pages}{271\bibrangedash 281}
       \range{pages}{11}
-      \field{volume}{104}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.2307/2234748
       \endverb
@@ -340,6 +379,7 @@
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.}
@@ -349,10 +389,9 @@
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{2483}
       \field{year}{1988}
       \field{urldateera}{ce}
-      \field{volume}{2483}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.3386/w2483
       \endverb
@@ -365,68 +404,6 @@
       \verb{url}
       \verb https://www.nber.org/papers/w2483
       \endverb
-    \endentry
-    \entry{Bandt2014}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=0c4828d2896c6d8205f3c9d08e7f2663}{%
-           family={Bandt},
-           familyi={B\bibinitperiod},
-           given={Olivier},
-           giveni={O\bibinitperiod},
-           givenun=0,
-           prefix={de},
-           prefixi={d\bibinitperiod},
-           prefixun=0}}%
-        {{un=0,uniquepart=base,hash=204966761a50c4c24e1687c3120e18f6}{%
-           family={Razafindrabe},
-           familyi={R\bibinitperiod},
-           given={Tovonony},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{92c8d0a6720b30141ace0a6f1d50d3c6}
-      \strng{fullhash}{19aa6083ae1777dcd5614d15c61074c6}
-      \strng{bibnamehash}{19aa6083ae1777dcd5614d15c61074c6}
-      \strng{authorbibnamehash}{19aa6083ae1777dcd5614d15c61074c6}
-      \strng{authornamehash}{92c8d0a6720b30141ace0a6f1d50d3c6}
-      \strng{authorfullhash}{19aa6083ae1777dcd5614d15c61074c6}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Using a new database of actual import price data rather than unit value indices, we analyze the impact of currency-invoicing decision of exporting firms on the extent of exchange rate pass-through (ERPT) for several Euro-area countries during the period of June 2005 to July 2013. Mainly, we use a multi-currency approach to distinguish between invoicing strategies across the most important currencies for Euro-area imports and make a distinction between bilateral and multilateral (or effective) ERPT. First, we show that the effective ERPT is primarily driven by the US Dollar bilateral ERPT. Second, in contrast to several papers in the empirical literature which argue that ERPT is low and incomplete, we find that short run effective ERPT is incomplete, while long run effective ERPT is complete. Third, estimating time-varying ERPT, we uncover that the 2008 global crisis triggered a temporary increase in the effective ERPT and find no evidence of declining value of the ERPT.}
-      \field{issn}{2110-7017}
-      \field{journaltitle}{International Economics}
-      \field{month}{8}
-      \field{shorttitle}{Exchange rate pass-through to import prices in the {Euro}-area}
-      \field{title}{Exchange rate pass-through to import prices in the {Euro}-area: {A} multi-currency investigation}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
-      \field{year}{2014}
-      \field{urldateera}{ce}
-      \field{pages}{63\bibrangedash 77}
-      \range{pages}{15}
-      \field{volume}{138}
-      \range{volume}{1}
-      \verb{doi}
-      \verb 10.1016/j.inteco.2014.01.001
-      \endverb
-      \verb{file}
-      \verb :Bandt2014 - Exchange Rate Pass through to Import Prices in the Euro Area_ a Multi Currency Investigation.pdf:PDF
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S2110701714000092
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S2110701714000092
-      \endverb
-      \keyw{Pass-through,Currency invoicing,Global crisis of 2008}
     \endentry
     \entry{Beckmann2013}{article}{}
       \name{author}{2}{}{%
@@ -456,24 +433,23 @@
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We analyze exchange rate pass-through in seven CIS countries using monthly data from 1999 to 2010. In the short run, VAR models estimates show that exchange rate movements in the US dollar affect consumer prices to a relatively high degree (about 50\%), while the Euro exchange rate is less important. Moreover, short-run exchange rate pass-through is very heterogeneous across countries. In particular, countries with high-energy imports from Russia generally have higher exchange rate pass-through. In the long run, panel cointegration results show pass-through rates of 60\% and above for both the US dollar and Euro exchange rates.}
       \field{issn}{1478-3320}
       \field{journaltitle}{Comparative Economic Studies}
       \field{month}{12}
+      \field{number}{4}
       \field{title}{Exchange {Rate} {Pass}-{Through} in {CIS} {Countries}}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{55}
       \field{year}{2013}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{705\bibrangedash 720}
       \range{pages}{16}
-      \field{volume}{55}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1057/ces.2013.8
       \endverb
@@ -515,26 +491,25 @@
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{A large sample of developed and emerging economies is utilized to investigate import exchange rate pass-through. Panel models reveal that various economic aspects of the destination country can explain about one third of the total variation in pass-through elasticities and the remaining variation comes largely in the form of unobserved country-specific effects. Inflation, exchange rate volatility, openness and relative wealth play a clear role as drivers of emerging markets’ pass-through whereas the output gap and protectionism appear influential more generally. Nonlinearity regarding large-versus-small changes in the exchange rate is quite pervasive. Our evidence challenges the widely-held view that pass-through has been universally falling in developed markets and that it is higher for emerging markets. The economic drivers are shown to play a role as out-of-sample predictors of pass-through. The findings confirm pricing-to-market theories and have implications for the optimal conduct of monetary policy.}
       \field{issn}{0261-5606}
       \field{journaltitle}{Journal of International Money and Finance}
       \field{month}{6}
+      \field{number}{4}
       \field{series}{Emerging {Markets} {Finance}}
       \field{shorttitle}{Exchange rate pass-through into import prices revisited}
       \field{title}{Exchange rate pass-through into import prices revisited: {What} drives it?}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{31}
       \field{year}{2012}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{818\bibrangedash 844}
       \range{pages}{27}
-      \field{volume}{31}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jimonfin.2012.01.009
       \endverb
@@ -586,22 +561,21 @@
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper examines the degree of Exchange Rate Pass-Through (ERPT) to prices in 12 emerging markets in Asia, Latin America, and Central and Eastern Europe. Our results, based on three alternative vector autoregressive models, partly overturn the conventional wisdom that ERPT into both import and consumer prices is always higher in "emerging" than in "developed" countries. For emerging markets with only one digit inflation (most notably the Asian countries), passthrough to import and consumer prices is found to be low and not very dissimilar from the levels of developed economies. The paper also finds robust evidence for a positive relationship between the degree of the ERPT and inflation, in line with Taylor's hypothesis once two outlier countries (Argentina and Turkey) are excluded from the analysis. Finally, the presence of a positive link between import openness and ERPT, while plausible theoretically, finds only weak empirical support.}
       \field{journaltitle}{ECB Working Paper}
       \field{month}{3}
+      \field{number}{ID 970654}
       \field{title}{Exchange {Rate} {Pass}-{Through} in {Emerging} {Markets}}
       \field{type}{{SSRN} {Scholarly} {Paper}}
       \field{urlday}{5}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{739}
       \field{year}{2007}
       \field{urldateera}{ce}
-      \field{number}{ID 970654}
-      \range{number}{-1}
-      \field{volume}{739}
-      \range{volume}{1}
       \verb{file}
       \verb :Ca'Zorzi_2007.pdf:PDF
       \endverb
@@ -638,24 +612,23 @@
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We provide cross-country and time series evidence on the extent of exchange rate pass-through into the import prices of 23 OECD countries. We find compelling evidence of partial pass-through in the short run, especially within manufacturing industries. Over the long run, producer-currency pricing is more prevalent for many types of imported goods. Countries with higher rates of exchange rate volatility have higher pass-through elasticities, although macroeconomic variables have played a minor role in the evolution of pass-through elasticities over time. Far more important for pass-through changes in these countries have been the dramatic shifts in the composition of country import bundles.}
       \field{issn}{0034-6535}
       \field{journaltitle}{The Review of Economics and Statistics}
       \field{month}{11}
+      \field{number}{4}
       \field{title}{Exchange {Rate} {Pass}-{Through} into {Import} {Prices}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{87}
       \field{year}{2005}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{679\bibrangedash 690}
       \range{pages}{12}
-      \field{volume}{87}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1162/003465305775098189
       \endverb
@@ -688,13 +661,13 @@
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Banque centrale du Luxembourg Working Paper}
       \field{title}{Non-linear exchange rate pass-through to euro area inflation: a local projection approach}
-      \field{year}{2019}
       \field{volume}{138}
-      \range{volume}{1}
+      \field{year}{2019}
       \verb{file}
       \verb :Colavecchio2019 - Non Linear Exchange Rate Pass through to Euro Area Inflation_ a Local Projection Approach.pdf:PDF
       \endverb
@@ -724,10 +697,9 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ECB Working Paper}
+      \field{number}{2003}
       \field{title}{Exchange Rate Pass-Through in the Euro Area}
       \field{year}{2017}
-      \field{number}{2003}
-      \range{number}{1}
       \verb{doi}
       \verb 10.2866/743801
       \endverb
@@ -759,9 +731,8 @@
       \field{issn}{1556-5068}
       \field{journaltitle}{CAMA Working Paper}
       \field{title}{Shock Dependence of Exchange Rate Pass-through: A Comparative Analysis of BVARs and DSGEs}
-      \field{year}{2020}
       \field{volume}{32}
-      \range{volume}{1}
+      \field{year}{2020}
       \verb{doi}
       \verb 10.2139/ssrn.3577352
       \endverb
@@ -770,7 +741,7 @@
       \endverb
     \endentry
     \entry{Comunale2018}{article}{}
-      \name{author}{2}{ul=2}{%
+      \name{author}{2}{}{%
         {{un=1,uniquepart=given,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
            family={Comunale},
            familyi={C\bibinitperiod},
@@ -787,11 +758,11 @@
       \list{publisher}{1}{%
         {Elsevier {BV}}%
       }
-      \strng{namehash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{namehash}{8bdf0a38e0a2e482661fb0166c64d449}
       \strng{fullhash}{3112488b664a7dd44ccb15f051626a64}
       \strng{bibnamehash}{3112488b664a7dd44ccb15f051626a64}
       \strng{authorbibnamehash}{3112488b664a7dd44ccb15f051626a64}
-      \strng{authornamehash}{3112488b664a7dd44ccb15f051626a64}
+      \strng{authornamehash}{8bdf0a38e0a2e482661fb0166c64d449}
       \strng{authorfullhash}{3112488b664a7dd44ccb15f051626a64}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
@@ -802,11 +773,10 @@
       \field{journaltitle}{Research in International Business and Finance}
       \field{month}{4}
       \field{title}{The pass-through to consumer prices in {CIS} economies: The role of exchange rates, commodities and other common factors}
+      \field{volume}{44}
       \field{year}{2018}
       \field{pages}{186\bibrangedash 217}
       \range{pages}{32}
-      \field{volume}{44}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.ribaf.2017.07.076
       \endverb
@@ -842,22 +812,21 @@
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0309-166X}
       \field{journaltitle}{Cambridge Journal of Economics}
+      \field{number}{3}
       \field{title}{Exchange Rate Adjustment and Oligopoly Pricing Behaviour}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{13}
       \field{year}{1989}
       \field{urldateera}{ce}
-      \field{number}{3}
-      \range{number}{1}
       \field{pages}{373\bibrangedash 393}
       \range{pages}{21}
-      \field{volume}{13}
-      \range{volume}{1}
       \verb{file}
       \verb :https\://www.jstor.org/stable/pdfplus/10.2307/23598123.pdf?acceptTC=true:application/pdf;:Cowling1989.pdf:PDF
       \endverb
@@ -867,6 +836,67 @@
       \verb{url}
       \verb https://www.jstor.org/stable/23598123
       \endverb
+    \endentry
+    \entry{Bandt2014}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0c4828d2896c6d8205f3c9d08e7f2663}{%
+           family={Bandt},
+           familyi={B\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=204966761a50c4c24e1687c3120e18f6}{%
+           family={Razafindrabe},
+           familyi={R\bibinitperiod},
+           given={Tovonony},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{92c8d0a6720b30141ace0a6f1d50d3c6}
+      \strng{fullhash}{19aa6083ae1777dcd5614d15c61074c6}
+      \strng{bibnamehash}{19aa6083ae1777dcd5614d15c61074c6}
+      \strng{authorbibnamehash}{19aa6083ae1777dcd5614d15c61074c6}
+      \strng{authornamehash}{92c8d0a6720b30141ace0a6f1d50d3c6}
+      \strng{authorfullhash}{19aa6083ae1777dcd5614d15c61074c6}
+      \field{sortinit}{d}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using a new database of actual import price data rather than unit value indices, we analyze the impact of currency-invoicing decision of exporting firms on the extent of exchange rate pass-through (ERPT) for several Euro-area countries during the period of June 2005 to July 2013. Mainly, we use a multi-currency approach to distinguish between invoicing strategies across the most important currencies for Euro-area imports and make a distinction between bilateral and multilateral (or effective) ERPT. First, we show that the effective ERPT is primarily driven by the US Dollar bilateral ERPT. Second, in contrast to several papers in the empirical literature which argue that ERPT is low and incomplete, we find that short run effective ERPT is incomplete, while long run effective ERPT is complete. Third, estimating time-varying ERPT, we uncover that the 2008 global crisis triggered a temporary increase in the effective ERPT and find no evidence of declining value of the ERPT.}
+      \field{issn}{2110-7017}
+      \field{journaltitle}{International Economics}
+      \field{month}{8}
+      \field{shorttitle}{Exchange rate pass-through to import prices in the {Euro}-area}
+      \field{title}{Exchange rate pass-through to import prices in the {Euro}-area: {A} multi-currency investigation}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{volume}{138}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{63\bibrangedash 77}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.inteco.2014.01.001
+      \endverb
+      \verb{file}
+      \verb :Bandt2014 - Exchange Rate Pass through to Import Prices in the Euro Area_ a Multi Currency Investigation.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2110701714000092
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2110701714000092
+      \endverb
+      \keyw{Pass-through,Currency invoicing,Global crisis of 2008}
     \endentry
     \entry{Delatte2012}{article}{}
       \name{author}{2}{}{%
@@ -896,25 +926,24 @@
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The aim of this paper is to investigate the asymmetric effect of exchange rate variations on prices over the short- and long-run in four major developed countries. To this end, we estimate a mark-up model for prices using a novel and simple asymmetric cointegrating model, with positive and negative partial sum decomposition of the nominal exchange rates. Our results show that prices react differently to appreciations and depreciations over the long-run, an effect that was previously ignored in the literature. In particular, we provide evidence that depreciations are passed through prices more than appreciations, a result that might suggest weak competition structures. This result has important implications for the proper conduct of monetary policy.}
       \field{issn}{0164-0704}
       \field{journaltitle}{Journal of Macroeconomics}
       \field{month}{9}
+      \field{number}{3}
       \field{shorttitle}{Asymmetric exchange rate pass-through}
       \field{title}{Asymmetric exchange rate pass-through: {Evidence} from major countries}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{34}
       \field{year}{2012}
       \field{urldateera}{ce}
-      \field{number}{3}
-      \range{number}{1}
       \field{pages}{833\bibrangedash 844}
       \range{pages}{12}
-      \field{volume}{34}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jmacro.2012.03.003
       \endverb
@@ -963,6 +992,7 @@
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Quarterly Journal of Business and Economics}
@@ -1002,24 +1032,23 @@
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper explores the hypothesis that high volatility of real and nominal exchange rates may be due to the fact that local currency pricing eliminates the pass-through from changes in exchange rates to consumer prices. Exchange rates may be highly volatile because in a sense they have little effect on macroeconomic variables. The paper shows the ingredients necessary to construct such an explanation for exchange rate volatility. In addition to the presence of local currency pricing, we need (a) incomplete international financial markets, (b) a structure of international pricing and product distribution such that wealth effects of exchange rate changes are minimized, and (c) stochastic deviations from uncovered interest rate parity. Together, it is shown that these elements can produce exchange rate volatility that is much higher than shocks to economic fundamentals, and ‘disconnected’ from the rest of the economy in the sense that the volatility of all other macroeconomic aggregates are of the same order as that of fundamentals.}
       \field{issn}{0304-3932}
       \field{journaltitle}{Journal of Monetary Economics}
       \field{month}{7}
+      \field{number}{5}
       \field{title}{Exchange rate pass-through, exchange rate volatility, and exchange rate disconnect}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{49}
       \field{year}{2002}
       \field{urldateera}{ce}
-      \field{number}{5}
-      \range{number}{1}
       \field{pages}{913\bibrangedash 940}
       \range{pages}{28}
-      \field{volume}{49}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/S0304-3932(02)00130-7
       \endverb
@@ -1034,7 +1063,7 @@
       \endverb
       \keyw{Exchange rate pass-through,Exchange rate volatility,Exchange rate disconnect,Local currency pricing,Noise traders}
     \endentry
-    \entry{Dobrynskaya2008}{incollection}{}
+    \entry{Dobrynskaya2008}{inbook}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=632a7e4286fcf9eb490ca098379b85d6}{%
            family={Dobrynskaya},
@@ -1075,6 +1104,7 @@
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Exchange Rates and Macroeconomic Dynamics}
@@ -1115,11 +1145,10 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{BOFIT Discussion Papers}
       \field{title}{The transmission of international shocks to CIS economies: A Global VAR approach}
+      \field{volume}{17}
       \field{year}{2018}
       \field{pages}{1\bibrangedash 46}
       \range{pages}{46}
-      \field{volume}{17}
-      \range{volume}{1}
       \verb{file}
       \verb :Faryna2018 - The Transmission of International Shocks to CIS Economies_ a Global VAR Approach.pdf:PDF
       \endverb
@@ -1150,9 +1179,8 @@
       \field{issn}{1456-5889 978-952-323-130-6}
       \field{journaltitle}{BOFIT Discussion Papers}
       \field{title}{Exchange rate pass-through and cross-country spillovers: Some evidence from Ukraine and Russia}
-      \field{year}{2016}
       \field{volume}{14}
-      \range{volume}{1}
+      \field{year}{2016}
       \verb{file}
       \verb :Faryna2016 - Exchange Rate Pass through and Cross Country Spillovers_ Some Evidence from Ukraine and Russia.pdf:PDF
       \endverb
@@ -1184,10 +1212,9 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Visnyk of the National Bank of Ukraine}
+      \field{number}{236}
       \field{title}{Nonlinear exchange rate pass-through to domestic prices in {Ukraine}}
       \field{year}{2016}
-      \field{number}{236}
-      \range{number}{1}
       \verb{file}
       \verb :Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF
       \endverb
@@ -1214,25 +1241,24 @@
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{This paper examines the effect of tariffs and exchange rates on U.S. prices of Japanese cars, trucks and motorcycles. In particular, we test whether the long-run pass-through of tariffs and exchange rates are identical: the symmetry hypothesis. We find that this hypothesis is easily accepted in our sample. We also find that the pass-through relation varies across products, ranging from about 0.6 for trucks to unity for motorcycles. These coefficients have very different implications for trade policy. We explain the results based on demand, cost and institutional conditions in each industry.}
       \field{issn}{0022-1996}
       \field{journaltitle}{Journal of International Economics}
       \field{month}{8}
+      \field{number}{1}
       \field{shorttitle}{Symmetric pass-through of tariffs and exchange rates under imperfect competition}
       \field{title}{Symmetric pass-through of tariffs and exchange rates under imperfect competition: {An} empirical test}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{27}
       \field{year}{1989}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{25\bibrangedash 45}
       \range{pages}{21}
-      \field{volume}{27}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/0022-1996(89)90076-7
       \endverb
@@ -1282,11 +1308,10 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of international economics}
       \field{title}{The Shocks Matter: Improving Our Estimates of Exchange Rate Pass-Through}
+      \field{volume}{114}
       \field{year}{2018}
       \field{pages}{255\bibrangedash 275}
       \range{pages}{21}
-      \field{volume}{114}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.3386/w24773
       \endverb
@@ -1335,18 +1360,16 @@
       \field{issn}{2041-417X}
       \field{journaltitle}{IMF Economic Review}
       \field{month}{12}
+      \field{number}{4}
       \field{title}{International {Evidence} on {Shock}-{Dependent} {Exchange} {Rate} {Pass}-{Through}}
       \field{urlday}{5}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{68}
       \field{year}{2020}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{721\bibrangedash 763}
       \range{pages}{43}
-      \field{volume}{68}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1057/s41308-020-00124-2
       \endverb
@@ -1402,18 +1425,16 @@
       \field{abstract}{We show that exchange rate pass-through to consumer prices varies not only across countries, but also over time. Previous literature has highlighted the role of an economy’s ‘structure’ — such as its inflation volatility, inflation rate, use of foreign currency invoicing, and openness — in explaining these variations in pass-through. We use a sample of 26 advanced and emerging economies to show which of these structural variables are significant in explaining not only differences in pass-through across countries, but also over time. The ‘shocks’ leading to exchange rate movements can also explain variations in pass-through over time. For example, exchange rate movements caused by monetary policy shocks consistently correspond to significantly higher estimates of pass-through than those caused by demand shocks. The role of ‘shocks’ in driving pass-through over time can be as large as that of structural variables, and even larger for some countries. As a result, forecasts predicting how a given exchange rate movement will impact inflation at a specific point in time should take into account not just an economy’s ‘structure’, but also the ‘shocks’.}
       \field{journaltitle}{Bank of England Discussion Paper}
       \field{month}{6}
+      \field{number}{ID 2999637}
       \field{shorttitle}{Shocks versus {Structure}}
       \field{title}{Shocks versus {Structure}: {Explaining} {Differences} in {Exchange} {Rate} {Pass}-{Through} across {Countries} and {Time}}
       \field{type}{{SSRN} {Scholarly} {Paper}}
       \field{urlday}{5}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{50}
       \field{year}{2017}
       \field{urldateera}{ce}
-      \field{number}{ID 2999637}
-      \range{number}{-1}
-      \field{volume}{50}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.2139/ssrn.2999637
       \endverb
@@ -1456,23 +1477,22 @@
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The pass-through of exchange rate changes into domestic inflation appears to have declined in many countries since the 1980s. We develop a theoretical model that attributes the change in the rate of pass-through to increased emphasis on inflation stabilization by many central banks. This hypothesis is tested on 20 industrial countries between 1971 and 2003. We find widespread evidence of a robust and statistically significant link between estimated rates of pass-through and inflation variability. We also find evidence that observed monetary policy behaviour may be a factor in the declining rate of pass-through. Published in 2004 by John Wiley \& Sons, Ltd.}
       \field{issn}{1099-1158}
       \field{journaltitle}{International Journal of Finance \& Economics}
+      \field{number}{4}
       \field{title}{Monetary policy and exchange rate pass-through}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{9}
       \field{year}{2004}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{315\bibrangedash 338}
       \range{pages}{24}
-      \field{volume}{9}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1002/ijfe.253
       \endverb
@@ -1512,6 +1532,7 @@
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{A large literature estimates the exchange rate pass-through to prices (ERPT) using reduced-form approaches, whose results are an important input for Central Banks. We show two shortcomings of these empirical measures for monetary policy analysis, which are quantitatively important and may lead to imprecise and biased inflation predictions. First, while the literature describes a single ERPT, which we will label unconditional, there are different ERPT conditional on each shock that hits the economy. Second, these crucially depend on expected monetary policy, so that empirical ERPT measures should not be taken as given in evaluating policy actions. We use a simple model of a small and open economy to understand the intuition behind these two critiques, showing that these results seem to hold under many alternative specifications. We then highlight the quantitative relevance of these distinctions using a large-scale DSGE model of a small open economy.}
@@ -1523,13 +1544,12 @@
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{127}
       \field{year}{2020}
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \field{pages}{103389}
       \range{pages}{1}
-      \field{volume}{127}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jinteco.2020.103389
       \endverb
@@ -1564,13 +1584,13 @@
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ECB Working Paper}
       \field{title}{Pass-through of external shocks to euro area inflation}
-      \field{year}{2003}
       \field{volume}{243}
-      \range{volume}{1}
+      \field{year}{2003}
       \verb{file}
       \verb :Hahn2003 - Pass through of External Shocks to Euro Area Inflation.pdf:PDF
       \endverb
@@ -1603,23 +1623,22 @@
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0007-2303}
       \field{journaltitle}{Brookings Papers on Economic Activity}
+      \field{number}{1}
       \field{shorttitle}{Exchange {Rate} {Pass}-{Through} in the 1980s}
       \field{title}{Exchange {Rate} {Pass}-{Through} in the 1980s: {The} {Case} of {U}.{S}. {Imports} of {Manufactures}}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{1989}
       \field{year}{1989}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{297\bibrangedash 337}
       \range{pages}{41}
-      \field{volume}{1989}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.2307/2534500
       \endverb
@@ -1667,6 +1686,7 @@
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Exchange rate pass-through}
@@ -1704,6 +1724,7 @@
       \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{As the Chinese economy becomes more open and the authorities scrapped the peg to the U.S. dollar in July 2005, exchange rate movements start to influence the price inflation in China in a significant way. This paper estimates a structural vector autoregression (SVAR) model to investigate the impact of exchange rate changes on prices in the presence of domestic monetary policy influence for China. We find that (i) the exchange rate pass-through (ERPT) to the producer price index (PPI) and retail price index (RPI) are generally incomplete; (ii) the ERPT to the PPI is higher than that to the RPI; (iii) the ERPT to the PPI and the RPI are relatively rapid. The SVAR evidence suggests that exchange rate stability plays a unique and significant role for price stability in China.}
@@ -1714,12 +1735,11 @@
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{33}
       \field{year}{2013}
       \field{urldateera}{ce}
       \field{pages}{900\bibrangedash 912}
       \range{pages}{13}
-      \field{volume}{33}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.econmod.2013.05.021
       \endverb
@@ -1753,16 +1773,16 @@
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0042-8736}
       \field{journaltitle}{Problems of Economic Transition}
       \field{title}{Relationship between Exchange Rate and Inflation in Russia}
+      \field{volume}{53}
       \field{year}{2010}
       \field{pages}{44\bibrangedash 62}
       \range{pages}{19}
-      \field{volume}{53}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.32609/0042-8736-2010-1-44-62
       \endverb
@@ -1798,18 +1818,16 @@
       \field{issn}{0889-1583}
       \field{journaltitle}{Journal of the Japanese and International Economies}
       \field{month}{3}
+      \field{number}{1}
       \field{title}{Exchange Rate Pass-through and Export Pricing Evidence from the {Japanese} {Economy}}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{5}
       \field{year}{1991}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{41\bibrangedash 59}
       \range{pages}{19}
-      \field{volume}{5}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/S0889-1583(05)80004-8
       \endverb
@@ -1824,7 +1842,7 @@
       \endverb
     \endentry
     \entry{Khosla1989}{article}{}
-      \name{author}{2}{ul=2}{%
+      \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2ec70b32f8ba496ab36297b6ffde31f0}{%
            family={Khosla},
            familyi={K\bibinitperiod},
@@ -1841,11 +1859,11 @@
       \list{publisher}{1}{%
         {Hitotsubashi University}%
       }
-      \strng{namehash}{456dbb4b2cd69f76d926ab4f67db5564}
+      \strng{namehash}{6073c9be0ece4b1f390a2f45f9140ba3}
       \strng{fullhash}{456dbb4b2cd69f76d926ab4f67db5564}
       \strng{bibnamehash}{456dbb4b2cd69f76d926ab4f67db5564}
       \strng{authorbibnamehash}{456dbb4b2cd69f76d926ab4f67db5564}
-      \strng{authornamehash}{456dbb4b2cd69f76d926ab4f67db5564}
+      \strng{authornamehash}{6073c9be0ece4b1f390a2f45f9140ba3}
       \strng{authorfullhash}{456dbb4b2cd69f76d926ab4f67db5564}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
@@ -1855,19 +1873,17 @@
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0018-280X}
       \field{journaltitle}{Hitotsubashi Journal of Economics}
+      \field{number}{1}
       \field{shorttitle}{{EXCHANGE} {RATE} {PASS}-{THROUGH} {IN} {EXPORT} {PRICES}}
       \field{title}{Exchange Rate Pass-through in Export Prices: An International Comparison}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{30}
       \field{year}{1989}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{31\bibrangedash 48}
       \range{pages}{18}
-      \field{volume}{30}
-      \range{volume}{1}
       \verb{file}
       \verb :Khosla1989 - EXCHANGE RATE PASS tHROUGH iN EXPORT PRICES_ aN INTERNATIONAL COMPARISON.html:URL;:Khosla1989.pdf:PDF
       \endverb
@@ -1900,6 +1916,7 @@
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bank of Russia Analytical Paper}
@@ -1937,19 +1954,17 @@
       \field{issn}{0003-6846}
       \field{journaltitle}{Applied Economics}
       \field{month}{5}
+      \field{number}{5}
       \field{shorttitle}{{US} inflation and the dollar exchange rate}
       \field{title}{{US} inflation and the dollar exchange rate: a vector error correction model}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{30}
       \field{year}{1998}
       \field{urldateera}{ce}
-      \field{number}{5}
-      \range{number}{1}
       \field{pages}{613\bibrangedash 619}
       \range{pages}{7}
-      \field{volume}{30}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1080/000368498325606
       \endverb
@@ -1991,19 +2006,17 @@
       \field{issn}{0735-0015}
       \field{journaltitle}{Journal of Business \& Economic Statistics}
       \field{month}{7}
+      \field{number}{3}
       \field{shorttitle}{Exchange {Rates} and {Import} {Prices} in the {United} {States}}
       \field{title}{Exchange {Rates} and {Import} {Prices} in the {United} {States}: {A} {Varying}-{Parameter} {Estimation} of {Exchange}-{Rate} {Pass}-{Through}}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{8}
       \field{year}{1990}
       \field{urldateera}{ce}
-      \field{number}{3}
-      \range{number}{1}
       \field{pages}{305\bibrangedash 315}
       \range{pages}{11}
-      \field{volume}{8}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1080/07350015.1990.10509801
       \endverb
@@ -2046,25 +2059,24 @@
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We assess the extent and speed of exchange rate pass-through in the countries of Commonwealth of Independent States (CIS). We do this in the framework of vector autoregressive regressions, utilising impulse functions and variance decompositions with monthly data that starts in 1999 in order to avoid the periods of very high inflation and the Russian crisis. We find that exchange rate movements have a clear impact on price developments in the CIS countries. Speed of pass-through is also fairly high, in most cases the full effect is transmitted into domestic prices in less than 12 months. Unlike in many other emerging market countries, an additional effect from US prices on to domestic prices is not significant. The extent of exchange rate pass-through is usually much higher than in our benchmark group of emerging market countries. Variance decomposition shows that the relative share of exchange rates in explaining changes in domestic prices is higher in the CIS countries than in the benchmark group. Our results indicate that policy-makers in the CIS countries need to pay more attention to exchange rate movements than in many other emerging market countries.}
       \field{issn}{0275-5319}
       \field{journaltitle}{Research in International Business and Finance}
       \field{month}{6}
+      \field{number}{2}
       \field{series}{Beyond the euro area: {Monetary} {Policy} in selected {CIS} countries}
       \field{title}{A note on exchange rate pass-through in {CIS} countries}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{20}
       \field{year}{2006}
       \field{urldateera}{ce}
-      \field{number}{2}
-      \range{number}{1}
       \field{pages}{215\bibrangedash 226}
       \range{pages}{12}
-      \field{volume}{20}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.ribaf.2005.09.006
       \endverb
@@ -2078,6 +2090,58 @@
       \verb https://www.sciencedirect.com/science/article/pii/S027553190500070X
       \endverb
       \keyw{Exchange rate pass-through,Inflation,Exchange rate regime,Transition countries}
+    \endentry
+    \entry{Lange2021}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e03772852654999700fe42df23c487ac}{%
+           family={Lange},
+           familyi={L\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5342fb3be6a087cb3d095960866341b3}{%
+           family={Dalheimer},
+           familyi={D\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=358d3b1a1a004d126f35c64f5350a385}{%
+           family={Herwartz},
+           familyi={H\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3487fe54b131c60ad12c9fe74038c52f}{%
+           family={Maxand},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Foundation for Open Access Statistic}%
+      }
+      \strng{namehash}{dadf52315fee35ba96523fad747fd0a7}
+      \strng{fullhash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
+      \strng{bibnamehash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
+      \strng{authorbibnamehash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
+      \strng{authornamehash}{dadf52315fee35ba96523fad747fd0a7}
+      \strng{authorfullhash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{number}{5}
+      \field{title}{svars: An R Package for Data-Driven Identification in Multivariate Time Series Analysis}
+      \field{volume}{97}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.18637/jss.v097.i05
+      \endverb
     \endentry
     \entry{LeivaLeon2019}{article}{}
       \name{author}{3}{}{%
@@ -2110,14 +2174,14 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1579-8666}
       \field{journaltitle}{Banco de Espa{ñ}a Documentos de Trabajo}
       \field{title}{Exchange Rate Shocks and Inflation Comovement in the Euro Area}
-      \field{year}{2019}
       \field{volume}{1934}
-      \range{volume}{1}
+      \field{year}{2019}
       \verb{doi}
       \verb 10.2139/ssrn.3470112
       \endverb
@@ -2153,25 +2217,24 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{This paper incorporates deflation in an analysis of the relationship between the exchange rate pass-through and inflation. Using a nonlinear model based on monthly data of Taiwan's import prices from 1981 to 2008, we find that the degree of exchange rate pass-through is increasing in deflation. The increase becomes smaller when the price of oil is excluded. Evidence for pass-through increasing in deflation has not previously been found in the existing literature and presents a new understanding of the pricing behavior of firms. Poor profits in deflation cause firms to pass through most of the cost of exchange rate changes to their products to avoid exiting the market.}
       \field{issn}{1059-0560}
       \field{journaltitle}{International Review of Economics \& Finance}
       \field{month}{4}
+      \field{number}{1}
       \field{shorttitle}{Exchange rate pass-through in deflation}
       \field{title}{Exchange rate pass-through in deflation: {The} case of {Taiwan}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{22}
       \field{year}{2012}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{101\bibrangedash 111}
       \range{pages}{11}
-      \field{volume}{22}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.iref.2011.10.010
       \endverb
@@ -2185,6 +2248,64 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1059056011001237
       \endverb
       \keyw{Exchange rate pass-through,Threshold autoregressive,Deflation}
+    \endentry
+    \entry{Luetkepohl2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d400c31862099db9f37a97b35e10814d}{%
+           family={Lütkepohl},
+           familyi={L\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=beff7df9e9614f25d91b64f7dd1e4e5f}{%
+           family={Netšunajev},
+           familyi={N\bibinitperiod},
+           given={Aleksei},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{35f8f56157c04b535c51acc6360ecf57}
+      \strng{fullhash}{0dd52df46d54494d1867dc43d1c9f3b7}
+      \strng{bibnamehash}{0dd52df46d54494d1867dc43d1c9f3b7}
+      \strng{authorbibnamehash}{0dd52df46d54494d1867dc43d1c9f3b7}
+      \strng{authornamehash}{35f8f56157c04b535c51acc6360ecf57}
+      \strng{authorfullhash}{0dd52df46d54494d1867dc43d1c9f3b7}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In structural vector autoregressive analysis identifying the shocks of interest via heteroskedasticity has become a standard tool. Unfortunately, the approaches currently used for modeling heteroskedasticity all have drawbacks. For instance, assuming known dates for variance changes is often unrealistic while more flexible models based on GARCH or Markov switching residuals are difficult to handle from a statistical and computational point of view. Therefore we propose a model based on a smooth change in variance that is flexible as well as relatively easy to estimate and illustrate its use by analysis of the interaction between monetary policy and the stock market based on a five-dimensional system of U.S. variables. For the benchmark setup it is found that previously used conventional identification schemes in this context are rejected by the data if heteroskedasticity is allowed for. We also illustrate the implications of using different transition variables and varying the sample period.}
+      \field{issn}{0165-1889}
+      \field{journaltitle}{Journal of Economic Dynamics and Control}
+      \field{month}{11}
+      \field{title}{Structural vector autoregressions with smooth transition in variances}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{84}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{43\bibrangedash 57}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.jedc.2017.09.001
+      \endverb
+      \verb{file}
+      \verb :Luetkepohl2017 - Structural Vector Autoregressions with Smooth Transition in Variances.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165188917301811
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165188917301811
+      \endverb
+      \keyw{Identification via heteroskedasticity,Monetary policy shocks,Smooth transition VAR models}
     \endentry
     \entry{McCarthy2007}{article}{}
       \name{author}{1}{}{%
@@ -2208,22 +2329,21 @@
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0094-5056}
       \field{journaltitle}{Eastern Economic Journal}
+      \field{number}{4}
       \field{title}{Pass-through of {Exchange} {Rates} and {Import} {Prices} to {Domestic} {Inflation} in {Some} {Industrialized} {Economies}}
       \field{urlday}{5}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{33}
       \field{year}{2007}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{511\bibrangedash 537}
       \range{pages}{27}
-      \field{volume}{33}
-      \range{volume}{1}
       \verb{file}
       \verb :https\://www.jstor.org/stable/pdfplus/10.2307/20642375.pdf?acceptTC=true:application/pdf;:McCarthy2007.pdf:PDF
       \endverb
@@ -2263,18 +2383,16 @@
       \field{issn}{1610-2886}
       \field{journaltitle}{Weltwirtschaftliches Archiv}
       \field{month}{12}
+      \field{number}{4}
       \field{title}{Exchange Rates and Prices of {Australian} Manufactured Exports}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{128}
       \field{year}{1992}
       \field{urldateera}{ce}
-      \field{number}{4}
-      \range{number}{1}
       \field{pages}{695\bibrangedash 710}
       \range{pages}{16}
-      \field{volume}{128}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1007/BF02707300
       \endverb
@@ -2317,19 +2435,17 @@
       \field{issn}{1016-8737}
       \field{journaltitle}{International Economic Journal}
       \field{month}{9}
+      \field{number}{3}
       \field{shorttitle}{Exchange {Rate} {Pass}-{Through}}
       \field{title}{Exchange {Rate} {Pass}-{Through}: {Australian} {Imports} of {Motor} {Vehicles}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{7}
       \field{year}{1993}
       \field{urldateera}{ce}
-      \field{number}{3}
-      \range{number}{1}
       \field{pages}{93\bibrangedash 109}
       \range{pages}{17}
-      \field{volume}{7}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1080/10168739300000008
       \endverb
@@ -2375,18 +2491,16 @@
       \field{issn}{1467-6419}
       \field{journaltitle}{Journal of Economic Surveys}
       \field{month}{6}
+      \field{number}{2}
       \field{title}{Exchange {Rate} {Pass}-{Through}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{9}
       \field{year}{1995}
       \field{urldateera}{ce}
-      \field{number}{2}
-      \range{number}{1}
       \field{pages}{197\bibrangedash 231}
       \range{pages}{35}
-      \field{volume}{9}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1111/j.1467-6419.1995.tb00114.x
       \endverb
@@ -2420,24 +2534,23 @@
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{It is well-known that if international linkages are relatively small, the potential gains to international monetary policy coordination are typically quite limited. But when goods and financial markets are tightly linked, is it problematic if countries unilaterally design their monetary policy rules? Are the stabilization gains from having separate currencies largely squandered in the absence of effective international monetary coordination? We argue that under plausible assumptions the answer is no. Unless risk aversion is very high, lack of coordination in rule setting is a second-order problem compared with the overall gains from macroeconomic stabilization.}
       \field{issn}{0033-5533}
       \field{journaltitle}{The Quarterly Journal of Economics}
       \field{month}{5}
+      \field{number}{2}
       \field{title}{Global {Implications} of {Self}-{Oriented} {National} {Monetary} {Rules}}
       \field{urlday}{2}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{117}
       \field{year}{2002}
       \field{urldateera}{ce}
-      \field{number}{2}
-      \range{number}{1}
       \field{pages}{503\bibrangedash 535}
       \range{pages}{33}
-      \field{volume}{117}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1162/003355302753650319
       \endverb
@@ -2479,26 +2592,25 @@
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Money demand in dollarized economies often appears to be highly unstable, making it difficult to forecast and control inflation. In this paper, we show that a stable money demand function can be found for Russia by using effective broad money, which includes an estimate of foreign cash holdings. Moreover, we show that an excess supply of effective broad money is inflationary, while other excess money measures are not. Finally, we demonstrate that effective broad money growth has the strongest and most persistent effect on short-run inflation. Journal of Comparative Economics 33 (3) (2005) 462–483.}
       \field{issn}{0147-5967}
       \field{journaltitle}{Journal of Comparative Economics}
       \field{month}{9}
+      \field{number}{3}
       \field{series}{Symposium: {Monetary} and {Exchange} {Rate} {Policies} in the {CIS} {Countries}: {Between} the {EU} and {Russia}}
       \field{shorttitle}{Money demand and inflation in dollarized economies}
       \field{title}{Money demand and inflation in dollarized economies: {The} case of {Russia}}
       \field{urlday}{8}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{33}
       \field{year}{2005}
       \field{urldateera}{ce}
-      \field{number}{3}
-      \range{number}{1}
       \field{pages}{462\bibrangedash 483}
       \range{pages}{22}
-      \field{volume}{33}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jce.2005.05.007
       \endverb
@@ -2538,6 +2650,7 @@
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1556-5068}
@@ -2582,16 +2695,16 @@
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1061-1991}
       \field{journaltitle}{Problems of Economic Transition}
       \field{title}{Exchange Rate Pass-Through in Russia}
+      \field{volume}{58}
       \field{year}{2016}
       \field{pages}{54\bibrangedash 72}
       \range{pages}{19}
-      \field{volume}{58}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1080/10611991.2016.1162046
       \endverb
@@ -2624,6 +2737,7 @@
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{6 Export Prices and Exchange Rates: An Industry Approach was published in Trade Policies for International Competitiveness on page 185.}
@@ -2672,18 +2786,17 @@
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0261-5606}
       \field{journaltitle}{Journal of International Money and Finance}
-      \field{title}{A New Look at Pass-through}
-      \field{year}{2008}
       \field{number}{4}
-      \range{number}{1}
+      \field{title}{A New Look at Pass-through}
+      \field{volume}{27}
+      \field{year}{2008}
       \field{pages}{560\bibrangedash 591}
       \range{pages}{32}
-      \field{volume}{27}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jimonfin.2008.01.009
       \endverb
@@ -2725,22 +2838,21 @@
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper we directly estimate exchange rate pass-through (ERPT) to producer prices in some industries of final goods. For this we use survey data on import content of firms' costs according to the survey conducted by the Bank of Russia in yearly 2017. Thus, we contribute to existing ERPT estimates for Russia based on aggregate industry- or economy-wide data. In addition, to account for possible strategic complementarities and variable markups in the estimate of ERPT, we use the survey data and other industry data to calibrate the model by (Amiti, Itskhoki, Konings, 2016). Our results show, first, that ERPT of final goods' producers is around 0,18. Second, according to the survey data, ERPT is asymmetric. It is twice as lower for rouble appreciations as for its depreciations. Third, strategic complementarities in the agriculture and the food producing industry cause ERPT relatively stronger deviate from its direct estimate based on import content in production costs comparing to other industries. The results have important implications for estimating inflation volatility of food products in the consumer basket and for financial well-being of companies in the industries with high strategic complementarity.}
       \field{journaltitle}{Journal of the New Economic Association}
+      \field{number}{1}
       \field{title}{Estimating the {Exchange} {Rate} {Pass}-{Through} {Effect} on {Producer} {Prices} of {Final} {Products} {Based} on {Micro}-{Data} of {Russian} {Companies}}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{41}
       \field{year}{2019}
       \field{urldateera}{ce}
-      \field{number}{1}
-      \range{number}{1}
       \field{pages}{128\bibrangedash 157}
       \range{pages}{30}
-      \field{volume}{41}
-      \range{volume}{1}
       \verb{file}
       \verb :Sinyakov2019 - Estimating the Exchange Rate Pass through Effect on Producer Prices of Final Products Based on Micro Data of Russian Companies.pdf:PDF
       \endverb
@@ -2780,24 +2892,23 @@
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper analyses the implications of imperfect exchange rate pass-through for optimal monetary policy in a linearised open-economy dynamic general equilibrium model calibrated to euro area data. Imperfect exchange rate pass through is modelled by assuming sticky import price behaviour. The degree of domestic and import price stickiness is estimated by reproducing the empirical identified impulse response of a monetary policy and exchange rate shock conditional on the response of output, net trade and the exchange rate. It is shown that a central bank that wants to minimise the resource costs of staggered price setting will aim at minimising a weighted average of domestic and import price inflation.}
       \field{issn}{0304-3932}
       \field{journaltitle}{Journal of Monetary Economics}
       \field{month}{7}
+      \field{number}{5}
       \field{title}{Openness, imperfect exchange rate pass-through and monetary policy}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{49}
       \field{year}{2002}
       \field{urldateera}{ce}
-      \field{number}{5}
-      \range{number}{1}
       \field{pages}{947\bibrangedash 981}
       \range{pages}{35}
-      \field{volume}{49}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/S0304-3932(02)00126-5
       \endverb
@@ -2843,10 +2954,12 @@
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The paper investigates the ability of monetary authorities to keep the real exchange rate undervalued over the long run by implementing a policy of accumulating foreign exchange reserves. We consider a model of a three-sector, small, open economy, where the central bank continuously purchases foreign currency reserves and compare them to Russian and Chinese economies in recent years. Both countries appear to pursue reserve accumulation policies. We find a clear trade-off between the steady state levels of the real exchange rate and inflation. After calibration, the model predicts an 8.5\% real undervaluation of the Russian currency and a 13.7\% undervaluation of the Chinese currency. Predicted inflation is found to match observed levels.}
       \field{month}{8}
+      \field{number}{ID 931908}
       \field{title}{The {Inflationary} {Consequences} of {Real} {Exchange} {Rate} {Targeting} {Via} {Accumulation} of {Reserves}}
       \field{type}{{SSRN} {Scholarly} {Paper}}
       \field{urlday}{8}
@@ -2854,8 +2967,6 @@
       \field{urlyear}{2021}
       \field{year}{2006}
       \field{urldateera}{ce}
-      \field{number}{ID 931908}
-      \range{number}{-1}
       \verb{doi}
       \verb 10.2139/ssrn.931908
       \endverb
@@ -2892,24 +3003,23 @@
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Recently there has been a significant decline in the degree to which firms ‘pass through’ changes in costs to prices, a decline that is frequently characterized as a reduction in the ‘pricing power’ of firms. The decline appears to be associated with the decline in inflation in many countries. The decline has important implications for monetary policy because it affects both forecasts of inflation and the effects of changes in monetary policy on inflation. Some have argued that the decline in pricing power helped to keep inflation low in the face of apparently strong demand pressures in the United States in the late 1990s. This paper puts forth the view that the decline in pass-through or pricing power is due to the low inflation environment that has recently been achieved in many countries. First, a microeconomic model of price setting is used to show that lower pass-through is caused by lower perceived persistence of cost changes. Evidence is then presented showing that inflation is positively correlated with persistence of inflation, suggesting that the low inflation itself has caused the low pass-through. An economy-wide model consistent with the micromodel is then presented to illustrate how such changes in pricing power affect output and inflation dynamics in favorable ways, but can disappear quickly if monetary policy and expectations change.}
       \field{issn}{0014-2921}
       \field{journaltitle}{European Economic Review}
       \field{month}{6}
+      \field{number}{7}
       \field{title}{Low inflation, pass-through, and the pricing power of firms}
       \field{urlday}{3}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
+      \field{volume}{44}
       \field{year}{2000}
       \field{urldateera}{ce}
-      \field{number}{7}
-      \range{number}{1}
       \field{pages}{1389\bibrangedash 1408}
       \range{pages}{20}
-      \field{volume}{44}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/S0014-2921(00)00037-4
       \endverb
@@ -2946,6 +3056,7 @@
       \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{We apply propensity score matching estimators with multiple outcomes to evaluate the impacts of exchange rate regimes (fixed, intermediate, and flexible without inflation targeting) and inflation targeting on inflation rates in emerging and developing countries. An inflation-targeting regime does better than or at least as good work as a fixed regime in lowering inflation rates when compared with intermediate or flexible regimes. We do not observe a clear difference in inflation rates between fixed and inflation-targeting regimes in recent years (2000–2007). Intermediate and flexible regimes provide higher inflation than fixed or inflation-targeting regimes in most cases.}
@@ -2957,12 +3068,11 @@
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
+      \field{volume}{32}
       \field{year}{2013}
       \field{urldateera}{ce}
       \field{pages}{968\bibrangedash 989}
       \range{pages}{22}
-      \field{volume}{32}
-      \range{volume}{1}
       \verb{doi}
       \verb 10.1016/j.jimonfin.2012.08.003
       \endverb
@@ -2978,7 +3088,6 @@
       \keyw{Inflation,Exchange rate regime,Inflation targeting}
     \endentry
   \enddatalist
-  \missing{Ponomarev2014}
 \endrefsection
 \endinput
 

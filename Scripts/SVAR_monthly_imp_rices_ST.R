@@ -26,7 +26,7 @@ for(colname in to_deseasonalize){
 }
 
 #Cholesky decomposition
-data_chol <- dat_unseas[,c("oil_USD", "exp_price_mom", 
+data_chol <- dat_unseas[,c("oil_USD", "imp_price_mom", 
                            "miacr_31", "neer_mom", "gdp_per_cap_SA", "cpi_all_mom")]
 data_chol$neer_mom <- data_chol$neer_mom * -1
 VARselect(data_chol)$selection
@@ -51,7 +51,8 @@ sum(irf_choldec$irf$`epsilon[ gdp_per_cap_SA ] %->% cpi_all_mom`) /
   sum(irf_choldec$irf$`epsilon[ gdp_per_cap_SA ] %->% neer_mom`)
 
 #Smooth transition
-model_cv <- id.st(model_VAR, c_lower=0.05, c_upper=0.95, c_step=3, nc=8, c_fix=70) #70
+model_cv <- id.st(model_VAR, c_lower=0.05, c_upper=0.95, c_step=1, nc=8, c_fix=70,
+                  gamma_lower=-10, gamma_upper=10, gamma_step=0.02) #70
 irf_cv <- irf(model_cv, n.ahead = 12, ortho=TRUE)
 plot(irf_cv)
 #Import price

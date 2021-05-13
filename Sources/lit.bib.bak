@@ -1,5 +1,24 @@
 % Encoding: UTF-8
 
+@Article{Luetkepohl2017,
+  author   = {Lütkepohl, Helmut and Netšunajev, Aleksei},
+  journal  = {Journal of Economic Dynamics and Control},
+  title    = {Structural vector autoregressions with smooth transition in variances},
+  year     = {2017},
+  issn     = {0165-1889},
+  month    = nov,
+  pages    = {43--57},
+  volume   = {84},
+  abstract = {In structural vector autoregressive analysis identifying the shocks of interest via heteroskedasticity has become a standard tool. Unfortunately, the approaches currently used for modeling heteroskedasticity all have drawbacks. For instance, assuming known dates for variance changes is often unrealistic while more flexible models based on GARCH or Markov switching residuals are difficult to handle from a statistical and computational point of view. Therefore we propose a model based on a smooth change in variance that is flexible as well as relatively easy to estimate and illustrate its use by analysis of the interaction between monetary policy and the stock market based on a five-dimensional system of U.S. variables. For the benchmark setup it is found that previously used conventional identification schemes in this context are rejected by the data if heteroskedasticity is allowed for. We also illustrate the implications of using different transition variables and varying the sample period.},
+  doi      = {10.1016/j.jedc.2017.09.001},
+  file     = {:Luetkepohl2017 - Structural Vector Autoregressions with Smooth Transition in Variances.pdf:PDF},
+  groups   = {Methods},
+  keywords = {Identification via heteroskedasticity, Monetary policy shocks, Smooth transition VAR models},
+  language = {en},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0165188917301811},
+  urldate  = {2021-05-14},
+}
+
 @Article{An2020,
   author    = {Lian An and Mark A. Wynne and Ren Zhang},
   journal   = {Open Economies Review},
@@ -310,21 +329,20 @@
 }
 
 @Article{Sinyakov2019,
-  author    = {Sinyakov, A. and Chernyadyev, D. and Sapova, A.},
-  journal   = {Journal of the New Economic Association},
-  title     = {Estimating the {Exchange} {Rate} {Pass}-{Through} {Effect} on {Producer} {Prices} of {Final} {Products} {Based} on {Micro}-{Data} of {Russian} {Companies}},
-  year      = {2019},
-  number    = {1},
-  pages     = {128--157},
-  volume    = {41},
-  abstract  = {In this paper we directly estimate exchange rate pass-through (ERPT) to producer prices in some industries of final goods. For this we use survey data on import content of firms' costs according to the survey conducted by the Bank of Russia in yearly 2017. Thus, we contribute to existing ERPT estimates for Russia based on aggregate industry- or economy-wide data. In addition, to account for possible strategic complementarities and variable markups in the estimate of ERPT, we use the survey data and other industry data to calibrate the model by (Amiti, Itskhoki, Konings, 2016). Our results show, first, that ERPT of final goods' producers is around 0,18. Second, according to the survey data, ERPT is asymmetric. It is twice as lower for rouble appreciations as for its depreciations. Third, strategic complementarities in the agriculture and the food producing industry cause ERPT relatively stronger deviate from its direct estimate based on import content in production costs comparing to other industries. The results have important implications for estimating inflation volatility of food products in the consumer basket and for financial well-being of companies in the industries with high strategic complementarity.},
-  file      = {:Sinyakov2019 - Estimating the Exchange Rate Pass through Effect on Producer Prices of Final Products Based on Micro Data of Russian Companies.pdf:PDF},
-  groups    = {Russia and CIS},
-  keywords  = {exchange rate pass-through, inflation, strategic complementarities, markups, imports content of production cost, survey data},
-  language  = {en},
-  publisher = {New Economic Association},
-  url       = {https://ideas.repec.org/a/nea/journl/y2019i41p128-157.html},
-  urldate   = {2021-04-28},
+  author   = {Sinyakov, A. and Chernyadyev, D. and Sapova, A.},
+  journal  = {Journal of the New Economic Association},
+  title    = {Estimating the {Exchange} {Rate} {Pass}-{Through} {Effect} on {Producer} {Prices} of {Final} {Products} {Based} on {Micro}-{Data} of {Russian} {Companies}},
+  year     = {2019},
+  number   = {1},
+  pages    = {128--157},
+  volume   = {41},
+  abstract = {In this paper we directly estimate exchange rate pass-through (ERPT) to producer prices in some industries of final goods. For this we use survey data on import content of firms' costs according to the survey conducted by the Bank of Russia in yearly 2017. Thus, we contribute to existing ERPT estimates for Russia based on aggregate industry- or economy-wide data. In addition, to account for possible strategic complementarities and variable markups in the estimate of ERPT, we use the survey data and other industry data to calibrate the model by (Amiti, Itskhoki, Konings, 2016). Our results show, first, that ERPT of final goods' producers is around 0,18. Second, according to the survey data, ERPT is asymmetric. It is twice as lower for rouble appreciations as for its depreciations. Third, strategic complementarities in the agriculture and the food producing industry cause ERPT relatively stronger deviate from its direct estimate based on import content in production costs comparing to other industries. The results have important implications for estimating inflation volatility of food products in the consumer basket and for financial well-being of companies in the industries with high strategic complementarity.},
+  file     = {:Sinyakov2019 - Estimating the Exchange Rate Pass through Effect on Producer Prices of Final Products Based on Micro Data of Russian Companies.pdf:PDF},
+  groups   = {Russia and CIS},
+  keywords = {exchange rate pass-through, inflation, strategic complementarities, markups, imports content of production cost, survey data},
+  language = {en},
+  url      = {https://ideas.repec.org/a/nea/journl/y2019i41p128-157.html},
+  urldate  = {2021-04-28},
 }
 
 @Article{Faryna2016a,
@@ -1050,6 +1068,17 @@
   shorttitle = {Money demand and inflation in dollarized economies},
   url        = {https://www.sciencedirect.com/science/article/pii/S0147596705000478},
   urldate    = {2021-05-08},
+}
+
+@Article{Lange2021,
+  author    = {Alexander Lange and Bernhard Dalheimer},
+  journal   = {Journal of Statistical Software},
+  title     = {svars: An R Package for Data-Driven Identification in Multivariate Time Series Analysis},
+  year      = {2021},
+  number    = {5},
+  volume    = {97},
+  doi       = {10.18637/jss.v097.i05},
+  publisher = {Foundation for Open Access Statistic},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
