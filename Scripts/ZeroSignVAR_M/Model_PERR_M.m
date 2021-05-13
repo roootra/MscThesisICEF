@@ -28,12 +28,9 @@ opt.endDate = '08-01-2020';
 % Define the lag order.
 opt.nLags = 4;   
 
-opt.nDrawsFromBvar = 1e3;
-opt.nTransformationsPerDraw = 1e3;
-
 % Choose the estimation method ('OLS' or 'diffuse'), corresponding to 
 % either ordinary least square or Bayesian estimations.
-opt.estimationMethod = 'OLS';
+opt.estimationMethod = 'diffuse';
 
 % Maximum horizon of sign restrictions (0 = only contemporary, 
 % 1 = contemporary + horizon 1, etc.; Default = 0).
@@ -103,15 +100,15 @@ Z = zeros(2,nVars*(opt.nMaxSignHorizon + 1),nVars);
 %%%Russia PERR short-run%%%
 
 %Oil shock
-S(1,1,1) = 1 %oil (normalized)
+S(1:4,1,1) = 1 %oil (normalized)
 %S(2,2,1) = 1 %imp.price
-%S(3,3,1) = -1 %NEER
+S(3:4,3,1) = -1 %NEER
 %S(4,4,1) = 1 %int.rate
 %Z(1,5,1) = 1 %gdp
 %Z(2,6,1) = 1 %cpi
 
 %Import price shock
-%Z(1,1,2) = 1 %oil 
+Z(1,1,2) = 1 %oil 
 S(1,2,2) = 1 %imp.price (normalized)
 %S(3,3,2) = -1 %NEER
 %S(4,4,2) = 1 %int.rate
@@ -119,7 +116,7 @@ S(1,2,2) = 1 %imp.price (normalized)
 S(2,6,2) = 1 %cpi
 
 %Exchange rate shock
-%Z(1,1,3) = 0 %oil
+Z(1,1,3) = 0 %oil
 %S(2,2,1) = 1 %imp.price
 S(1,3,3) = 1 %NEER (normalized)
 %S(4,4,1) = 1 %int.rate
@@ -127,7 +124,7 @@ S(1,3,3) = 1 %NEER (normalized)
 S(2,6,3) = 1 %cpi
 
 %Interest rate shock
-%Z(1,1,4) = 0 %oil 
+Z(1,1,4) = 0 %oil 
 %S(2,2,1) = 1 %imp.price
 %S(3,3,1) = -1 %NEER
 S(1,4,4) = 1 %int.rate (normalized)
@@ -151,9 +148,20 @@ S(3,5,6) = 1 %gdp
 S(4,6,6) = 1 %cpi (normalized)
 
 opt.isImpulsePlots = 0;
-opt.isHistDecompPlots = 1;
-opt.nModelDraws = 500;
+opt.isHistDecompPlots = 0;
+opt.nModelDraws = 100;
+opt.nDrawsFromBvar = 1e3;
+opt.nTransformationsPerDraw = 1e3;
 %opt.isNoTransform = 1;
 signrestrictions
 
+%%% IRF Calculation
+irf_oil = sum(output.irfCTM(1:12,13))/sum(output.irfCTM(1:12,31));
+irf_imp = sum(output.irfCTM(1:12,14))/sum(output.irfCTM(1:12,32));
+irf_neer = sum(output.irfCTM(1:12,15))/sum(output.irfCTM(1:12,33));
+irf_int = sum(output.irfCTM(1:12,16))/sum(output.irfCTM(1:12,34));
+irf_gdp = sum(output.irfCTM(1:12,17))/sum(output.irfCTM(1:12,35));
+irf_cpi = sum(output.irfCTM(1:12,18))/sum(output.irfCTM(1:12,36));
 
+sprintf("PERRs:\tOil\tImp. price\tNEER\tInt. rate\tGDP\tCPI\n\t%0.5f\t%0.5f\t%0.5f\t%0.5f\t%0.5f\t%0.5f", irf_oil, irf_imp, irf_neer, irf_int, irf_gdp, irf_cpi)
+%sprintf("\t%0.5f\t%0.5f\t%0.5f\t%0.5f\t%0.5f\t%0.5f", irf_oil, irf_imp, irf_neer, irf_int, irf_gdp, irf_cpi)

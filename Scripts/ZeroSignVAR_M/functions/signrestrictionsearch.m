@@ -136,6 +136,7 @@ for ii = 1:nModels
                     % basis for the null space of R. 
                     N = null(R);
                     if isempty(N)
+                        %break;
                         error('Unable to find a matrix whose columns form an orthonormal basis for the null space of R.')
                     end
                     % basis for the null space of R.
