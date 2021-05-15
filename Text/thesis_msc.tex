@@ -33,6 +33,7 @@
 \usepackage{makecell}
 \usepackage{pdflscape}
 \usepackage{tabularx}
+\usepackage{graphicx}
 
 %БЛОК СООТВЕТСТВИЯ ПРАВИЛАМ
 %\renewcommand{\rmdefault}{ftm}
@@ -457,15 +458,16 @@ In this work, I use smooth covariance transition technique proposed in \cite{Lue
 	\Xi_a &= B_0^{-1}B_0^{-1'}, \; \Xi_b = B_0^{-1}\Lambda B_0^{-1'},\\
 	f(t) &= \frac{1}{(1 + e^{e^\gamma \cdot (t - c)})},
 \end{align}
-where $c$ is period of transition and $\gamma$ is smoothness parameter. The search for optimal $c$ and $\gamma$ is done via grid search, although these values can be specified. I specify $c$ to be equal to the period when the Central Bank of Russia has switched to the floating exchange rate regime and do search grid for optimal $\gamma$ on the space $(-5,5)$ with step $0.02$. In order to estimate the model, I use implementation from \texttt{svars} package in R (\cite{Lange2021}).
+where $c$ is period of transition and $\gamma$ is smoothness parameter. The search for optimal $c$ and $\gamma$ is done via grid search, although these values can be specified. I specify $c$ to be equal to the period when the Central Bank of Russia has switched to the floating exchange rate regime (November 2014) and do search grid for optimal $\gamma$ on the space $(-5,5)$ with step $0.02$. In order to estimate the model, I use implementation from \texttt{svars} package in R (\cite{Lange2021}).
 
-The model's parsimony is predominantly caused by identification issues, while DSGE models may include dozens of variables. A problem of lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
+The model's parsimony is predominantly caused by identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A problem of lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
 
-
+\clearpage
 \section*{SECTION 4. DATA}
-
 \setcounter{section}{2}
 \addcontentsline{toc}{section}{SECTION 4. DATA}
+
+See Table \ref{table:variables_decription} for data description and sources, Table \ref{table:correlation_variables} for correlation matrix of variables.
 
 
 \section*{SECTION 5. RESULTS}
@@ -488,19 +490,53 @@ The model's parsimony is predominantly caused by identification issues, while DS
 \addcontentsline{toc}{section}{References}
 \newpage
 %counters in captions
-\setcounter{figure}{1}
-\setcounter{table}{1}
+\setcounter{figure}{0}
+\setcounter{table}{0}
 \makeatletter
 \renewcommand*{\thetable}{\alph{table}}
 \renewcommand*{\thefigure}{\alph{figure}}
 \let\c@table\c@figure
 \makeatother 
 
-\normalsize
-\linespread{0.5}
-\section*{Appendix A: }
-\label{app:a}
+%\normalsize
+%\linespread{0.5}
+\section*{Appendix}
+\label{app}
+\begin{table}[h!]
+	\centering
+	%\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}lll@{}}
+			\toprule
+			Variable  & Description                                              & Source    \\ \midrule
+			Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\monthly average} & Bloomberg \\
+			Import prices & \makecell[l]{World import price index, \\manufactured goods only (2005m1 = 100), seasonally adjusted}    & WTO        \\
+			Interest rate & \makecell[l]{MIACR 31--180 days, monthly average. \\Absent values were imputed by last available rate} & CBR        \\
+			Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\MoM, Central Bank of Russia methodology} & CBR        \\
+			Output        & \makecell[l]{Russian real GDP per capita (1995m1 = 100), \\OECD leading indicator, seasonally adjusted}  & FRED, OECD \\
+			Inflation & \makecell[l]{Consumer price index, MoM, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
+		\end{tabular}%
+	%}
+	\caption{Description of Data and Sources}
+	\label{table:variables_decription}
+\end{table}
 
+\begin{table}[h!]
+\centering
+	\begin{tabular}{rllllll}
+	  \toprule
+	 & Oil price & Import price & MIACR & NEER & GDP & CPI \\ 
+	  \midrule
+	 	Oil price & 1 &  &  &  &  &\\ 
+  		Import price &  0.12  & 1 &  &  &  &\\ 
+  		MIACR& -0.13  & -0.30*** & 1 &  &  &\\ 
+  		NEER & -0.35*** & -0.04  &  0.16*  & 1 &  &\\ 
+  		GDP &  0.19**  &  0.32*** & -0.57*** & -0.13  & 1 &\\ 
+  		CPI & -0.05  & -0.10  &  0.29*** &  0.27*** & -0.19**  & 1\\ 
+	   \bottomrule
+	\end{tabular}
+	\caption{Correlation table of variables, growth rates where applicable.\\ $^*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
+	\label{table:correlation_variables}
+\end{table}
 ~\\
 \clearpage
 \newpage
