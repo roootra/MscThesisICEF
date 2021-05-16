@@ -493,13 +493,64 @@ In general, the Russian economy can be described by the following stylized facts
 	\item Russian GDP and CPI are negatively correlated.
 \end{enumerate}
 
-Appendix contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. MIACR exhibits unit root, although there is no visual evidence of its presence, and short-term interest rates are used in the literature without differencing.
+Appendix contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it, and short-term interest rates are used in the literature without differencing.
 
 \clearpage
 \section*{SECTION 5. RESULTS}
 \setcounter{section}{4}
 \setcounter{subsection}{0}
 \addcontentsline{toc}{section}{SECTION 5. RESULTS}
+
+To obtain the results, I estimate VAR of order 4. The order of model is picked based on AIC (Akaike information criterion) calculated for models up to 10 lags. I use the following order of variables: oil price growth rate, import price growth rate, short-term interest rate, NEER growth rate, real GDP per capita growth rate, CPI growth rate. Although variable order is not important for smooth covariance transition, it is crucial for robustness test purposes. 
+
+After VAR estimation, smooth covariance transition algorithm is applied in order to recover orthogonal impulse-response functions. Then, PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decomposition for CPI is calculated.
+
+As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme. 
+
+Tables \ref{tab:perr_shortrun} and \ref{tab:perr_longrun} provide PERR estimations. Shock-dependent pass-through coefficients calculated from smooth transition scheme are incomplete for all the variables, except global demand and output shocks. The latter shock is substantial for the economy, as even small output fluctuations generate huge deviations of other macroeconomic variables. Hence, this result might be the case for Russian economy. On the same time, there is a huge difference of results from the recursive scheme. I don't expect PERR for output from Cholesky decomposition to be robust as output shocks have influence only to CPI (due to variable order), while there may be more effects to other variables.
+
+The result for global demand shock is more controversial, although there is little difference in coefficients from two models. It might be a result of weak identification as well as natural result due to behaviour of retail sellers, which hedge import price volatility risks by rising local prices.
+
++ irfs in appendix
++ historical decomposition
+
+\begin{table}[h]
+	\centering
+	%\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}lll@{}}
+			\toprule
+			Shock                     & Smooth cov. & Cholesky dec. \\
+			\midrule
+			Global persistent shock   & 0.1219      & 0.1216        \\
+			Global demand shock       & 0.4844      & 0.2354        \\
+			Monetary shock            & 0.4703     & 0.4798        \\
+			Exog. exchange rate shock & 0.1509      & 0.1514        \\
+			Output shock              & 3.7154      & 0.1591       \\
+			\bottomrule
+		\end{tabular}%
+	%}
+	\caption{PERR calculated from different models, short-run (4 months).}
+	\label{tab:perr_shortrun}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	%\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}lll@{}}
+			\toprule
+			Shock                     & Smooth cov. & Cholesky dec. \\
+			\midrule
+			Global persistent shock   & 0.1361      & 0.1354        \\
+			Global demand shock       & 1.4662      & 1.5997        \\
+			Monetary shock            & 0.4111      &0.4229        \\
+			Exog. exchange rate shock & 0.2858      & 0.2871        \\
+			Output shock              & 3.0022      &0.0664    \\   
+			\bottomrule
+		\end{tabular}%
+	%}
+	\caption{PERR calculated from different models, long-run (12 months).}
+	\label{tab:perr_longrun}
+\end{table}
 
 
 \clearpage

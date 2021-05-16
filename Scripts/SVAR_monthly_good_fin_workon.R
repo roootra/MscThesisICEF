@@ -28,8 +28,8 @@ for(colname in to_deseasonalize){
 #Cholesky decomposition
 data_chol <- dat_unseas[,c("oil_USD", "imp_price_mom", 
                            "miacr_31", "neer_mom", "gdp_per_cap_SA", "cpi_all_mom")]
-write.csv(data_chol,
-          "/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/graph_builder/data_w_impprices.csv", row.names = FALSE)
+#write.csv(data_chol,
+#          "/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/graph_builder/data_w_impprices.csv", row.names = FALSE)
 data_chol$neer_mom <- data_chol$neer_mom * -1
 VARselect(data_chol)$selection
 model_VAR <- VAR(data_chol, p = 4, type = "const")
