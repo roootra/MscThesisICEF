@@ -34,6 +34,7 @@
 \usepackage{pdflscape}
 \usepackage{tabularx}
 \usepackage{graphicx}
+\usepackage{rotating}
 
 %БЛОК СООТВЕТСТВИЯ ПРАВИЛАМ
 %\renewcommand{\rmdefault}{ftm}
@@ -467,16 +468,41 @@ The model's parsimony is predominantly caused by identification issues, while DS
 \setcounter{section}{2}
 \addcontentsline{toc}{section}{SECTION 4. DATA}
 
-See Table \ref{table:variables_decription} for data description and sources, Table \ref{table:correlation_variables} for correlation matrix of variables.
+I use monthly time series of six variables from 2003M3 to 2020M8: oil price in USD, world import prices, short-term interest rate, nominal effective exchange rate, real GDP per capita and CPI. Monthly data are more interesting for policy conclusions in terms that it allows to make policy responds more rapidly, although quarterly data are more popular in the literature. It comes mostly from absence of monthly data in open access for the most countries (primarily, GDP) and purely academical purpose of studies.
 
+The data time-frame is bounded by the first observation of the import price index and by the last observation of real GDP per capita. There are 186 observations in total. World import price index growth rate and CPI growth rate are seasonally adjusted according to X13-ARIMA-SEATS; GDP per capita index growth rate is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} in Appendix for data description and sources.
 
+I associate oil price fluctuations with global persistent shock (as in \cite{Forbes2018}), import price fluctuations with global supply shocks, interest rate fluctuations with monetary policy shocks, exchange rate fluctuations with exogenous exchange rate shocks, domestic product fluctuations with aggregate supply shocks and CPI fluctuations with aggregate demand shocks.
+\begin{figure}[b!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/neer_cpi}
+	\caption[]{Time series of NEER and CPI (seasonally adjusted), growth rates.}
+	\label{fig:neer_cpi}
+\end{figure}
+
+A quite intuitive fact that oil price is negatively correlated with exchange rate follows from the fact that oil producers convert their yields from convertible currencies (mostly, US dollar and Euro) to Russian ruble, which creates excessive supply of foreign currency. In the same time, ruble appreciation declines consumer prices due to the import-dependent structure of consumer basket (huge share of import in manufactured goods). These relations form a pass-through channel. 
+
+In general, the Russian economy can be described by the following stylized facts:
+\begin{enumerate}
+	\setlength\itemsep{0.02em}
+	\item There is a strong negative correlation of oil price and ruble exchange rate (especially, USD and EUR);
+	\item There is a strong negative correlation of interest rate in Russia and Russian GDP;
+	\item Oil price and Russian GDP are positively correlated;
+	\item Exchange rate and CPI are positively correlated;
+	\item Exchange rate is more volatile than CPI;
+	\item Russian GDP and CPI are negatively correlated.
+\end{enumerate}
+
+Appendix contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. MIACR exhibits unit root, although there is no visual evidence of its presence, and short-term interest rates are used in the literature without differencing.
+
+\clearpage
 \section*{SECTION 5. RESULTS}
 \setcounter{section}{4}
 \setcounter{subsection}{0}
 \addcontentsline{toc}{section}{SECTION 5. RESULTS}
 
-\clearpage
 
+\clearpage
 \section*{DISCUSSION}
 \addcontentsline{toc}{section}{DISCUSSION}
 
@@ -511,7 +537,7 @@ See Table \ref{table:variables_decription} for data description and sources, Tab
 			Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\monthly average} & Bloomberg \\
 			Import prices & \makecell[l]{World import price index, \\manufactured goods only (2005m1 = 100), seasonally adjusted}    & WTO        \\
 			Interest rate & \makecell[l]{MIACR 31--180 days, monthly average. \\Absent values were imputed by last available rate} & CBR        \\
-			Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\MoM, Central Bank of Russia methodology} & CBR        \\
+			Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\MoM, Central Bank of Russia methodology} & CBR        \\
 			Output        & \makecell[l]{Russian real GDP per capita (1995m1 = 100), \\OECD leading indicator, seasonally adjusted}  & FRED, OECD \\
 			Inflation & \makecell[l]{Consumer price index, MoM, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
 		\end{tabular}%
@@ -522,7 +548,8 @@ See Table \ref{table:variables_decription} for data description and sources, Tab
 
 \begin{table}[h!]
 \centering
-	\begin{tabular}{rllllll}
+	%\begin{tabular}{rllllll}
+	\begin{tabular}{@{}rllllll@{}}
 	  \toprule
 	 & Oil price & Import price & MIACR & NEER & GDP & CPI \\ 
 	  \midrule
@@ -534,9 +561,44 @@ See Table \ref{table:variables_decription} for data description and sources, Tab
   		CPI & -0.05  & -0.10  &  0.29*** &  0.27*** & -0.19**  & 1\\ 
 	   \bottomrule
 	\end{tabular}
-	\caption{Correlation table of variables, growth rates where applicable.\\ $^*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
+	\caption{Correlation table (Pearson) of variables, growth rates where applicable.\\ $^*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.\\
+	CBR = Central Bank of Russia.\\
+	FRED = Federal Reserve Economic Data.\\
+	OECD = Organization of Economic Co-operation and Development.\\
+	Rosstat = Federal State Statistics Service of Russia.\\
+	WTO = World Trade Organization.}
 	\label{table:correlation_variables}
 \end{table}
+
+\begin{table}[]
+	\centering
+	%\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}lcc@{}}
+			 \toprule
+			Variable & ADF & PP \\
+			\midrule
+			Oil price, gr. r     & \makecell{-6.2036, p\textless{}0.01} & \makecell{-10.868, p\textless{}0.01}   \\
+			Import price, gr. r. & \makecell{-4.7868, p\textless{}0.01} & \makecell{-10.88, p\textless{}0.01}    \\
+			MIACR                & \makecell{-2.851, p=0.2203}          & \makecell{-2.9313, p=0.1867}          \\
+			NEER, gr. r.         & \makecell{-6.0899, p\textless{}0.01} & \makecell{-7.7579, p\textless{}0.01}   \\
+			GDP per cap., gr. r  & \makecell{-5.3102, p\textless{}0.01} & \makecell{-3.2687, p\textless{}0.0783} \\
+			CPI, gr. r.          & \makecell{-3.8145, p=0.0197}         & \makecell{-5.3466, p\textless{}0.01}\\
+			\bottomrule
+		\end{tabular}%
+	%}
+	\caption{Unit root tests for time series used in the model. Null hypothesis for both models: unit root, alternative hypothesis: stationarity.}
+	\label{table:unit_roots}
+\end{table}
+
+\begin{sidewaysfigure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/time_series}
+	\caption[]{Time series of variables used in the model, seasonally adjusted. Growth rates, where applicable.}
+	\label{fig:timeseries}
+\end{sidewaysfigure}
+
+
+
 ~\\
 \clearpage
 \newpage

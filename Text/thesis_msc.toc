@@ -4,6 +4,6 @@
 \contentsline {section}{SECTION 2. DATA}{5}{Doc-Start}%
 \contentsline {section}{SECTION 3. METHODS}{15}{table.1}%
 \contentsline {section}{SECTION 4. DATA}{20}{equation.3.14}%
-\contentsline {section}{SECTION 5. RESULTS}{20}{equation.3.14}%
-\contentsline {section}{DISCUSSION}{21}{equation.3.14}%
-\contentsline {section}{References}{26}{equation.3.14}%
+\contentsline {section}{SECTION 5. RESULTS}{21}{Item.6}%
+\contentsline {section}{DISCUSSION}{22}{Item.6}%
+\contentsline {section}{References}{27}{Item.6}%

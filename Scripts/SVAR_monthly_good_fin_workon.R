@@ -13,7 +13,8 @@ dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregat
 dat <- dat[NROW(dat):1,]
 
 #Deseasonalization
-to_deseasonalize <- c("ind_output_yoy", grep("cpi.*", colnames(dat), value=T))
+to_deseasonalize <- c("ind_output_yoy","imp_price_mom", "exp_price_mom", 
+                      grep("cpi.*", colnames(dat), value=T))
 dat_unseas <- dat
 for(colname in to_deseasonalize){
   current_ts <- ts(dat[,colname], start=c(2005, 3), frequency=12)
@@ -27,6 +28,8 @@ for(colname in to_deseasonalize){
 #Cholesky decomposition
 data_chol <- dat_unseas[,c("oil_USD", "imp_price_mom", 
                            "miacr_31", "neer_mom", "gdp_per_cap_SA", "cpi_all_mom")]
+write.csv(data_chol,
+          "/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/graph_builder/data_w_impprices.csv", row.names = FALSE)
 data_chol$neer_mom <- data_chol$neer_mom * -1
 VARselect(data_chol)$selection
 model_VAR <- VAR(data_chol, p = 4, type = "const")
