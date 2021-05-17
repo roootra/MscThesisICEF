@@ -3,7 +3,7 @@
 \contentsline {section}{SECTION 1. INTRODUCTION}{4}{Doc-Start}%
 \contentsline {section}{SECTION 2. DATA}{5}{Doc-Start}%
 \contentsline {section}{SECTION 3. METHODS}{15}{table.1}%
-\contentsline {section}{SECTION 4. DATA}{20}{equation.3.14}%
-\contentsline {section}{SECTION 5. RESULTS}{22}{Item.6}%
-\contentsline {section}{DISCUSSION}{24}{table.3}%
-\contentsline {section}{References}{29}{table.3}%
+\contentsline {section}{SECTION 4. DATA}{21}{equation.3.16}%
+\contentsline {section}{SECTION 5. RESULTS}{23}{Item.6}%
+\contentsline {section}{DISCUSSION}{26}{figure.2}%
+\contentsline {section}{References}{31}{figure.2}%

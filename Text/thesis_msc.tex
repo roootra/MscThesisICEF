@@ -418,7 +418,7 @@ From this result and equivalence $B_0^{-1} \epsilon_t = u_t$, an idea is to spec
 \end{equation}
 This result is noticeable, as it appears that $B_0^{-1} B_0^{-1'}$ is a Cholesky decomposition of $\Xi_{u_t}$. Then, $\displaystyle\frac{n(n-1)}{2}$ restrictions are needed to exactly identify shocks.
 
-There are several methods to do this. The first method is the simplest one --- Cholesky decomposition of variance-covariance matrix $\Xi_{u_t}$, as it is given above. Then, on the example of the model estimated in this work, shocks are identified as follows:
+There are several methods to do this. The first method is the simplest one --- Cholesky decomposition of variance-covariance matrix $\Xi_{u_t}$, as it is given above. From it, on the example of the model estimated in this work, shocks are identified as follows:
 \begin{equation}
 	\begin{pmatrix}
 		\epsilon^{\text{Global supply shock}}_t\\
@@ -447,13 +447,15 @@ There are several methods to do this. The first method is the simplest one --- C
 \end{equation}
 Then, the first variable in the vector is not directly affected by any shock but one that is associated with this variable, while the last variable is affected by fluctuations of all the shocks in the model. The main drawback of this identification scheme is that it implies very stiff restrictions to the shocks, and there may not be desired order of variables that produces sensible result. For example, one can reasonably assume that ruble's exchange rate and inflation have effect to the interest rate in short-run (monetary policy rule reaction).
 
+This method is used in order to provide robustness test for the results, obtained from the main model described below. Under this specific variable order, a reader shouldn't expect precise results from identification of supply (output) shock, as it is restricted to have effect only to inflation, which is a primitive assumption. Hence, I expect PERR coefficients to match at least for the first four structural shocks.
+
 In the recent literature estimating shock-dependent pass-through, a sign and zero restrictions method is widely used. A reader can refer to (\cite{Arias2014}) for rigorous explanations of this technique, although, in a nutshell, this is a \textit{guess-and-verify} technique: one has to randomly generate matrix $Q$ such that $QQ'$ is diagonal and its product with matrix from Cholesky decomposition produces such IRF's that satisfy both sign and zero restrictions. As the model is underidentified, there are multiple matrices $Q$ satisfying there restrictions.  After $n$ times generating the matrices and obtaining random IRF's, their median is calculated as a result. 
 
 The main drawback of this approach is that researcher has to intuitively arrange signs of response functions, which is usually non-trivial. (\cite{Ortega2020}) advice to use DSGE models for this purpose, although data are not necessarily to match IRF produced by theoretical justifications. Another shortcoming is that sign and zero approach is hard to apply to data that presume heterogeneous covariance matrix, and it mostly comes from the problem of sign setting. Moreover, this approach is quite sensitive to data atomicity: for example, quarterly data require less effort to determine signs than monthly series, since data with less periodicity is averaged, and there are less fluctuations, which harmfully affect the process of model fitting and further identification. 
 
 Talking about Russian data, one can recall the exchange rate policy shift in November 2014, when banded exchange rate was replaced by floating one. Hence, it is not expected that Russian macroeconomic time series exhibit homogeneity, while economic agents' adjustment to the new policy has been continuous. Then, sign and zero approach seems fraught with difficulties; moreover, there can be no plausible identification found if sign restrictions are set thoroughly from the theory.
 
-In this work, I use smooth covariance transition technique proposed in \cite{Luetkepohl2017}, which seems to produce more credible results than Cholesky decomposition, on the one side, and is more data-driven than sign and zero restrictions. The idea of this method is that if the residual term is heteroscedastic, its variance-covariance matrix can be defined as a sum of two non-linearly weighted variance-covariance matrices, which represents gradual and time-dependent transition from one volatility pattern to another one. Below I provide the widely used transition function, which is employed in this work:
+In this work, I use smooth covariance transition technique proposed in (\cite{Luetkepohl2017}), which seems to produce more credible results than Cholesky decomposition, on the one side, and is more data-driven than sign and zero restrictions. The idea of this method is that if the residual term is heteroscedastic, its variance-covariance matrix can be defined as a sum of two non-linearly weighted variance-covariance matrices, which represents gradual and time-dependent transition from one volatility pattern to another one. Below I provide the widely used transition function, which is employed in this work:
 \begin{align}
 	\Xi_{u_t, t} &= f(t)\Xi_a + (1 - f(t))\Xi_b,\\
 	\Xi_a &= B_0^{-1}B_0^{-1'}, \; \Xi_b = B_0^{-1}\Lambda B_0^{-1'},\\
@@ -463,6 +465,24 @@ where $c$ is period of transition and $\gamma$ is smoothness parameter. The sear
 
 The model's parsimony is predominantly caused by identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A problem of lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
 
+\begin{center}
+	\textbf{Post-Estimation Analysis}
+\end{center}
+
+After structural shocks are identified, a researcher is usually interested in response of variables after a unit structural shock. For this purposes, an impulse response function (IRF) is calculated, which represents deviation from a steady state of a variable for different periods after an (orthogonal) shock.
+
+In order to calculate IRFs, the model should be written in terms of vector moving average (VMA) model:
+\begin{equation}
+	Y_t = \sum_{j=0}^{\inf} \Phi_j \epsilon_{t-j},
+\end{equation}
+where $\Phi_j$ is a matrix of MA coefficients obtained by VAR inversion. Finally, IRFs are defined as:
+\begin{equation}
+	IRF^{\text{imp,resp}}_j = \Phi_j^{\text{imp,resp}},
+\end{equation}
+where ''imp'' is a row index of matrix $\Phi_j$, ''resp'' is a column index of the same matrix.
+
+
+
 \clearpage
 \section*{SECTION 4. DATA}
 \setcounter{section}{2}
@@ -470,7 +490,25 @@ The model's parsimony is predominantly caused by identification issues, while DS
 
 I use monthly time series of six variables from 2003M3 to 2020M8: oil price in USD, world import prices, short-term interest rate, nominal effective exchange rate, real GDP per capita and CPI. Monthly data are more interesting for policy conclusions in terms that it allows to make policy responds more rapidly, although quarterly data are more popular in the literature. It comes mostly from absence of monthly data in open access for the most countries (primarily, GDP) and purely academical purpose of studies.
 
-The data time-frame is bounded by the first observation of the import price index and by the last observation of real GDP per capita. There are 186 observations in total. World import price index growth rate and CPI growth rate are seasonally adjusted according to X13-ARIMA-SEATS; GDP per capita index growth rate is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} in Appendix for data description and sources.
+The data time-frame is bounded by the first observation of the import price index and by the last observation of real GDP per capita. There are 186 observations in total. World import price index growth rate and CPI growth rate are seasonally adjusted according to X13-ARIMA-SEATS; GDP per capita index growth rate is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} for data description and sources.
+
+\begin{table}[b!]
+	\centering
+	%\resizebox{\textwidth}{!}{%
+	\begin{tabular}{@{}lll@{}}
+		\toprule
+		Variable  & Description                                              & Source    \\ \midrule
+		Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\monthly average} & Bloomberg \\
+		Import prices & \makecell[l]{World import price index, \\manufactured goods only (2005m1 = 100), seasonally adjusted}    & WTO        \\
+		Interest rate & \makecell[l]{MIACR 31--180 days, monthly average. \\Absent values were imputed by last available rate} & CBR        \\
+		Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\MoM, Central Bank of Russia methodology} & CBR        \\
+		Output        & \makecell[l]{Russian real GDP per capita (1995m1 = 100), \\OECD leading indicator, seasonally adjusted}  & \makecell[l]{FRED\\ OECD} \\
+		Inflation & \makecell[l]{Consumer price index, MoM, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
+	\end{tabular}%
+	%}
+	\caption{Description of Data and Sources}
+	\label{table:variables_decription}
+\end{table}
 
 I associate oil price fluctuations with global persistent shock (as in \cite{Forbes2018}), import price fluctuations with global supply shocks, interest rate fluctuations with monetary policy shocks, exchange rate fluctuations with exogenous exchange rate shocks, domestic product fluctuations with aggregate supply shocks and CPI fluctuations with aggregate demand shocks.
 \begin{figure}[b!]
@@ -511,10 +549,9 @@ Tables \ref{tab:perr_shortrun} and \ref{tab:perr_longrun} provide PERR estimatio
 
 The result for global demand shock is more controversial, although there is little difference in coefficients from two models. It might be a result of weak identification as well as natural result due to behaviour of retail sellers, which hedge import price volatility risks by rising local prices.
 
-+ irfs in appendix
-+ historical decomposition
+IRFs for smooth covariance transition identification scheme are provided in Appendix (Figure \ref{fig:irf_st_1} and \ref{fig:irf_st_2}). 
 
-\begin{table}[h]
+\begin{table}[t]
 	\centering
 	%\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}lll@{}}
@@ -533,7 +570,7 @@ The result for global demand shock is more controversial, although there is litt
 	\label{tab:perr_shortrun}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[t]
 	\centering
 	%\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}lll@{}}
@@ -552,6 +589,14 @@ The result for global demand shock is more controversial, although there is litt
 	\label{tab:perr_longrun}
 \end{table}
 
+Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate for observations from 2017. See Figure \ref{fig:hd_full} in Appendix for full historical decomposition graph.
+
+\begin{sidewaysfigure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/hd_st_cut}
+	\caption[]{Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted), observations from 2017. Black line denotes demeaned observed CPI gr. r.}
+	\label{fig:hd_cut}
+\end{sidewaysfigure}
 
 \clearpage
 \section*{DISCUSSION}
@@ -579,23 +624,6 @@ The result for global demand shock is more controversial, although there is litt
 %\linespread{0.5}
 \section*{Appendix}
 \label{app}
-\begin{table}[h!]
-	\centering
-	%\resizebox{\textwidth}{!}{%
-		\begin{tabular}{@{}lll@{}}
-			\toprule
-			Variable  & Description                                              & Source    \\ \midrule
-			Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\monthly average} & Bloomberg \\
-			Import prices & \makecell[l]{World import price index, \\manufactured goods only (2005m1 = 100), seasonally adjusted}    & WTO        \\
-			Interest rate & \makecell[l]{MIACR 31--180 days, monthly average. \\Absent values were imputed by last available rate} & CBR        \\
-			Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\MoM, Central Bank of Russia methodology} & CBR        \\
-			Output        & \makecell[l]{Russian real GDP per capita (1995m1 = 100), \\OECD leading indicator, seasonally adjusted}  & FRED, OECD \\
-			Inflation & \makecell[l]{Consumer price index, MoM, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
-		\end{tabular}%
-	%}
-	\caption{Description of Data and Sources}
-	\label{table:variables_decription}
-\end{table}
 
 \begin{table}[h!]
 \centering
@@ -624,16 +652,16 @@ The result for global demand shock is more controversial, although there is litt
 \begin{table}[]
 	\centering
 	%\resizebox{\textwidth}{!}{%
-		\begin{tabular}{@{}lcc@{}}
+		\begin{tabular}{@{}lll@{}}
 			 \toprule
 			Variable & ADF & PP \\
 			\midrule
-			Oil price, gr. r     & \makecell{-6.2036, p\textless{}0.01} & \makecell{-10.868, p\textless{}0.01}   \\
-			Import price, gr. r. & \makecell{-4.7868, p\textless{}0.01} & \makecell{-10.88, p\textless{}0.01}    \\
-			MIACR                & \makecell{-2.851, p=0.2203}          & \makecell{-2.9313, p=0.1867}          \\
-			NEER, gr. r.         & \makecell{-6.0899, p\textless{}0.01} & \makecell{-7.7579, p\textless{}0.01}   \\
-			GDP per cap., gr. r  & \makecell{-5.3102, p\textless{}0.01} & \makecell{-3.2687, p\textless{}0.0783} \\
-			CPI, gr. r.          & \makecell{-3.8145, p=0.0197}         & \makecell{-5.3466, p\textless{}0.01}\\
+			Oil price, gr. r     & {-6.2036, p\textless{}0.01} &{-10.868, p\textless{}0.01}   \\
+			Import price, gr. r. & {-4.7868, p\textless{}0.01} & {-10.880, p\textless{}0.01}    \\
+			MIACR                & {-2.8510, p$\approx$0.22}          & {-2.9313, p$\approx$0.19}          \\
+			NEER, gr. r.         & {-6.0899, p\textless{}0.01} & {-7.7579, p\textless{}0.01}   \\
+			GDP per cap., gr. r  & {-5.3102, p\textless{}0.01} & {-3.2687, p$\approx$0.08} \\
+			CPI, gr. r.          & {-3.8145, p$\approx$0.02}         & {-5.3466, p\textless{}0.01}\\
 			\bottomrule
 		\end{tabular}%
 	%}
@@ -648,6 +676,26 @@ The result for global demand shock is more controversial, although there is litt
 	\label{fig:timeseries}
 \end{sidewaysfigure}
 
+\begin{sidewaysfigure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/irf_st_1}
+	\caption[]{Impulse response functions for smooth covariance transition identification scheme (1).}
+	\label{fig:irf_st_1}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/irf_st_2}
+	\caption[]{Impulse response functions for smooth covariance transition identification scheme (2).}
+	\label{fig:irf_st_2}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/hd_st_full}
+	\caption[]{Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted). Black line denotes demeaned observed CPI gr. r.}
+	\label{fig:hd_full}
+\end{sidewaysfigure}
 
 
 ~\\

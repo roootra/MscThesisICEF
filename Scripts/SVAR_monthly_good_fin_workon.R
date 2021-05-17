@@ -72,6 +72,15 @@ sum(irf_cv$irf$`epsilon[ neer_mom ] %->% cpi_all_mom`) /
 sum(irf_cv$irf$`epsilon[ gdp_per_cap_SA ] %->% cpi_all_mom`) /
   sum(irf_cv$irf$`epsilon[ gdp_per_cap_SA ] %->% neer_mom`)
 
+write.csv(irf_cv$irf, "/Users/rutra/ВШЭ/Магистратура/Thesis/R workspaces/st_irf.csv",
+          row.names = FALSE)
+
+#Historical decomposition
+hd_cv <- hd(model_cv, series=6)
+write.csv(hd_cv$hidec, "/Users/rutra/ВШЭ/Магистратура/Thesis/R workspaces/st_hd.csv",
+          row.names = FALSE)
+
+
 corstarsl <- function(x){ 
   require(Hmisc) 
   x <- as.matrix(x) 
