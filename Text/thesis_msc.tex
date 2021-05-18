@@ -210,6 +210,22 @@
 \section*{SECTION 1. INTRODUCTION}
 \addcontentsline{toc}{section}{SECTION 1. INTRODUCTION}
 
+The process of integrated world economy formation has been quite substantially changing policies of monetary and macroprudential authorities around the world, adding more challenges to them. Emerging economies being involved into world market has been experiencing a huge policy transformation, especially for ex-socialist countries with strict authoritarian regimes that had very basic international trading affairs before the collapse of these regimes. During transitory process of integration into world economy for such countries, it appears that price stability there becomes subject not only to domestic shocks, but shocks coming from outer world.
+
+The main goal of a monetary authority is price stability; in the above mentioned conditions, policymakers of emerging economies are not suited well for rebuffing outer shocks, since the natural mechanisms of self-compensation in the local economy are yet to be founded. This fact requires prudent policy adjustment, which takes into account a structure of international trade, exchange rate fluctuations and external shocks occurring globally. 
+
+To render the basis for this, the policymaker has to conduct not only positive, but normative analysis of the economy and find transmission channels of external shocks into inflation to guarantee price stability. As there is external trade, one should be interested in effect of exchange rate fluctuations to domestic prices, usually observed in the literature as exchange rate pass-through.
+
+Russia, as emerging ex-socialist commodity economy, can be described as severely subject to commodity (oil) shocks and exchange rate fluctuations. During last 30 years, ruble --- local currency of Russia --- has experienced several large depreciation waves (the largest ones were after 1998 default and 2014 oil price drop). Accompanied by different set of shocks, these events had different degree of exchange rate pass-through in the Russian economy. 
+
+There is many research done on shock \textit{independent} pass-through estimation made for many countries; several papers estimate it for Russia, some of them getting though controversial results due to lack of data available. This approach, in a plain setup, does not require sophisticated statistical methods, as estimates can be obtained from OLS model.
+
+On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE. Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
+
+The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression. 
+
+
+
 \newpage
 \section*{SECTION 2. LITERATURE REVIEW}
 \setcounter{section}{2}
@@ -543,11 +559,17 @@ To obtain the results, I estimate VAR of order 4. The order of model is picked b
 
 After VAR estimation, smooth covariance transition algorithm is applied in order to recover orthogonal impulse-response functions. Then, PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decomposition for CPI is calculated.
 
-As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme. 
+As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme, though the obtained results are comparable.
 
 Tables \ref{tab:perr_shortrun} and \ref{tab:perr_longrun} provide PERR estimations. Shock-dependent pass-through coefficients calculated from smooth transition scheme are incomplete for all the variables, except global demand and output shocks. The latter shock is substantial for the economy, as even small output fluctuations generate huge deviations of other macroeconomic variables. Hence, this result might be the case for Russian economy. On the same time, there is a huge difference of results from the recursive scheme. I don't expect PERR for output from Cholesky decomposition to be robust as output shocks have influence only to CPI (due to variable order), while there may be more effects to other variables.
 
-The result for global demand shock is more controversial, although there is little difference in coefficients from two models. It might be a result of weak identification as well as natural result due to behaviour of retail sellers, which hedge import price volatility risks by rising local prices.
+Overall, results match with (\cite{Khotulev2020}), which uses DSGE, for global persistent and monetary shocks. The latter shock has a larger PERR comparing to global persistent shock and exogenous exchange rate shock. This fact is widely supported in the literature (e. g. \cite[p. 43]{Ortega2020}; \cite[p. 9]{Khotulev2020}). 
+
+Global persistent shock, associated with oil price, is minor in terms of PERR (0.12--0.13).  
+
+The result for global demand shock is more controversial, although there is little difference in coefficients from two models. It might be a result of weak identification as well as a natural result coming from a behaviour of retail sellers, which hedge import price volatility risks by rising local prices.
+
+
 
 IRFs for smooth covariance transition identification scheme are provided in Appendix (Figure \ref{fig:irf_st_1} and \ref{fig:irf_st_2}). 
 
@@ -622,7 +644,8 @@ Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate fo
 
 %\normalsize
 %\linespread{0.5}
-\section*{Appendix}
+\section*{Annex}
+\addcontentsline{toc}{section}{Annex}
 \label{app}
 
 \begin{table}[h!]

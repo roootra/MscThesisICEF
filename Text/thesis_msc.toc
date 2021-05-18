@@ -1,9 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \contentsline {section}{SECTION 1. INTRODUCTION}{4}{Doc-Start}%
-\contentsline {section}{SECTION 2. DATA}{5}{Doc-Start}%
-\contentsline {section}{SECTION 3. METHODS}{15}{table.1}%
-\contentsline {section}{SECTION 4. DATA}{21}{equation.3.16}%
-\contentsline {section}{SECTION 5. RESULTS}{23}{Item.6}%
-\contentsline {section}{DISCUSSION}{26}{figure.2}%
-\contentsline {section}{References}{31}{figure.2}%
+\contentsline {section}{SECTION 2. DATA}{6}{Doc-Start}%
+\contentsline {section}{SECTION 3. METHODS}{16}{table.1}%
+\contentsline {section}{SECTION 4. DATA}{22}{equation.3.16}%
+\contentsline {section}{SECTION 5. RESULTS}{24}{Item.6}%
+\contentsline {section}{DISCUSSION}{27}{figure.2}%
+\contentsline {section}{References}{32}{figure.2}%
+\contentsline {section}{ANNEX}{33}{figure.2}%
