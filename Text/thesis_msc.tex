@@ -194,7 +194,7 @@
 \begin{document}
 \setcounter{page}{2}
 \begin{abstract}
-	\textit{tbd}
+	Russian inflation movements are mostly associated with exchange rate fluctuations, especially after decision of Bank of Russia to adopt floating exchange rate regime. Several studies attempt to measure exchange rate pass-through for Russia, although their estimations are shock-independent. This work estimates SVAR and applies smooth covariance transition identification scheme in order to recover shock-dependent ERPT to describe effects of exchange rate to prices under different structural shocks. My findings are comparable to ones in the literature and show that influence of output and global demand shocks to pass-through is huge, while shocks associated with oil prices cause relatively small price to exchange rate ratio.
 \end{abstract}
 \newpage
 
@@ -220,9 +220,20 @@ Russia, as emerging ex-socialist commodity economy, can be described as severely
 
 There is many research done on shock \textit{independent} pass-through estimation made for many countries; several papers estimate it for Russia, some of them getting though controversial results due to lack of data available. This approach, in a plain setup, does not require sophisticated statistical methods, as estimates can be obtained from OLS model.
 
-On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE. Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
+On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE (\cite{Khotulev2020}). Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
 
-The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression. 
+The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. I include six variables from March 2003 to August 2020 into the model: oil price, world import price index, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP per capita and CPI in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, global demand shock, local monetary shock, local exogenous exchange rate shock and local supply shock leaving local demand shock as residual one. Monthly data used in this work allow to examine shocks' influence to inflation with better precision.
+
+In order to identify structural shocks, after estimation of vector autoregression, I apply smooth covariance transition scheme (\cite{Luetkepohl2017}) with a shift date in November 2014, when Central Bank of Russia adopted floating exchange rate for ruble, followed by huge exchange rate shock in the next month. I refrain from using sign and zero approach introduced in (\cite{Arias2014}) since a) I assume huge structural shifts in Russian economy after floating exchange rate adoption, which have changed expectations of economic agents; b) the process of sign assignment is quite non-trivial, especially for Russian volatile data.
+
+My findings are comparable to (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. As I use real GDP per capita to identify local supply shock, I get quite huge result of pass-through for it. This result can be explained by importance of the shock for the whole economy. Another concern is a big value for global demand shock; however, robustness test shows its relevance.
+
+Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate, which shows contribution of different macrovariables in the model to inflation volatility. I show that exchange rate shock drove prices down from 2019, starting to rise them only in August 2020. More globally, I observe that while supply shocks were the main price drivers during 2008--2009 financial crisis, their effect in price behaviour during 2014--2015 ruble depreciation was opposite.
+
+As a robustness test, I apply recursive decomposition to SVAR in order to recover structural shocks using more plain approach. Except output shock, all pass-through estimates match. Difference in pass-through under output shock can be explained by rigid structure of recursive decomposition and position of the variable, which determines causal relationships in the model; hence, impacts of innovation from output can be incorrect there.
+
+This paper is organised as follows. Section 2 guides reader through the literature on the topic of exchange rate pass-through. For convenience, I break this section into two parts: a) methods and non-CIS economies and b) Russia and CIS countries. Section 3 gives a brief econometric introduction and defines the model and identification schemes used. Section 4 describes data used in this work. Section 5 reveals results fetched from the model. Section 6 concludes.
+
 
 
 
@@ -621,8 +632,8 @@ Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate fo
 \end{sidewaysfigure}
 
 \clearpage
-\section*{DISCUSSION}
-\addcontentsline{toc}{section}{DISCUSSION}
+\section*{SECTION 6. DISCUSSION}
+\addcontentsline{toc}{section}{SECTION 6. DISCUSSION}
 
 
 %%%%%%%%%%%%%%%%%%%%
