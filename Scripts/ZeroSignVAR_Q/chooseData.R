@@ -35,15 +35,26 @@ dat_unseas$real_gdp_gap <- hpfilter(dat_unseas$gdp_real_SA_index, freq=1600)$cyc
 plot(dat_unseas$date, dat_unseas$real_gdp_gap)
 
 #Cholesky decomposition
-data_to_write <- dat_unseas[,c("oil_USD_qoq", 
-                           "imp_price_qoq", 
-                           "neer_qoq",
+data_to_write <- dat_unseas[,c(#"date",
+                               "oil_USD_qoq", 
+                           #"imp_price_qoq", 
                            #"reserves_USD_qoq",
                            #"broad_money_SA",
                            "miacr_31",
+                           #"neer_qoq",
+                           "nom_usd_qoq",
                            "gdp_real_SA_qoq", 
                            "cpi_all_qoq")]
+data_to_write <- dat_unseas[,c(#"date",
+  "gdp_real_SA_qoq",
+  "cpi_all_qoq",
+  "miacr_31",
+  "neer_qoq",
+  "oil_USD_qoq"
+  )]
 data_to_write$neer_qoq <- data_to_write$neer_qoq*-1
+#data_to_write$nom_usd_qoq <- data_to_write$nom_usd_qoq*-1
+VARselect(data_to_write, lag.max=6)
 write.csv(data_to_write, 
           "/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/ZeroSignVAR_Q/data_sign_and_zero.csv",
           row.names=FALSE, col.names=NA)

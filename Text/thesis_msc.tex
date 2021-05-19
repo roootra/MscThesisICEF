@@ -142,9 +142,9 @@
 \usepackage{siunitx}
 \usepackage{multicol}
 
-\renewcommand{\appendixtocname}{Appendix}
-\renewcommand{\appendixname}{Appendix}
-\renewcommand{\appendixpagename}{Appendix}
+\renewcommand{\appendixtocname}{Annex}
+\renewcommand{\appendixname}{Annex}
+\renewcommand{\appendixpagename}{Annex}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 \makeatletter
@@ -490,25 +490,7 @@ In this work, I use smooth covariance transition technique proposed in (\cite{Lu
 \end{align}
 where $c$ is period of transition and $\gamma$ is smoothness parameter. The search for optimal $c$ and $\gamma$ is done via grid search, although these values can be specified. I specify $c$ to be equal to the period when the Central Bank of Russia has switched to the floating exchange rate regime (November 2014) and do search grid for optimal $\gamma$ on the space $(-5,5)$ with step $0.02$. In order to estimate the model, I use implementation from \texttt{svars} package in R (\cite{Lange2021}).
 
-The model's parsimony is predominantly caused by identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A problem of lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
-
-\begin{center}
-	\textbf{Post-Estimation Analysis}
-\end{center}
-
-After structural shocks are identified, a researcher is usually interested in response of variables after a unit structural shock. For this purposes, an impulse response function (IRF) is calculated, which represents deviation from a steady state of a variable for different periods after an (orthogonal) shock.
-
-In order to calculate IRFs, the model should be written in terms of vector moving average (VMA) model:
-\begin{equation}
-	Y_t = \sum_{j=0}^{\inf} \Phi_j \epsilon_{t-j},
-\end{equation}
-where $\Phi_j$ is a matrix of MA coefficients obtained by VAR inversion. Finally, IRFs are defined as:
-\begin{equation}
-	IRF^{\text{imp,resp}}_j = \Phi_j^{\text{imp,resp}},
-\end{equation}
-where ''imp'' is a row index of matrix $\Phi_j$, ''resp'' is a column index of the same matrix.
-
-
+The model's parsimony is predominantly caused by identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
 
 \clearpage
 \section*{SECTION 4. DATA}
@@ -558,7 +540,7 @@ In general, the Russian economy can be described by the following stylized facts
 	\item Russian GDP and CPI are negatively correlated.
 \end{enumerate}
 
-Appendix contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it, and short-term interest rates are used in the literature without differencing.
+Annex contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it, and short-term interest rates are used in the literature without differencing.
 
 \clearpage
 \section*{SECTION 5. RESULTS}
@@ -568,21 +550,17 @@ Appendix contains additional information about characteristics of time series. T
 
 To obtain the results, I estimate VAR of order 4. The order of model is picked based on AIC (Akaike information criterion) calculated for models up to 10 lags. I use the following order of variables: oil price growth rate, import price growth rate, short-term interest rate, NEER growth rate, real GDP per capita growth rate, CPI growth rate. Although variable order is not important for smooth covariance transition, it is crucial for robustness test purposes. 
 
-After VAR estimation, smooth covariance transition algorithm is applied in order to recover orthogonal impulse-response functions. Then, PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decomposition for CPI is calculated.
-
-As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme, though the obtained results are comparable.
+After VAR estimation, smooth covariance transition algorithm is applied in order to recover orthogonal impulse-response functions. Then, PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decomposition for CPI is calculated. As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme, though the obtained results are comparable.
 
 Tables \ref{tab:perr_shortrun} and \ref{tab:perr_longrun} provide PERR estimations. Shock-dependent pass-through coefficients calculated from smooth transition scheme are incomplete for all the variables, except global demand and output shocks. The latter shock is substantial for the economy, as even small output fluctuations generate huge deviations of other macroeconomic variables. Hence, this result might be the case for Russian economy. On the same time, there is a huge difference of results from the recursive scheme. I don't expect PERR for output from Cholesky decomposition to be robust as output shocks have influence only to CPI (due to variable order), while there may be more effects to other variables.
 
-Overall, results match with (\cite{Khotulev2020}), which uses DSGE, for global persistent and monetary shocks. The latter shock has a larger PERR comparing to global persistent shock and exogenous exchange rate shock. This fact is widely supported in the literature (e. g. \cite[p. 43]{Ortega2020}; \cite[p. 9]{Khotulev2020}). 
+Overall, results match with (\cite{Khotulev2020}), which uses DSGE, for global persistent and monetary shocks. The latter shock has a larger PERR comparing to global persistent shock and exogenous exchange rate shock. This fact is widely supported in the literature (e.~g. \cite[p.~43]{Ortega2020}; \cite[p.~9]{Khotulev2020}). 
 
-Global persistent shock, associated with oil price, is minor in terms of PERR (0.12--0.13).  
+Global persistent shock, associated with oil price, is minor in terms of PERR (0.12--0.13), though comparable to one in (\cite{Khotulev2020}). However, it is unlikely this shock happens isolated, as it is usually associated with exchange rate shock.
 
 The result for global demand shock is more controversial, although there is little difference in coefficients from two models. It might be a result of weak identification as well as a natural result coming from a behaviour of retail sellers, which hedge import price volatility risks by rising local prices.
 
-
-
-IRFs for smooth covariance transition identification scheme are provided in Appendix (Figure \ref{fig:irf_st_1} and \ref{fig:irf_st_2}). 
+IRFs for smooth covariance transition identification scheme are provided in Annex (Figure \ref{fig:irf_st_1} and \ref{fig:irf_st_2}). 
 
 \begin{table}[t]
 	\centering
@@ -622,7 +600,7 @@ IRFs for smooth covariance transition identification scheme are provided in Appe
 	\label{tab:perr_longrun}
 \end{table}
 
-Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate for observations from 2017. See Figure \ref{fig:hd_full} in Appendix for full historical decomposition graph.
+Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate for observations from 2017. See Figure \ref{fig:hd_full} in Annex for full historical decomposition graph.
 
 \begin{sidewaysfigure}[h!]
 	\centering

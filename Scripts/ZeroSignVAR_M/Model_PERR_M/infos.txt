@@ -5,5 +5,5 @@
    (max) number of draws from posterior:                       100
      number of transformations per draw:                      1000
     Transform only until match is found:                       YES
-       overall number of models checked:                     49710
-                           Models found:                         6
+       overall number of models checked:                     26466
+                           Models found:                         2

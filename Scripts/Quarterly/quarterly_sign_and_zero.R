@@ -38,12 +38,12 @@ plot(dat_unseas$date, dat_unseas$real_gdp_gap)
 
 data_to_fit <- dat_unseas[,c("oil_USD_qoq", 
                                #"imp_price_qoq", 
-                               "neer_qoq",
-                              "miacr_31",
+                                "miacr_31",
+                                "neer_qoq",
                                #"reserves_USD_qoq",
                                #"broad_money_SA",
                                "gdp_real_SA_qoq", 
-                               "cpi_all_qoq")]
+                               "cpi_all_qoq")[5:1]]
 bvar_irf_ident_mat <- matrix(nrow=NCOL(data_to_fit), ncol=NCOL(data_to_fit))
 ### IDENTIFICATION MATRIX
 oil_order = which(colnames(data_to_fit) == "oil_USD_qoq")
@@ -58,10 +58,10 @@ cpi_order = which(colnames(data_to_fit) == "cpi_all_qoq")
 
 #Oil shock
 bvar_irf_ident_mat[oil_order,oil_order] <- 1 #normalization
-bvar_irf_ident_mat[oil_order,impprice_order] <- 1 #imp.price, oil is costly
+bvar_irf_ident_mat[oil_order,impprice_order] <- NA #imp.price, oil is costly
 bvar_irf_ident_mat[oil_order,neer_order] <- -1 #oil is sold => exrate declines
 bvar_irf_ident_mat[oil_order,reserves_order] <- NA #cbr buys depreciated usd??
-bvar_irf_ident_mat[oil_order,money_order] <- 0 #no effect to money 
+bvar_irf_ident_mat[oil_order,money_order] <- NA #no effect to money 
 bvar_irf_ident_mat[oil_order,miacr_order] <- NA #no effect to int.rate
 bvar_irf_ident_mat[oil_order,gdp_order] <- NA #gdp?
 bvar_irf_ident_mat[oil_order,cpi_order] <- NA #cpi?
@@ -89,7 +89,7 @@ bvar_irf_ident_mat[neer_order,cpi_order] <- 1 #cpi grows, as imported goods beco
 #Interest rate
 bvar_irf_ident_mat[miacr_order,oil_order] <- 0 #no oil influence
 bvar_irf_ident_mat[miacr_order,impprice_order] <- 0 #no influence to imp. price
-bvar_irf_ident_mat[miacr_order,neer_order] <- -1 #interest rate is higher => exrate declines
+bvar_irf_ident_mat[miacr_order,neer_order] <- NA #interest rate is higher => exrate declines
 bvar_irf_ident_mat[miacr_order,reserves_order] <- NA #reserves?
 bvar_irf_ident_mat[miacr_order,money_order] <- NA #money?
 bvar_irf_ident_mat[miacr_order,miacr_order] <- 1 #normalization
@@ -117,7 +117,7 @@ bvar_irf_ident_mat[money_order,gdp_order] <- NA #gdp?
 bvar_irf_ident_mat[money_order,cpi_order] <- 1 #cpi grows with money supply
 
 #GDP
-bvar_irf_ident_mat[gdp_order,oil_order] <- 0 #no oil influence
+bvar_irf_ident_mat[gdp_order,oil_order] <- NA #no oil influence
 bvar_irf_ident_mat[gdp_order,impprice_order] <- 0 #no influence to imp. price
 bvar_irf_ident_mat[gdp_order,neer_order] <- NA #exrate?
 bvar_irf_ident_mat[gdp_order,reserves_order] <- NA #reserves?
@@ -130,20 +130,23 @@ bvar_irf_ident_mat[gdp_order,cpi_order] <- NA #cpi?
 bvar_irf_ident_mat[cpi_order,oil_order] <- 0 #no oil influence
 bvar_irf_ident_mat[cpi_order,impprice_order] <- 0 #no influence to imp. price
 bvar_irf_ident_mat[cpi_order,neer_order] <- NA #exrate?
-bvar_irf_ident_mat[cpi_order,reserves_order] <- 0 #reserves?
+bvar_irf_ident_mat[cpi_order,reserves_order] <- NA #reserves?
 bvar_irf_ident_mat[cpi_order,money_order] <- NA #broad money?
-bvar_irf_ident_mat[cpi_order,miacr_order] <- 1 #cbr increases interest rate
+bvar_irf_ident_mat[cpi_order,miacr_order] <- NA #cbr increases interest rate
 bvar_irf_ident_mat[cpi_order,gdp_order] <- NA #gdp?#not positive
 bvar_irf_ident_mat[cpi_order,cpi_order] <- 1 #normalization
 
 
 ###
 bvar_model <- bvar(data=data_to_fit, lags=1)
+bvar_irf_ident_mat <- t(bvar_irf_ident_mat)
 #bvar_irf_ident <- bv_irf(horizon=4, identification = TRUE,
 #                         sign_restr=bvar_irf_ident_mat, sign_lim = 5000)
 bvar_irf_results <- irf(bvar_model, bv_irf(horizon=4, identification = TRUE,
-                            sign_restr=bvar_irf_ident_mat, sign_lim = 1000), conf_bands=0.5)
-
+                            sign_restr=bvar_irf_ident_mat, sign_lim = 10000), conf_bands=0.5)
+summary(bvar_irf_results, 1, 1)
+summary(bvar_irf_results, 1, 2)
+summary(bvar_irf_results, 5, 5)
 
 irf_median <- apply(bvar_irf_results$irf, c(2,3,4), median)
 irf_median <- bvar_irf_results$quants
@@ -152,5 +155,8 @@ sum(irf_median[1,,5])/sum(irf_median[1,,2]) #oil price shock
 sum(irf_median[2,,5])/sum(irf_median[2,,2]) #exrate shock
 sum(irf_median[3,,5])/sum(irf_median[3,,2]) #int. rate shock
 sum(irf_median[4,,5])/sum(irf_median[4,,2]) #output shock
-sum(irf_median[5,,5])/sum(irf_median[5,,2]) #exog. cpi shock
+sum(irf_median[5,,1])/sum(irf_median[5,,3]) #exog. cpi shock
 test <- summary(bvar_irf_results)
+
+irf_median <- bvar_irf_results$quants
+bvar_irf_results$quants[1,,2]

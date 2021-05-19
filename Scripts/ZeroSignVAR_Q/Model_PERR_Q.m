@@ -15,11 +15,13 @@ opt.modelPath = strcat(pwd,'/');
 %% VAR specification and other setup 
 
 % Define labels for the variables in the same order as they enter the VAR.
-opt.lVars = {'oil_USD_qoq', 'imp_price_qoq', 'neer_qoq','miacr_31'm'reserves_USD_qoq','broad_money_SA','gdp_nominal_qoq', 'cpi_all_qoq'};
+%opt.lVars = {'oil_USD_qoq', 'miacr_31', 'neer_qoq','gdp_real_qoq', 'cpi_all_qoq'};
+opt.lVars = {'gdp_real_qoq', 'cpi_all_qoq', 'miacr_31','neer_qoq', 'oil_USD_qoq'}; %a-la Forbes et al. 2018
 
 % Define labels for the identified shocks. The number of shock labels has 
 % to be equal to the number of variables (i.e. label also residual shocks).
-opt.lShocks = {'Oil shock', 'Import price shock', 'Ex. rate shock', 'Monetary shock', 'Reserves shock', 'Money supply shock', 'Supply shock', 'Demand shock'};
+%opt.lShocks = {'Oil shock', 'Monetary shock', 'Ex. rate shock', 'Supply shock', 'Demand shock'};
+opt.lShocks = {'Supply shock', 'Demand shock', 'Monetary shock', 'Exchange rate shock', 'Oil price shock'};
 
 % % Define start and end date (MM-DD-YYYY).
 opt.startDate = '30-06-2005';
@@ -28,8 +30,8 @@ opt.endDate = '31-12-2020';
 % Define the lag order.
 opt.nLags = 1;   
 
-opt.nDrawsFromBvar = 1e3;
-opt.nTransformationsPerDraw = 1e3;
+opt.nDrawsFromBvar = 300;
+opt.nTransformationsPerDraw = 1000;
 
 % Choose the estimation method ('OLS' or 'diffuse'), corresponding to 
 % either ordinary least square or Bayesian estimations.
@@ -99,94 +101,103 @@ Z = zeros(2,nVars*(opt.nMaxSignHorizon + 1),nVars);
 %   done, but they may be normalized.
 % -----------------------------------------------------------------------
 
+%opt.lShocks = {'Oil shock', 'Monetary shock', 'Ex. rate shock', 'Supply shock', 'Demand shock'};
 
 %%%Russia PERR short-run%%%
-
-%Oil shock
-S(1,1,1) = 1 %oil self
-S(2,2,1) = 1 %oil is costly => higher import prices %???
-S(3,3,1) = -1 %oil is purchased => demand for rouble => lower NEER
-%S(4,4,1) = 1 %oil price is higher => budget rule works => higher reserves
-%Z(1,5,1) = 1
-%Z(2,6,1) = 1
-%S(1,7,1) = 
-%S(1,8,1) = 
-
-%Imp. price shock
-Z(1,1,2) = 1 %import prices have no effect to oil
-S(1,2,2) = 1 %imp. prices self
-%S(2,3,2) = 1 %NEER?
-Z(3,4,2) = 1 %reserves
-Z(4,5,2) = 1 %money
-%S(2,6,2) = 1 %int. rate?
-%S(2,7,2) = 
-S(2,8,2) = 1 %heats up cpi
-
-%NEER shock
-Z(1,1,3) = 1 %oil
-Z(2,2,3) = 1 %imp. prices
-S(1,3,3) = 1 %normalization
-%S(3,4,3) = 1 %reserves? may be -
-Z(3,5,3) = 1 %money
-%S(3,6,3) = 1 %int rate should be higher to return rub investors
-%S(3,7,3) = %gdp? + in LR???
-S(2,8,3) = 1 %heats up prices
-
-%Int. rate shock
-Z(1,1,4) = 1
-Z(2,2,4) = 1
-S(1,3,4) = -1 %NEER
-S(2,4,4) = 1 %normalization
-%Z(3,5,4) = 1 %reserves
-Z(4,6,4) = 1 %int rate
-Z(5,7,4) = 1 %gdp
-Z(5,8,4) = 1 %cpi
-
-%Reserves shock
-Z(1,1,5) = 1
-Z(2,2,5) = 1
-S(1,3,5) = 1 %more money => more rouble supply?
-%Z(3,4,5) = 1 %reserves
-S(2,5,5) = 1 %normalization
-%S(3,6,5) = 1 %Int. rate
-%S(4,7,5) = %in LR should be 0!!!
-S(5,8,5) = 1 %money supply heats up prices
-
-%Broad money shock
-Z(1,1,6) = 1
-Z(2,2,6) = 1
-%S(1,3,6) = -1 %more attractive for foreign investors
-Z(3,4,6) = 1 %reserves
-S(2,5,6) = -1 %money?
-S(3,6,6) = 1 %normalization
-Z(3,7,6) = 1 %no contemporaneous reaction of GDP
-S(4,8,6) = -1 %cools down prices, money are costly => less credits
-
-%GDP shock
-Z(1,1,7) = 1
-Z(2,2,7) = 1
-%S(1,3,7) = -1 %neer
-%Z(3,4,7) = 1 %reserves
-%S(2,5,7) = 1 %more output => more money???
-%S(3,6,7) = 1 %int. rate
-S(4,7,7) = 1 %normalization
-%S(5,8,7) = 1 %cpi
-
-%CPI shock
-Z(1,1,8) = 1 
-Z(2,2,8) = 1
-%S(1,3,8) = -1 %NEER, may be 0
-Z(3,4,8) = 0 %reserves
-Z(4,5,8) = 0 %money
-%S(2,6,8) = 1 %cb resists infl.
-S(3,7,8) = 1 %Forbes 2020
-S(4,8,8) = 1 %normalization
 %{
+    %Oil shock
+    S(1,1,1) = 1
+    S(2,3,1) = -1
+    S(3,8,1) = -1
+
+    %Monetary shock
+    Z(1,1,2) = 1
+    %Z(2,6,2) = 1
+    S(1,2,2) = 1
+    S(2,4,2) = -1
+    S(3,5,2) = -1
+    S(4,9,2) = -1
+    S(5,10,2) = -1
+
+    %Ex. rate shock
+    Z(1,1,3) = 1
+    %Z(2,6,3) = 1
+    S(1,3,3) = 1
+    S(2,5,3) = 1
+    S(3,10,3) = 1
+
+    %Supply shock
+    Z(1,1,4) = 1
+    %Z(2,6,4) = 1
+    S(1,4,4) = 1
+
+    %Demand shock
+    %Z(1,1,5) = 1
+    %Z(2,6,5) = 1
+    S(1,5,5) = 1
+    S(2,2,5) = 1
+    S(3,7,5) = 1
+    S(4,3,5) = 1
+    S(4,8,5) = 1
 %}
 
-opt.isImpulsePlots = 0;
-opt.nModelDraws = 500;
-opt.isNoTransform = 1;
+%opt.lShocks = {'Supply shock', 'Demand shock', 'Monetary shock', 'Exchange rate shock', 'Oil price shock'};
+%Supply shock
+S(1,1,1) = 1
+Z(1,5,1) = 1
+
+
+%Demand shock
+S(1,2,2) = 1
+S(2,3,2) = 1
+S(3,8,2) = 1
+Z(1,5,2) = 1
+
+%Monetary shock
+S(1,3,3) = 1
+S(2,1,3) = -1
+S(3,2,3) = -1
+S(4,6,3) = -1
+S(5,7,3) = -1
+Z(1,5,3) = 1
+
+%Ex. rate shock
+S(1,4,4) = 1
+S(2,2,4) = 1
+S(3,7,4) = 1
+Z(1,5,4) = 1
+
+%Oil price shock
+S(1,5,5) = 1
+S(2,4,5) = -1
+
+
+opt.isImpulsePlots = 1;
+opt.isIRFtable = 1;
+opt.isStructShockTable = 1;
+opt.isSaveResults = 1;
+opt.isFevdTable = 0;
+opt.isFevdTexTable = 0;
+opt.isHistDecompTable = 0;
+opt.isPlotTitle = 0;
+opt.isFevdPlots = 0;
+opt.isStructShockPlots = 0;
+opt.isHistDecompPlots = 0;
+
 signrestrictions
 
 
+%%% PERR Calculation
+perr_gdp = sum(output.irfCTM(1:4,6))/sum(output.irfCTM(1:4,16))
+perr_cpi = sum(output.irfCTM(1:4,7))/sum(output.irfCTM(1:4,17))
+perr_int = sum(output.irfCTM(1:4,8))/sum(output.irfCTM(1:4,18))
+perr_neer = sum(output.irfCTM(1:4,9))/sum(output.irfCTM(1:4,19))
+perr_oil = sum(output.irfCTM(1:4,10))/sum(output.irfCTM(1:4,20))
+
+sprintf("PERRs:\n");
+sprintf("Oil shock: %0.5f", perr_oil);
+sprintf("Monetary shock: %0.5f", perr_int);
+sprintf("Exchange rate shock: %0.5f", perr_neer);
+sprintf("Output shock: %0.5f", perr_gdp);
+sprintf("Inflation shock: %0.5f", perr_cpi);
+%sprintf("\t%0.5f\t%0.5f\t%0.5f\t%0.5f\t%0.5f\t%0.5f", irf_oil, irf_imp, irf_neer, irf_int, irf_gdp, irf_cpi)
