@@ -346,7 +346,7 @@ A comprehensive research is done by \textcite{Khotulev2020}. In this paper, auth
 
 The evolution of pass-through literature concerning Russia and CIS is fairly limited, since the last work calculates shock-dependent ERPT. Some works include negative shock-independent ERPT for Russia, which is rather dubious for Russian structure of external trade. Table \ref{table:litreview_erpt} summarizes shock-independent pass-through estimates across the literature.
 
-\begin{table}[b!]
+\begin{table}[p]
 	\centering
 	\begin{tabular}{llllll}
 		Paper                                   & Currency & Data         & Infl. aggr. & Length    & ERPT \\
@@ -477,11 +477,34 @@ Mostly, this technique is done together with Bayesian estimation of VAR instead 
 
 An important benefit of this method is in its ability to resolve the \textit{price puzzle} --- an unpleasant effect in vector autoregressions, when positive interest rate shock causes contradictive increase in inflation. Since IRF signs are directly assigned of inflationary response to monetary surprise, prize puzzle vanishes.
 
-The main drawback of this approach is that researcher has to intuitively arrange signs of response functions, which is usually non-trivial. (\cite{Ortega2020}) advice to use DSGE models for this purpose, although data are not necessarily to match IRF produced by theoretical justifications. Taking some ideas from (\cite{An2020}) and basing the sign and zero restrictions mainly on (\cite{Forbes2018}), I use identification scheme described in Table \ref{tab:signs_and_zeros}.
+The main drawback of this approach is that researcher has to intuitively arrange signs of response functions, which is usually non-trivial. (\cite{Ortega2020}) advice to use DSGE models for this purpose, although data are not necessarily to match IRF produced by theoretical justifications.
 
 The model's parsimony is predominantly caused by sign identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
 
 In addition to this, there are no published data for Russian import prices, while almost every study uses them in their analysis. Export prices are also not used, contrary to the literature, as I assume that oil price captures export price shocks, and construction of export price time series would require much effort without necessary data.
+
+Taking some ideas from (\cite{An2020}) and basing the sign and zero restrictions mainly on (\cite{Forbes2018}), I use identification scheme described in Table~\ref{tab:signs_and_zeros}. Note that NEER is taken with opposite sign: ruble appreciation yields NEER decrease in my data.
+
+I assume oil price does not respond to any domestic shock, positive supply shock increases GDP and slows down CPI due to excessive supply. Positive demand shock heats up output and inflation, while the central bank fights against it by raising interest rate; foreign importers are required to purchase more local currency, hence, exchange rate declines. \footnote{Though the latter idea may be seem controversial, data comprehensively support it.} Positive exogenous exchange rate shock increases inflation and, as a response, the central bank raises interest rate. Finally, positive global persistent shock is associated with raise of business activity, hence, it pushes up oil price, while oil exporters bring more foreign currency into country, reducing exchange rate.
+
+\begin{table}[p]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}lccccc@{}}
+			\toprule
+			Variable & \makecell{Supply shock} & \makecell{Demand shock} & \makecell{Monetary shock} & \makecell{Exchange rate \\shock} & \makecell{Global persistent \\shock} \\
+			\midrule
+			Real GDP      & +   & +   & -- & ? & ?   \\
+			CPI           & -- & +   & -- & + & ?   \\
+			Interest rate & ?   & +   & +   & + & ?   \\
+			NEER          & ?   & -- & -- & + & -- \\
+			Oil price     & 0   & 0   & 0   & 0 & +  \\
+			\bottomrule
+		\end{tabular}%
+	}
+	\caption{Identification restrictions used to recover structural shocks. Positive (negative) signs describe non-strictly positive (negative) restrictions for variable's contemporaneous and next quarter response to a particular shock. Zero indicates for no contemporaneous reaction.}
+	\label{tab:signs_and_zeros}
+\end{table}
 
 \clearpage
 \section*{SECTION 4. DATA}
@@ -534,7 +557,7 @@ In general, the Russian economy can be described by the following stylized facts
 	\item Exchange rate is more volatile than CPI.
 \end{enumerate}
 
-Annex contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it, and short-term interest rates are used in the literature without differencing.
+Annex contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it; hence, short-term interest rates are used in the literature without differencing.
 
 \clearpage
 \section*{SECTION 5. RESULTS}
@@ -542,11 +565,13 @@ Annex contains additional information about characteristics of time series. Tabl
 \setcounter{subsection}{0}
 \addcontentsline{toc}{section}{SECTION 5. RESULTS}
 
-To obtain the results, I estimate VAR of order 4. The order of model is picked based on AIC (Akaike information criterion) calculated for models up to 10 lags. I use the following order of variables: oil price growth rate, import price growth rate, short-term interest rate, NEER growth rate, real GDP per capita growth rate, CPI growth rate. Although variable order is not important for smooth covariance transition, it is crucial for robustness test purposes. 
+To obtain the results, I estimate BVAR with Normal Inverse-Whishart prior of order 1. The order of model is picked based on SIC (Schwartz information criterion) calculated for models up to 6 lags.
 
-After VAR estimation, smooth covariance transition algorithm is applied in order to recover orthogonal impulse-response functions. Then, PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decomposition for CPI is calculated. As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme, though the obtained results are comparable.
+After BVAR estimation, sign and zero restrictions algorithm is applied in order to recover orthogonal impulse-response functions. 466,6 thousands of models are checked and 43 of them fulfil restrictions. As a robustness test, I apply recursive (Cholesky) identification scheme. This approach is more rigid; hence, a reader shouldn't expect this method to be more precise than the first scheme, though the obtained results are comparable.
 
-Tables \ref{tab:perr_shortrun} and \ref{tab:perr_longrun} provide PERR estimations. Shock-dependent pass-through coefficients calculated from smooth transition scheme are incomplete for all the variables, except global demand and output shocks. The latter shock is substantial for the economy, as even small output fluctuations generate huge deviations of other macroeconomic variables. Hence, this result might be the case for Russian economy. On the same time, there is a huge difference of results from the recursive scheme. I don't expect PERR for output from Cholesky decomposition to be robust as output shocks have influence only to CPI (due to variable order), while there may be more effects to other variables.
+PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decompositions for CPI and GDP are calculated.
+
+Tables \ref{tab:perr_shortrun} and \ref{tab:perr_longrun} provide PERR estimations. Shock-dependent pass-through coefficients calculated from smooth transition scheme are incomplete for all the variables, except global demand and output shocks. The latter shock is substantial for the economy, as even small output fluctuations generate huge deviations of other macroeconomic variables. Hence, this result might be the case for Russian economy. On the same time, there is a huge difference of results from the recursive scheme. I don't expect PERR for output from Cholesky decomposition to be robust as output shocks have influence only to CPI (due to variable order), while in reality there may be more effects to other variables.
 
 Overall, results match with (\cite{Khotulev2020}), which uses DSGE, for global persistent and monetary shocks. The latter shock has a larger PERR comparing to global persistent shock and exogenous exchange rate shock. This fact is widely supported in the literature (e.~g. \cite[p.~43]{Ortega2020}; \cite[p.~9]{Khotulev2020}). 
 
@@ -561,17 +586,17 @@ IRFs for smooth covariance transition identification scheme are provided in Anne
 	%\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}lll@{}}
 			\toprule
-			Shock                     & Smooth cov. & Cholesky dec. \\
+			Shock                     & Sign and zero & Cholesky  \\
 			\midrule
-			Global persistent shock   & 0.1219      & 0.1216        \\
-			Global demand shock       & 0.4844      & 0.2354        \\
-			Monetary shock            & 0.4703     & 0.4798        \\
-			Exog. exchange rate shock & 0.1509      & 0.1514        \\
-			Output shock              & 3.7154      & 0.1591       \\
+			Global persistent shock   & 0.0695      & 0.1354        \\
+			Monetary shock            & 0.0439    & 0.4229        \\
+			Exchange rate shock & 0.1459     & 0.2871        \\
+			Supply shock              & -0.2389     & 0.0664    \\  
+			Demand shock              & -0.0366      & 0.0664    \\   
 			\bottomrule
 		\end{tabular}%
 	%}
-	\caption{PERR calculated from different models, short-run (4 months).}
+	\caption{PERR calculated from BVAR with sign and zero restrictions and VAR with Cholesky decomposition, short-run (2 quarters).}
 	\label{tab:perr_shortrun}
 \end{table}
 
@@ -580,17 +605,17 @@ IRFs for smooth covariance transition identification scheme are provided in Anne
 	%\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}lll@{}}
 			\toprule
-			Shock                     & Smooth cov. & Cholesky dec. \\
+			Shock                     & Sign and zero & Cholesky  \\
 			\midrule
-			Global persistent shock   & 0.1361      & 0.1354        \\
-			Global demand shock       & 1.4662      & 1.5997        \\
-			Monetary shock            & 0.4111      &0.4229        \\
-			Exog. exchange rate shock & 0.2858      & 0.2871        \\
-			Output shock              & 3.0022      &0.0664    \\   
+			Global persistent shock   & 0.1584      & 0.1354        \\
+			Monetary shock            & 0.2813    & 0.4229        \\
+			Exchange rate shock & 0.4033     & 0.2871        \\
+			Supply shock              & -0.3556      & 0.0664    \\  
+			Demand shock              & -0.1326      & 0.0664    \\   
 			\bottomrule
 		\end{tabular}%
 	%}
-	\caption{PERR calculated from different models, long-run (12 months).}
+	\caption{PERR calculated from BVAR with sign and zero restrictions and VAR with Cholesky decomposition, long-run (4 quarters).}
 	\label{tab:perr_longrun}
 \end{table}
 
@@ -598,9 +623,9 @@ Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate fo
 
 \begin{sidewaysfigure}[h!]
 	\centering
-	\includegraphics[width=0.95\linewidth]{figures/hd_st_cut}
-	\caption[]{Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted), observations from 2017. Black line denotes demeaned observed CPI gr. r.}
-	\label{fig:hd_cut}
+	\includegraphics[width=0.95\linewidth]{figures/hd_cpi_cut}
+	\caption[]{Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted), observations from 2015. Black line denotes demeaned observed CPI gr. r.}
+	\label{fig:hd_cpi_cut}
 \end{sidewaysfigure}
 
 \clearpage
@@ -679,23 +704,23 @@ Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate fo
 
 \begin{sidewaysfigure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/irf_st_1}
-	\caption[]{Impulse response functions for smooth covariance transition identification scheme (1).}
-	\label{fig:irf_st_1}
+	\includegraphics[width=0.9\linewidth]{figures/irf_1}
+	\caption[]{Impulse response functions for zero and sign identification scheme (1).}
+	\label{fig:irf_1}
 \end{sidewaysfigure}
 
 \begin{sidewaysfigure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/irf_st_2}
-	\caption[]{Impulse response functions for smooth covariance transition identification scheme (2).}
-	\label{fig:irf_st_2}
+	\includegraphics[width=0.9\linewidth]{figures/irf_2}
+	\caption[]{Impulse response functions for zero and sign identification scheme (2).}
+	\label{fig:irf_2}
 \end{sidewaysfigure}
 
 \begin{sidewaysfigure}[h!]
 	\centering
-	\includegraphics[width=0.95\linewidth]{figures/hd_st_full}
+	\includegraphics[width=0.95\linewidth]{figures/hd_cpi_full}
 	\caption[]{Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted). Black line denotes demeaned observed CPI gr. r.}
-	\label{fig:hd_full}
+	\label{fig:hd_cpi_full}
 \end{sidewaysfigure}
 
 

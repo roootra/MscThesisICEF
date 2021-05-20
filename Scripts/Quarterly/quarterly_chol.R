@@ -35,15 +35,15 @@ dat_unseas$real_gdp_gap <- hpfilter(dat_unseas$gdp_real_SA_index, freq=1600)$cyc
 plot(dat_unseas$date, dat_unseas$real_gdp_gap)
 
 #Cholesky decomposition
-data_chol <- dat_unseas[,c("oil_USD_qoq", 
-                           "imp_price_qoq", 
+data_chol <- dat_unseas[,c("oil_USD_qoq",
                            #"reserves_USD_qoq",
                            #"broad_money_SA",
-                           "miacr_31",
                            "neer_qoq",
-                           #"gdp_real_SA_qoq", 
-                           "gdp_nominal_qoq", 
-                           "cpi_all_qoq")]
+                           "miacr_31",
+                           #"gdp_nominal_qoq",
+                           "cpi_all_qoq",
+                           "gdp_real_SA_qoq",
+)]
 #data_chol <- dat_unseas[,c("oil_USD_qoq", "imp_price_qoq", "reserves_USD_qoq", 
 #                           "miacr_31", "neer_qoq", "d_real_gdp_gap", "cpi_all_qoq")]
 data_chol$neer_qoq <- data_chol$neer_qoq * -1
@@ -58,9 +58,6 @@ irf_choldec <- irf(choldec, n.ahead = 4, ortho=TRUE)
 #Oil
 sum(irf_choldec$irf$`epsilon[ oil_USD_qoq ] %->% cpi_all_qoq`) /
   sum(irf_choldec$irf$`epsilon[ oil_USD_qoq ] %->% neer_qoq`)
-#Import prices
-sum(irf_choldec$irf$`epsilon[ imp_price_qoq ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ imp_price_qoq ] %->% neer_qoq`)
 #MIACR 31
 sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% cpi_all_qoq`) /
   sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% neer_qoq`)
@@ -68,8 +65,11 @@ sum(irf_choldec$irf$`epsilon[ miacr_31 ] %->% cpi_all_qoq`) /
 sum(irf_choldec$irf$`epsilon[ neer_qoq ] %->% cpi_all_qoq`) /
   sum(irf_choldec$irf$`epsilon[ neer_qoq ] %->% neer_qoq`)
 #Output
-sum(irf_choldec$irf$`epsilon[ gdp_nominal_qoq ] %->% cpi_all_qoq`) /
-  sum(irf_choldec$irf$`epsilon[ gdp_nominal_qoq ] %->% neer_qoq`)
+sum(irf_choldec$irf$`epsilon[ gdp_real_SA_qoq ] %->% cpi_all_qoq`) /
+  sum(irf_choldec$irf$`epsilon[ gdp_real_SA_qoq ] %->% neer_qoq`)
+#CPI
+sum(irf_choldec$irf$`epsilon[ cpi_all_qoq ] %->% cpi_all_qoq`) /
+  sum(irf_choldec$irf$`epsilon[ cpi_all_qoq ] %->% neer_qoq`)
 
 #Cholesky decomposition (dollars as exchange rate)
 data_chol_usd <- dat_unseas[,c("oil_USD_qoq", "imp_price_qoq", "reserves_USD_qoq",

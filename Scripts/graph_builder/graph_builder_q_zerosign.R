@@ -7,6 +7,7 @@ library(tidyr)
 library(scales)
 library(tseries)
 library(stringr)
+library(zoo)
 
 Sys.setlocale("LC_TIME", "C")
 dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Quarterly.xlsx", sheet=3)
@@ -33,15 +34,16 @@ colnames(data_draw) <- c("Date", "Oil price gr. rate",
                          "NEER gr. rate", 
                          "Real GDP gr. rate",
                          "CPI gr. rate")
+data_draw$`NEER gr. rate` <- data_draw$`NEER gr. rate`*-1
 data_draw$Date <- as.Date(data_draw$Date)
 data_draw_long <- gather(data_draw, "Variable", "Value", -Date)
 months <- month(data_draw$Date)
 ggplot(data_draw_long, aes(x = Date, y = Value), size = 0.1) + geom_hline(yintercept = 0, col="grey") +
-  geom_line() + 
+  geom_line() + xlab("Year") +
   facet_wrap(~ Variable, ncol=3, scales="free") + 
   theme_minimal() + #+theme_bw()
   scale_x_date(breaks=pretty_breaks(), date_labels="%y", 
-               date_breaks="1 year") + 
+               date_breaks="1 year") 
 ggsave(filename="time_series.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
@@ -50,7 +52,7 @@ ggsave(filename="time_series.eps",
 data_draw_long_perr <- data_draw_long[data_draw_long$Variable %in% 
                                         c("NEER gr. rate", "CPI gr. rate"),]
 ggplot(data_draw_long_perr, aes(x = Date, y = Value, linetype=Variable), size = 0.1) + 
-  geom_hline(yintercept = 0, col="grey")+ geom_line() + theme_minimal() + #+theme_bw()
+  geom_hline(yintercept = 0, col="grey") + geom_line() + theme_minimal() + #+theme_bw()
   #facet_wrap(~ Variable, nrow=2, scales="free") + 
   scale_x_date(breaks=pretty_breaks(), date_labels="%b %y", 
                date_breaks = "6 months", expand=c(0,0)) + 
@@ -98,17 +100,27 @@ corstarsl <- function(x){
 corstarsl(data_draw[,-1])
 
 ### IRF
-irf_st_data <- read.csv("/Users/rutra/ВШЭ/Магистратура/Thesis/R workspaces/st_irf.csv", check.names = FALSE)
-irf_st_long <- gather(irf_st_data, "Variable", "Value", -Period)
-irf_st_long$Variable <- str_replace_all(irf_st_long$Variable, " shock ", ' shock\n')
-irf_st_long_1 <- irf_st_long[irf_st_long$Variable %in% c(grep("Global persistent *", irf_st_long$Variable, value=T),
-                                                         grep("Global demand *", irf_st_long$Variable, value=T),
-                                                         grep("Monetary *", irf_st_long$Variable, value=T)),]
-irf_st_long_2 <- irf_st_long[irf_st_long$Variable %in% c(grep("Exchange rate *", irf_st_long$Variable, value=T),
-                                                         grep("Supply *", irf_st_long$Variable, value=T),
-                                                         grep("Demand *", irf_st_long$Variable, value=T)),]
+irf_mat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/ZeroSignVAR_Q/no_exp_prices_RC/Model_PERR_Q_rc/tables/irfs.mat")
+varnames <- c("real GDP", "CPI", "int. rate", "NEER", "oil price")
+shocknames <- c("Supply", "Demand", "Monetary", "Exchange rate", "Global persistent")
+colnames_irf <- c()
+for(varname in varnames){
+  new_names <- paste0(shocknames, " shock\n to ", varname)
+  colnames_irf <- c(colnames_irf, new_names)
+}
+irf_mat_ctm <- as.data.frame(irf_mat$irfCTM)
+colnames(irf_mat_ctm) <- colnames_irf
+irf_mat_ctm$Period <- 0:(NROW(irf_mat_ctm)-1)
+irf_mat_ctm <- irf_mat_ctm[1:9,]
+irf_mat_long <- gather(irf_mat_ctm, "Variable", "Value", -Period)
+#irf_st_long$Variable <- str_replace_all(irf_st_long$Variable, " shock ", ' shock\n')
+irf_mat_long_1 <- irf_mat_long[irf_mat_long$Variable %in% c(grep("Global persistent *", irf_mat_long$Variable, value=T),
+                                                         grep("Monetary *", irf_mat_long$Variable, value=T),
+                                                         grep("Exchange rate *", irf_mat_long$Variable, value=T)),]
+irf_mat_long_2 <- irf_mat_long[irf_mat_long$Variable %in% c(grep("Supply *", irf_mat_long$Variable, value=T),
+                                                         grep("Demand *", irf_mat_long$Variable, value=T)),]
   
-ggplot(irf_st_long_1, aes(x = Period, y = Value), size = 0.1) + geom_line() + 
+ggplot(irf_mat_long_1, aes(x = Period, y = Value), size = 0.1) + geom_line() + 
   facet_wrap(~ Variable, nrow=3, scales="free") + geom_hline(yintercept = 0, col="grey") +
   theme_minimal() + scale_x_continuous(breaks=1:12, expand=c(0,0)) +
   theme(text = element_text(size=10 ), axis.text.x = element_text(size=8), 
@@ -117,87 +129,74 @@ ggplot(irf_st_long_1, aes(x = Period, y = Value), size = 0.1) + geom_line() +
   #scale_x_date(breaks=pretty_breaks(), date_labels="%y", 
   #             date_breaks="1 year")
   
-ggsave(filename="irf_st_1.eps",
+ggsave(filename="irf_1.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
-ggplot(irf_st_long_2, aes(x = Period, y = Value), size = 0.1) + geom_line() + 
-  facet_wrap(~ Variable, nrow=3, scales="free") + geom_hline(yintercept = 0, col="grey") +
+ggplot(irf_mat_long_2, aes(x = Period, y = Value), size = 0.1) + geom_line() + 
+  facet_wrap(~ Variable, nrow=2, scales="free") + geom_hline(yintercept = 0, col="grey") +
   theme_minimal() + scale_x_continuous(breaks=1:12, expand=c(0,0))+
   theme(text = element_text(size=10 ), axis.text.x = element_text(size=8 ), 
         axis.text.y = element_text(size=8 ))#+theme_bw()
   #scale_x_date(breaks=pretty_breaks(), date_labels="%y", 
   #             date_breaks="1 year")
   
-ggsave(filename="irf_st_2.eps",
+ggsave(filename="irf_2.eps",
          path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
          device="eps",
          width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
 
 #Historical decomposition
-hd_st <- read.csv("/Users/rutra/ВШЭ/Магистратура/Thesis/R workspaces/st_hd.csv", check.names = FALSE)
-hd_st_joined <- data.frame(
-  `Global persistent shock` = hd_st$`Cumulative effect of  oil_USD shock on  cpi_all_mom`,
-  `Global demand shock` = hd_st$`Cumulative effect of  imp_price_mom shock on  cpi_all_mom`,
-  `Monetary shock` = hd_st$`Cumulative effect of  miacr_31 shock on  cpi_all_mom`,
-  `Exchange rate shock` = hd_st$`Cumulative effect of  neer_mom shock on  cpi_all_mom`,
-  `Supply shock` = hd_st$`Cumulative effect of  gdp_per_cap_SA shock on  cpi_all_mom`,
-  `Demand shock` = hd_st$`Cumulative effect of  cpi_all_mom shock on  cpi_all_mom`,
-  check.names = FALSE
-  )
-hd_st_joined$Date <- as.Date(seq(as.yearmon("2005-7"),as.yearmon("2020-8"), 1/12)) #model's order matters!
-hd_st_joined_bar <- gather(hd_st_joined, "Variable", "Value", -Date)
-ggplot(hd_st_joined_bar, aes(x = Date, y = Value, fill = Variable)) + 
-  geom_bar(stat="identity") + #scale_x_date(breaks=hd_st_joined_bar$Date) + 
-  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y", 
-      date_breaks = "6 months", expand=c(0,0)) +
-  theme_minimal() +
+hd_mat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/ZeroSignVAR_Q/no_exp_prices_RC/Model_PERR_Q_rc/tables/HistDecompCTM.mat")
+hd_mat_ctm <- hd_mat$HistDecomp
+hd_mat_ctm_cpi <- hd_mat_ctm[,6:10]
+hd_mat_ctm_cpi_df <- as.data.frame(hd_mat_ctm_cpi)
+colnames(hd_mat_ctm_cpi_df) <- paste0(shocknames, " shock")
+
+hd_mat_ctm_cpi_df$Date <- as.Date(seq(as.yearqtr("2005-3"),as.yearqtr("2020-4"), 1/4)) #model's order matters!
+hd_mat_ctm_cpi_df_bar <- gather(hd_mat_ctm_cpi_df, "Variable", "Value", -Date)
+hd_mat_ctm_cpi_df_bar$Date <-  as.Date(hd_mat_ctm_cpi_df_bar$Date)
+demeaned_cpi <- dat_unseas$cpi_all_qoq - mean(dat_unseas$cpi_all_qoq)
+
+ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
+  geom_bar(stat="identity") +  
+  scale_x_date(breaks=hd_mat_ctm_cpi_df_bar$Date, date_labels="%b %y", 
+      date_breaks = "4 months", expand=c(0,0)) +
+  theme_minimal() + geom_hline(yintercept = 0, col="red") +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size = 8),
         axis.text.y = element_text(vjust = 0.5, hjust=1, size = 8),
         axis.title.x = element_text(vjust = 0.5, size = 9),
         axis.title.y = element_text(vjust = 0.5, size = 9),
         legend.position="bottom") +
   xlab("Date") + ylab("Contribution to CPI gr. r.") +
-  geom_line(aes(x=rep(hd_st_joined$Date, 6), y=rep(hd_st$`Demeaned series  cpi_all_mom`, 6)), col="black", size=0.3) +##383838
-  scale_fill_brewer(palette="Dark2") + 
+  geom_line(aes(x=as.Date(rep(hd_mat_ctm_cpi_df$Date, 5)), y=rep(demeaned_cpi[-1], 5)), col="black", size=0.3) +##383838
+  scale_fill_brewer(palette="Dark2")
 
-ggsave(filename="hd_st_full.eps",
+ggsave(filename="hd_cpi_full.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
-hd_st_cut <- hd_st
-hd_st_cut$Date <- as.Date(seq(as.yearmon("2005-7"),as.yearmon("2020-8"), 1/12))
-hd_st_cut <- hd_st_cut[hd_st_cut$Date >= as.Date("2017-01-01"),]
-hd_st_joined_cut <- data.frame(
-  `Global persistent shock` = hd_st_cut$`Cumulative effect of  oil_USD shock on  cpi_all_mom`,
-  `Global demand shock` = hd_st_cut$`Cumulative effect of  imp_price_mom shock on  cpi_all_mom`,
-  `Monetary shock` = hd_st_cut$`Cumulative effect of  miacr_31 shock on  cpi_all_mom`,
-  `Exchange rate shock` = hd_st_cut$`Cumulative effect of  neer_mom shock on  cpi_all_mom`,
-  `Supply shock` = hd_st_cut$`Cumulative effect of  gdp_per_cap_SA shock on  cpi_all_mom`,
-  `Demand shock` = hd_st_cut$`Cumulative effect of  cpi_all_mom shock on  cpi_all_mom`,
-  check.names = FALSE
-)
-hd_st_joined_cut <- hd_st_joined[hd_st_joined$Date >= as.Date("2017-01-01"), ]
-hd_st_joined_cut_bar <- gather(hd_st_joined_cut, "Variable", "Value", -Date)
-ggplot(hd_st_joined_cut_bar, aes(x = Date, y = Value, fill = Variable)) + 
-  geom_bar(stat="identity") +
-  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y", 
-               date_breaks = "2 months", expand=c(0,0)) +
-  theme_minimal() +
+ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
+  geom_bar(stat="identity") +  
+  scale_x_date(breaks=hd_mat_ctm_cpi_df_bar$Date, date_labels="%b %y", 
+               expand=c(0,0), 
+               limits=c(as.Date("2015-01-02"), NA)) +
+  ylim(c(-0.025, 0.02)) +
+  theme_minimal() + geom_hline(yintercept = 0, col="red") +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size = 8),
         axis.text.y = element_text(vjust = 0.5, hjust=1, size = 8),
         axis.title.x = element_text(vjust = 0.5, size = 9),
         axis.title.y = element_text(vjust = 0.5, size = 9),
         legend.position="bottom") +
-  xlab("Date") + ylab("Contribution to CPI gr. r.") +
-  geom_line(aes(x=rep(hd_st_joined_cut$Date, 6), 
-                y=rep(hd_st_cut$`Demeaned series  cpi_all_mom`, 6)), col="black", size=0.3) +##383838
-  scale_fill_brewer(palette="Dark2") 
+  xlab("Date") + ylab("Contribution to CPI gr. r.") + 
+  geom_line(aes(x=as.Date(rep(hd_mat_ctm_cpi_df$Date, 5)), 
+                y=rep(demeaned_cpi[-1], 5)), col="black", size=0.3) +
+  scale_fill_brewer(palette="Dark2")
 
-ggsave(filename="hd_st_cut.eps",
+ggsave(filename="hd_cpi_cut.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
