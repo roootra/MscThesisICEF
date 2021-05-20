@@ -1,9 +1,0 @@
-                             Model name:                  Model_02
-                      Estimation Method:                   diffuse
-                         number of lags:                         2
-            draws to generate posterior:                      1000
-   (max) number of draws from posterior:                      1000
-     number of transformations per draw:                      1000
-    Transform only until match is found:                       YES
-       overall number of models checked:                      7489
-                           Models found:                      1000

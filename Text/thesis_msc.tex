@@ -194,7 +194,7 @@
 \begin{document}
 \setcounter{page}{2}
 \begin{abstract}
-	Russian inflation movements are mostly associated with exchange rate fluctuations, especially after decision of Bank of Russia to adopt floating exchange rate regime. Several studies attempt to measure exchange rate pass-through for Russia, although their estimations are shock-independent. This work estimates SVAR and applies smooth covariance transition identification scheme in order to recover shock-dependent ERPT to describe effects of exchange rate to prices under different structural shocks. My findings are comparable to ones in the literature and show that influence of output and global demand shocks to pass-through is huge, while shocks associated with oil prices cause relatively small price to exchange rate ratio.
+	Russian inflation movements are mostly associated with exchange rate fluctuations, especially after decision of Bank of Russia to adopt floating exchange rate regime. Several studies attempt to measure exchange rate pass-through for Russia, although their estimations are shock-independent. This work estimates SVAR and applies sign and zero restrictions in order to recover shock-dependent ERPT to describe effects of exchange rate to prices under different structural shocks. My findings are comparable to ones in the literature and show that pass-through effect of monetary shock is the highest in absolute value, while shocks associated with oil prices cause relatively small changes in term of price to exchange rate ratio.
 \end{abstract}
 \newpage
 
@@ -222,20 +222,17 @@ There is many research done on shock \textit{independent} pass-through estimatio
 
 On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE (\cite{Khotulev2020}). Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
 
-The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. I include six variables from March 2003 to August 2020 into the model: oil price, world import price index, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP per capita and CPI in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, global demand shock, local monetary shock, local exogenous exchange rate shock and local supply shock leaving local demand shock as residual one. Monthly data used in this work allow to examine shocks' influence to inflation with better precision.
+The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. I include five variables from 2003Q2 to 2020Q4 into the model: oil price, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP and CPI in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, local monetary shock, local exogenous exchange rate shock, local supply shock and local demand shock. I use quarterly data in order to estimate the model since there is no monthly time series for Russian output.
 
-In order to identify structural shocks, after estimation of vector autoregression, I apply smooth covariance transition scheme (\cite{Luetkepohl2017}) with a shift date in November 2014, when Central Bank of Russia adopted floating exchange rate for ruble, followed by huge exchange rate shock in the next month. I refrain from using sign and zero approach introduced in (\cite{Arias2014}) since a) I assume huge structural shifts in Russian economy after floating exchange rate adoption, which have changed expectations of economic agents; b) the process of sign assignment is quite non-trivial, especially for Russian volatile data.
+In order to identify structural shocks, after estimation of vector autoregression, I apply short-run sign and zero restrictions proposed in (\cite{Arias2014}). Although signs of impulse response functions need to be guessed, this method is quite flexible and allows to precisely estimate shock-dependent exchange rate pass-through. To address problem of weak identification, I estimate Bayesian VAR with uninformative Normal Inverse-Wishart prior and use identification scheme mentioned above for 500 draws from posterior distribution. 
 
-My findings are comparable to (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. As I use real GDP per capita to identify local supply shock, I get quite huge result of pass-through for it. This result can be explained by importance of the shock for the whole economy. Another concern is a big value for global demand shock; however, robustness test shows its relevance.
+My findings are comparable to (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. Analysis reveals highest pass-through estimate from monetary shocks, while oil shocks, which are commonly considered as a main driver of exchange rate for Russia, have a little pass-through effect. 
 
-Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate, which shows contribution of different macrovariables in the model to inflation volatility. I show that exchange rate shock drove prices down from 2019, starting to rise them only in August 2020. More globally, I observe that while supply shocks were the main price drivers during 2008--2009 financial crisis, their effect in price behaviour during 2014--2015 ruble depreciation was opposite.
+Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate, which shows contribution of different macrovariables in the model to inflation volatility. \textbf{TO BE FILLED.}
 
-As a robustness test, I apply recursive decomposition to SVAR in order to recover structural shocks using more plain approach. Except output shock, all pass-through estimates match. Difference in pass-through under output shock can be explained by rigid structure of recursive decomposition and position of the variable, which determines causal relationships in the model; hence, impacts of innovation from output can be incorrect there.
+As a robustness test, I apply the same algorithm excluding zero restrictions. \textbf{TO BE FILLED.}
 
 This paper is organised as follows. Section 2 guides reader through the literature on the topic of exchange rate pass-through. For convenience, I break this section into two parts: a) methods and non-CIS economies and b) Russia and CIS countries. Section 3 gives a brief econometric introduction and defines the model and identification schemes used. Section 4 describes data used in this work. Section 5 reveals results fetched from the model. Section 6 concludes.
-
-
-
 
 \newpage
 \section*{SECTION 2. LITERATURE REVIEW}
@@ -423,9 +420,9 @@ where $IRF^{\text{shock}, \text{response}}_{t}$ is a value of impulse-response f
 	\textbf{Econometric Model and Identification Strategies}
 \end{center}
 
-I estimate vector autoregression (VAR) with six variables: oil price in US dollars, world import price index, local short-term interest rate, local nominal effective exchange rate, local GDP per capita index and local consumer price index (CPI). All variables, except interest rate, are used in differences of logarithms.
+I estimate vector autoregression (VAR) with five variables: oil price in US dollars, local short-term interest rate (MIACR\footnote{Moscow Interbank Average Credit Rate.} 31-180 days), local nominal effective exchange rate, local real GDP index and local consumer price index (CPI). All variables, except interest rate, are used in growth rates in the model.
 
-The choice of variables here is dictated mainly by (\cite{Hahn2003};\cite{Comunale2017}; \cite{Forbes2018}; \cite{LeivaLeon2019}). Throughout the shock-dependent pass-through literature widely used variables are import/export price index, short-term interest rate, exchange rate, output and inflation aggregate. Moreover, quarterly data are used instead of monthly series due to primarily absence of monthly output data. In addition to this, I include oil price series, as this variable is crucial for determining exchange rate fluctuations and movement of other macrovariables in Russia. More information about data is in the following section.
+The choice of variables here is dictated mainly by (\cite{Hahn2003};\cite{Comunale2017}; \cite{Forbes2018}; \cite{LeivaLeon2019}). Throughout the shock-dependent pass-through literature widely used variables are import/export price index, short-term interest rate, exchange rate, output and inflation aggregate. Moreover, the literature uses quarterly data used instead of monthly series due to primarily absence of monthly output data. My work also uses quarterly data, since GDP data estimates are not in free use, while usage of output proxies (e. g. manufacturing index) may lead to controversial results. In addition to this, I include oil price series, as this variable is crucial for determining exchange rate fluctuations and movement of other macrovariables in Russia. More information about data is in the following section.
 
 After VAR estimation a researcher gets its reduced form, which is given as follows:
 \begin{equation}
@@ -448,24 +445,24 @@ This result is noticeable, as it appears that $B_0^{-1} B_0^{-1'}$ is a Cholesky
 There are several methods to do this. The first method is the simplest one --- Cholesky decomposition of variance-covariance matrix $\Xi_{u_t}$, as it is given above. From it, on the example of the model estimated in this work, shocks are identified as follows:
 \begin{equation}
 	\begin{pmatrix}
-		\epsilon^{\text{Global supply shock}}_t\\
-		\epsilon^{\text{Global demand shock}}_t\\
+		\epsilon^{\text{Global persistent shock}}_t\\
+		%\epsilon^{\text{Global demand shock}}_t\\
 		\epsilon^{\text{Mon. shock}}_t\\
 		\epsilon^{\text{Ex. rate shock}}_t\\
-		\epsilon^{\text{Output shock}}_t\\
-		\epsilon^{\text{Inflation shock}}_t\\
+		\epsilon^{\text{Supply shock}}_t\\
+		\epsilon^{\text{Demand shock}}_t\\
 	\end{pmatrix} = 
 	\begin{pmatrix}
-		S_{11} & 0 & 0 & 0 & 0 & 0\\
-		S_{21} & S_{22} & 0 & 0 & 0 & 0\\
-		S_{31} & S_{32} & S_{33} & 0 & 0 & 0\\
-		S_{41} & S_{42} & S_{43} & S_{44} & 0 & 0\\
-		S_{51} & S_{52} & S_{53} & S_{54} & S_{55} & 0\\
-		S_{61} & S_{62} & S_{63} & S_{64} & S_{65} & S_{66}\\
+		S_{11} & 0 & 0 & 0 & 0 \\
+		S_{21} & S_{22} & 0 & 0 & 0\\
+		S_{31} & S_{32} & S_{33} & 0 & 0 \\
+		S_{41} & S_{42} & S_{43} & S_{44} & 0 \\
+		S_{51} & S_{52} & S_{53} & S_{54} & S_{55} \\
+		%S_{61} & S_{62} & S_{63} & S_{64} & S_{65} & S_{66}\\
 	\end{pmatrix} 
 	\begin{pmatrix}
 		u^{\text{Oil}}_t\\
-		u^{\text{Imp. infl}}_t\\
+		%u^{\text{Imp. infl}}_t\\
 		u^{\text{Int. rate}}_t\\
 		u^{\text{NEER}}_t\\
 		u^{\text{Real GDP}}_t\\
@@ -474,32 +471,26 @@ There are several methods to do this. The first method is the simplest one --- C
 \end{equation}
 Then, the first variable in the vector is not directly affected by any shock but one that is associated with this variable, while the last variable is affected by fluctuations of all the shocks in the model. The main drawback of this identification scheme is that it implies very stiff restrictions to the shocks, and there may not be desired order of variables that produces sensible result. For example, one can reasonably assume that ruble's exchange rate and inflation have effect to the interest rate in short-run (monetary policy rule reaction).
 
-This method is used in order to provide robustness test for the results, obtained from the main model described below. Under this specific variable order, a reader shouldn't expect precise results from identification of supply (output) shock, as it is restricted to have effect only to inflation, which is a primitive assumption. Hence, I expect PERR coefficients to match at least for the first four structural shocks.
+In the recent literature estimating shock-dependent pass-through, a sign and zero restrictions method is widely used. A reader can refer to (\cite{Arias2014}) for rigorous explanations of this technique, although, in a nutshell, this is a \textit{guess-and-verify} technique: one has to randomly generate matrix $Q$ such that $QQ'$ is diagonal and its product with matrix from Cholesky decomposition produces such IRF's that satisfy both sign and zero restrictions. As the model is underidentified, there are multiple matrices $Q$ satisfying there restrictions. After $n$ times generating the random matrices and obtaining IRF's, their median values are calculated as a result. 
 
-In the recent literature estimating shock-dependent pass-through, a sign and zero restrictions method is widely used. A reader can refer to (\cite{Arias2014}) for rigorous explanations of this technique, although, in a nutshell, this is a \textit{guess-and-verify} technique: one has to randomly generate matrix $Q$ such that $QQ'$ is diagonal and its product with matrix from Cholesky decomposition produces such IRF's that satisfy both sign and zero restrictions. As the model is underidentified, there are multiple matrices $Q$ satisfying there restrictions.  After $n$ times generating the matrices and obtaining random IRF's, their median is calculated as a result. 
+Mostly, this technique is done together with Bayesian estimation of VAR instead of using OLS. This is done mostly for two purposes --- lack of observations and weak identification. Many studies estimate Bayesian VAR with uninformative prior, which adds more flexibility to estimates. After BVAR estimation, the algorithm proposes to draw several times random estimates and generate big amount of random matrices $Q$. Hence, if identification scheme --- signs and zeros --- are assigned properly, there exist matrices $Q$ for some draws that fulfil these restrictions. 
 
-The main drawback of this approach is that researcher has to intuitively arrange signs of response functions, which is usually non-trivial. (\cite{Ortega2020}) advice to use DSGE models for this purpose, although data are not necessarily to match IRF produced by theoretical justifications. Another shortcoming is that sign and zero approach is hard to apply to data that presume heterogeneous covariance matrix, and it mostly comes from the problem of sign setting. Moreover, this approach is quite sensitive to data atomicity: for example, quarterly data require less effort to determine signs than monthly series, since data with less periodicity is averaged, and there are less fluctuations, which harmfully affect the process of model fitting and further identification. 
+An important benefit of this method is in its ability to resolve the \textit{price puzzle} --- an unpleasant effect in vector autoregressions, when positive interest rate shock causes contradictive increase in inflation. Since IRF signs are directly assigned of inflationary response to monetary surprise, prize puzzle vanishes.
 
-Talking about Russian data, one can recall the exchange rate policy shift in November 2014, when banded exchange rate was replaced by floating one. Hence, it is not expected that Russian macroeconomic time series exhibit homogeneity, while economic agents' adjustment to the new policy has been continuous. Then, sign and zero approach seems fraught with difficulties; moreover, there can be no plausible identification found if sign restrictions are set thoroughly from the theory.
+The main drawback of this approach is that researcher has to intuitively arrange signs of response functions, which is usually non-trivial. (\cite{Ortega2020}) advice to use DSGE models for this purpose, although data are not necessarily to match IRF produced by theoretical justifications. Taking some ideas from (\cite{An2020}) and basing the sign and zero restrictions mainly on (\cite{Forbes2018}), I use identification scheme described in Table \ref{tab:signs_and_zeros}.
 
-In this work, I use smooth covariance transition technique proposed in (\cite{Luetkepohl2017}), which seems to produce more credible results than Cholesky decomposition, on the one side, and is more data-driven than sign and zero restrictions. The idea of this method is that if the residual term is heteroscedastic, its variance-covariance matrix can be defined as a sum of two non-linearly weighted variance-covariance matrices, which represents gradual and time-dependent transition from one volatility pattern to another one. Below I provide the widely used transition function, which is employed in this work:
-\begin{align}
-	\Xi_{u_t, t} &= f(t)\Xi_a + (1 - f(t))\Xi_b,\\
-	\Xi_a &= B_0^{-1}B_0^{-1'}, \; \Xi_b = B_0^{-1}\Lambda B_0^{-1'},\\
-	f(t) &= \frac{1}{(1 + e^{e^\gamma \cdot (t - c)})},
-\end{align}
-where $c$ is period of transition and $\gamma$ is smoothness parameter. The search for optimal $c$ and $\gamma$ is done via grid search, although these values can be specified. I specify $c$ to be equal to the period when the Central Bank of Russia has switched to the floating exchange rate regime (November 2014) and do search grid for optimal $\gamma$ on the space $(-5,5)$ with step $0.02$. In order to estimate the model, I use implementation from \texttt{svars} package in R (\cite{Lange2021}).
+The model's parsimony is predominantly caused by sign identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
 
-The model's parsimony is predominantly caused by identification issues, while DSGE models may include dozens of variables.\footnote{On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few parameters.} A lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
+In addition to this, there are no published data for Russian import prices, while almost every study uses them in their analysis. Export prices are also not used, contrary to the literature, as I assume that oil price captures export price shocks, and construction of export price time series would require much effort without necessary data.
 
 \clearpage
 \section*{SECTION 4. DATA}
 \setcounter{section}{2}
 \addcontentsline{toc}{section}{SECTION 4. DATA}
 
-I use monthly time series of six variables from 2003M3 to 2020M8: oil price in USD, world import prices, short-term interest rate, nominal effective exchange rate, real GDP per capita and CPI. Monthly data are more interesting for policy conclusions in terms that it allows to make policy responds more rapidly, although quarterly data are more popular in the literature. It comes mostly from absence of monthly data in open access for the most countries (primarily, GDP) and purely academical purpose of studies.
+I use quarterly time series of five variables from 2003Q2 to 2020Q4: oil price in USD, short-term interest rate (MIACR 31-180 days), nominal effective exchange rate, real GDP and CPI. Monthly data are available for all the variables, except for GDP, while use of output proxies seems unreasonable as it may distort final results, as inflation-output and exchange rate-output relations are hardly identifiable.
 
-The data time-frame is bounded by the first observation of the import price index and by the last observation of real GDP per capita. There are 186 observations in total. World import price index growth rate and CPI growth rate are seasonally adjusted according to X13-ARIMA-SEATS; GDP per capita index growth rate is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} for data description and sources.
+The data time-frame is bounded by the first observation of the real GDP (2005Q1 = 100) and by its last observation. There are 63 observations in total. CPI is seasonally adjusted according to X13-ARIMA-SEATS; real GDP index is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} for data description and sources.
 
 \begin{table}[b!]
 	\centering
@@ -507,8 +498,7 @@ The data time-frame is bounded by the first observation of the import price inde
 	\begin{tabular}{@{}lll@{}}
 		\toprule
 		Variable  & Description                                              & Source    \\ \midrule
-		Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\monthly average} & Bloomberg \\
-		Import prices & \makecell[l]{World import price index, \\manufactured goods only (2005m1 = 100), seasonally adjusted}    & WTO        \\
+		Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\quarterly average} & Bloomberg \\
 		Interest rate & \makecell[l]{MIACR 31--180 days, monthly average. \\Absent values were imputed by last available rate} & CBR        \\
 		Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\MoM, Central Bank of Russia methodology} & CBR        \\
 		Output        & \makecell[l]{Russian real GDP per capita (1995m1 = 100), \\OECD leading indicator, seasonally adjusted}  & \makecell[l]{FRED\\ OECD} \\
