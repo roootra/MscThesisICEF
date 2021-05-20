@@ -51,4 +51,7 @@ VARselect(data_to_write, lag.max=6)
 write.csv(data_to_write, 
           "/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/ZeroSignVAR_Q/no_exp_prices_RC/data_sign_and_zero.csv",
           row.names=FALSE, col.names=NA)
+write.csv(data_to_write, 
+          "/Users/rutra/ВШЭ/Магистратура/Thesis/Scripts/graph_builder/data_qty_zerosign.csv",
+          row.names=FALSE, col.names=NA)
 tseries::adf.test(data_to_write$miacr_31)

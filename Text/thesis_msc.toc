@@ -4,7 +4,7 @@
 \contentsline {section}{SECTION 2. DATA}{7}{Doc-Start}%
 \contentsline {section}{SECTION 3. METHODS}{17}{table.1}%
 \contentsline {section}{SECTION 4. DATA}{22}{equation.3.11}%
-\contentsline {section}{SECTION 5. RESULTS}{24}{Item.6}%
+\contentsline {section}{SECTION 5. RESULTS}{24}{Item.5}%
 \contentsline {section}{SECTION 6. DISCUSSION}{27}{figure.2}%
 \contentsline {section}{References}{32}{figure.2}%
 \contentsline {section}{Annex}{33}{figure.2}%

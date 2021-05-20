@@ -490,7 +490,7 @@ In addition to this, there are no published data for Russian import prices, whil
 
 I use quarterly time series of five variables from 2003Q2 to 2020Q4: oil price in USD, short-term interest rate (MIACR 31-180 days), nominal effective exchange rate, real GDP and CPI. Monthly data are available for all the variables, except for GDP, while use of output proxies seems unreasonable as it may distort final results, as inflation-output and exchange rate-output relations are hardly identifiable.
 
-The data time-frame is bounded by the first observation of the real GDP (2005Q1 = 100) and by its last observation. There are 63 observations in total. CPI is seasonally adjusted according to X13-ARIMA-SEATS; real GDP index is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} for data description and sources.
+The data time-frame is bounded by the first observation of the real GDP and by its last observation. There are 63 observations in total. CPI is seasonally adjusted according to X13-ARIMA-SEATS; real GDP index is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table \ref{table:variables_decription} for data description and sources.
 
 \begin{table}[b!]
 	\centering
@@ -498,18 +498,23 @@ The data time-frame is bounded by the first observation of the real GDP (2005Q1 
 	\begin{tabular}{@{}lll@{}}
 		\toprule
 		Variable  & Description                                              & Source    \\ \midrule
-		Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\quarterly average} & Bloomberg \\
-		Interest rate & \makecell[l]{MIACR 31--180 days, monthly average. \\Absent values were imputed by last available rate} & CBR        \\
-		Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\MoM, Central Bank of Russia methodology} & CBR        \\
-		Output        & \makecell[l]{Russian real GDP per capita (1995m1 = 100), \\OECD leading indicator, seasonally adjusted}  & \makecell[l]{FRED\\ OECD} \\
-		Inflation & \makecell[l]{Consumer price index, MoM, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
+		Oil price & \makecell[l]{Brent oil price nominated in US dollars, \\quarterly average, QoQ} & Bloomberg \\
+		Interest rate & \makecell[l]{MIACR 31--180 days, quarterly average. \\Absent values were imputed by last available rate} & CBR        \\
+		Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\QoQ, Central Bank of Russia methodology} & CBR        \\
+		Output        & \makecell[l]{Russian real GDP (2015Q1 = 100), \\seasonally adjusted, QoQ}  & \makecell[l]{FRED} \\
+		Inflation & \makecell[l]{Consumer price index, QoQ, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
 	\end{tabular}%
 	%}
-	\caption{Description of Data and Sources}
+	\caption{Description of Data and Sources\\	
+		CBR = Central Bank of Russia.\\
+		FRED = Federal Reserve Economic Data.\\
+		OECD = Organization of Economic Co-operation and Development.\\
+		Rosstat = Federal State Statistics Service of Russia.\\
+		WTO = World Trade Organization.}
 	\label{table:variables_decription}
 \end{table}
 
-I associate oil price fluctuations with global persistent shock (as in \cite{Forbes2018}), import price fluctuations with global supply shocks, interest rate fluctuations with monetary policy shocks, exchange rate fluctuations with exogenous exchange rate shocks, domestic product fluctuations with aggregate supply shocks and CPI fluctuations with aggregate demand shocks.
+I associate oil price fluctuations with global persistent shock (as in \cite{Forbes2018}), interest rate fluctuations with monetary policy shocks, exchange rate fluctuations with exogenous exchange rate shocks, domestic product fluctuations with supply shocks and CPI fluctuations with demand shocks.
 \begin{figure}[b!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/neer_cpi}
@@ -522,12 +527,11 @@ A quite intuitive fact that oil price is negatively correlated with exchange rat
 In general, the Russian economy can be described by the following stylized facts:
 \begin{enumerate}
 	\setlength\itemsep{0.02em}
-	\item There is a strong negative correlation of oil price and ruble exchange rate (especially, USD and EUR);
+	\item There is a significant negative correlation of oil price and ruble exchange rate (especially, USD and EUR);
 	\item There is a strong negative correlation of interest rate in Russia and Russian GDP;
 	\item Oil price and Russian GDP are positively correlated;
 	\item Exchange rate and CPI are positively correlated;
-	\item Exchange rate is more volatile than CPI;
-	\item Russian GDP and CPI are negatively correlated.
+	\item Exchange rate is more volatile than CPI.
 \end{enumerate}
 
 Annex contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it, and short-term interest rates are used in the literature without differencing.
@@ -630,40 +634,35 @@ Figure \ref{fig:hd_cut} contains historical decomposition for CPI growth rate fo
 \begin{table}[h!]
 \centering
 	%\begin{tabular}{rllllll}
-	\begin{tabular}{@{}rllllll@{}}
+	\begin{tabular}{@{}rlllll@{}}
 	  \toprule
-	 & Oil price & Import price & MIACR & NEER & GDP & CPI \\ 
+	 & Oil price & MIACR & NEER & GDP & CPI \\ 
 	  \midrule
-	 	Oil price & 1 &  &  &  &  &\\ 
-  		Import price &  0.12  & 1 &  &  &  &\\ 
-  		MIACR& -0.13  & -0.30*** & 1 &  &  &\\ 
-  		NEER & -0.35*** & -0.04  &  0.16*  & 1 &  &\\ 
-  		GDP &  0.19**  &  0.32*** & -0.57*** & -0.13  & 1 &\\ 
-  		CPI & -0.05  & -0.10  &  0.29*** &  0.27*** & -0.19**  & 1\\ 
+	 	Oil price & 1 &  &  &  &\\ 
+  		%Import price &  0.12  & 1 &  &  &  &\\ 
+  		MIACR& -0.37**  & 1 &  &  & \\ 
+  		NEER & -0.45*** & 0.24  &  1  & & \\ 
+  		GDP &  0.43***  &  -0.65*** & -0.25* & 1 & \\ 
+  		CPI & -0.10  & 0.34  &  0.35** &  -0.08 & 1 \\ 
 	   \bottomrule
 	\end{tabular}
-	\caption{Correlation table (Pearson) of variables, growth rates where applicable.\\ $^*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.\\
-	CBR = Central Bank of Russia.\\
-	FRED = Federal Reserve Economic Data.\\
-	OECD = Organization of Economic Co-operation and Development.\\
-	Rosstat = Federal State Statistics Service of Russia.\\
-	WTO = World Trade Organization.}
+	\caption{Correlation table (Pearson) of variables, growth rates where applicable.\\ $^*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
 	\label{table:correlation_variables}
 \end{table}
 
-\begin{table}[]
+\begin{table}[h!]
 	\centering
 	%\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}lll@{}}
 			 \toprule
 			Variable & ADF & PP \\
 			\midrule
-			Oil price, gr. r     & {-6.2036, p\textless{}0.01} &{-10.868, p\textless{}0.01}   \\
-			Import price, gr. r. & {-4.7868, p\textless{}0.01} & {-10.880, p\textless{}0.01}    \\
-			MIACR                & {-2.8510, p$\approx$0.22}          & {-2.9313, p$\approx$0.19}          \\
-			NEER, gr. r.         & {-6.0899, p\textless{}0.01} & {-7.7579, p\textless{}0.01}   \\
-			GDP per cap., gr. r  & {-5.3102, p\textless{}0.01} & {-3.2687, p$\approx$0.08} \\
-			CPI, gr. r.          & {-3.8145, p$\approx$0.02}         & {-5.3466, p\textless{}0.01}\\
+			Oil price, gr. r     & {-4.2347, p\textless{}0.01} &{-6.6924, p\textless{}0.01}   \\
+			%Import price, gr. r. & {-4.7868, p\textless{}0.01} & {-10.880, p\textless{}0.01}    \\
+			MIACR                & {-2.6818, p$\approx$0.30}          & {-2.5258, p$\approx$0.36}          \\
+			NEER, gr. r.         & {-3.1391, p$\approx$0.11} & {-8.9038, p\textless{}0.01}   \\
+			Real GDP, gr. r  & {-4.9839, p\textless{}0.01} & {-3.9216, p$\approx$0.02} \\
+			CPI, gr. r.          & {-3.3366, p$\approx$0.07}         & {-4.4526, p\textless{}0.01}\\
 			\bottomrule
 		\end{tabular}%
 	%}
