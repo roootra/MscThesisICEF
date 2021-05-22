@@ -219,4 +219,61 @@ ggsave(filename="hd_cpi_cut.eps",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
-#FEVD
+#For exrate
+hd_mat_ctm_exrate <- hd_mat_ctm[,16:20]
+hd_mat_ctm_exrate_df <- as.data.frame(hd_mat_ctm_exrate)
+colnames(hd_mat_ctm_exrate_df) <- paste0(shocknames, " shock")
+
+hd_mat_ctm_exrate_df$Date <- as.Date(seq(as.yearqtr("2005-3"),as.yearqtr("2020-4"), 1/4)) #model's order matters!
+hd_mat_ctm_exrate_df_bar <- gather(hd_mat_ctm_exrate_df, "Variable", "Value", -Date)
+hd_mat_ctm_exrate_df_bar$Date <-  as.Date(hd_mat_ctm_exrate_df_bar$Date)
+demeaned_exrate <- apply(hd_mat_ctm_exrate, 1, sum)
+
+ggplot(hd_mat_ctm_exrate_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
+  geom_bar(stat="identity") +  
+  scale_x_date(breaks=hd_mat_ctm_exrate_df_bar$Date, date_labels="%b %y", 
+               date_breaks = "6 months", expand=c(0,0)) +
+  theme_minimal() + geom_hline(yintercept = 0, col="red") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 1, hjust=1, size = 8),
+        axis.text.y = element_text(vjust = 0.5, hjust=1, size = 8),
+        axis.title.x = element_text(vjust = 0.5, size = 9),
+        axis.title.y = element_text(vjust = 0.5, size = 9),
+        legend.position="bottom") +
+  xlab("Date") + ylab("Contribution to NEER gr. r.") +
+  geom_line(aes(x=as.Date(rep(hd_mat_ctm_exrate_df$Date, 5)), y=rep(demeaned_exrate, 5)), col="black", size=0.3) +##383838
+  scale_fill_brewer(palette="Dark2")
+
+ggsave(filename="hd_exrate_full.eps",
+       path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
+       device="eps",
+       width=200, height=100, dpi=320, units = "mm", limitsize=FALSE)
+
+#For gdp
+hd_mat_ctm_gdp <- hd_mat_ctm[,1:5]
+hd_mat_ctm_gdp_df <- as.data.frame(hd_mat_ctm_gdp)
+colnames(hd_mat_ctm_gdp_df) <- paste0(shocknames, " shock")
+
+hd_mat_ctm_gdp_df$Date <- as.Date(seq(as.yearqtr("2005-3"),as.yearqtr("2020-4"), 1/4)) #model's order matters!
+hd_mat_ctm_gdp_df_bar <- gather(hd_mat_ctm_gdp_df, "Variable", "Value", -Date)
+hd_mat_ctm_gdp_df_bar$Date <-  as.Date(hd_mat_ctm_gdp_df_bar$Date)
+demeaned_gdp <- apply(hd_mat_ctm_gdp, 1, sum)
+
+ggplot(hd_mat_ctm_gdp_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
+  geom_bar(stat="identity") +  
+  scale_x_date(breaks=hd_mat_ctm_gdp_df_bar$Date, date_labels="%b %y", 
+               date_breaks = "6 months", expand=c(0,0)) +
+  theme_minimal() + geom_hline(yintercept = 0, col="red") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 1, hjust=1, size = 8),
+        axis.text.y = element_text(vjust = 0.5, hjust=1, size = 8),
+        axis.title.x = element_text(vjust = 0.5, size = 9),
+        axis.title.y = element_text(vjust = 0.5, size = 9),
+        legend.position="bottom") +
+  xlab("Date") + ylab("Contribution to gdp gr. r.") +
+  geom_line(aes(x=as.Date(rep(hd_mat_ctm_gdp_df$Date, 5)), y=rep(demeaned_gdp, 5)), col="black", size=0.3) +##383838
+  scale_fill_brewer(palette="Dark2")
+
+ggsave(filename="hd_gdp_full.eps",
+       path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
+       device="eps",
+       width=200, height=100, dpi=320, units = "mm", limitsize=FALSE)
+

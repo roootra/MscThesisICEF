@@ -1,0 +1,63 @@
+NEER, CPI core, quarterly
+ans = 
+
+    "PERRs (4q):
+     "
+
+
+ans = 
+
+    "Oil shock: 0.42645"
+
+
+ans = 
+
+    "Monetary shock: 0.44787"
+
+
+ans = 
+
+    "Exchange rate shock: 0.56485"
+
+
+ans = 
+
+    "Output shock: -0.39073"
+
+
+ans = 
+
+    "Inflation shock: -0.35424"
+
+
+ans = 
+
+    "PERRs (1q):
+     "
+
+
+ans = 
+
+    "Oil shock: 0.34442"
+
+
+ans = 
+
+    "Monetary shock: 0.11015"
+
+
+ans = 
+
+    "Exchange rate shock: 0.19667"
+
+
+ans = 
+
+    "Output shock: -0.02393"
+
+
+ans = 
+
+    "Inflation shock: -0.29487"
+
+>> 

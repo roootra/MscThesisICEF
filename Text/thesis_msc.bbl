@@ -636,6 +636,53 @@
       \verb :Campa2005 - Exchange Rate Pass through into Import Prices.pdf:PDF
       \endverb
     \endentry
+    \entry{Christiano1994}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=501e5adc78e2f6013e900537482b2bc7}{%
+           family={Christiano},
+           familyi={C\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c07f9d81d480d76a0e2d1ca23c79c74}{%
+           family={Eichenbaum},
+           familyi={E\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f1d7bb21a9a2d537650e5d58b5f9f78}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36c58db8fd4246ac654a6f9c80c61c81}
+      \strng{fullhash}{7a4dd2fef26f1df8736e326e052afaf8}
+      \strng{bibnamehash}{7a4dd2fef26f1df8736e326e052afaf8}
+      \strng{authorbibnamehash}{7a4dd2fef26f1df8736e326e052afaf8}
+      \strng{authornamehash}{36c58db8fd4246ac654a6f9c80c61c81}
+      \strng{authorfullhash}{7a4dd2fef26f1df8736e326e052afaf8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Federal Reserve Bank of Chicago}
+      \field{number}{94-7}
+      \field{title}{Identification and the Effects of Monetary Policy Shocks}
+      \field{type}{Working Paper Series, Macroeconomic Issues}
+      \field{year}{1994}
+      \verb{urlraw}
+      \verb https://EconPapers.repec.org/RePEc:fip:fedhma:94-7
+      \endverb
+      \verb{url}
+      \verb https://EconPapers.repec.org/RePEc:fip:fedhma:94-7
+      \endverb
+      \keyw{Monetary policy; Business cycles; Flow of funds}
+    \endentry
     \entry{Colavecchio2019}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fce64337b2670c0208ba26792b6da19d}{%

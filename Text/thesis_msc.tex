@@ -141,6 +141,7 @@
 \usepackage{tocloft}
 \usepackage{siunitx}
 \usepackage{multicol}
+\usepackage{multirow}
 
 \renewcommand{\appendixtocname}{Annex}
 \renewcommand{\appendixname}{Annex}
@@ -526,7 +527,7 @@ The data time-frame is bounded by the first observation of the real GDP and by i
 		Interest rate & \makecell[l]{MIACR 31--180 days, quarterly average. \\Absent values were imputed by last available rate} & CBR        \\
 		Exchange rate & \makecell[l]{Nominal effective exchange rate (NEER) of ruble, \\Ruble appreciation = NEER decline, \\QoQ, Central Bank of Russia methodology} & CBR        \\
 		Output        & \makecell[l]{Russian real GDP (2015Q1 = 100), \\seasonally adjusted, QoQ}  & \makecell[l]{FRED} \\
-		Inflation & \makecell[l]{Consumer price index and core consumer price index, QoQ, \\seasonally adjusted }          & Rosstat   \\ \bottomrule
+		Inflation & \makecell[l]{Consumer price index and core consumer price index, QoQ, \\seasonally adjusted, Rosstat methodology }          & Rosstat   \\ \bottomrule
 	\end{tabular}%
 	%}
 	\caption{Description of Data and Sources\\	
@@ -568,6 +569,10 @@ Annex contains additional information about characteristics of time series. Tabl
 \setcounter{subsection}{0}
 \addcontentsline{toc}{section}{SECTION 5. RESULTS}
 
+\begin{center}
+	\textbf{Price-to-exchange rate ratios}
+\end{center}
+
 To obtain the results, I estimate two BVARs of order 1 with Normal Inverse-Whishart prior and different compositions of CPI (full and core). The order of model is picked based on SIC (Schwartz information criterion) calculated for models up to 6 lags.
 
 After BVAR estimation, sign and zero restrictions algorithm is applied in order to recover orthogonal impulse-response functions. For CPI, 466,6 thousands of models are checked and 43 of them fulfil restrictions. In case of core CPI, 480,9 thousands of models are checked and 31 of them fit. IRFs for both models are in Annex (Figures \ref{fig:irf_1} and \ref{fig:irf_2} for full CPI, Figures \ref{fig:irf_core_1}~and~\ref{fig:irf_core_2} for core CPI). I use closest-to-median (CTM) IRF definition, as it describes a model that is most coherent with the data, while use of median IRFs during calculation of shock-dependent PERR values may lead to wrong results.
@@ -582,47 +587,36 @@ For the long-term PERRs, there are less differences between full and core CPI, a
 
 Monetary shock PERR is lower than obtained in (\cite[p. 9]{Khotulev2020}) for both short- and long-run. The fact of bigger pass-through estimates from DSGE is observed in the literature (e.g. \cite{Comunale2020}) and explained by endogenous shocks in long-run. On the same time, results for supply shocks are comparable to ones in (\cite{Forbes2018}). Hence, in long-run, global and demand shocks are not so influential than the rest of them for full CPI, while exchange rate and supply shocks have huge pass-through. For core CPI, all PERRs are quite huge. 
 
-In addition to this, Figures \ref{fig:hd_cpi_cut} and \ref{fig:hd_core_cpi_cut} contain historical decomposition for CPI and core CPI growth rates observations from 2015. See Figures \ref{fig:hd_cpi_full} and  \ref{fig:hd_core_cpi_full} in Annex for full historical decomposition graphs.
-
-After 2014 ruble depreciation crisis, model captures positive relation of inflation and short-term interest rate. This effect is widely known as \textit{price puzzle} and mainly associated with (\cite{Sims1992})
-
-
-\textbf{+ FEVD!!!}
-
-\begin{table}[]
+\begin{table}[h!!]
 	\centering
 	%\resizebox{\textwidth}{!}{%
-		\begin{tabular}{@{}lllll@{}}
-			\toprule
-			& \multicolumn{2}{c}{Short-run (1Q)} & \multicolumn{2}{c}{Long-run (4Q)} \\
-			\midrule
-			Shock                   & \makecell[c]{PERR\\(CPI)}      & \makecell[c]{PERR\\(Core)}      & \makecell[c]{PERR\\(CPI)}      & \makecell[c]{PERR\\(Core)}     \\
-			\midrule
-			Global persistent shock & 0.0695          & 0.3444           & 0.1584          & 0.4265          \\
-			Monetary shock          & 0.0439          & 0.1102           & 0.2813          & 0.4479          \\
-			Exchange rate shock     & 0.1459          & 0.1967           & 0.4033          & 0.5649          \\
-			Supply shock            & -0.2389         & -0.0239          & -0.3556         & -0.3907         \\
-			Demand shock            & -0.0366         & -0.2949          & -0.1326         & -0.3542   \\
-			\bottomrule
-		\end{tabular}%
+	\begin{tabular}{@{}lllll@{}}
+		\toprule
+		& \multicolumn{2}{c}{Short-run (1Q)} & \multicolumn{2}{c}{Long-run (4Q)} \\
+		\midrule
+		Shock                   & \makecell[c]{PERR\\(CPI)}      & \makecell[c]{PERR\\(Core)}      & \makecell[c]{PERR\\(CPI)}      & \makecell[c]{PERR\\(Core)}     \\
+		\midrule
+		Global persistent shock & 0.0695          & 0.3444           & 0.1584          & 0.4265          \\
+		Monetary shock          & 0.0439          & 0.1102           & 0.2813          & 0.4479          \\
+		Exchange rate shock     & 0.1459          & 0.1967           & 0.4033          & 0.5649          \\
+		Supply shock            & -0.2389         & -0.0239          & -0.3556         & -0.3907         \\
+		Demand shock            & -0.0366         & -0.2949          & -0.1326         & -0.3542   \\
+		\bottomrule
+	\end{tabular}%
 	%}
 	\caption{PERR calculated for BVAR with sign and zero restrictions. ''CPI'' and ''core'' in parentheses reflect price aggregate (CPI or Core CPI) used in the model.}
 	\label{tab:perr}
 \end{table}
 
-\begin{sidewaysfigure}[h!]
-	\centering
-	\includegraphics[width=0.95\linewidth]{figures/hd_cpi_cut}
-	\caption[]{Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted), observations from 2015. Black line denotes demeaned observed CPI gr. r.}
-	\label{fig:hd_cpi_cut}
-\end{sidewaysfigure}
+\begin{center}
+	\textbf{Historical decomposition}
+\end{center}
 
-\begin{sidewaysfigure}[h!]
-	\centering
-	\includegraphics[width=0.95\linewidth]{figures/hd_core_cpi_cut}
-	\caption[]{Historical decomposition of demeaned core CPI gr. r. time series (seasonally adjusted), observations from 2015. Black line denotes demeaned observed core CPI gr. r.}
-	\label{fig:hd_core_cpi_cut}
-\end{sidewaysfigure}
+To the purpose of retrospective analysis, Figures \ref{fig:hd_cpi_cut} and \ref{fig:hd_core_cpi_cut} contain historical decompositions for CPI and core CPI growth rates observed from 2015. See Figures \ref{fig:hd_cpi_full} and \ref{fig:hd_core_cpi_full} in Annex for full historical decomposition graphs.
+
+After 2014 ruble depreciation crisis, model captures positive effect of monetary shock to inflation, as from 2015--2016 Bank of Russia has started to gradually decrease key rate, while inflation rate has begun to slow down. Figure \ref{fig:intrate_cpi} shows dynamics of CPI and short-term interest rate. Positive IRF of monetary shock to inflation is widely known as \textit{price puzzle}, a good description is given in (\cite{Sims1992}; \cite{Christiano1994}). 
+
+For my models, monetary shock IRFs to CPI growth rate of both compositions show negative direct effect for all periods, as identification scheme implies non-positive response; then, there is no direct effect of monetary shock to inflation, but indirect contemporaneous effects of positive sign from other variables outweigh its contribution. Hence, I do not consider temporary negative influence of monetary shock of the same sign to inflation as related to price puzzle. The positive effect, which has appeared from 2020Q4 for full CPI and 2020Q1 for core CPI is in support to my assertion.
 
 \begin{figure}[h!]
 	\centering
@@ -631,9 +625,39 @@ After 2014 ruble depreciation crisis, model captures positive relation of inflat
 	\label{fig:intrate_cpi}
 \end{figure}
 
+
+COVID-19 outbreak in 2020Q1 heated up prices in Russia, although signs of inflationary sentiments were already in 2019Q4. Negative global persistent shock, associated with drop in oil prices, and supply shock of the same sign were the main inflation risers in the first three quarters of 2020, though exchange rate shock was driving prices down. The latter can be explained by unchanged domestic risk aversion (\cite[p. 258]{Forbes2018}).
+
+Comparing the recent downturn with 2008 financial crisis, I notice the crucial difference that exchange rate shock was hugely heating up prices in 2008Q4--2009Q2. This may be an outcome of banded exchange rate adopted by Bank of Russia from 2005 to 2014 or changed risk perception of economic agents due to disbelief to local financial system and capital outflow, as during 2014--2015 ruble devaluation episode, where exchange rate shock was overwhelming.
+
+Another remarkable pattern is positive influence of exchange rate shocks due to political tensions to CPI. For a period of 2016--2020 it is possible to see three periods of positive influence of exchange rate shock to inflation: the last two occurrences can be associated with incidents in March 2017 (2017Q2 ---2018Q2) and August 2020 (from 2020Q4), while the first one (2016Q2--Q3) could happen due to the leak of so-called ''Panama Papers'' in April 2016. Hence, exchange rate shocks are strongly associated with political conditions and Russian international affairs.
+
+Core CPI exhibits the same influence pattern, however, effect of exchange rate shock is still negative, though negligible, in 2020Q4. An interesting fact is that persistence and strength of shocks' influence is higher for core CPI. 
+
+For illustrative purposes, I add historical decompositions of NEER gr. r. and GDP gr. r. for full CPI model (Figures \ref{fig:hd_neer_full} and \ref{fig:hd_gdp_full}). Forecast error variance decomposition is presented in Annex, Table \ref{tab:fevd_cpi}, for both full and core CPI.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/hd_exrate_full}
+	\caption[]{Historical decomposition of demeaned NEER gr. r. time series. Black line denotes demeaned observed NEER gr. r.}
+	\label{fig:hd_neer_full}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/hd_gdp_full}
+	\caption[]{Historical decomposition of demeaned real GDP gr. r. time series. Black line denotes demeaned observed real GDP gr. r.}
+	\label{fig:hd_gdp_full}
+\end{figure}
+
+
+
+
 \clearpage
 \section*{SECTION 6. CONCLUSION}
 \addcontentsline{toc}{section}{SECTION 6. CONCLUSION}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%
@@ -697,6 +721,41 @@ After 2014 ruble depreciation crisis, model captures positive relation of inflat
 	\caption{Unit root tests for time series used in the model. Null hypothesis for both models: unit root, alternative hypothesis: stationarity.}
 	\label{table:unit_roots}
 \end{table}
+
+\begin{table}
+	\footnotesize
+	\begin{tabular}{cccccc}
+		\toprule
+		Horizon & Supply shock & Demand shock & Monetary shock & Exchange rate shock & Oil price shock\\
+		\midrule
+		\multicolumn{6}{c}{CPI}\\
+		\midrule
+		1&30.05 &  1.43 &  2.45 &  61.12  &  4.95\\
+		2&17.17  &  3.16 & 14.16 & 52.51  & 13.00\\
+		3&15.35 &  4.28 & 18.00 &  48.41 &  13.96\\
+		4&14.91  &  4.76 & 19.73 &  47.04  & 13.56\\
+		5&14.69  & 4.90 &  20.32 &  46.37 &  13.72\\
+		6&14.54  &  4.92 &  20.43 &  45.95 &  14.15\\
+		7&14.45  &  4.91 &  20.40 &  45.70  & 14.53\\
+		8&14.40  &  4.90 &  20.36 &  45.56 &  14.77\\
+		\midrule
+		\multicolumn{6}{c}{Core CPI}\\
+		\midrule
+		1 &	0.59 &  20.14 &   7.75 &  68.92 & 2.60\\
+		2 &	0.40 &  14.11  & 12.86 &  62.61 & 10.03\\
+		3 &	1.42 &  12.36 & 16.05 & 57.83 & 12.34\\
+		4 &	1.80 &  11.75  & 18.64 &  55.70 & 12.11\\
+		5 &	1.78 &  11.56  & 20.17 & 54.58 & 11.91\\
+		6 &	1.84 &  11.48  & 20.69 & 53.85 & 12.15\\
+		7 &	2.06 &  11.40  & 20.62 &  53.32 & 12.60\\
+		8 &	2.33 &  11.31  & 20.39 &  52.95 & 13.01\\
+		\bottomrule
+	\end{tabular}
+	\caption{Forecast error variance decomposition of CPI gr. r., percentage points of total variance, values from closest-to-mean model.}
+	\label{tab:fevd_cpi}
+\end{table}
+
+
 
 \begin{sidewaysfigure}[h!]
 	\centering
