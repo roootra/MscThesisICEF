@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  23 MAY 2021 00:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  23 MAY 2021 02:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,16 +1224,7 @@ ine 545.
 
 ] [24 <./figures/neer_cpi-eps-converted-to.pdf>] [25
 
-]
-
-LaTeX Warning: Reference `fig:hd_cpi_cut' on page 26 undefined on input line 61
-5.
-
-
-LaTeX Warning: Reference `fig:hd_core_cpi_cut' on page 26 undefined on input li
-ne 615.
-
-[26]
+] [26]
 Package epstopdf Info: Source file: <figures/intrate_cpi.eps>
 (epstopdf)                    date: 2021-05-22 14:39:23
 (epstopdf)                    size: 13194 bytes
@@ -1244,7 +1235,7 @@ Package epstopdf Info: Source file: <figures/intrate_cpi.eps>
 nverted-to.pdf figures/intrate_cpi.eps>
 (epstopdf)             \includegraphics on input line 623.
 Package epstopdf Info: Output file is already uptodate.
-<figures/intrate_cpi-eps-converted-to.pdf, id=370, 569.12625pt x 284.06125pt>
+<figures/intrate_cpi-eps-converted-to.pdf, id=371, 569.12625pt x 284.06125pt>
 File: figures/intrate_cpi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/intrate_cpi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/intrate_cpi-eps-converted-to.pdf  used on inpu
@@ -1262,7 +1253,7 @@ f>
 -converted-to.pdf figures/hd_exrate_full.eps>
 (epstopdf)             \includegraphics on input line 641.
 Package epstopdf Info: Output file is already uptodate.
-<figures/hd_exrate_full-eps-converted-to.pdf, id=387, 569.12625pt x 284.06125pt
+<figures/hd_exrate_full-eps-converted-to.pdf, id=388, 569.12625pt x 284.06125pt
 >
 File: figures/hd_exrate_full-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/hd_exrate_full-eps-converted-to.pdf>
@@ -1279,103 +1270,144 @@ Package epstopdf Info: Source file: <figures/hd_gdp_full.eps>
 nverted-to.pdf figures/hd_gdp_full.eps>
 (epstopdf)             \includegraphics on input line 648.
 Package epstopdf Info: Output file is already uptodate.
-<figures/hd_gdp_full-eps-converted-to.pdf, id=388, 569.12625pt x 284.06125pt>
+<figures/hd_gdp_full-eps-converted-to.pdf, id=389, 569.12625pt x 284.06125pt>
 File: figures/hd_gdp_full-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/hd_gdp_full-eps-converted-to.pdf>
 Package pdftex.def Info: figures/hd_gdp_full-eps-converted-to.pdf  used on inpu
 t line 648.
 (pdftex.def)             Requested size: 418.96548pt x 209.12274pt.
- [28 <./figures/hd_exrate_full-eps-converted-to.pdf> <./figures/hd_gdp_full-eps
--converted-to.pdf>]
-[29
+Package epstopdf Info: Source file: <figures/hd_cpi_cut.eps>
+(epstopdf)                    date: 2021-05-21 02:27:59
+(epstopdf)                    size: 22562 bytes
+(epstopdf)             Output file: <figures/hd_cpi_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-05-21 02:28:21
+(epstopdf)                    size: 14478 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hd_cpi_cut-eps-con
+verted-to.pdf figures/hd_cpi_cut.eps>
+(epstopdf)             \includegraphics on input line 655.
+Package epstopdf Info: Output file is already uptodate.
+<figures/hd_cpi_cut-eps-converted-to.pdf, id=390, 910.40125pt x 597.23125pt>
+File: figures/hd_cpi_cut-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/hd_cpi_cut-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hd_cpi_cut-eps-converted-to.pdf  used on input
+ line 655.
+(pdftex.def)             Requested size: 667.64177pt x 437.98915pt.
 
-]
-Overfull \hbox (9.9179pt too wide) in paragraph at lines 667--667
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <figures/hd_core_cpi_cut.eps>
+(epstopdf)                    date: 2021-05-21 22:40:47
+(epstopdf)                    size: 22525 bytes
+(epstopdf)             Output file: <figures/hd_core_cpi_cut-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-05-22 01:34:09
+(epstopdf)                    size: 14453 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hd_core_cpi_cut-ep
+s-converted-to.pdf figures/hd_core_cpi_cut.eps>
+(epstopdf)             \includegraphics on input line 662.
+Package epstopdf Info: Output file is already uptodate.
+<figures/hd_core_cpi_cut-eps-converted-to.pdf, id=391, 910.40125pt x 597.23125p
+t>
+File: figures/hd_core_cpi_cut-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/hd_core_cpi_cut-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hd_core_cpi_cut-eps-converted-to.pdf  used on 
+input line 662.
+(pdftex.def)             Requested size: 667.64177pt x 437.98915pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28 <./figures/hd_exrate_full-eps-converted-to.pdf> <./figures/hd_gdp_full-eps-
+converted-to.pdf>] [29 <./figures/hd_cpi_cut-eps-converted-to.pdf>] [30 <./figu
+res/hd_core_cpi_cut-eps-converted-to.pdf>] [31
+
+] [32]
+Overfull \hbox (9.9179pt too wide) in paragraph at lines 697--697
 [][]\OT1/ptm/m/n/12 Adolfson, M. (2001). Mon-e-tary Pol-icy with In-com-plete E
 x-change Rate Pass-Through. \OT1/ptm/m/it/12 Sveriges
  []
 
-[30]
-Overfull \hbox (21.79755pt too wide) in paragraph at lines 667--667
+[33]
+Overfull \hbox (21.79755pt too wide) in paragraph at lines 697--697
 [][]\OT1/ptm/m/n/12 Faryna, H., Olek-sandr; Simola. (2018). The trans-mis-sion 
 of in-ter-na-tional shocks to cis economies:
  []
 
-[31]
-Overfull \hbox (4.29828pt too wide) in paragraph at lines 667--667
+[34]
+Overfull \hbox (4.29828pt too wide) in paragraph at lines 697--697
 [][]\OT1/ptm/m/n/12 Jasova, M., Moess-ner, R., & Tak[]ats, E. (2016). Ex-change
  rate pass-through: What has changed
  []
 
 
-Overfull \hbox (2.08989pt too wide) in paragraph at lines 667--667
+Overfull \hbox (2.08989pt too wide) in paragraph at lines 697--697
 [][]\OT1/ptm/m/n/12 Khosla, A. (1991). Ex-change rate pass-through and ex-port 
 pric-ing ev-i-dence from the Japanese
  []
 
-[32]
-Overfull \hbox (9.64407pt too wide) in paragraph at lines 667--667
+[35]
+Overfull \hbox (9.64407pt too wide) in paragraph at lines 697--697
 \OT1/ptm/m/n/12 model. \OT1/ptm/m/it/12 Ap-plied Eco-nomics\OT1/ptm/m/n/12 , \O
 T1/ptm/m/it/12 30\OT1/ptm/m/n/12 (5), 613{619. [][]$https : / / doi . org / 10 
 . 1080 / 000368498325606$[][] 
  []
 
 
-Overfull \hbox (40.21698pt too wide) in paragraph at lines 667--667
+Overfull \hbox (40.21698pt too wide) in paragraph at lines 697--697
 [][]\OT1/ptm/m/n/12 Menon, J. (1992). Ex-change rates and prices of Aus-tralian
  man-u-fac-tured ex-ports. \OT1/ptm/m/it/12 Weltwirtschaftliches
  []
 
 
-Overfull \hbox (25.45552pt too wide) in paragraph at lines 667--667
+Overfull \hbox (25.45552pt too wide) in paragraph at lines 697--697
 \OT1/ptm/m/it/12 ter-na-tional Eco-nomic Jour-nal\OT1/ptm/m/n/12 , \OT1/ptm/m/i
 t/12 7\OT1/ptm/m/n/12 (3), 93{109. [][]$https : / / doi . org / 10 . 1080 / 101
 68739300000008$[][] 
  []
 
-[33] [34]pdfTeX warning (ext4): destination with the same identifier (name{tabl
+[36] [37]pdfTeX warning (ext4): destination with the same identifier (name{tabl
 e.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.699 ...*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
+l.729 ...*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{table.1}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.699 ...*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
+l.729 ...*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$.}
                                                   
 LaTeX Font Info:    Trying to load font information for OML+ptm on input line 7
-10.
+40.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 710.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 740.
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.719 ...t, alternative hypothesis: stationarity.}
+l.749 ...t, alternative hypothesis: stationarity.}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{table.2}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.719 ...t, alternative hypothesis: stationarity.}
+l.749 ...t, alternative hypothesis: stationarity.}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{table.3}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.752 ...ance, values from closest-to-mean model.}
+l.782 ...ance, values from closest-to-mean model.}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{table.3}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.752 ...ance, values from closest-to-mean model.}
+l.782 ...ance, values from closest-to-mean model.}
                                                   
 Package epstopdf Info: Source file: <figures/time_series.eps>
 (epstopdf)                    date: 2021-05-21 22:37:06
@@ -1385,19 +1417,19 @@ Package epstopdf Info: Source file: <figures/time_series.eps>
 (epstopdf)                    size: 16846 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/time_series-eps-co
 nverted-to.pdf figures/time_series.eps>
-(epstopdf)             \includegraphics on input line 760.
+(epstopdf)             \includegraphics on input line 790.
 Package epstopdf Info: Output file is already uptodate.
-<figures/time_series-eps-converted-to.pdf, id=517, 910.40125pt x 597.23125pt>
+<figures/time_series-eps-converted-to.pdf, id=549, 910.40125pt x 597.23125pt>
 File: figures/time_series-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/time_series-eps-converted-to.pdf>
 Package pdftex.def Info: figures/time_series-eps-converted-to.pdf  used on inpu
-t line 760.
+t line 790.
 (pdftex.def)             Requested size: 632.50047pt x 414.93326pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.761 ...djusted. Growth rates, where applicable.}
+l.791 ...djusted. Growth rates, where applicable.}
                                                   
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1410,14 +1442,20 @@ Package epstopdf Info: Source file: <figures/irf_1.eps>
 (epstopdf)                    size: 16691 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/irf_1-eps-converte
 d-to.pdf figures/irf_1.eps>
-(epstopdf)             \includegraphics on input line 767.
+(epstopdf)             \includegraphics on input line 797.
 Package epstopdf Info: Output file is already uptodate.
-<figures/irf_1-eps-converted-to.pdf, id=518, 910.40125pt x 597.23125pt>
+<figures/irf_1-eps-converted-to.pdf, id=550, 910.40125pt x 597.23125pt>
 File: figures/irf_1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/irf_1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/irf_1-eps-converted-to.pdf  used on input line
- 767.
+ 797.
 (pdftex.def)             Requested size: 632.50047pt x 414.93326pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.798 ...ign identification scheme, full CPI (1).}
+                                                  
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1429,14 +1467,20 @@ Package epstopdf Info: Source file: <figures/irf_2.eps>
 (epstopdf)                    size: 15092 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/irf_2-eps-converte
 d-to.pdf figures/irf_2.eps>
-(epstopdf)             \includegraphics on input line 774.
+(epstopdf)             \includegraphics on input line 804.
 Package epstopdf Info: Output file is already uptodate.
-<figures/irf_2-eps-converted-to.pdf, id=519, 910.40125pt x 597.23125pt>
+<figures/irf_2-eps-converted-to.pdf, id=551, 910.40125pt x 597.23125pt>
 File: figures/irf_2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/irf_2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/irf_2-eps-converted-to.pdf  used on input line
- 774.
+ 804.
 (pdftex.def)             Requested size: 632.50047pt x 414.93326pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.805 ...ign identification scheme, full CPI (2).}
+                                                  
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1448,13 +1492,13 @@ Package epstopdf Info: Source file: <figures/irf_core_1.eps>
 (epstopdf)                    size: 16681 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/irf_core_1-eps-con
 verted-to.pdf figures/irf_core_1.eps>
-(epstopdf)             \includegraphics on input line 781.
+(epstopdf)             \includegraphics on input line 811.
 Package epstopdf Info: Output file is already uptodate.
-<figures/irf_core_1-eps-converted-to.pdf, id=520, 910.40125pt x 597.23125pt>
+<figures/irf_core_1-eps-converted-to.pdf, id=552, 910.40125pt x 597.23125pt>
 File: figures/irf_core_1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/irf_core_1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/irf_core_1-eps-converted-to.pdf  used on input
- line 781.
+ line 811.
 (pdftex.def)             Requested size: 632.50047pt x 414.93326pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1467,13 +1511,13 @@ Package epstopdf Info: Source file: <figures/irf_core_2.eps>
 (epstopdf)                    size: 15115 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/irf_core_2-eps-con
 verted-to.pdf figures/irf_core_2.eps>
-(epstopdf)             \includegraphics on input line 788.
+(epstopdf)             \includegraphics on input line 818.
 Package epstopdf Info: Output file is already uptodate.
-<figures/irf_core_2-eps-converted-to.pdf, id=521, 910.40125pt x 597.23125pt>
+<figures/irf_core_2-eps-converted-to.pdf, id=553, 910.40125pt x 597.23125pt>
 File: figures/irf_core_2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/irf_core_2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/irf_core_2-eps-converted-to.pdf  used on input
- line 788.
+ line 818.
 (pdftex.def)             Requested size: 632.50047pt x 414.93326pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1486,13 +1530,13 @@ Package epstopdf Info: Source file: <figures/hd_cpi_full.eps>
 (epstopdf)                    size: 16980 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/hd_cpi_full-eps-co
 nverted-to.pdf figures/hd_cpi_full.eps>
-(epstopdf)             \includegraphics on input line 795.
+(epstopdf)             \includegraphics on input line 825.
 Package epstopdf Info: Output file is already uptodate.
-<figures/hd_cpi_full-eps-converted-to.pdf, id=522, 910.40125pt x 597.23125pt>
+<figures/hd_cpi_full-eps-converted-to.pdf, id=554, 910.40125pt x 597.23125pt>
 File: figures/hd_cpi_full-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/hd_cpi_full-eps-converted-to.pdf>
 Package pdftex.def Info: figures/hd_cpi_full-eps-converted-to.pdf  used on inpu
-t line 795.
+t line 825.
 (pdftex.def)             Requested size: 667.64177pt x 437.98915pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1506,48 +1550,44 @@ pdf>
 (epstopdf)                    size: 16996 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/hd_core_cpi_full-e
 ps-converted-to.pdf figures/hd_core_cpi_full.eps>
-(epstopdf)             \includegraphics on input line 802.
+(epstopdf)             \includegraphics on input line 832.
 Package epstopdf Info: Output file is already uptodate.
-<figures/hd_core_cpi_full-eps-converted-to.pdf, id=523, 910.40125pt x 597.23125
+<figures/hd_core_cpi_full-eps-converted-to.pdf, id=555, 910.40125pt x 597.23125
 pt>
 File: figures/hd_core_cpi_full-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/hd_core_cpi_full-eps-converted-to.pdf>
 Package pdftex.def Info: figures/hd_core_cpi_full-eps-converted-to.pdf  used on
- input line 802.
+ input line 832.
 (pdftex.def)             Requested size: 667.64177pt x 437.98915pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
+Underfull \hbox (badness 10000) in paragraph at lines 838--839
 
  []
 
-[35] [36] [37 <./figures/time_series-eps-converted-to.pdf>] [38 <./figures/irf_
-1-eps-converted-to.pdf>] [39 <./figures/irf_2-eps-converted-to.pdf>] [40 <./fig
-ures/irf_core_1-eps-converted-to.pdf>] [41 <./figures/irf_core_2-eps-converted-
-to.pdf>] [42 <./figures/hd_cpi_full-eps-converted-to.pdf>] [43 <./figures/hd_co
+[38] [39] [40 <./figures/time_series-eps-converted-to.pdf>] [41 <./figures/irf_
+1-eps-converted-to.pdf>] [42 <./figures/irf_2-eps-converted-to.pdf>] [43 <./fig
+ures/irf_core_1-eps-converted-to.pdf>] [44 <./figures/irf_core_2-eps-converted-
+to.pdf>] [45 <./figures/hd_cpi_full-eps-converted-to.pdf>] [46 <./figures/hd_co
 re_cpi_full-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 813.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 813.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 843.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 843.
  (./thesis_msc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 813.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 813.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 843.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 843.
 Package rerunfilecheck Info: File `thesis_msc.out' has not changed.
-(rerunfilecheck)             Checksum: 08EAD91BC258294A156785F9F0A4D04A;995.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 2F648C0D0CEDA234C2A7E62CE72E54A8;995.
 Package logreq Info: Writing requests to 'thesis_msc.run.xml'.
 \openout1 = `thesis_msc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25712 strings out of 480608
- 455165 string characters out of 5903629
- 1220699 words of memory out of 5000000
- 41009 multiletter control sequences out of 15000+600000
+ 25757 strings out of 480608
+ 456386 string characters out of 5903629
+ 1220753 words of memory out of 5000000
+ 41049 multiletter control sequences out of 15000+600000
  556968 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,17n,57p,1485b,4720s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1566,10 +1606,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on thesis_msc.pdf (42 pages, 354395 bytes).
+Output written on thesis_msc.pdf (45 pages, 382504 bytes).
 PDF statistics:
- 687 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 138 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 613 compressed objects within 7 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

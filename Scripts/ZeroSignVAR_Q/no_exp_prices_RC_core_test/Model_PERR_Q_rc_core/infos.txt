@@ -1,9 +1,9 @@
                              Model name:      Model_PERR_Q_rc_core
                       Estimation Method:                   diffuse
                          number of lags:                         1
-            draws to generate posterior:                       500
+            draws to generate posterior:                       600
    (max) number of draws from posterior:                      1000
      number of transformations per draw:                      1000
     Transform only until match is found:                       YES
-       overall number of models checked:                    480904
-                           Models found:                        31
+       overall number of models checked:                    576079
+                           Models found:                        38
