@@ -2091,58 +2091,6 @@
       \endverb
       \keyw{Exchange rate pass-through,Inflation,Exchange rate regime,Transition countries}
     \endentry
-    \entry{Lange2021}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=e03772852654999700fe42df23c487ac}{%
-           family={Lange},
-           familyi={L\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5342fb3be6a087cb3d095960866341b3}{%
-           family={Dalheimer},
-           familyi={D\bibinitperiod},
-           given={Bernhard},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=358d3b1a1a004d126f35c64f5350a385}{%
-           family={Herwartz},
-           familyi={H\bibinitperiod},
-           given={Helmut},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3487fe54b131c60ad12c9fe74038c52f}{%
-           family={Maxand},
-           familyi={M\bibinitperiod},
-           given={Simone},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Foundation for Open Access Statistic}%
-      }
-      \strng{namehash}{dadf52315fee35ba96523fad747fd0a7}
-      \strng{fullhash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
-      \strng{bibnamehash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
-      \strng{authorbibnamehash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
-      \strng{authornamehash}{dadf52315fee35ba96523fad747fd0a7}
-      \strng{authorfullhash}{c9c25e52c1ae83b06a8d518b2e0b90ea}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Statistical Software}
-      \field{number}{5}
-      \field{title}{svars: An R Package for Data-Driven Identification in Multivariate Time Series Analysis}
-      \field{volume}{97}
-      \field{year}{2021}
-      \verb{doi}
-      \verb 10.18637/jss.v097.i05
-      \endverb
-    \endentry
     \entry{LeivaLeon2019}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=c2f2360e1c9b3ed3ca7c90f0f3970eef}{%
@@ -2248,64 +2196,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1059056011001237
       \endverb
       \keyw{Exchange rate pass-through,Threshold autoregressive,Deflation}
-    \endentry
-    \entry{Luetkepohl2017}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=d400c31862099db9f37a97b35e10814d}{%
-           family={Lütkepohl},
-           familyi={L\bibinitperiod},
-           given={Helmut},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=beff7df9e9614f25d91b64f7dd1e4e5f}{%
-           family={Netšunajev},
-           familyi={N\bibinitperiod},
-           given={Aleksei},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{35f8f56157c04b535c51acc6360ecf57}
-      \strng{fullhash}{0dd52df46d54494d1867dc43d1c9f3b7}
-      \strng{bibnamehash}{0dd52df46d54494d1867dc43d1c9f3b7}
-      \strng{authorbibnamehash}{0dd52df46d54494d1867dc43d1c9f3b7}
-      \strng{authornamehash}{35f8f56157c04b535c51acc6360ecf57}
-      \strng{authorfullhash}{0dd52df46d54494d1867dc43d1c9f3b7}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In structural vector autoregressive analysis identifying the shocks of interest via heteroskedasticity has become a standard tool. Unfortunately, the approaches currently used for modeling heteroskedasticity all have drawbacks. For instance, assuming known dates for variance changes is often unrealistic while more flexible models based on GARCH or Markov switching residuals are difficult to handle from a statistical and computational point of view. Therefore we propose a model based on a smooth change in variance that is flexible as well as relatively easy to estimate and illustrate its use by analysis of the interaction between monetary policy and the stock market based on a five-dimensional system of U.S. variables. For the benchmark setup it is found that previously used conventional identification schemes in this context are rejected by the data if heteroskedasticity is allowed for. We also illustrate the implications of using different transition variables and varying the sample period.}
-      \field{issn}{0165-1889}
-      \field{journaltitle}{Journal of Economic Dynamics and Control}
-      \field{month}{11}
-      \field{title}{Structural vector autoregressions with smooth transition in variances}
-      \field{urlday}{14}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{84}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \field{pages}{43\bibrangedash 57}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1016/j.jedc.2017.09.001
-      \endverb
-      \verb{file}
-      \verb :Luetkepohl2017 - Structural Vector Autoregressions with Smooth Transition in Variances.pdf:PDF
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0165188917301811
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0165188917301811
-      \endverb
-      \keyw{Identification via heteroskedasticity,Monetary policy shocks,Smooth transition VAR models}
     \endentry
     \entry{McCarthy2007}{article}{}
       \name{author}{1}{}{%
@@ -2802,6 +2692,59 @@
       \endverb
       \verb{file}
       \verb :Shambaugh2008 - A New Look at Pass through.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Sims1992}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6ea5ed711258737020e21f785822b8e5}{%
+           family={Sims},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6ea5ed711258737020e21f785822b8e5}
+      \strng{fullhash}{6ea5ed711258737020e21f785822b8e5}
+      \strng{bibnamehash}{6ea5ed711258737020e21f785822b8e5}
+      \strng{authorbibnamehash}{6ea5ed711258737020e21f785822b8e5}
+      \strng{authornamehash}{6ea5ed711258737020e21f785822b8e5}
+      \strng{authorfullhash}{6ea5ed711258737020e21f785822b8e5}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Existing theory and evidence on the effects of monetary policy are reviewed. Substantial room for disagreement among economists remains. New evidence, based on multivariate time series studies of several countries, is presented. While certain patterns in the data consistent with effective monetary policy are strikingly similar across countries, others, particularly the tendency of interest rate increases to predict high inflation, are harder to reconcile with effective monetary policy.}
+      \field{issn}{0014-2921}
+      \field{journaltitle}{European Economic Review}
+      \field{month}{6}
+      \field{number}{5}
+      \field{shorttitle}{Interpreting the macroeconomic time series facts}
+      \field{title}{Interpreting the macroeconomic time series facts: {The} effects of monetary policy}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{36}
+      \field{year}{1992}
+      \field{urldateera}{ce}
+      \field{pages}{975\bibrangedash 1000}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/0014-2921(92)90041-T
+      \endverb
+      \verb{file}
+      \verb :Sims1992 - Interpreting the Macroeconomic Time Series Facts_ the Effects of Monetary Policy.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/001429219290041T
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/001429219290041T
       \endverb
     \endentry
     \entry{Sinyakov2019}{article}{}

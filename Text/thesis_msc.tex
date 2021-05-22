@@ -227,15 +227,13 @@ There is many research done on shock \textit{independent} pass-through estimatio
 
 On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE (\cite{Khotulev2020}). Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
 
-The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. I include five variables from 2003Q2 to 2020Q4 into the model: oil price, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP and CPI in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, local monetary shock, local exogenous exchange rate shock, local supply shock and local demand shock. I use quarterly data in order to estimate the model since there is no monthly time series for Russian output.
+The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. I include five variables from 2003Q2 to 2020Q4 into two models, depending on CPI composition: oil price, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP and CPI (full or core) in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, local monetary shock, local exogenous exchange rate shock, local supply shock and local demand shock. I use quarterly data in order to estimate the model since there is no monthly time series for Russian output.
 
 In order to identify structural shocks, after estimation of vector autoregression, I apply short-run sign and zero restrictions proposed in (\cite{Arias2014}). Although signs of impulse response functions need to be guessed, this method is quite flexible and allows to precisely estimate shock-dependent exchange rate pass-through. To address problem of weak identification, I estimate Bayesian VAR with uninformative Normal Inverse-Wishart prior and use identification scheme mentioned above for 500 draws from posterior distribution. 
 
-My findings are comparable to (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. Analysis reveals highest pass-through estimate from monetary shocks, while oil shocks, which are commonly considered as a main driver of exchange rate for Russia, have a little pass-through effect. 
+In general, my findings meet results from (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. Analysis reveals highest pass-through estimate from exchange rate shocks, while oil fluctuations, which are commonly considered as a main driver of exchange rate for Russia, have a little pass-through effect. However, pass-through is higher in Russia comparing to developed economies (US and Euro area), which is expected.
 
-Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate, which shows contribution of different macrovariables in the model to inflation volatility. \textbf{TO BE FILLED.}
-
-As a robustness test, I apply the same algorithm excluding zero restrictions. \textbf{TO BE FILLED.}
+Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate (both full and core), which shows contribution of different macrovariables in the model to inflation volatility. There is a presence of price puzzle after 2014 rouble depreciation, although monetary shocks to core CPI from the beginning of 2020 and to full CPI in the last quarter of the same year become positive. Talking about COVID-19 outbreak in the first quarter of 2020, I conclude that the main drivers here were global persistent (associated with oil price) and local supply shocks, while exchange rate was cooling down consumer inflation. In the last quarter of 2020 gradual increase in oil price reduced inflation rate, while exchange rate effect appears to be positive; I associate the latter with a political incident in late summer of the same year.
 
 This paper is organised as follows. Section 2 guides reader through the literature on the topic of exchange rate pass-through. For convenience, I break this section into two parts: a) methods and non-CIS economies and b) Russia and CIS countries. Section 3 gives a brief econometric introduction and defines the model and identification schemes used. Section 4 describes data used in this work. Section 5 reveals results fetched from the model. Section 6 concludes.
 
@@ -582,11 +580,14 @@ Core CPI inflation pass-through appears to be faster than for CPI, as it is expe
 
 For the long-term PERRs, there are less differences between full and core CPI, although spread between full and core compositions is still huge. The same is for demand shock, which contributes less to price for full CPI. Again, shocks associated with nominal variables have bigger PERR, while values for supply shock are comparable.
 
-Monetary shock PERR is lower than obtained in (\cite[p. 9]{Khotulev2020}) for both short- and long-run. The fact of bigger pass-through estimates from DSGE is observed in the literature (e.g. \cite{Comunale2020}) and explained by endogenous shocks in long-run. On the same time, results for supply shocks are comparable to ones in (\cite{Forbes2018}).
+Monetary shock PERR is lower than obtained in (\cite[p. 9]{Khotulev2020}) for both short- and long-run. The fact of bigger pass-through estimates from DSGE is observed in the literature (e.g. \cite{Comunale2020}) and explained by endogenous shocks in long-run. On the same time, results for supply shocks are comparable to ones in (\cite{Forbes2018}). Hence, in long-run, global and demand shocks are not so influential than the rest of them for full CPI, while exchange rate and supply shocks have huge pass-through. For core CPI, all PERRs are quite huge. 
 
-Hence, in long-run, oil and demand shocks are not so influential than the rest of them for full CPI, while exchange rate and supply shocks have huge pass-through. 
+In addition to this, Figures \ref{fig:hd_cpi_cut} and \ref{fig:hd_core_cpi_cut} contain historical decomposition for CPI and core CPI growth rates observations from 2015. See Figures \ref{fig:hd_cpi_full} and  \ref{fig:hd_core_cpi_full} in Annex for full historical decomposition graphs.
 
-Figures \ref{fig:hd_cpi_cut} and \ref{fig:hd_core_cpi_cut} contain historical decomposition for CPI and core CPI growth rates observations from 2015. See Figures \ref{fig:hd_cpi_full} and  \ref{fig:hd_core_cpi_full} in Annex for full historical decomposition graphs.
+After 2014 ruble depreciation crisis, model captures positive relation of inflation and short-term interest rate. This effect is widely known as \textit{price puzzle} and mainly associated with (\cite{Sims1992})
+
+
+\textbf{+ FEVD!!!}
 
 \begin{table}[]
 	\centering
@@ -622,6 +623,13 @@ Figures \ref{fig:hd_cpi_cut} and \ref{fig:hd_core_cpi_cut} contain historical de
 	\caption[]{Historical decomposition of demeaned core CPI gr. r. time series (seasonally adjusted), observations from 2015. Black line denotes demeaned observed core CPI gr. r.}
 	\label{fig:hd_core_cpi_cut}
 \end{sidewaysfigure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/intrate_cpi}
+	\caption[]{Plot of MIACR (31-180 days) and CPI (full and core compositions) gr. rates.}
+	\label{fig:intrate_cpi}
+\end{figure}
 
 \clearpage
 \section*{SECTION 6. CONCLUSION}

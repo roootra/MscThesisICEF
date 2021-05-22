@@ -28,12 +28,14 @@ for(colname in to_deseasonalize){
 }
 
 data_draw <- dat_unseas[,c("date", "oil_USD_qoq", "miacr_31", 
-                           "neer_qoq", "gdp_real_SA_qoq", "cpi_all_qoq")]
+                           "neer_qoq", "gdp_real_SA_qoq", "cpi_all_qoq",
+                           "cpi_core_qoq")]
 colnames(data_draw) <- c("Date", "Oil price gr. rate", 
                          "MIACR 31-180 days", 
                          "NEER gr. rate", 
                          "Real GDP gr. rate",
-                         "CPI gr. rate")
+                         "CPI gr. rate",
+                         "Core CPI gr. rate")
 data_draw$`NEER gr. rate` <- data_draw$`NEER gr. rate`*-1
 data_draw$Date <- as.Date(data_draw$Date)
 data_draw_long <- gather(data_draw, "Variable", "Value", -Date)
@@ -59,6 +61,22 @@ ggplot(data_draw_long_perr, aes(x = Date, y = Value, linetype=Variable), size = 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = "top")
 ggsave(filename="neer_cpi.eps",
+       path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
+       device="eps",
+       width=200, height=100, dpi=320, units = "mm", limitsize=FALSE)
+
+data_draw_intrate_cpi <- data_draw_long[data_draw_long$Variable %in% 
+                                        c("MIACR 31-180 days", "CPI gr. rate",
+                                          "Core CPI gr. rate"),]
+ggplot(data_draw_intrate_cpi, aes(x = Date, y = Value, linetype=Variable), size = 0.1) + 
+  geom_hline(yintercept = 0, col="grey") + geom_line() + theme_minimal() + #+theme_bw()
+  #facet_wrap(~ Variable, nrow=2, scales="free") + 
+  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y", 
+               date_breaks = "6 months", expand=c(0,0)) + 
+  scale_linetype_manual(values=c("dotted", "dashed", "solid")) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "top")
+ggsave(filename="intrate_cpi.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
        width=200, height=100, dpi=320, units = "mm", limitsize=FALSE)
