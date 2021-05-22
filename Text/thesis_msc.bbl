@@ -100,7 +100,7 @@
       \field{issn}{0165-1889}
       \field{journaltitle}{Journal of Economic Dynamics and Control}
       \field{number}{7}
-      \field{title}{Monthly pass-through ratios}
+      \field{title}{Monthly Pass-through Ratios}
       \field{volume}{34}
       \field{year}{2010}
       \field{pages}{1202\bibrangedash 1213}
@@ -146,7 +146,7 @@
       \field{journaltitle}{Open Economies Review}
       \field{number}{2}
       \field{shorttitle}{Exchange rate pass-through}
-      \field{title}{Exchange rate pass-through: {Evidence} based on vector autoregression with sign restrictions}
+      \field{title}{Exchange Rate Pass-through: {Evidence} Based on Vector Autoregression with Sign Restrictions}
       \field{volume}{23}
       \field{year}{2012}
       \field{pages}{359\bibrangedash 380}
@@ -501,7 +501,7 @@
       \field{number}{4}
       \field{series}{Emerging {Markets} {Finance}}
       \field{shorttitle}{Exchange rate pass-through into import prices revisited}
-      \field{title}{Exchange rate pass-through into import prices revisited: {What} drives it?}
+      \field{title}{Exchange Rate Pass-through into Import Prices Revisited: {What} Drives It?}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -712,56 +712,21 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Banque centrale du Luxembourg Working Paper}
-      \field{title}{Non-linear exchange rate pass-through to euro area inflation: a local projection approach}
+      \field{title}{Non-linear Exchange Rate Pass-through to Euro Area Inflation: A Local Projection Approach}
       \field{volume}{138}
       \field{year}{2019}
       \verb{file}
       \verb :Colavecchio2019 - Non Linear Exchange Rate Pass through to Euro Area Inflation_ a Local Projection Approach.pdf:PDF
       \endverb
     \endentry
-    \entry{Comunale2017}{article}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=fdbf45f431d17ebe1ed3746b4e6bfed5}{%
-           family={Comunale},
-           familyi={C\bibinitperiod},
-           given={Davor},
-           giveni={D\bibinitperiod},
-           givenun=1,
-           suffix={Mariarosaria;\bibnamedelima Kunovac},
-           suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{fdbf45f431d17ebe1ed3746b4e6bfed5}
-      \strng{fullhash}{fdbf45f431d17ebe1ed3746b4e6bfed5}
-      \strng{bibnamehash}{fdbf45f431d17ebe1ed3746b4e6bfed5}
-      \strng{authorbibnamehash}{fdbf45f431d17ebe1ed3746b4e6bfed5}
-      \strng{authornamehash}{fdbf45f431d17ebe1ed3746b4e6bfed5}
-      \strng{authorfullhash}{fdbf45f431d17ebe1ed3746b4e6bfed5}
-      \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ECB Working Paper}
-      \field{number}{2003}
-      \field{title}{Exchange Rate Pass-Through in the Euro Area}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.2866/743801
-      \endverb
-      \verb{file}
-      \verb :Comunale2017 - Exchange Rate Pass through in the Euro Area.pdf:PDF
-      \endverb
-    \endentry
     \entry{Comunale2020}{article}{}
       \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
+        {{un=0,uniquepart=base,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
            family={Comunale},
            familyi={C\bibinitperiod},
            given={Mariarosaria},
            giveni={M\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \strng{namehash}{e3f9db0fc76941180a1d2bd48cde0da5}
       \strng{fullhash}{e3f9db0fc76941180a1d2bd48cde0da5}
@@ -787,14 +752,53 @@
       \verb :Comunale2020 - Shock Dependence of Exchange Rate Pass Through_ a Comparative Analysis of BVARs and DSGEs.pdf:PDF
       \endverb
     \endentry
-    \entry{Comunale2018}{article}{}
+    \entry{Comunale2017}{article}{}
       \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
+        {{un=0,uniquepart=base,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
            family={Comunale},
            familyi={C\bibinitperiod},
            given={Mariarosaria},
            giveni={M\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=668fdcc17d44b0ba1e5f89fc90b00a81}{%
+           family={Kunovac},
+           familyi={K\bibinitperiod},
+           given={Davor},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8bdf0a38e0a2e482661fb0166c64d449}
+      \strng{fullhash}{6dd34790d63641a5778ae75e04a12ce5}
+      \strng{bibnamehash}{6dd34790d63641a5778ae75e04a12ce5}
+      \strng{authorbibnamehash}{6dd34790d63641a5778ae75e04a12ce5}
+      \strng{authornamehash}{8bdf0a38e0a2e482661fb0166c64d449}
+      \strng{authorfullhash}{6dd34790d63641a5778ae75e04a12ce5}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ECB Working Paper}
+      \field{number}{2003}
+      \field{title}{Exchange Rate Pass-Through in the Euro Area}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.2866/743801
+      \endverb
+      \verb{file}
+      \verb :Comunale2017 - Exchange Rate Pass through in the Euro Area.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Comunale2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e3f9db0fc76941180a1d2bd48cde0da5}{%
+           family={Comunale},
+           familyi={C\bibinitperiod},
+           given={Mariarosaria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=0c10e70af5cc3f2acaf4c7d829bf31c2}{%
            family={Simola},
            familyi={S\bibinitperiod},
@@ -811,6 +815,7 @@
       \strng{authorbibnamehash}{3112488b664a7dd44ccb15f051626a64}
       \strng{authornamehash}{8bdf0a38e0a2e482661fb0166c64d449}
       \strng{authorfullhash}{3112488b664a7dd44ccb15f051626a64}
+      \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
@@ -819,7 +824,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Research in International Business and Finance}
       \field{month}{4}
-      \field{title}{The pass-through to consumer prices in {CIS} economies: The role of exchange rates, commodities and other common factors}
+      \field{title}{The Pass-through to Consumer Prices in {CIS} Economies: The Role of Exchange Rates, Commodities and Other Common Factors}
       \field{volume}{44}
       \field{year}{2018}
       \field{pages}{186\bibrangedash 217}
@@ -922,7 +927,7 @@
       \field{journaltitle}{International Economics}
       \field{month}{8}
       \field{shorttitle}{Exchange rate pass-through to import prices in the {Euro}-area}
-      \field{title}{Exchange rate pass-through to import prices in the {Euro}-area: {A} multi-currency investigation}
+      \field{title}{Exchange Rate Pass-through to Import Prices in the {Euro}-area: {A} Multi-currency Investigation}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -982,7 +987,7 @@
       \field{month}{9}
       \field{number}{3}
       \field{shorttitle}{Asymmetric exchange rate pass-through}
-      \field{title}{Asymmetric exchange rate pass-through: {Evidence} from major countries}
+      \field{title}{Asymmetric Exchange Rate Pass-through: {Evidence} from Major Countries}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -1043,7 +1048,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Quarterly Journal of Business and Economics}
-      \field{title}{Exchange rates and the inflation rate}
+      \field{title}{Exchange Rates and the Inflation Rate}
       \field{year}{1995}
       \field{pages}{42\bibrangedash 54}
       \range{pages}{13}
@@ -1087,7 +1092,7 @@
       \field{journaltitle}{Journal of Monetary Economics}
       \field{month}{7}
       \field{number}{5}
-      \field{title}{Exchange rate pass-through, exchange rate volatility, and exchange rate disconnect}
+      \field{title}{Exchange Rate Pass-through, Exchange Rate Volatility, and Exchange Rate Disconnect}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -1166,55 +1171,21 @@
       \verb :Dobrynskaya2008 - Exchange Rate Pass through Effect and Monetary Policy in Russia.pdf:PDF
       \endverb
     \endentry
-    \entry{Faryna2018}{article}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=9f38146cca8246d0fe10419d38a6c5a8}{%
-           family={Faryna},
-           familyi={F\bibinitperiod},
-           given={Heli},
-           giveni={H\bibinitperiod},
-           givenun=1,
-           suffix={Oleksandr;\bibnamedelima Simola},
-           suffixi={O\bibinitperiod\bibinitdelim S\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{9f38146cca8246d0fe10419d38a6c5a8}
-      \strng{fullhash}{9f38146cca8246d0fe10419d38a6c5a8}
-      \strng{bibnamehash}{9f38146cca8246d0fe10419d38a6c5a8}
-      \strng{authorbibnamehash}{9f38146cca8246d0fe10419d38a6c5a8}
-      \strng{authornamehash}{9f38146cca8246d0fe10419d38a6c5a8}
-      \strng{authorfullhash}{9f38146cca8246d0fe10419d38a6c5a8}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{BOFIT Discussion Papers}
-      \field{title}{The transmission of international shocks to CIS economies: A Global VAR approach}
-      \field{volume}{17}
-      \field{year}{2018}
-      \field{pages}{1\bibrangedash 46}
-      \range{pages}{46}
-      \verb{file}
-      \verb :Faryna2018 - The Transmission of International Shocks to CIS Economies_ a Global VAR Approach.pdf:PDF
-      \endverb
-    \endentry
     \entry{Faryna2016}{article}{}
       \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=a2cb4f1bfbe60f8483b08fdccbbe6581}{%
+        {{un=0,uniquepart=base,hash=b2df9da39f5984c7c18063f065154abe}{%
            family={Faryna},
            familyi={F\bibinitperiod},
-           given={O},
+           given={Oleksandr},
            giveni={O\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
-      \strng{namehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
-      \strng{fullhash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
-      \strng{bibnamehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
-      \strng{authorbibnamehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
-      \strng{authornamehash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
-      \strng{authorfullhash}{a2cb4f1bfbe60f8483b08fdccbbe6581}
+      \strng{namehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{fullhash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{bibnamehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{authorbibnamehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{authornamehash}{b2df9da39f5984c7c18063f065154abe}
+      \strng{authorfullhash}{b2df9da39f5984c7c18063f065154abe}
       \field{extraname}{1}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
@@ -1225,7 +1196,7 @@
       \field{labeltitlesource}{title}
       \field{issn}{1456-5889 978-952-323-130-6}
       \field{journaltitle}{BOFIT Discussion Papers}
-      \field{title}{Exchange rate pass-through and cross-country spillovers: Some evidence from Ukraine and Russia}
+      \field{title}{Exchange Rate Pass-through and Cross-country Spillovers: Some Evidence from Ukraine and Russia}
       \field{volume}{14}
       \field{year}{2016}
       \verb{file}
@@ -1234,12 +1205,12 @@
     \endentry
     \entry{Faryna2016a}{article}{}
       \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=b2df9da39f5984c7c18063f065154abe}{%
+        {{un=0,uniquepart=base,hash=b2df9da39f5984c7c18063f065154abe}{%
            family={Faryna},
            familyi={F\bibinitperiod},
            given={Oleksandr},
            giveni={O\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {National Bank of Ukraine}%
@@ -1260,10 +1231,47 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Visnyk of the National Bank of Ukraine}
       \field{number}{236}
-      \field{title}{Nonlinear exchange rate pass-through to domestic prices in {Ukraine}}
+      \field{title}{Nonlinear Exchange Rate Pass-through to Domestic Prices in {Ukraine}}
       \field{year}{2016}
       \verb{file}
       \verb :Faryna2016a - Nonlinear Exchange Rate Pass through to Domestic Prices in Ukraine.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Faryna2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b2df9da39f5984c7c18063f065154abe}{%
+           family={Faryna},
+           familyi={F\bibinitperiod},
+           given={Oleksandr},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c10e70af5cc3f2acaf4c7d829bf31c2}{%
+           family={Simola},
+           familyi={S\bibinitperiod},
+           given={Heli},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e305e48cdb649545db5563fbe84f4e51}
+      \strng{fullhash}{2d5018f9e887d73fca02ee145745eca0}
+      \strng{bibnamehash}{2d5018f9e887d73fca02ee145745eca0}
+      \strng{authorbibnamehash}{2d5018f9e887d73fca02ee145745eca0}
+      \strng{authornamehash}{e305e48cdb649545db5563fbe84f4e51}
+      \strng{authorfullhash}{2d5018f9e887d73fca02ee145745eca0}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BOFIT Discussion Papers}
+      \field{title}{The Transmission of International Shocks to Cis Economies: A Global Var Approach}
+      \field{volume}{17}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 46}
+      \range{pages}{46}
+      \verb{file}
+      \verb :Faryna2018 - The Transmission of International Shocks to CIS Economies_ a Global VAR Approach.pdf:PDF
       \endverb
     \endentry
     \entry{Feenstra1989}{article}{}
@@ -1297,7 +1305,7 @@
       \field{month}{8}
       \field{number}{1}
       \field{shorttitle}{Symmetric pass-through of tariffs and exchange rates under imperfect competition}
-      \field{title}{Symmetric pass-through of tariffs and exchange rates under imperfect competition: {An} empirical test}
+      \field{title}{Symmetric Pass-through of Tariffs and Exchange Rates under Imperfect Competition: {An} Empirical Test}
       \field{urlday}{30}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -1319,125 +1327,14 @@
       \verb https://www.sciencedirect.com/science/article/pii/0022199689900767
       \endverb
     \endentry
-    \entry{Forbes2018}{article}{}
-      \name{author}{3}{}{%
-        {{un=1,uniquepart=given,hash=1602aa6f6b71dd9d568a912e76912b53}{%
-           family={Forbes},
-           familyi={F\bibinitperiod},
-           given={Kristin},
-           giveni={K\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=d2d8b359918278b81ae73192da63747b}{%
-           family={Hjortsoe},
-           familyi={H\bibinitperiod},
-           given={Ida},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fc214215c60fa4330ded23088287169f}{%
-           family={Nenova},
-           familyi={N\bibinitperiod},
-           given={Tsvetelina},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{883d17101c2e2c9617800109d639d897}
-      \strng{fullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \strng{bibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \strng{authorbibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \strng{authornamehash}{883d17101c2e2c9617800109d639d897}
-      \strng{authorfullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \field{extraname}{1}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of international economics}
-      \field{title}{The Shocks Matter: Improving Our Estimates of Exchange Rate Pass-Through}
-      \field{volume}{114}
-      \field{year}{2018}
-      \field{pages}{255\bibrangedash 275}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.3386/w24773
-      \endverb
-      \verb{file}
-      \verb :Forbes2018 - The Shocks Matter_ Improving Our Estimates of Exchange Rate Pass through.pdf:PDF
-      \endverb
-    \endentry
-    \entry{Forbes2020}{article}{}
-      \name{author}{3}{}{%
-        {{un=1,uniquepart=given,hash=1602aa6f6b71dd9d568a912e76912b53}{%
-           family={Forbes},
-           familyi={F\bibinitperiod},
-           given={Kristin},
-           giveni={K\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=d2d8b359918278b81ae73192da63747b}{%
-           family={Hjortsoe},
-           familyi={H\bibinitperiod},
-           given={Ida},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fc214215c60fa4330ded23088287169f}{%
-           family={Nenova},
-           familyi={N\bibinitperiod},
-           given={Tsvetelina},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{883d17101c2e2c9617800109d639d897}
-      \strng{fullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \strng{bibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \strng{authorbibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \strng{authornamehash}{883d17101c2e2c9617800109d639d897}
-      \strng{authorfullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
-      \field{extraname}{2}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We analyse the economic conditions (the “shocks”) behind currency movements and show how that analysis can help address a range of questions, focussing on exchange rate pass-through to prices. We build on a methodology previously developed for the UK and adapt this framework so that it can be applied to a diverse sample of countries using widely available data. The paper provides three examples of how this enriched methodology can be used to provide insights into pass-through and other questions. First, it shows that exchange rate movements caused by monetary policy shocks consistently correspond to significantly higher pass-through than those caused by demand shocks in a cross-section of countries, confirming earlier results for the UK. Second, it shows that the underlying shocks (especially monetary policy shocks) are particularly important for understanding the time-series dimension of pass-through, while the standard structural variables highlighted in the previous literature are most important for the cross-section dimension. Finally, the paper explores how the methodology can be used to shed light on the effects of monetary policy and the debate on “currency wars”: it shows that the role of monetary policy shocks in driving the exchange rate has increased moderately since the global financial crisis in advanced economies.}
-      \field{issn}{2041-417X}
-      \field{journaltitle}{IMF Economic Review}
-      \field{month}{12}
-      \field{number}{4}
-      \field{title}{International {Evidence} on {Shock}-{Dependent} {Exchange} {Rate} {Pass}-{Through}}
-      \field{urlday}{5}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{volume}{68}
-      \field{year}{2020}
-      \field{urldateera}{ce}
-      \field{pages}{721\bibrangedash 763}
-      \range{pages}{43}
-      \verb{doi}
-      \verb 10.1057/s41308-020-00124-2
-      \endverb
-      \verb{file}
-      \verb :Forbes2020 - International Evidence on Shock Dependent Exchange Rate Pass through.pdf:PDF
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1057/s41308-020-00124-2
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1057/s41308-020-00124-2
-      \endverb
-    \endentry
     \entry{Forbes2017}{article}{}
       \name{author}{3}{}{%
-        {{un=1,uniquepart=given,hash=f5dde46697707f4f99acec677c7bc564}{%
+        {{un=0,uniquepart=base,hash=1602aa6f6b71dd9d568a912e76912b53}{%
            family={Forbes},
            familyi={F\bibinitperiod},
-           given={Kristin\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=1}}%
+           given={Kristin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=d2d8b359918278b81ae73192da63747b}{%
            family={Hjortsoe},
            familyi={H\bibinitperiod},
@@ -1457,12 +1354,13 @@
       \list{location}{1}{%
         {Rochester, NY}%
       }
-      \strng{namehash}{e2f5b5a9380a974d4b5e166f4ca9aeb8}
-      \strng{fullhash}{1a9ad934dc78232f4176ff98bcff9605}
-      \strng{bibnamehash}{1a9ad934dc78232f4176ff98bcff9605}
-      \strng{authorbibnamehash}{1a9ad934dc78232f4176ff98bcff9605}
-      \strng{authornamehash}{e2f5b5a9380a974d4b5e166f4ca9aeb8}
-      \strng{authorfullhash}{1a9ad934dc78232f4176ff98bcff9605}
+      \strng{namehash}{883d17101c2e2c9617800109d639d897}
+      \strng{fullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{bibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authorbibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authornamehash}{883d17101c2e2c9617800109d639d897}
+      \strng{authorfullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \field{extraname}{1}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{extradatescope}{labelyear}
@@ -1495,6 +1393,117 @@
       \verb https://papers.ssrn.com/abstract=2999637
       \endverb
       \keyw{Pass-Through,Exchange Rate,Price Level,Inflation,Monetary Policy}
+    \endentry
+    \entry{Forbes2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1602aa6f6b71dd9d568a912e76912b53}{%
+           family={Forbes},
+           familyi={F\bibinitperiod},
+           given={Kristin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2d8b359918278b81ae73192da63747b}{%
+           family={Hjortsoe},
+           familyi={H\bibinitperiod},
+           given={Ida},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc214215c60fa4330ded23088287169f}{%
+           family={Nenova},
+           familyi={N\bibinitperiod},
+           given={Tsvetelina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{883d17101c2e2c9617800109d639d897}
+      \strng{fullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{bibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authorbibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authornamehash}{883d17101c2e2c9617800109d639d897}
+      \strng{authorfullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of international economics}
+      \field{title}{The Shocks Matter: Improving Our Estimates of Exchange Rate Pass-through}
+      \field{volume}{114}
+      \field{year}{2018}
+      \field{pages}{255\bibrangedash 275}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.3386/w24773
+      \endverb
+      \verb{file}
+      \verb :Forbes2018 - The Shocks Matter_ Improving Our Estimates of Exchange Rate Pass through.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Forbes2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1602aa6f6b71dd9d568a912e76912b53}{%
+           family={Forbes},
+           familyi={F\bibinitperiod},
+           given={Kristin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2d8b359918278b81ae73192da63747b}{%
+           family={Hjortsoe},
+           familyi={H\bibinitperiod},
+           given={Ida},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc214215c60fa4330ded23088287169f}{%
+           family={Nenova},
+           familyi={N\bibinitperiod},
+           given={Tsvetelina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{883d17101c2e2c9617800109d639d897}
+      \strng{fullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{bibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authorbibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authornamehash}{883d17101c2e2c9617800109d639d897}
+      \strng{authorfullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We analyse the economic conditions (the “shocks”) behind currency movements and show how that analysis can help address a range of questions, focussing on exchange rate pass-through to prices. We build on a methodology previously developed for the UK and adapt this framework so that it can be applied to a diverse sample of countries using widely available data. The paper provides three examples of how this enriched methodology can be used to provide insights into pass-through and other questions. First, it shows that exchange rate movements caused by monetary policy shocks consistently correspond to significantly higher pass-through than those caused by demand shocks in a cross-section of countries, confirming earlier results for the UK. Second, it shows that the underlying shocks (especially monetary policy shocks) are particularly important for understanding the time-series dimension of pass-through, while the standard structural variables highlighted in the previous literature are most important for the cross-section dimension. Finally, the paper explores how the methodology can be used to shed light on the effects of monetary policy and the debate on “currency wars”: it shows that the role of monetary policy shocks in driving the exchange rate has increased moderately since the global financial crisis in advanced economies.}
+      \field{issn}{2041-417X}
+      \field{journaltitle}{IMF Economic Review}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{International {Evidence} on {Shock}-{Dependent} {Exchange} {Rate} {Pass}-{Through}}
+      \field{urlday}{5}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{68}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{721\bibrangedash 763}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1057/s41308-020-00124-2
+      \endverb
+      \verb{file}
+      \verb :Forbes2020 - International Evidence on Shock Dependent Exchange Rate Pass through.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1057/s41308-020-00124-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1057/s41308-020-00124-2
+      \endverb
     \endentry
     \entry{Gagnon2004}{article}{}
       \name{author}{2}{}{%
@@ -1531,7 +1540,7 @@
       \field{issn}{1099-1158}
       \field{journaltitle}{International Journal of Finance \& Economics}
       \field{number}{4}
-      \field{title}{Monetary policy and exchange rate pass-through}
+      \field{title}{Monetary Policy and Exchange Rate Pass-through}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -1635,7 +1644,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ECB Working Paper}
-      \field{title}{Pass-through of external shocks to euro area inflation}
+      \field{title}{Pass-through of External Shocks to Euro Area Inflation}
       \field{volume}{243}
       \field{year}{2003}
       \verb{file}
@@ -1737,7 +1746,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Exchange rate pass-through}
-      \field{title}{Exchange rate pass-through: {What} has changed since the crisis?}
+      \field{title}{Exchange Rate Pass-through: {What} Has Changed since the Crisis?}
       \field{year}{2016}
       \verb{file}
       \verb :Jasova2016 - Exchange Rate Pass Through_ What Has Changed since the Crisis_.pdf:PDF;:Jasova2016 - Exchange Rate Pass Through_ What Has Changed since the Crisis_.pdf:PDF
@@ -1778,7 +1787,7 @@
       \field{issn}{0264-9993}
       \field{journaltitle}{Economic Modelling}
       \field{month}{7}
-      \field{title}{Exchange rate pass-through to inflation in {China}}
+      \field{title}{Exchange Rate Pass-through to Inflation in {China}}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -2115,7 +2124,7 @@
       \field{month}{6}
       \field{number}{2}
       \field{series}{Beyond the euro area: {Monetary} {Policy} in selected {CIS} countries}
-      \field{title}{A note on exchange rate pass-through in {CIS} countries}
+      \field{title}{A Note on Exchange Rate Pass-through in {CIS} Countries}
       \field{urlday}{28}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -2221,7 +2230,7 @@
       \field{month}{4}
       \field{number}{1}
       \field{shorttitle}{Exchange rate pass-through in deflation}
-      \field{title}{Exchange rate pass-through in deflation: {The} case of {Taiwan}}
+      \field{title}{Exchange Rate Pass-through in Deflation: {The} Case of {Taiwan}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -2539,7 +2548,7 @@
       \field{number}{3}
       \field{series}{Symposium: {Monetary} and {Exchange} {Rate} {Policies} in the {CIS} {Countries}: {Between} the {EU} and {Russia}}
       \field{shorttitle}{Money demand and inflation in dollarized economies}
-      \field{title}{Money demand and inflation in dollarized economies: {The} case of {Russia}}
+      \field{title}{Money Demand and Inflation in Dollarized Economies: {The} Case of {Russia}}
       \field{urlday}{8}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
@@ -2673,7 +2682,7 @@
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
@@ -2683,22 +2692,20 @@
       \field{journaltitle}{Trade Policies for International Competitiveness}
       \field{month}{4}
       \field{shorttitle}{6 {Export} {Prices} and {Exchange} {Rates}}
-      \field{title}{6 {Export} {Prices} and {Exchange} {Rates}: {An} {Industry} {Approach}}
+      \field{title}{{Export} {Prices} and {Exchange} {Rates}: {An} {Industry} {Approach}}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
       \field{year}{1985}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \field{pages}{185\bibrangedash 216}
       \range{pages}{32}
+      \verb{doi}
+      \verb 10.7208/9780226239507-008/html
+      \endverb
       \verb{file}
       \verb :Schembri2008.pdf:PDF
-      \endverb
-      \verb{urlraw}
-      \verb https://www.degruyter.com/document/doi/10.7208/9780226239507-008/html
-      \endverb
-      \verb{url}
-      \verb https://www.degruyter.com/document/doi/10.7208/9780226239507-008/html
       \endverb
     \endentry
     \entry{Shambaugh2008}{article}{}
@@ -2772,7 +2779,7 @@
       \field{month}{6}
       \field{number}{5}
       \field{shorttitle}{Interpreting the macroeconomic time series facts}
-      \field{title}{Interpreting the macroeconomic time series facts: {The} effects of monetary policy}
+      \field{title}{Interpreting the Macroeconomic Time Series Facts: {The} Effects of Monetary Policy}
       \field{urlday}{22}
       \field{urlmonth}{5}
       \field{urlyear}{2021}
@@ -2890,7 +2897,7 @@
       \field{journaltitle}{Journal of Monetary Economics}
       \field{month}{7}
       \field{number}{5}
-      \field{title}{Openness, imperfect exchange rate pass-through and monetary policy}
+      \field{title}{Openness, Imperfect Exchange Rate Pass-through and Monetary Policy}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
@@ -3054,7 +3061,7 @@
       \field{journaltitle}{Journal of International Money and Finance}
       \field{month}{2}
       \field{shorttitle}{Does the exchange rate regime make a difference in inflation performance in developing and emerging countries?}
-      \field{title}{Does the exchange rate regime make a difference in inflation performance in developing and emerging countries?: {The} role of inflation targeting}
+      \field{title}{Does the Exchange Rate Regime Make a Difference In inflation Performance in Developing and Emerging Countries?: {The} Role of Inflation Targeting}
       \field{urlday}{29}
       \field{urlmonth}{4}
       \field{urlyear}{2021}
