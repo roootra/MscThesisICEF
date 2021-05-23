@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  24 MAY 2021 01:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  24 MAY 2021 01:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1219,7 +1219,7 @@ File: figures/neer_cpi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/neer_cpi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/neer_cpi-eps-converted-to.pdf  used on input l
 ine 559.
-(pdftex.def)             Requested size: 491.946pt x 245.54921pt.
+(pdftex.def)             Requested size: 562.2286pt x 280.645pt.
  [23
 
 ] [24] [25 <./figures/neer_cpi-eps-converted-to.pdf>] [26
@@ -1574,7 +1574,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on thesis_msc.pdf (45 pages, 378229 bytes).
+Output written on thesis_msc.pdf (45 pages, 378228 bytes).
 PDF statistics:
  643 PDF objects out of 1000 (max. 8388607)
  535 compressed objects within 6 object streams
