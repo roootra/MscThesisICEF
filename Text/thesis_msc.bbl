@@ -50,12 +50,8 @@
       \field{abstract}{The central bank's optimal reaction to foreign and domestic shocks is analyzed in an inflation targeting model allowing for incomplete exchange rate pass-through. Limited pass-through is incorporated through nominal rigidities in an aggregate supply-aggregate demand model derived from some microfoundations. Three main results are obtained. First, the results suggest that the interest rate response to foreign shocks is smaller when pass-through is low. Second, the inflation-output variability trade-off becomes more favourable as pass-through decreases. Third, lower pass-through, that is larger nominal rigidity, leads to higher exchange rate volatility. With exogenous nominal price stickiness, part of the required relative price adjustment is provided through larger movements in the endogenously determined exchange rate.}
       \field{journaltitle}{Sveriges Riksbank Working Paper}
       \field{title}{Monetary {Policy} with {Incomplete} {Exchange} {Rate} {Pass}-{Through}}
-      \field{urlday}{2}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{127}
       \field{year}{2001}
-      \field{urldateera}{ce}
       \verb{file}
       \verb :Adolfson2001 - Monetary Policy with Incomplete Exchange Rate Pass through.pdf:PDF
       \endverb
@@ -282,12 +278,8 @@
       \field{number}{1}
       \field{shorttitle}{Exchange rate pass-through}
       \field{title}{Exchange Rate Pass-through: {The} Case of {Korean} Exports of Manufactures}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{35}
       \field{year}{1991}
-      \field{urldateera}{ce}
       \field{pages}{79\bibrangedash 84}
       \range{pages}{6}
       \verb{doi}
@@ -336,12 +328,8 @@
       \field{month}{3}
       \field{number}{423}
       \field{title}{Pricing to {Market} {Behaviour} and {Exchange} {Rate} {Pass}-{Through} in {Japanese} {Exports}}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{104}
       \field{year}{1994}
-      \field{urldateera}{ce}
       \field{pages}{271\bibrangedash 281}
       \range{pages}{11}
       \verb{doi}
@@ -386,12 +374,8 @@
       \field{journaltitle}{NBER Working Paper}
       \field{month}{1}
       \field{title}{Some {Empirical} {Evidence} on {Hysteresis} in {Aggregate} {US} {Import} {Prices}}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{2483}
       \field{year}{1988}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.3386/w2483
       \endverb
@@ -442,12 +426,8 @@
       \field{month}{12}
       \field{number}{4}
       \field{title}{Exchange {Rate} {Pass}-{Through} in {CIS} {Countries}}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{55}
       \field{year}{2013}
-      \field{urldateera}{ce}
       \field{pages}{705\bibrangedash 720}
       \range{pages}{16}
       \verb{doi}
@@ -502,12 +482,8 @@
       \field{series}{Emerging {Markets} {Finance}}
       \field{shorttitle}{Exchange rate pass-through into import prices revisited}
       \field{title}{Exchange Rate Pass-through into Import Prices Revisited: {What} Drives It?}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{31}
       \field{year}{2012}
-      \field{urldateera}{ce}
       \field{pages}{818\bibrangedash 844}
       \range{pages}{27}
       \verb{doi}
@@ -567,15 +543,10 @@
       \field{abstract}{This paper examines the degree of Exchange Rate Pass-Through (ERPT) to prices in 12 emerging markets in Asia, Latin America, and Central and Eastern Europe. Our results, based on three alternative vector autoregressive models, partly overturn the conventional wisdom that ERPT into both import and consumer prices is always higher in "emerging" than in "developed" countries. For emerging markets with only one digit inflation (most notably the Asian countries), passthrough to import and consumer prices is found to be low and not very dissimilar from the levels of developed economies. The paper also finds robust evidence for a positive relationship between the degree of the ERPT and inflation, in line with Taylor's hypothesis once two outlier countries (Argentina and Turkey) are excluded from the analysis. Finally, the presence of a positive link between import openness and ERPT, while plausible theoretically, finds only weak empirical support.}
       \field{journaltitle}{ECB Working Paper}
       \field{month}{3}
-      \field{number}{ID 970654}
       \field{title}{Exchange {Rate} {Pass}-{Through} in {Emerging} {Markets}}
       \field{type}{{SSRN} {Scholarly} {Paper}}
-      \field{urlday}{5}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{739}
       \field{year}{2007}
-      \field{urldateera}{ce}
       \verb{file}
       \verb :Ca'Zorzi_2007.pdf:PDF
       \endverb
@@ -621,12 +592,8 @@
       \field{month}{11}
       \field{number}{4}
       \field{title}{Exchange {Rate} {Pass}-{Through} into {Import} {Prices}}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{87}
       \field{year}{2005}
-      \field{urldateera}{ce}
       \field{pages}{679\bibrangedash 690}
       \range{pages}{12}
       \verb{doi}
@@ -871,12 +838,8 @@
       \field{journaltitle}{Cambridge Journal of Economics}
       \field{number}{3}
       \field{title}{Exchange Rate Adjustment and Oligopoly Pricing Behaviour}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{13}
       \field{year}{1989}
-      \field{urldateera}{ce}
       \field{pages}{373\bibrangedash 393}
       \range{pages}{21}
       \verb{file}
@@ -928,12 +891,8 @@
       \field{month}{8}
       \field{shorttitle}{Exchange rate pass-through to import prices in the {Euro}-area}
       \field{title}{Exchange Rate Pass-through to Import Prices in the {Euro}-area: {A} Multi-currency Investigation}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{138}
       \field{year}{2014}
-      \field{urldateera}{ce}
       \field{pages}{63\bibrangedash 77}
       \range{pages}{15}
       \verb{doi}
@@ -988,12 +947,8 @@
       \field{number}{3}
       \field{shorttitle}{Asymmetric exchange rate pass-through}
       \field{title}{Asymmetric Exchange Rate Pass-through: {Evidence} from Major Countries}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{34}
       \field{year}{2012}
-      \field{urldateera}{ce}
       \field{pages}{833\bibrangedash 844}
       \range{pages}{12}
       \verb{doi}
@@ -1093,12 +1048,8 @@
       \field{month}{7}
       \field{number}{5}
       \field{title}{Exchange Rate Pass-through, Exchange Rate Volatility, and Exchange Rate Disconnect}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{49}
       \field{year}{2002}
-      \field{urldateera}{ce}
       \field{pages}{913\bibrangedash 940}
       \range{pages}{28}
       \verb{doi}
@@ -1306,12 +1257,8 @@
       \field{number}{1}
       \field{shorttitle}{Symmetric pass-through of tariffs and exchange rates under imperfect competition}
       \field{title}{Symmetric Pass-through of Tariffs and Exchange Rates under Imperfect Competition: {An} Empirical Test}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{27}
       \field{year}{1989}
-      \field{urldateera}{ce}
       \field{pages}{25\bibrangedash 45}
       \range{pages}{21}
       \verb{doi}
@@ -1374,12 +1321,8 @@
       \field{shorttitle}{Shocks versus {Structure}}
       \field{title}{Shocks versus {Structure}: {Explaining} {Differences} in {Exchange} {Rate} {Pass}-{Through} across {Countries} and {Time}}
       \field{type}{{SSRN} {Scholarly} {Paper}}
-      \field{urlday}{5}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{50}
       \field{year}{2017}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.2139/ssrn.2999637
       \endverb
@@ -1484,12 +1427,8 @@
       \field{month}{12}
       \field{number}{4}
       \field{title}{International {Evidence} on {Shock}-{Dependent} {Exchange} {Rate} {Pass}-{Through}}
-      \field{urlday}{5}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{68}
       \field{year}{2020}
-      \field{urldateera}{ce}
       \field{pages}{721\bibrangedash 763}
       \range{pages}{43}
       \verb{doi}
@@ -1541,12 +1480,8 @@
       \field{journaltitle}{International Journal of Finance \& Economics}
       \field{number}{4}
       \field{title}{Monetary Policy and Exchange Rate Pass-through}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{9}
       \field{year}{2004}
-      \field{urldateera}{ce}
       \field{pages}{315\bibrangedash 338}
       \range{pages}{24}
       \verb{doi}
@@ -1597,13 +1532,9 @@
       \field{month}{11}
       \field{shorttitle}{Revisiting the exchange rate pass through}
       \field{title}{Revisiting the Exchange Rate Pass through: {A} General Equilibrium Perspective}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{127}
       \field{year}{2020}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{103389}
       \range{pages}{1}
       \verb{doi}
@@ -1687,12 +1618,8 @@
       \field{number}{1}
       \field{shorttitle}{Exchange {Rate} {Pass}-{Through} in the 1980s}
       \field{title}{Exchange {Rate} {Pass}-{Through} in the 1980s: {The} {Case} of {U}.{S}. {Imports} of {Manufactures}}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{1989}
       \field{year}{1989}
-      \field{urldateera}{ce}
       \field{pages}{297\bibrangedash 337}
       \range{pages}{41}
       \verb{doi}
@@ -1788,12 +1715,8 @@
       \field{journaltitle}{Economic Modelling}
       \field{month}{7}
       \field{title}{Exchange Rate Pass-through to Inflation in {China}}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{33}
       \field{year}{2013}
-      \field{urldateera}{ce}
       \field{pages}{900\bibrangedash 912}
       \range{pages}{13}
       \verb{doi}
@@ -1876,12 +1799,8 @@
       \field{month}{3}
       \field{number}{1}
       \field{title}{Exchange Rate Pass-through and Export Pricing Evidence from the {Japanese} {Economy}}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{5}
       \field{year}{1991}
-      \field{urldateera}{ce}
       \field{pages}{41\bibrangedash 59}
       \range{pages}{19}
       \verb{doi}
@@ -1932,12 +1851,8 @@
       \field{number}{1}
       \field{shorttitle}{{EXCHANGE} {RATE} {PASS}-{THROUGH} {IN} {EXPORT} {PRICES}}
       \field{title}{Exchange Rate Pass-through in Export Prices: An International Comparison}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{30}
       \field{year}{1989}
-      \field{urldateera}{ce}
       \field{pages}{31\bibrangedash 48}
       \range{pages}{18}
       \verb{file}
@@ -2013,12 +1928,8 @@
       \field{number}{5}
       \field{shorttitle}{{US} inflation and the dollar exchange rate}
       \field{title}{{US} inflation and the dollar exchange rate: a vector error correction model}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{30}
       \field{year}{1998}
-      \field{urldateera}{ce}
       \field{pages}{613\bibrangedash 619}
       \range{pages}{7}
       \verb{doi}
@@ -2065,12 +1976,8 @@
       \field{number}{3}
       \field{shorttitle}{Exchange {Rates} and {Import} {Prices} in the {United} {States}}
       \field{title}{Exchange {Rates} and {Import} {Prices} in the {United} {States}: {A} {Varying}-{Parameter} {Estimation} of {Exchange}-{Rate} {Pass}-{Through}}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{8}
       \field{year}{1990}
-      \field{urldateera}{ce}
       \field{pages}{305\bibrangedash 315}
       \range{pages}{11}
       \verb{doi}
@@ -2125,12 +2032,8 @@
       \field{number}{2}
       \field{series}{Beyond the euro area: {Monetary} {Policy} in selected {CIS} countries}
       \field{title}{A Note on Exchange Rate Pass-through in {CIS} Countries}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{20}
       \field{year}{2006}
-      \field{urldateera}{ce}
       \field{pages}{215\bibrangedash 226}
       \range{pages}{12}
       \verb{doi}
@@ -2146,6 +2049,57 @@
       \verb https://www.sciencedirect.com/science/article/pii/S027553190500070X
       \endverb
       \keyw{Exchange rate pass-through,Inflation,Exchange rate regime,Transition countries}
+    \endentry
+    \entry{Kreptsev2017}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf4e9ec346daf42f5143923082d182ee}{%
+           family={Kreptsev},
+           familyi={K\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cf31ea7e08330f35a2f3086e3902b19}{%
+           family={Seleznev},
+           familyi={S\bibinitperiod},
+           given={Sergei},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Bank of Russia}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3e735c436c1e5276a5174b849793eae8}
+      \strng{fullhash}{5c8333b738dce954133a616b330e3cf6}
+      \strng{bibnamehash}{5c8333b738dce954133a616b330e3cf6}
+      \strng{authorbibnamehash}{5c8333b738dce954133a616b330e3cf6}
+      \strng{authornamehash}{3e735c436c1e5276a5174b849793eae8}
+      \strng{authorfullhash}{5c8333b738dce954133a616b330e3cf6}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents the DSGE model of the Russian economy with the banking sector which the Bank of Russia uses for simulation experiments. We show how the introduction of the banking sector changes impulse responses of a standard DSGE model of a small open economy. We also demonstrate that the model has fairly good predictive power. The model enables us to study the effect of banking sector-specific shocks on the economy. Estimation on Russian data has led us to conclude that in this model such shocks did not have a significant effect on the real economy’s variables in the period under observation spanning years from 2006 to 2016.}
+      \field{journaltitle}{Bank of Russia Working Paper Series}
+      \field{month}{12}
+      \field{title}{{DSGE} {Model} of the {Russian} {Economy} with the {Banking} {Sector}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \verb{file}
+      \verb :Kreptsev2017 - DSGE Model of the Russian Economy with the Banking Sector.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/p/bkr/wpaper/wps27.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/p/bkr/wpaper/wps27.html
+      \endverb
+      \keyw{DSGE,BVAR,Russia’s economy,financial frictions,banking sector.}
     \endentry
     \entry{LeivaLeon2019}{article}{}
       \name{author}{3}{}{%
@@ -2231,12 +2185,8 @@
       \field{number}{1}
       \field{shorttitle}{Exchange rate pass-through in deflation}
       \field{title}{Exchange Rate Pass-through in Deflation: {The} Case of {Taiwan}}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{22}
       \field{year}{2012}
-      \field{urldateera}{ce}
       \field{pages}{101\bibrangedash 111}
       \range{pages}{11}
       \verb{doi}
@@ -2282,12 +2232,8 @@
       \field{journaltitle}{Eastern Economic Journal}
       \field{number}{4}
       \field{title}{Pass-through of {Exchange} {Rates} and {Import} {Prices} to {Domestic} {Inflation} in {Some} {Industrialized} {Economies}}
-      \field{urlday}{5}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{33}
       \field{year}{2007}
-      \field{urldateera}{ce}
       \field{pages}{511\bibrangedash 537}
       \range{pages}{27}
       \verb{file}
@@ -2331,12 +2277,8 @@
       \field{month}{12}
       \field{number}{4}
       \field{title}{Exchange Rates and Prices of {Australian} Manufactured Exports}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{128}
       \field{year}{1992}
-      \field{urldateera}{ce}
       \field{pages}{695\bibrangedash 710}
       \range{pages}{16}
       \verb{doi}
@@ -2384,12 +2326,8 @@
       \field{number}{3}
       \field{shorttitle}{Exchange {Rate} {Pass}-{Through}}
       \field{title}{Exchange {Rate} {Pass}-{Through}: {Australian} {Imports} of {Motor} {Vehicles}}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{7}
       \field{year}{1993}
-      \field{urldateera}{ce}
       \field{pages}{93\bibrangedash 109}
       \range{pages}{17}
       \verb{doi}
@@ -2439,12 +2377,8 @@
       \field{month}{6}
       \field{number}{2}
       \field{title}{Exchange {Rate} {Pass}-{Through}}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{9}
       \field{year}{1995}
-      \field{urldateera}{ce}
       \field{pages}{197\bibrangedash 231}
       \range{pages}{35}
       \verb{doi}
@@ -2489,12 +2423,8 @@
       \field{month}{5}
       \field{number}{2}
       \field{title}{Global {Implications} of {Self}-{Oriented} {National} {Monetary} {Rules}}
-      \field{urlday}{2}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{117}
       \field{year}{2002}
-      \field{urldateera}{ce}
       \field{pages}{503\bibrangedash 535}
       \range{pages}{33}
       \verb{doi}
@@ -2549,12 +2479,8 @@
       \field{series}{Symposium: {Monetary} and {Exchange} {Rate} {Policies} in the {CIS} {Countries}: {Between} the {EU} and {Russia}}
       \field{shorttitle}{Money demand and inflation in dollarized economies}
       \field{title}{Money Demand and Inflation in Dollarized Economies: {The} Case of {Russia}}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{33}
       \field{year}{2005}
-      \field{urldateera}{ce}
       \field{pages}{462\bibrangedash 483}
       \range{pages}{22}
       \verb{doi}
@@ -2693,12 +2619,8 @@
       \field{month}{4}
       \field{shorttitle}{6 {Export} {Prices} and {Exchange} {Rates}}
       \field{title}{{Export} {Prices} and {Exchange} {Rates}: {An} {Industry} {Approach}}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{year}{1985}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{185\bibrangedash 216}
       \range{pages}{32}
       \verb{doi}
@@ -2780,12 +2702,8 @@
       \field{number}{5}
       \field{shorttitle}{Interpreting the macroeconomic time series facts}
       \field{title}{Interpreting the Macroeconomic Time Series Facts: {The} Effects of Monetary Policy}
-      \field{urlday}{22}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{36}
       \field{year}{1992}
-      \field{urldateera}{ce}
       \field{pages}{975\bibrangedash 1000}
       \range{pages}{26}
       \verb{doi}
@@ -2842,12 +2760,8 @@
       \field{journaltitle}{Journal of the New Economic Association}
       \field{number}{1}
       \field{title}{Estimating the {Exchange} {Rate} {Pass}-{Through} {Effect} on {Producer} {Prices} of {Final} {Products} {Based} on {Micro}-{Data} of {Russian} {Companies}}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{41}
       \field{year}{2019}
-      \field{urldateera}{ce}
       \field{pages}{128\bibrangedash 157}
       \range{pages}{30}
       \verb{file}
@@ -2898,12 +2812,8 @@
       \field{month}{7}
       \field{number}{5}
       \field{title}{Openness, Imperfect Exchange Rate Pass-through and Monetary Policy}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{49}
       \field{year}{2002}
-      \field{urldateera}{ce}
       \field{pages}{947\bibrangedash 981}
       \range{pages}{35}
       \verb{doi}
@@ -2955,15 +2865,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The paper investigates the ability of monetary authorities to keep the real exchange rate undervalued over the long run by implementing a policy of accumulating foreign exchange reserves. We consider a model of a three-sector, small, open economy, where the central bank continuously purchases foreign currency reserves and compare them to Russian and Chinese economies in recent years. Both countries appear to pursue reserve accumulation policies. We find a clear trade-off between the steady state levels of the real exchange rate and inflation. After calibration, the model predicts an 8.5\% real undervaluation of the Russian currency and a 13.7\% undervaluation of the Chinese currency. Predicted inflation is found to match observed levels.}
+      \field{journaltitle}{BOFIT Discussion Paper}
       \field{month}{8}
-      \field{number}{ID 931908}
       \field{title}{The {Inflationary} {Consequences} of {Real} {Exchange} {Rate} {Targeting} {Via} {Accumulation} of {Reserves}}
       \field{type}{{SSRN} {Scholarly} {Paper}}
-      \field{urlday}{8}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
+      \field{volume}{11}
       \field{year}{2006}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.2139/ssrn.931908
       \endverb
@@ -3009,12 +2916,8 @@
       \field{month}{6}
       \field{number}{7}
       \field{title}{Low inflation, pass-through, and the pricing power of firms}
-      \field{urlday}{3}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
       \field{volume}{44}
       \field{year}{2000}
-      \field{urldateera}{ce}
       \field{pages}{1389\bibrangedash 1408}
       \range{pages}{20}
       \verb{doi}
@@ -3062,12 +2965,8 @@
       \field{month}{2}
       \field{shorttitle}{Does the exchange rate regime make a difference in inflation performance in developing and emerging countries?}
       \field{title}{Does the Exchange Rate Regime Make a Difference In inflation Performance in Developing and Emerging Countries?: {The} Role of Inflation Targeting}
-      \field{urlday}{29}
-      \field{urlmonth}{4}
-      \field{urlyear}{2021}
       \field{volume}{32}
       \field{year}{2013}
-      \field{urldateera}{ce}
       \field{pages}{968\bibrangedash 989}
       \range{pages}{22}
       \verb{doi}

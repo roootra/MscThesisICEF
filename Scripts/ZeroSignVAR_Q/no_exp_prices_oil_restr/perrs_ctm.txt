@@ -1,0 +1,61 @@
+
+ans = 
+
+    "PERRs (4q):
+     "
+
+
+ans = 
+
+    "Oil shock: 0.15838"
+
+
+ans = 
+
+    "Monetary shock: 0.60972"
+
+
+ans = 
+
+    "Exchange rate shock: 0.22755"
+
+
+ans = 
+
+    "Output shock: -0.22295"
+
+
+ans = 
+
+    "Inflation shock: -0.43028"
+
+
+ans = 
+
+    "PERRs (1q):
+     "
+
+
+ans = 
+
+    "Oil shock: 0.06947"
+
+
+ans = 
+
+    "Monetary shock: 0.38343"
+
+
+ans = 
+
+    "Exchange rate shock: 0.08680"
+
+
+ans = 
+
+    "Output shock: -0.30444"
+
+
+ans = 
+
+    "Inflation shock: -0.27841"
