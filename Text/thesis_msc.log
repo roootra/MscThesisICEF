@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  24 MAY 2021 01:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.14)  24 MAY 2021 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,7 +1224,7 @@ ine 559.
 
 ] [24] [25 <./figures/neer_cpi-eps-converted-to.pdf>] [26
 
-] [27]
+]
 Package epstopdf Info: Source file: <figures/intrate_cpi.eps>
 (epstopdf)                    date: 2021-05-22 14:39:23
 (epstopdf)                    size: 13194 bytes
@@ -1235,13 +1235,17 @@ Package epstopdf Info: Source file: <figures/intrate_cpi.eps>
 nverted-to.pdf figures/intrate_cpi.eps>
 (epstopdf)             \includegraphics on input line 637.
 Package epstopdf Info: Output file is already uptodate.
-<figures/intrate_cpi-eps-converted-to.pdf, id=377, 569.12625pt x 284.06125pt>
+<figures/intrate_cpi-eps-converted-to.pdf, id=368, 569.12625pt x 284.06125pt>
 File: figures/intrate_cpi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/intrate_cpi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/intrate_cpi-eps-converted-to.pdf  used on inpu
 t line 637.
 (pdftex.def)             Requested size: 441.01773pt x 220.12784pt.
- [28 <./figures/intrate_cpi-eps-converted-to.pdf>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] [28 <./figures/intrate_cpi-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/hd_exrate_full.eps>
 (epstopdf)                    date: 2021-05-23 00:57:38
 (epstopdf)                    size: 24929 bytes
@@ -1574,7 +1578,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on thesis_msc.pdf (45 pages, 378228 bytes).
+Output written on thesis_msc.pdf (45 pages, 378397 bytes).
 PDF statistics:
  643 PDF objects out of 1000 (max. 8388607)
  535 compressed objects within 6 object streams

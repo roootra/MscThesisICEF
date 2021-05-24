@@ -207,7 +207,7 @@
 \begin{document}
 \setcounter{page}{2}
 \begin{abstract}
-Russian inflation movements are mostly associated with exchange rate fluctuations, especially after decision of Bank of Russia to adopt floating exchange rate regime. Several studies attempt to measure exchange rate pass-through for Russia, although their estimations are shock-independent. This work estimates SVAR and applies short-run sign and zero restrictions in order to recover shock-dependent ERPT to describe effects of exchange rate to prices under different structural shocks. My findings are comparable to ones in the literature and show that oil shock pass-through in both short- and long-run is ambiguous: while the effect to CPI is low, it is huge to core CPI.
+Russian inflation movements are mostly associated with exchange rate fluctuations, especially after decision of Bank of Russia to adopt floating exchange rate regime. Several studies attempt to measure exchange rate pass-through for Russia, although their estimations are shock-independent. This work estimates SVAR and applies short-run sign and zero restrictions in order to recover shock-dependent ERPT to describe effects of exchange rate to prices during evolution of different structural shocks. My findings are comparable to ones in the literature and show that oil shock pass-through effect in both short- and long-run is ambiguous: while the effect to CPI is low, it is huge to core CPI.
 \end{abstract}
 \newpage
 
@@ -224,7 +224,7 @@ Russian inflation movements are mostly associated with exchange rate fluctuation
 \addcontentsline{toc}{section}{Introduction}
 
 \blfootnote{\textit{To the memory of my grandfather. Bene qui latuit, bene vixit.}}
-The process of integrated world economy formation has been quite substantially changing policies of monetary and macroprudential authorities around the world, adding more challenges to them. Emerging economies being involved into world market has been experiencing a huge policy transformation, especially for ex-socialist countries with strict authoritarian regimes that had very basic international trading affairs before the collapse of these regimes. During transitory process of integration into world economy for such countries, it appears that price stability there becomes subject not only to domestic shocks, but shocks coming from outer world.
+The process of integrated world economy formation has been quite substantially changing policies of monetary and macroprudential authorities around the world, adding more challenges to them. Emerging economies being involved into world market has been experiencing a huge policy transformation, especially for ex-socialist countries with strict authoritarian regimes that had very basic international trading affairs before their collapse. During transitory process of integration into world economy for such countries, it appears that price stability there becomes subject not only to domestic shocks, but shocks coming from outer world.
 
 The main goal of a monetary authority is price stability; in the above mentioned conditions, policymakers of emerging economies are not suited well for rebuffing outer shocks, since the natural mechanisms of self-compensation in the local economy are yet to be founded. This fact requires prudent policy adjustment, which takes into account a structure of international trade, exchange rate fluctuations and external shocks occurring globally. 
 
@@ -232,15 +232,15 @@ To render the basis for this, the policymaker has to conduct not only positive, 
 
 Russia, as emerging ex-socialist commodity economy, can be described as severely subject to commodity (oil) shocks and exchange rate fluctuations. During last 30 years, ruble --- local currency of Russia --- has experienced several large depreciation waves (the largest ones were after 1998 default and 2014 oil price drop). Accompanied by different set of shocks, these events had different degree of exchange rate pass-through in the Russian economy. 
 
-There is many research done on shock \textit{independent} pass-through estimation made for many countries; several papers estimate it for Russia, some of them getting though controversial results due to lack of data available. This approach, in a plain setup, does not require sophisticated statistical methods, as estimates can be obtained from OLS model.
+There is many research done on shock \textit{independent} pass-through estimation made for many countries; several papers estimate it for Russia, some of them getting though controversial results due to lack of data available. This approach, in a plain setup, does not require sophisticated statistical methods, as estimates can be obtained from ARDL model.
 
 On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE (\cite{Khotulev2020}). Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
 
-The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. I include five variables from 2003Q2 to 2020Q4 into two models, depending on CPI composition: oil price, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP and CPI (full or core) in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, local monetary shock, local exogenous exchange rate shock, local supply shock and local demand shock. Different CPI compositions add more robustness to the results as well. I use quarterly data in order to estimate the model since there is no monthly time series for Russian output.
+The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. In order to answer to research question --- what is exchange rate pass-through for Russia conditioning on different economic shocks --- I include five variables from 2003Q2 to 2020Q4 into two models, depending on CPI composition: oil price, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP and CPI (full or core) in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, local monetary shock, local exogenous exchange rate shock, local supply shock and local demand shock. Different CPI compositions add more robustness to the results as well. I use quarterly data in order to estimate the model since there is no monthly time series for Russian output.
 
-In order to identify structural shocks, after estimation of vector autoregression, I apply short-run sign and zero restrictions proposed in (\cite{Arias2014}). Although signs of impulse response functions need to be guessed, this method is quite flexible and allows to precisely estimate shock-dependent exchange rate pass-through. To address a potential problem of weak identification, I estimate Bayesian VAR with uninformative Normal Inverse-Wishart prior and use identification scheme mentioned above for 500 draws from posterior distribution. 
+In order to identify structural shocks, after estimation of vector autoregression, I apply short-run sign and zero restrictions proposed in (\cite{Arias2014}). Although signs of impulse response functions need to be guessed, this method is quite flexible and allows to precisely estimate shock-dependent exchange rate pass-through. To address a potential problem of weak identification, I estimate Bayesian VAR with uninformative Normal Inverse-Wishart prior and use identification scheme mentioned above for draws from error covariance matrix distribution. 
 
-In general, my findings meet results from (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. Analysis reveals highest pass-through estimate from exchange rate shocks, while oil fluctuations, which are commonly considered as a main driver of exchange rate for Russia, have a little pass-through effect. However, pass-through is higher in Russia comparing to developed economies (US and Euro area), which is expected.
+In general, my findings meet results from (\cite{Khotulev2020}) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. Analysis reveals highest pass-through estimate from exchange rate shocks, while oil fluctuations, which are commonly considered as a main driver of exchange rate for Russia, have a little pass-through effect. However, pass-through is higher in Russia comparing to developed economies (US and Euro area), which is expected result.
 
 Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate (both full and core), which shows contribution of different macrovariables in the model to inflation volatility. There is a presence of negative effect to inflation after 2014 rouble depreciation and gradual interest rate decrease, although monetary shocks to core CPI from the beginning of 2020 and to full CPI in the last quarter of the same year become positive. Talking about COVID-19 outbreak in the first quarter of 2020, I conclude that the main drivers here were global persistent (associated with oil price) and local supply shocks, while exchange rate was cooling down consumer inflation. In the last quarter of 2020 gradual increase in oil price reduced inflation rate, while exchange rate effect appears to be positive; I associate the latter with a political incident in late summer of the same year.
 
@@ -342,7 +342,7 @@ In (\cite{Kataranova2010}), a more recent (2000--2008) data are used. Author fit
 
 \textcite{Beckmann2013} estimate exchange rate pass-through for CIS countries on the data from 1999 to 2010. Authors obtain negative ERPT estimate from VAR model for USD-RUB pair and the same estimate close to zero for EUR-RUB pair, which contradicts reality. Authors address this issue by pointing out that this pass-through estimate is shock-independent and there is an uncontrolled effect of oil shocks.
 
-In (\cite{Faryna2016}) paper author estimate bilateral panel VAR for both Russia and Ukraine to study cross-country spillovers. Author claims that depreciation of ruble causes increase in Ukrainian inflation, which follows intuition as Russian and Ukrainian economies have been quite integrated (even after 2014 political crisis this degree of integration remains high). Moreover, it is observed in this paper that inflation in Ukraine responds to USD-RUB changes higher than to USD-UAH (Ukrainian hryvna --- the Ukrainian local currency). 
+In (\cite{Faryna2016}) paper author estimate bilateral panel VAR for both Russia and Ukraine to study cross-country spillovers. Author claims that depreciation of ruble causes increase in Ukrainian inflation, which follows intuition as Russian and Ukrainian economies have been quite integrated (even after 2014 political crisis this degree of integration remains high). Moreover, it is observed in this paper that inflation in Ukraine responds to USD-RUB changes higher than to USD-UAH (hryvna --- the Ukrainian local currency). 
 
 The other work of the same author is (\cite{Faryna2016a}), which examines non-linear ERPT for Ukraine exclusively on the 2007--2016 data. As it is occurred in the literature for Russia, local currency depreciation causes more effect to inflation than its appreciation, although pass-through is higher for Ukraine.
 
@@ -565,17 +565,17 @@ I do not use RUB/USD as the exchange rate, since nominal effective exchange rate
 
 A quite intuitive fact that oil price is negatively correlated with exchange rate follows from the fact that oil producers convert their yields from convertible currencies (mostly, US dollar and Euro) to Russian ruble, which creates excessive supply of foreign currency. At the same time, ruble appreciation declines consumer prices due to the import-dependent structure of consumer basket (huge share of import in manufactured goods). These relations form a pass-through channel. This is in contrast to identification scheme used in \parencite{Forbes2018}, which does not imply any restrictions to global persistent shock due to ambiguity of risk-aversion effect.
 
-In general, the Russian economy can be described by the following stylized facts:
+In general, based on the correlation matrix, the Russian economy can be described by the following stylized facts:
 \begin{enumerate}
 	\setlength\itemsep{0.02em}
-	\item There is a significant negative correlation of oil price and ruble exchange rate (especially, USD and EUR);
-	\item There is a strong negative correlation of interest rate in Russia and Russian GDP;
-	\item Oil price and Russian GDP are positively correlated;
+	\item There is a significant negative correlation of oil price and ruble exchange rate (especially, for RUB/USD and RUB/EUR);
+	\item There is a strong negative correlation of interest rate in Russia and local real GDP;
+	\item Oil price and local real GDP are positively correlated;
 	\item Exchange rate and CPI are positively correlated;
 	\item Exchange rate is more volatile than CPI.
 \end{enumerate}
 
-Annex contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it; hence, short-term interest rates are used in the literature without differencing.
+Annex contains additional information about characteristics of time series. Table \ref{table:correlation_variables} displays correlation coefficients of variables, Table \ref{table:unit_roots} provides unit root tests for them. \mbox{MIACR} exhibits unit root presence, although there is no visual evidence of it; hence, short-term interest rates are used in the literature without differencing. 
 
 \clearpage
 \section*{SECTION 5. RESULTS}
@@ -587,11 +587,11 @@ Annex contains additional information about characteristics of time series. Tabl
 	\textbf{Price-to-exchange rate ratios}
 \end{center}
 
-To obtain the results, I estimate two BVARs of order 1 with Normal Inverse-Whishart prior and different compositions of CPI (full and core). The order of model is picked based on SIC (Schwartz information criterion) calculated for models up to 6 lags.
+To obtain the results, I estimate two BVARs of order 1 with Normal Inverse-Whishart prior and different compositions of CPI (full and core). The order of model is picked based on SIC (Schwartz information criterion) calculated for models up to 8 lags.
 
-After BVAR estimation, sign and zero restrictions algorithm is applied in order to recover orthogonal impulse-response functions. For CPI, 466,6 thousands of models are checked and 43 of them fulfil restrictions. In case of core CPI, 480,9 thousands of models are checked and 31 of them fit. IRFs for both models are in Annex (Figures \ref{fig:irf_1} and \ref{fig:irf_2} for full CPI, Figures \ref{fig:irf_core_1}~and~\ref{fig:irf_core_2} for core CPI). I use closest-to-median (CTM) IRF definition, as it describes a model that is most coherent with the data, while use of median IRFs during calculation of shock-dependent PERR values may lead to wrong results.
+After BVAR estimation, sign and zero restrictions algorithm is applied in order to recover orthogonal impulse-response functions. For CPI, 466,6 thousands of models are checked and 43 of them fulfil restrictions. In case of core CPI, 480,9 thousands of models are checked and 31 of them fit. IRFs for both models are in Annex (Figures \ref{fig:irf_1} and \ref{fig:irf_2} for full CPI, Figures \ref{fig:irf_core_1}~and~\ref{fig:irf_core_2} for core CPI). I use closest-to-median (CTM) IRF definition instead of median one, as the former describes a model that is most coherent with the data.
 
-PERR coefficients are calculated for two time periods: the short-run (4 months) and the long-run one (12 months). For purposes of positive analysis, historical decompositions for CPI (both full and core), exchange rate and GDP are calculated. CTM IRFs are used in calculations.
+PERR coefficients are calculated for two time periods: the short-run (1 quarter) and the long-run one (4 quarters). For purposes of positive analysis, historical decompositions for CPI (both full and core), exchange rate and GDP are calculated.
 
 Table \ref{tab:perr} provides PERR estimations. Shock-dependent pass-through coefficients calculated from model are incomplete for all the variables for both short- and long-run. I get negative PERRs for supply and demand positive shocks, which is a usual fact for SVARs (e.~g. \cite[p.~55]{Ortega2020}).
 
@@ -613,7 +613,7 @@ Monetary shock PERR is lower than obtained in (\cite[p. 9]{Khotulev2020}) for bo
 		Global persistent shock & 0.0695          & 0.3444           & 0.1584          & 0.4265          \\
 		Monetary shock          & 0.0439          & 0.1102           & 0.2813          & 0.4479          \\
 		Exchange rate shock     & 0.1459          & 0.1967           & 0.4033          & 0.5649          \\
-		Supply shock            & -0.2389         & -0.0239          & -0.3556         & -0.3907         \\
+		Supply shock            & -0.2389         & -0.1239          & -0.3556         & -0.3907         \\ % & -0.2389         & -0.0239          & -0.3556         & -0.3907         \\
 		Demand shock            & -0.0366         & -0.2949          & -0.1326         & -0.3542   \\
 		\bottomrule
 	\end{tabular}%
@@ -648,7 +648,7 @@ Another remarkable pattern is positive influence of exchange rate shocks due to 
 
 Core CPI exhibits the same influence pattern, however, effect of exchange rate shock is still negative, though negligible, in 2020Q4. An interesting fact is that persistence and strength of shocks' influence is higher for core CPI. 
 
-For illustrative purposes, I add historical decompositions of NEER gr. r. and GDP gr. r. for full CPI model (Figures \ref{fig:hd_neer_full} and \ref{fig:hd_gdp_full}). Forecast error variance decomposition is presented in Annex, Table \ref{tab:fevd_cpi}, for both full and core CPI.
+For illustrative purposes, I add historical decompositions of NEER and GDP growth rates for full CPI model (Figures \ref{fig:hd_neer_full} and \ref{fig:hd_gdp_full}), as the difference in decompositions of these time series between two models is negligible. Forecast error variance decomposition is presented in Annex, Table \ref{tab:fevd_cpi}, for both full and core CPI.
 
 \begin{figure}[h!]
 	\centering
