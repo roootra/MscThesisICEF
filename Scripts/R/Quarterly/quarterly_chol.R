@@ -8,6 +8,7 @@ library(svars)
 library(tsDyn)
 library(ggplot2)
 library(mFilter)
+library(BVAR)
 
 dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Quarterly.xlsx", sheet=3)
 dat <- na.omit(dat[dat$date > as.Date("2005-05-01"),])
@@ -35,15 +36,14 @@ dat_unseas$real_gdp_gap <- hpfilter(dat_unseas$gdp_real_SA_index, freq=1600)$cyc
 plot(dat_unseas$date, dat_unseas$real_gdp_gap)
 
 #Cholesky decomposition
-data_chol <- dat_unseas[,c("oil_USD_qoq",
-                           #"reserves_USD_qoq",
-                           #"broad_money_SA",
-                           "neer_qoq",
-                           "miacr_31",
-                           #"gdp_nominal_qoq",
-                           "cpi_all_qoq",
-                           "gdp_real_SA_qoq",
+data_to_model <- dat_unseas[,c(
+  "gdp_real_SA_qoq",
+  "oil_USD_qoq",
+  "miacr_31",
+  "neer_qoq",
+  "cpi_all_qoq"
 )]
+data_chol <- data_to_model
 #data_chol <- dat_unseas[,c("oil_USD_qoq", "imp_price_qoq", "reserves_USD_qoq", 
 #                           "miacr_31", "neer_qoq", "d_real_gdp_gap", "cpi_all_qoq")]
 data_chol$neer_qoq <- data_chol$neer_qoq * -1
@@ -116,5 +116,3 @@ sum(irf_cv$irf$`epsilon[ neer_qoq ] %->% cpi_all_qoq`) /
 #Output
 sum(irf_cv$irf$`epsilon[ gdp_real_SA_qoq ] %->% cpi_all_qoq`) /
   sum(irf_cv$irf$`epsilon[ gdp_real_SA_qoq ] %->% neer_qoq`)
-
-
