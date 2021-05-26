@@ -36,36 +36,9 @@ require(expm)
 bayesian_model <- bvar(data_to_model, lags=1,
                        priors = bv_priors(),
                        mh = bv_mh(),
-                       n_thin=10, n_burn=95000, n_draw=100000)
+                       n_thin=10, n_burn=9000, n_draw=10000)
 
-#VMA representation
-Phi_bayesian <- function(bayesian_model, nahead){
-  bayesian_coefs <- bayesian_model$beta[,-1,]
-  nahead <- nahead + 1
-  order <- bayesian_model$meta$lags
-  Phi_VMA <- array(data = 0, dim=c(bayesian_model$meta$M, 
-                                   bayesian_model$meta$M, 
-                                   nahead, bayesian_model$meta$n_save))
-  for(draw in 1:dim(Phi_VMA)[4]){
-    diag(Phi_VMA[,,1,draw]) <- 1
-    for(i in 1:(nahead-1)){
-      sum_phi <- 0
-      for(lag in 1:order){
-        if(lag <= i){
-          sum_phi <- sum_phi + Phi_VMA[,,i+1-lag,draw] %*% 
-            bayesian_coefs[draw,
-              (1+(lag-1)*bayesian_model$meta$M):((lag)*bayesian_model$meta$M),]
-        }
-      }
-      Phi_VMA[,,(i+1),draw] <- sum_phi
-    }
-  }
-  return(Phi_VMA)
-}
-irfs <- Phi_bayesian(bayesian_model = bayesian_model, nahead=12)
 
-#Cholesky decompositions
-choldecs <- apply(bayesian_model$sigma, 1, chol)
 #Pure sign approach
 horizon <- 1
 nvars <- dim(irfs)[1]
@@ -93,62 +66,6 @@ signs[5,4,1] <- 0 #oil
 #oil shocks
 signs[5,5,1] <- 1 #self
 signs[4,5,1] <- -1 #exrate
-
-#Sign check
-sign_models <- list()
-tries <- 200
-succ <- 0
-for(draw in 1:dim(irfs)[4]){
-  P <- t(matrix(choldecs[,draw], ncol=5)) #lower Cholesky dec. of vcov mat from draw
-  for(try in 1:tries){
-    cat("Draw ", draw, ", try ", try, ". Accepted: ", succ,".\033[K\r", sep="")
-    new_candidate <- matrix(rnorm(nvars^2), nrow=nvars)
-    Q <- qr.Q(qr(new_candidate, complete=T)) #random orthogonal matrix from N(0,1)
-    for(current_t in 1:horizon){
-      #for(colperm in permn(1:NCOL(Q))){
-        irfs_transformed <- irfs[,,current_t,draw] %*% P %*% Q#[,colperm]
-        #print(diag(irfs_transformed))
-        signs_check <- irfs_transformed * signs_lower[,,current_t]
-        fail <- sum(na.fill(signs_check,0) < 0) #check whether restrictions are held
-        if(fail == 0){
-          succ = succ + 1
-          sign_models[[paste0("Draw ",as.character(draw))]][[paste0("Try ", 
-                                                                    as.character(try))]][["Q"]] <- Q
-          sign_models[[paste0("Draw ",as.character(draw))]][[paste0("Try ", 
-                                                                    as.character(try))]][["P"]] <- P
-        }
-      #}
-    }
-  }
-}
-
-signs_zeros_lower <- signs_lower
-signs_zeros_lower[1:4,5,1] <- 0
-
-for(draw in 1:dim(irfs)[4]){
-  P <- t(matrix(choldecs[,draw], ncol=5)) #lower Cholesky dec. of vcov mat from draw
-  for(try in 1:tries){
-    cat("Draw ", draw, ", try ", try, ". Accepted: ", succ,".\033[K\r", sep="")
-    new_candidate <- matrix(rnorm(nvars^2), nrow=nvars)
-    Q <- qr.Q(qr(new_candidate, complete=T)) #random orthogonal matrix from N(0,1)
-    
-    for(current_t in 1:horizon){
-      #for(colperm in permn(1:NCOL(Q))){
-      irfs_transformed <- irfs[,,current_t,draw] %*% P %*% Q[,colperm]
-      #print(diag(irfs_transformed))
-      signs_check <- irfs_transformed * signs_lower[,,current_t]
-      fail <- sum(na.fill(signs_check,0) < 0) #check whether restrictions are held
-      if(fail == 0){
-        succ = succ + 1
-        sign_models[[paste0("Draw ",as.character(draw))]][[paste0("Try ", 
-                                                                  as.character(try))]][["Q"]] <- Q
-        sign_models[[paste0("Draw ",as.character(draw))]][[paste0("Try ", 
-                                                                  as.character(try))]][["P"]] <- P
-      }
-      #}
-    }
-  }
-}
 
 irf_ala_arias <- function(B, Sigma, p, n, horizon, LR=T){
   #B = A+ %*% A0^(-1) --- matrix of reduced parameters
@@ -202,8 +119,9 @@ sign_restr_ala_arias <- function(irfs, sign_matrix, tries=300, perm_Q=FALSE){
     Q = qr.Q(qr(X))
     #each irf in period h (column-stacked) should be transformed
     irfs_transformed = matrix(nrow=nvars*periods, ncol=nvars)
-    if(!perm_Q){
+    if(!perm_Q){ 
       for(period in 1:periods){ #instead of this, stack Q horisontally (columnwise) period times
+        #It might be better to follow the paper here
         irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
           irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
       }
@@ -281,8 +199,10 @@ zerosign_restr_ala_arias <- function(irfs, zero_sign_matrix, tries=300, perm_Q=F
   Z = (zero_sign_matrix == 0)
   Z = na.fill(Z, 0)
   satisfying_models = list()
+  succ = 0
+  fails = 0
+  cat("\n")
   for(try in 1:tries){
-    #cat("Try ", try, ", successes: ", length(satisfying_models), "\r", sep="")
     #each irf in period h (column-stacked) should be transformed
     irfs_transformed = matrix(nrow=nvars*periods, ncol=nvars)
     #R-matrix recursive construction
@@ -306,12 +226,10 @@ zerosign_restr_ala_arias <- function(irfs, zero_sign_matrix, tries=300, perm_Q=F
       n_j = NCOL(N_jminus)
       y_j = rnorm(n_j)
       Q[,j] = N_jminus %*% y_j / norm(y_j, type="2")
-      #x_j = rnorm(nvars)
-      #Q[,j] = N_jminus %*% (t(N_jminus)  %*% x_j / norm(t(N_jminus) %*% x_j, type="2"))
     }
-    print(Q%*%t(Q))
     if(!perm_Q){
       for(period in 1:periods){ #instead of this, stack Q horisontally (columnwise) period times
+        #It might be better to follow paper here (e_j)
         irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
           irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
       }
@@ -324,15 +242,68 @@ zerosign_restr_ala_arias <- function(irfs, zero_sign_matrix, tries=300, perm_Q=F
       }
     }
     #check for signs
-    fail = any(S * irfs_transformed < 0) 
-    if(!fail){
+    flag_fail = FALSE
+    for(j in 1:nvars){
+      S_j = diag(S[,j])
+      S_j = t(S_j[,(colSums(S_j) != 0)])
+      e_j = diag(nrow=nvars)[,j]
+      if(any(S_j %*% irfs %*% e_j < 0)){
+        flag_fail = TRUE
+        break
+      }
+    }
+    if(flag_fail){
+      fails = fails + 1
+      cat("\rTry ", try, ", successes: ", succ, ". Failed: ", fails, ".", sep="")
+      }
+    else{
+      succ = succ + 1
+      cat("\rTry ", try, ", successes: ", succ, ". Failed: ", fails, ".", sep="")
       satisfying_models[[length(satisfying_models) + 1]] =
         list("Q" = Q, "Transformed_irfs" = irfs_transformed)
-      
     }
   }
+  cat("\n")
   return(satisfying_models)
 }
 debug(zerosign_restr_ala_arias)
-zerosign_restr_ala_arias(irfs_transformed, signs[,,1])
+zerosign_restr_ala_arias(irfs_transformed, signs[,,1], tries = 10000)
+undebug(zerosign_restr_ala_arias)
+
+bayesian_zero_sign_restr_arias <- function(B, Sigma, p, n, draws, sr_sign_matrix, 
+                                           has_const=TRUE, tries=1000){
+  sr_sign_matrix_stacked = NULL
+  for(period in 1:dim(sr_sign_matrix)[3]){
+    sr_sign_matrix_stacked = rbind(sr_sign_matrix_stacked, sr_sign_matrix[,,period])
+  }
+  #sr_sign_matrix_stacked = matrix(nrow=5, ncol=5)
+  #diag(sr_sign_matrix_stacked) = 1
+  #sr_sign_matrix_stacked[5, 1:4] <- 0
+  #DEBUG!
+  cat("\n")
+  cat("Restrictions horizon: ", (dim(sr_sign_matrix)[3]-1), "\n", sep="")
+  satisfying_models = list()
+  for(draw in 1:draws){
+    cat("\rDraw ", draw, ". Accepted draws: ", length(satisfying_models), ".", sep="")
+    bayesian_ortho_irfs = irf_ala_arias(B=B[draw,,], Sigma=Sigma[draw,,], 
+                                        p=p, n=n, horizon=(dim(sr_sign_matrix)[3]-1), LR=FALSE)
+    succ_models_from_draw = zerosign_restr_ala_arias(irfs=bayesian_ortho_irfs, 
+                                                 zero_sign_matrix = sr_sign_matrix_stacked, 
+                                                 tries = tries)
+    if(length(succ_models_from_draw) != 0){
+      satisfying_models[[length(satisfying_models) + 1]] = succ_models_from_draw
+    }
+  }
+  cat("\n", sep="")
+  return(satisfying_models)
+}
+debug(bayesian_zero_sign_restr_arias)
+bayesian_zero_sign_restr_arias(B=bayesian_model$beta[1:100,,],
+                          Sigma=bayesian_model$sigma[1:100,,],
+                          p=bayesian_model$meta$lags,
+                          n=bayesian_model$meta$M,
+                          draws=100,#bayesian_model$meta$n_save,
+                          sr_sign_matrix=signs,
+                          tries=1000)
+undebug(bayesian_zero_sign_restr_arias)
 
