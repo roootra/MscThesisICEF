@@ -3,7 +3,6 @@ library(rio)
 library(lubridate)
 library(vars)
 library(ggplot2)
-require(BVAR)
 
 dat <- import("/Users/rutra/ВШЭ/Магистратура/Thesis/Data/Aggregated data/Data Quarterly.xlsx", sheet=3)
 dat <- na.omit(dat[dat$date > as.Date("2005-05-01"),])
@@ -30,14 +29,14 @@ data_to_model <- dat_unseas[,c(
 )]
 data_to_model$neer_qoq <- data_to_model$neer_qoq*-1
 
-require(bvarr)
+require(BVAR)
 require(combinat)
 require(MASS)
 require(expm)
-bayesian_model <- bvar(data_to_model, lags=2,
+bayesian_model <- bvar(data_to_model, lags=1,
                        priors = bv_priors(),
                        mh = bv_mh(),
-                       n_thin=10, n_burn=45000, n_draw=50000)
+                       n_thin=10, n_burn=95000, n_draw=100000)
 
 #VMA representation
 Phi_bayesian <- function(bayesian_model, nahead){
@@ -74,29 +73,27 @@ signs <- array(NA, dim=c(nvars, nvars, horizon))
 #supply shocks
 signs[1,1,1] <- 1 #self
 signs[2,1,1] <- -1 #inflation
-#signs[5,1,1] <- 0 #oil
+signs[5,1,1] <- 0 #oil
 #demand shocks
 signs[2,2,1] <- 1 #self
 signs[1,2,1] <- 1 #gdp
 signs[3,2,1] <- 1 #intrate
-#signs[5,2,1] <- 0 #oil
+signs[5,2,1] <- 0 #oil
 #monetary shocks
 signs[3,3,1] <- 1 #self
 signs[1,3,1] <- -1 #gdp
 signs[2,3,1] <- -1 #inflation
 signs[4,3,1] <- -1 #exrate
-#signs[5,3,1] <- 0 #oil
+signs[5,3,1] <- 0 #oil
 #exrate shocks
 signs[4,4,1] <- 1 #self
 signs[2,4,1] <- 1 #inflation
 signs[3,4,1] <- 1 #monetary
-#signs[5,4,1] <- 0 #oil
+signs[5,4,1] <- 0 #oil
 #oil shocks
 signs[5,5,1] <- 1 #self
 signs[4,5,1] <- -1 #exrate
 
-signs_lower <- array(dim=dim(signs))
-signs_lower[,,1] <- t(signs[,,1])
 #Sign check
 sign_models <- list()
 tries <- 200
@@ -109,7 +106,7 @@ for(draw in 1:dim(irfs)[4]){
     Q <- qr.Q(qr(new_candidate, complete=T)) #random orthogonal matrix from N(0,1)
     for(current_t in 1:horizon){
       #for(colperm in permn(1:NCOL(Q))){
-        irfs_transformed <- irfs[,,current_t,draw] %*% P %*% Q[,colperm]
+        irfs_transformed <- irfs[,,current_t,draw] %*% P %*% Q#[,colperm]
         #print(diag(irfs_transformed))
         signs_check <- irfs_transformed * signs_lower[,,current_t]
         fail <- sum(na.fill(signs_check,0) < 0) #check whether restrictions are held
@@ -176,9 +173,10 @@ irf_ala_arias <- function(B, Sigma, p, n, horizon, LR=T){
   J_mat = matrix(data=0, nrow=p*n, ncol=n)
   J_mat[1:n, 1:n] = diag(nrow=n, ncol=n)
   
-  irfs_fr = array(dim=c(horizon+1,n,n)) #first dim is horizon
+  irfs = matrix(nrow=(horizon+1)*n, ncol=n)
   for(time in 0:horizon){
-    irfs_fr[(time+1),,] = A0_inv %*% t(J_mat) %*% (F_mat %^%(time)) %*% J_mat 
+    irfs[(1 + n*(time)):(n*(time+1)),] = 
+      A0_inv %*% t(J_mat) %*% (F_mat %^%(time)) %*% J_mat 
     #delete A0_inv to get usual Phi
     #otherwise, get already Cholesky ortho IRFs
   }
@@ -188,34 +186,44 @@ irf_ala_arias <- function(B, Sigma, p, n, horizon, LR=T){
       A_sum = A_sum + t(A_plus)[1:n, ((2 + n*(lag-1)):(1 + n*lag))]
     }
     irfs_lr <- solve(t(A0) - A_sum)
-    return(list("Finite run IRFs"=irfs_fr, "Long run IRFs"=irfs_lr))
+    irfs <- rbind(irfs, irfs_lr)
   }
-  return(irfs_fr)
+  return(irfs)
 }
 
-sign_restr_ala_arias <- function(irfs, sign_matrix, tries=300){
+sign_restr_ala_arias <- function(irfs, sign_matrix, tries=300, perm_Q=FALSE){
   nvars = NCOL(irfs)
   periods = NROW(irfs) / nvars
   S = na.fill(sign_matrix, 0)
   satisfying_models = list()
   for(try in 1:tries){
-    cat("Try ", try, ", successes: ", length(satisfying_models), "\r", sep="")
+    #cat("Try ", try, ", successes: ", length(satisfying_models), "\r", sep="")
     X = matrix(rnorm(nvars^2), nrow=nvars)
     Q = qr.Q(qr(X))
     #each irf in period h (column-stacked) should be transformed
     irfs_transformed = matrix(nrow=nvars*periods, ncol=nvars)
-    for(period in 1:periods){
-      irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
-        irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
+    if(!perm_Q){
+      for(period in 1:periods){ #instead of this, stack Q horisontally (columnwise) period times
+        irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
+          irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
+      }
+    }
+    else{ #TBD
+      q_col_perm = permn(1:NCOL(Q))
+        for(period in 1:periods){
+          irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
+            irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
+        }
     }
     #check for signs
     fail = any(S * irfs_transformed < 0) 
     if(!fail){
       satisfying_models[[length(satisfying_models) + 1]] =
         list("Q" = Q, "Transformed_irfs" = irfs_transformed)
-      return(satisfying_models)
+      
     }
   }
+  return(satisfying_models)
 }
 
 signs_test <- array(dim=c(5,5,2))
@@ -224,34 +232,107 @@ matrix(aperm(signs_test, c(2,3,1)), nrow=10, ncol=5)
 
 test_arias_irfs <- irf_ala_arias(B=bayesian_model$beta[1,,], Sigma=bayesian_model$sigma[1,,], 
                             p=bayesian_model$meta$lags, n=bayesian_model$meta$M, 
-                            horizon=1, LR=F)
-sign_restr_ala_arias(irfs=test_arias_irfs[1,,], sign_matrix = signs_test[,,1])
+                            horizon=0, LR=F)
+sign_restr_ala_arias(irfs=test_arias_irfs, sign_matrix = diag(nrow=5, ncol=5), tries = 10000)
+sign_restr_ala_arias(irfs=test_arias_irfs, sign_matrix = signs[,,1], tries = 10000)
 
 
 bayesian_sign_restr_arias <- function(B, Sigma, p, n, draws, sr_sign_matrix, 
-                                      lr_sign_matrix=NULL, has_const=TRUE){
+                                      lr_sign_matrix=NULL, has_const=TRUE, tries=1000){
   sr_sign_matrix_stacked = matrix(aperm(sr_sign_matrix, 
                                          c(2,3,1)), 
                                    nrow=dim(sr_sign_matrix)[1] * dim(sr_sign_matrix)[3], 
                                    ncol=dim(sr_sign_matrix)[1])
+  #sr_sign_matrix_stacked = diag(nrow=5, ncol=5) #DEBUG!
+  cat("\n")
+  cat("Restrictions horizon: ", (dim(sr_sign_matrix)[3]-1), "\n", sep="")
   satisfying_models = list()
   for(draw in 1:draws){
+    cat("\rDraw ", draw, ". Accepted: ", length(satisfying_models), ".", sep="")
     bayesian_ortho_irfs = irf_ala_arias(B=B[draw,,], Sigma=Sigma[draw,,], 
-                  p=p, n=n, horizon=dim(sr_sign_matrix)[3], LR=FALSE)
-    #stack irfs
-    bayesian_ortho_irfs_stacked = matrix(aperm(bayesian_ortho_irfs, c(2,1,3)), 
-                                         nrow=dim(bayesian_ortho_irfs)[2]*dim(bayesian_ortho_irfs)[1],
-                                         ncol=dim(bayesian_ortho_irfs)[2])
-    succ_models_from_draw = sign_restr_ala_arias(irfs=bayesian_ortho_irfs_stacked, 
-                         sign_matrix = sr_sign_matrix_stacked)
-    sr_sign_matrix_stacked[[length(sr_sign_matrix_stacked) + 1]] = succ_models_from_draw
+                  p=p, n=n, horizon=(dim(sr_sign_matrix)[3]-1), LR=FALSE)
+    succ_models_from_draw = sign_restr_ala_arias(irfs=bayesian_ortho_irfs, 
+                         sign_matrix = sr_sign_matrix_stacked, tries = tries)
+    if(length(succ_models_from_draw) != 0){
+      satisfying_models[[length(satisfying_models) + 1]] = succ_models_from_draw
+    }
   }
+  cat("\n", sep="")
   return(satisfying_models)
 }
+
+bayesian_model_uninf <- bvar(data_to_model, lags=1,
+                       priors = bv_priors(sur=bv_sur()),
+                       mh = bv_mh(),
+                       n_thin=10, n_burn=95000, n_draw=100000)
 
 bayesian_sign_restr_arias(B=bayesian_model$beta,
                           Sigma=bayesian_model$sigma,
                           p=bayesian_model$meta$lags,
                           n=bayesian_model$meta$M,
                           draws=bayesian_model$meta$n_save,
-                          sr_sign_matrix=signs)
+                          sr_sign_matrix=signs,
+                          tries=1000)
+
+zerosign_restr_ala_arias <- function(irfs, zero_sign_matrix, tries=300, perm_Q=FALSE){
+  nvars = NCOL(irfs)
+  periods = NROW(irfs) / nvars
+  S = na.fill(zero_sign_matrix, 0)
+  Z = (zero_sign_matrix == 0)
+  Z = na.fill(Z, 0)
+  satisfying_models = list()
+  for(try in 1:tries){
+    #cat("Try ", try, ", successes: ", length(satisfying_models), "\r", sep="")
+    #each irf in period h (column-stacked) should be transformed
+    irfs_transformed = matrix(nrow=nvars*periods, ncol=nvars)
+    #R-matrix recursive construction
+    Q = matrix(nrow=nvars, ncol=nvars)
+    for(j in 1:nvars){
+      Z_j = diag(mapply(Z[,j], FUN=as.numeric))
+      Z_j = Z_j[,(colSums(Z_j) != 0)]
+      n_zeros = sum(Z_j)
+      if(j > 1){
+        if(n_zeros > 0){
+          R_j = rbind(Z_j %*% irfs, t(Q[,1:(j-1)]))
+        }
+        else{
+          R_j = t(Q[,1:(j-1)])
+        }
+      }
+      else{
+        R_j = Z_j %*% irfs
+      }
+      N_jminus = Null(t(R_j))
+      n_j = NCOL(N_jminus)
+      y_j = rnorm(n_j)
+      Q[,j] = N_jminus %*% y_j / norm(y_j, type="2")
+      #x_j = rnorm(nvars)
+      #Q[,j] = N_jminus %*% (t(N_jminus)  %*% x_j / norm(t(N_jminus) %*% x_j, type="2"))
+    }
+    print(Q%*%t(Q))
+    if(!perm_Q){
+      for(period in 1:periods){ #instead of this, stack Q horisontally (columnwise) period times
+        irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
+          irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
+      }
+    }
+    else{ #TBD
+      q_col_perm = permn(1:NCOL(Q))
+      for(period in 1:periods){
+        irfs_transformed[(1 + nvars*(period-1)):(nvars*period), 1:nvars] = 
+          irfs[(1 + nvars*(period-1)):(nvars*period), 1:nvars] %*% Q
+      }
+    }
+    #check for signs
+    fail = any(S * irfs_transformed < 0) 
+    if(!fail){
+      satisfying_models[[length(satisfying_models) + 1]] =
+        list("Q" = Q, "Transformed_irfs" = irfs_transformed)
+      
+    }
+  }
+  return(satisfying_models)
+}
+debug(zerosign_restr_ala_arias)
+zerosign_restr_ala_arias(irfs_transformed, signs[,,1])
+
