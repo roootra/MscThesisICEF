@@ -247,7 +247,7 @@ zerosign_restr_ala_arias <- function(irfs, zero_sign_matrix, tries=300, perm_Q=F
       S_j = diag(S[,j])
       S_j = t(S_j[,(colSums(S_j) != 0)])
       e_j = diag(nrow=nvars)[,j]
-      if(any(S_j %*% irfs %*% e_j < 0)){
+      if(any(S_j %*% irfs_transformed %*% e_j < 0)){
         flag_fail = TRUE
         break
       }
@@ -298,11 +298,11 @@ bayesian_zero_sign_restr_arias <- function(B, Sigma, p, n, draws, sr_sign_matrix
   return(satisfying_models)
 }
 debug(bayesian_zero_sign_restr_arias)
-bayesian_zero_sign_restr_arias(B=bayesian_model$beta[1:100,,],
-                          Sigma=bayesian_model$sigma[1:100,,],
+test <- bayesian_zero_sign_restr_arias(B=bayesian_model$beta,
+                          Sigma=bayesian_model$sigma,
                           p=bayesian_model$meta$lags,
                           n=bayesian_model$meta$M,
-                          draws=100,#bayesian_model$meta$n_save,
+                          draws=bayesian_model$meta$n_save,
                           sr_sign_matrix=signs,
                           tries=1000)
 undebug(bayesian_zero_sign_restr_arias)
