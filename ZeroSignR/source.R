@@ -247,7 +247,8 @@ zerosign_restr_ala_arias <- function(irfs, zero_sign_matrix, tries=300, perm_Q=F
       S_j = diag(S[,j])
       S_j = t(S_j[,(colSums(S_j) != 0)])
       e_j = diag(nrow=nvars)[,j]
-      if(any(S_j %*% irfs_transformed %*% e_j < 0)){
+      #if(any(S_j %*% irfs_transformed %*% e_j < 0)){
+      if(any(S_j %*% irfs %*% Q[,j] < 0)){
         flag_fail = TRUE
         break
       }
