@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'Pres_meeting.blg'
+[84] biber-darwin:322> INFO - === Wed Jun  9, 2021, 03:21:20
+[112] Biber.pm:415> INFO - Reading 'Pres_meeting.bcf'
+[237] Biber.pm:943> INFO - Found 11 citekeys in bib section 0
+[253] Biber.pm:4256> INFO - Processing section 0
+[254] Utils.pm:75> INFO - Globbing data source '../Sources/lit.bib'
+[254] Utils.pm:91> INFO - Globbed data source '../Sources/lit.bib' to ../Sources/lit.bib
+[267] Biber.pm:4455> INFO - Looking for bibtex format file '../Sources/lit.bib' for section 0
+[274] bibtex.pm:1653> INFO - LaTeX decoding ...
+[469] bibtex.pm:1471> INFO - Found BibTeX data source '../Sources/lit.bib'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[576] Biber.pm:4084> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[576] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[594] bbl.pm:652> INFO - Writing 'Pres_meeting.bbl' with encoding 'UTF-8'
+[603] bbl.pm:755> INFO - Output to Pres_meeting.bbl

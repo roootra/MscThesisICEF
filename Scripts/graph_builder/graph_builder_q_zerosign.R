@@ -15,7 +15,7 @@ dat <- dat[NROW(dat):1,]
 dat <- na.omit(dat)
 
 #Deseasonalization
-to_deseasonalize <- c("gdp_nominal_qoq","imp_price_qoq", "exp_price_qoq", 
+to_deseasonalize <- c("gdp_nominal_qoq","imp_price_qoq", "exp_price_qoq",
                       grep("cpi.*", colnames(dat), value=T))
 dat_unseas <- dat
 for(colname in to_deseasonalize){
@@ -27,12 +27,12 @@ for(colname in to_deseasonalize){
   dat_unseas[,colname] <- as.numeric(final(current_seas))
 }
 
-data_draw <- dat_unseas[,c("date", "oil_USD_qoq", "miacr_31", 
+data_draw <- dat_unseas[,c("date", "oil_USD_qoq", "miacr_31",
                            "neer_qoq", "gdp_real_SA_qoq", "cpi_all_qoq",
                            "cpi_core_qoq")]
-colnames(data_draw) <- c("Date", "Oil price gr. rate", 
-                         "MIACR 31-180 days", 
-                         "NEER gr. rate", 
+colnames(data_draw) <- c("Date", "Oil price gr. rate",
+                         "MIACR 31-180 days",
+                         "NEER gr. rate",
                          "Real GDP gr. rate",
                          "CPI gr. rate",
                          "Core CPI gr. rate")
@@ -42,22 +42,22 @@ data_draw_long <- gather(data_draw, "Variable", "Value", -Date)
 months <- month(data_draw$Date)
 ggplot(data_draw_long, aes(x = Date, y = Value), size = 0.1) + geom_hline(yintercept = 0, col="grey") +
   geom_line() + xlab("Year") +
-  facet_wrap(~ Variable, ncol=3, scales="free") + 
+  facet_wrap(~ Variable, ncol=3, scales="free") +
   theme_minimal() + #+theme_bw()
-  scale_x_date(breaks=pretty_breaks(), date_labels="%y", 
-               date_breaks="1 year") 
+  scale_x_date(breaks=pretty_breaks(), date_labels="%y",
+               date_breaks="1 year")
 ggsave(filename="time_series.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
-data_draw_long_perr <- data_draw_long[data_draw_long$Variable %in% 
+data_draw_long_perr <- data_draw_long[data_draw_long$Variable %in%
                                         c("NEER gr. rate", "CPI gr. rate"),]
-ggplot(data_draw_long_perr, aes(x = Date, y = Value, linetype=Variable), size = 0.1) + 
+ggplot(data_draw_long_perr, aes(x = Date, y = Value, linetype=Variable), size = 0.1) +
   geom_hline(yintercept = 0, col="grey") + geom_line() + theme_minimal() + #+theme_bw()
-  #facet_wrap(~ Variable, nrow=2, scales="free") + 
-  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y", 
-               date_breaks = "6 months", expand=c(0,0)) + 
+  #facet_wrap(~ Variable, nrow=2, scales="free") +
+  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y",
+               date_breaks = "6 months", expand=c(0,0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = "top")
 ggsave(filename="neer_cpi.eps",
@@ -65,14 +65,14 @@ ggsave(filename="neer_cpi.eps",
        device="eps",
        width=200, height=100, dpi=320, units = "mm", limitsize=FALSE)
 
-data_draw_intrate_cpi <- data_draw_long[data_draw_long$Variable %in% 
+data_draw_intrate_cpi <- data_draw_long[data_draw_long$Variable %in%
                                         c("MIACR 31-180 days", "CPI gr. rate",
                                           "Core CPI gr. rate"),]
-ggplot(data_draw_intrate_cpi, aes(x = Date, y = Value, linetype=Variable), size = 0.1) + 
+ggplot(data_draw_intrate_cpi, aes(x = Date, y = Value, linetype=Variable), size = 0.1) +
   geom_hline(yintercept = 0, col="grey") + geom_line() + theme_minimal() + #+theme_bw()
-  #facet_wrap(~ Variable, nrow=2, scales="free") + 
-  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y", 
-               date_breaks = "6 months", expand=c(0,0)) + 
+  #facet_wrap(~ Variable, nrow=2, scales="free") +
+  scale_x_date(breaks=pretty_breaks(), date_labels="%b %y",
+               date_breaks = "6 months", expand=c(0,0)) +
   scale_linetype_manual(values=c("dotted", "dashed", "solid")) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = "top")
@@ -87,32 +87,32 @@ for(colname in colnames(data_draw)[-1]){
   print(adf.test(data_draw[,colname]))
 }
 
-corstarsl <- function(x){ 
-  require(Hmisc) 
-  x <- as.matrix(x) 
-  R <- rcorr(x)$r 
-  p <- rcorr(x)$P 
-  
+corstarsl <- function(x){
+  require(Hmisc)
+  x <- as.matrix(x)
+  R <- rcorr(x)$r
+  p <- rcorr(x)$P
+
   ## define notions for significance levels; spacing is important.
   mystars <- ifelse(p < .001, "***", ifelse(p < .01, "** ", ifelse(p < .05, "* ", " ")))
-  
+
   ## trunctuate the matrix that holds the correlations to two decimal
-  R <- format(round(cbind(rep(-1.11, ncol(x)), R), 2))[,-1] 
-  
+  R <- format(round(cbind(rep(-1.11, ncol(x)), R), 2))[,-1]
+
   ## build a new matrix that includes the correlations with their apropriate stars
-  Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x)) 
-  diag(Rnew) <- paste(diag(R), " ", sep="") 
-  rownames(Rnew) <- colnames(x) 
-  colnames(Rnew) <- paste(colnames(x), "", sep="") 
-  
+  Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x))
+  diag(Rnew) <- paste(diag(R), " ", sep="")
+  rownames(Rnew) <- colnames(x)
+  colnames(Rnew) <- paste(colnames(x), "", sep="")
+
   ## remove upper triangle
   Rnew <- as.matrix(Rnew)
   Rnew[upper.tri(Rnew, diag = TRUE)] <- ""
-  Rnew <- as.data.frame(Rnew) 
-  
+  Rnew <- as.data.frame(Rnew)
+
   ## remove last column and return the matrix (which is now a data frame)
   Rnew <- cbind(Rnew[1:length(Rnew)-1])
-  return(Rnew) 
+  return(Rnew)
 }
 
 corstarsl(data_draw[,-1])
@@ -137,29 +137,29 @@ irf_mat_long_1 <- irf_mat_long[irf_mat_long$Variable %in% c(grep("Global persist
                                                          grep("Exchange rate *", irf_mat_long$Variable, value=T)),]
 irf_mat_long_2 <- irf_mat_long[irf_mat_long$Variable %in% c(grep("Supply *", irf_mat_long$Variable, value=T),
                                                          grep("Demand *", irf_mat_long$Variable, value=T)),]
-  
-ggplot(irf_mat_long_1, aes(x = Period, y = Value), size = 0.1) + geom_line() + 
+
+ggplot(irf_mat_long_1, aes(x = Period, y = Value), size = 0.1) + geom_line() +
   facet_wrap(~ Variable, nrow=3, scales="free") + geom_hline(yintercept = 0, col="grey") +
   theme_minimal() + scale_x_continuous(breaks=1:12, expand=c(0,0)) +
-  theme(text = element_text(size=10 ), axis.text.x = element_text(size=8), 
+  theme(text = element_text(size=10 ), axis.text.x = element_text(size=8),
         axis.text.y = element_text(size=8 ))
   #+theme_bw()
-  #scale_x_date(breaks=pretty_breaks(), date_labels="%y", 
+  #scale_x_date(breaks=pretty_breaks(), date_labels="%y",
   #             date_breaks="1 year")
-  
+
 ggsave(filename="irf_1.eps",
        path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
-ggplot(irf_mat_long_2, aes(x = Period, y = Value), size = 0.1) + geom_line() + 
+ggplot(irf_mat_long_2, aes(x = Period, y = Value), size = 0.1) + geom_line() +
   facet_wrap(~ Variable, nrow=2, scales="free") + geom_hline(yintercept = 0, col="grey") +
   theme_minimal() + scale_x_continuous(breaks=1:12, expand=c(0,0))+
-  theme(text = element_text(size=10 ), axis.text.x = element_text(size=8 ), 
+  theme(text = element_text(size=10 ), axis.text.x = element_text(size=8 ),
         axis.text.y = element_text(size=8 ))#+theme_bw()
-  #scale_x_date(breaks=pretty_breaks(), date_labels="%y", 
+  #scale_x_date(breaks=pretty_breaks(), date_labels="%y",
   #             date_breaks="1 year")
-  
+
 ggsave(filename="irf_2.eps",
          path="/Users/rutra/ВШЭ/Магистратура/Thesis/Text/figures/",
          device="eps",
@@ -176,11 +176,11 @@ colnames(hd_mat_ctm_cpi_df) <- paste0(shocknames, " shock")
 hd_mat_ctm_cpi_df$Date <- as.Date(seq(as.yearqtr("2005-3"),as.yearqtr("2020-4"), 1/4)) #model's order matters!
 hd_mat_ctm_cpi_df_bar <- gather(hd_mat_ctm_cpi_df, "Variable", "Value", -Date)
 hd_mat_ctm_cpi_df_bar$Date <-  as.Date(hd_mat_ctm_cpi_df_bar$Date)
-demeaned_cpi <- dat_unseas$cpi_all_qoq - mean(dat_unseas$cpi_all_qoq)
+demeaned_cpi <- apply(hd_mat_ctm_cpi, 1, sum)
 
-ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
-  geom_bar(stat="identity") +  
-  scale_x_date(breaks=hd_mat_ctm_cpi_df_bar$Date, date_labels="%b %y", 
+ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) +
+  geom_bar(stat="identity") +
+  scale_x_date(breaks=hd_mat_ctm_cpi_df_bar$Date, date_labels="%b %y",
       date_breaks = "4 months", expand=c(0,0)) +
   theme_minimal() + geom_hline(yintercept = 0, col="red") +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size = 8),
@@ -189,7 +189,7 @@ ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) +
         axis.title.y = element_text(vjust = 0.5, size = 9),
         legend.position="bottom") +
   xlab("Date") + ylab("Contribution to CPI gr. r.") +
-  geom_line(aes(x=as.Date(rep(hd_mat_ctm_cpi_df$Date, 5)), y=rep(demeaned_cpi[-1], 5)), col="black", size=0.3) +##383838
+  geom_line(aes(x=as.Date(rep(hd_mat_ctm_cpi_df$Date, 5)), y=rep(demeaned_cpi, 5)), col="black", size=0.3) +##383838
   scale_fill_brewer(palette="Dark2")
 
 ggsave(filename="hd_cpi_full.eps",
@@ -197,10 +197,10 @@ ggsave(filename="hd_cpi_full.eps",
        device="eps",
        width=320, height=210, dpi=320, units = "mm", limitsize=FALSE)
 
-ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
-  geom_bar(stat="identity") +  
-  scale_x_date(breaks=hd_mat_ctm_cpi_df_bar$Date, date_labels="%b %y", 
-               expand=c(0,0), 
+ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) +
+  geom_bar(stat="identity") +
+  scale_x_date(breaks=hd_mat_ctm_cpi_df_bar$Date, date_labels="%b %y",
+               expand=c(0,0),
                limits=c(as.Date("2015-01-02"), NA)) +
   ylim(c(-0.025, 0.02)) +
   theme_minimal() + geom_hline(yintercept = 0, col="red") +
@@ -209,9 +209,9 @@ ggplot(hd_mat_ctm_cpi_df_bar, aes(x = Date, y = Value, fill = Variable)) +
         axis.title.x = element_text(vjust = 0.5, size = 9),
         axis.title.y = element_text(vjust = 0.5, size = 9),
         legend.position="bottom") +
-  xlab("Date") + ylab("Contribution to CPI gr. r.") + 
-  geom_line(aes(x=as.Date(rep(hd_mat_ctm_cpi_df$Date, 5)), 
-                y=rep(demeaned_cpi[-1], 5)), col="black", size=0.3) +
+  xlab("Date") + ylab("Contribution to CPI gr. r.") +
+  geom_line(aes(x=as.Date(rep(hd_mat_ctm_cpi_df$Date, 5)),
+                y=rep(demeaned_cpi, 5)), col="black", size=0.3) +
   scale_fill_brewer(palette="Dark2")
 
 ggsave(filename="hd_cpi_cut.eps",
@@ -229,9 +229,9 @@ hd_mat_ctm_exrate_df_bar <- gather(hd_mat_ctm_exrate_df, "Variable", "Value", -D
 hd_mat_ctm_exrate_df_bar$Date <-  as.Date(hd_mat_ctm_exrate_df_bar$Date)
 demeaned_exrate <- apply(hd_mat_ctm_exrate, 1, sum)
 
-ggplot(hd_mat_ctm_exrate_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
-  geom_bar(stat="identity") +  
-  scale_x_date(breaks=hd_mat_ctm_exrate_df_bar$Date, date_labels="%b %y", 
+ggplot(hd_mat_ctm_exrate_df_bar, aes(x = Date, y = Value, fill = Variable)) +
+  geom_bar(stat="identity") +
+  scale_x_date(breaks=hd_mat_ctm_exrate_df_bar$Date, date_labels="%b %y",
                date_breaks = "6 months", expand=c(0,0)) +
   theme_minimal() + geom_hline(yintercept = 0, col="red") +
   theme(axis.text.x = element_text(angle = 90, vjust = 1, hjust=1, size = 8),
@@ -258,9 +258,9 @@ hd_mat_ctm_gdp_df_bar <- gather(hd_mat_ctm_gdp_df, "Variable", "Value", -Date)
 hd_mat_ctm_gdp_df_bar$Date <-  as.Date(hd_mat_ctm_gdp_df_bar$Date)
 demeaned_gdp <- apply(hd_mat_ctm_gdp, 1, sum)
 
-ggplot(hd_mat_ctm_gdp_df_bar, aes(x = Date, y = Value, fill = Variable)) + 
-  geom_bar(stat="identity") +  
-  scale_x_date(breaks=hd_mat_ctm_gdp_df_bar$Date, date_labels="%b %y", 
+ggplot(hd_mat_ctm_gdp_df_bar, aes(x = Date, y = Value, fill = Variable)) +
+  geom_bar(stat="identity") +
+  scale_x_date(breaks=hd_mat_ctm_gdp_df_bar$Date, date_labels="%b %y",
                date_breaks = "6 months", expand=c(0,0)) +
   theme_minimal() + geom_hline(yintercept = 0, col="red") +
   theme(axis.text.x = element_text(angle = 90, vjust = 1, hjust=1, size = 8),

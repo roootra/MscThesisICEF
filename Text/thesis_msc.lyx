@@ -1,0 +1,9202 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /Users/rutra/ВШЭ/Магистратура/Thesis/Text/
+\textclass extarticle
+\begin_preamble
+% !TeX document-id = {e267d368-ee0e-4347-96b8-d2202efb2395}
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_GB
+
+
+%\usepackage{showframe}
+
+\usepackage{cmap}% поиск в PDF
+%\usepackage{mathtext} 				% русские буквы в формулах
+%\usepackage[T2A]{fontenc}			% кодировка
+% кодировка исходного текста
+\usepackage[english]{babel}
+% локализация и переносы
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{indentfirst}
+\usepackage{setspace}
+\frenchspacing % добаляет большой пробел между предложениями
+%\onehalfspacing
+\linespread{1.5}
+%\usepackage{helvet}
+%\usepackage{newcent}
+%\usepackage{lmodern}
+\usepackage{calligra}
+\DeclareFontFamily{OT1}{pzc}{}
+\DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [1.10] pzcmi7t}{}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\DeclareUnicodeCharacter{0301}{} %workaround
+
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{makecell}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{rotating}
+
+
+%БЛОК СООТВЕТСТВИЯ ПРАВИЛАМ
+%\renewcommand{\rmdefault}{ftm}
+\usepackage{times}
+
+
+%without babel
+\renewcommand{\contentsname}{CONTENTS}
+\renewcommand{\refname}{REFERENCES}
+
+
+% запрещаем переносы в названиях секций
+%\renewcommand{\section}{\@startsection{section}{1}{0pt}%
+%	{-3.5ex plus -1ex minus -.2ex}%
+%	{2.3ex plus .2ex}%
+%	{\centering\hyphenpenalty=10000\normalfont\bfseries}}
+
+% chapter
+\usepackage{titlesec}
+\titleformat{\chapter}{\thispagestyle{myheadings}\centering\hyphenpenalty=10000\normalfont\huge\bfseries}{
+	\thechapter. }{0pt}{\large}
+
+
+%section
+%\titleformat{\section}[block]{\bfseries\large\filcenter}{SECTION \thesection.}{.5em}{}
+\titleformat{\section}[block]{\bfseries\filcenter}{}{.5em}{}
+
+% subsection
+\titleformat{\subsection}[block]{\bfseries\filcenter}{\thesubsection.}{.5em}{}
+
+%subsubsection
+\titleformat{\subsubsection}[block]{\bfseries\filcenter}{\thesubsubsection.}{.5em}{}
+
+%math font size (textfont-disp-script-scriptscript)
+
+\DeclareMathSizes{\f@size}{12}{10}{9}
+
+
+%to show current font size in log (14pt = 14.4pt)
+
+\show\f@size
+
+
+%toc depth
+
+
+%TOC section cap
+%\addto\captionsenglish{
+%	\renewcommand{\contentsname}{\hfill\bfseriesCONTENTS\hfill} 
+%}
+%\makeatletter
+%\renewcommand{\tableofcontents}{%
+%	\vspace*{-4mm}% reduce space before
+%    \noindent{\contentsname}%
+%	\vspace{2mm}% space between title and rule
+%	\hrule
+%	\vspace{2mm}% space below rule
+%	\@starttoc{toc}}
+%\makeatother
+
+%bib section cap
+%\DefineBibliographyStrings{english}{%
+%	bibliography = {BIBLIOGRAPHY},
+%	references = {REFERENCES},
+%}
+
+
+% КОНЕЦ БЛОКА СООТВЕТСТВИЯ ПРАВИЛАМ
+
+
+
+%bibstyle=gost-authoryear-min,
+%citestyle=authoryear,
+%работа с библиографией
+%style=authoryear
+%sorting=nyt,
+
+			
+
+
+%Убрать тире из библиографического списка
+%\renewcommand*{\newblockpunct}{\addperiod\space\bibsentence}.:
+%Для возврата к прежнему значению (установленному по умолчанию):
+%\renewcommand*{\newblockpunct}{\addperiod\addnbspace\textemdash\space\bibsentence}.
+
+
+
+%Дополнительные пакеты
+\usepackage{amsfonts}\usepackage{amsthm}%математика
+\usepackage{indentfirst}%отступ первого абзаца
+%вставка рисунков
+\usepackage{wrapfig}%обтекание рисунков текстом
+%установка полей
+ % >20
+ % >20
+ % =35
+ % >15
+\usepackage{soul}%модификаторы начертания
+\usepackage{csquotes}
+%\usepackage{titling}
+\usepackage{enumitem}
+\usepackage[toc,page]{appendix}
+\usepackage{tocloft}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{multirow}
+
+
+\renewcommand{\appendixtocname}{Annex}
+\renewcommand{\appendixname}{Annex}
+\renewcommand{\appendixpagename}{Annex}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+
+\newcommand{\mathleft}{\@fleqntrue\@mathmargin0pt}
+\newcommand{\mathcenter}{\@fleqnfalse}
+
+
+\usepackage{float}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+
+
+
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+
+
+\hyphenation{Welt-wirt-schaft-lich-es} %some Springler journal in References
+\hyphenation{Sve-rig-es} %Sweden bank in References
+
+%колонтитулы
+\usepackage{fancyhdr}%загрузим пакет
+ %применим колонтитул
+\fancyhead{} %очистим header на всякий случай
+%\fancyhead[LE,RO]{\thepage} %номер страницы слева сверху на четных и справа на нечетных
+%\fancyhead[CO]{текст-центр-нечетные}
+%\fancyhead[LO]{текст-слева-нечетные} 
+%\fancyhead[CE]{текст-центр-четные} 
+\fancyfoot{}
+%\fancyfoot[RE,RO]{\thepage}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setcounter{page}{2}
+
+%шапка
+\title{{\large DETERMINING EXCHANGE RATE PASS-THROUGH IN RUSSIA}}
+\author{Artur N. Zmanovskii\footnote{National Research University `Higher School of Economics'}}
+
+
+%\renewcommand{\appendixname}{Appendix}
+
+
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+graphicboxes
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Determining Exchange Rate Pass-through in Russia"
+\pdf_author "Artur N. Zmanovskii"
+\pdf_subject "Macroeconomerics, Macroeconomics"
+\pdf_keywords "Pass-through}{ERPT}{PERR"
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 1
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "pdfcreator={},pdfproducer={},linkcolor=black,citecolor=black,filecolor=black,urlcolor=black"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 2
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\biblio_options maxcitenames=1,url=false,doi=false,eprint=false,backend=biber
+\biblatex_bibstyle apa
+\biblatex_citestyle apa
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancyplain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{page}{2}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Abstract
+Russian inflation movements are mostly associated with exchange rate fluctuations, especially after decision of Bank of Russia to adopt floating exchange rate regime. Several studies attempt to measure exchange rate pass-through for Russia, although their estimations are shock-independent. This work estimates SVAR and applies short-run sign and zero restrictions in order to recover shock-dependent ERPT to describe effects of exchange rate to prices during evolution of different structural shocks. My findings are comparable to ones in the literature and show that oil shock pass-through effect in both short- and long-run is ambiguous: while the effect to CPI is low, it is huge to core CPI. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linespread
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1.5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linespread
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1.5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+INTRODUCTION
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Introduction}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+blfootnote
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\shape italic
+To the memory of my grandfather. Bene qui latuit, bene vixit.
+\shape default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ The process of integrated world economy formation has been quite substantially changing policies of monetary and macroprudential authorities around the world, adding more challenges to them. Emerging economies being involved into world market has been experiencing a huge policy transformation, especially for ex-socialist countries with strict authoritarian regimes that had very basic international trading affairs before their collapse. During transitory process of integration into world economy for such countries, it appears that price stability there becomes subject not only to domestic shocks, but shocks coming from outer world.
+\end_layout
+
+\begin_layout Standard
+The main goal of a monetary authority is price stability; in the above mentioned conditions, policymakers of emerging economies are not suited well for rebuffing outer shocks, since the natural mechanisms of self-compensation in the local economy are yet to be founded. This fact requires prudent policy adjustment, which takes into account a structure of international trade, exchange rate fluctuations and external shocks occurring globally.
+\end_layout
+
+\begin_layout Standard
+To render the basis for this, the policymaker has to conduct not only positive, but normative analysis of the economy and find transmission channels of external shocks into inflation to guarantee price stability. As there is external trade, one should be interested in effect of exchange rate fluctuations to domestic prices, usually observed in the literature as exchange rate pass-through.
+\end_layout
+
+\begin_layout Standard
+Russia, as emerging ex-socialist commodity economy, can be described as severely subject to commodity (oil) shocks and exchange rate fluctuations. During last 30 years, ruble — local currency of Russia — has experienced several large depreciation waves (the largest ones were after 1998 default and 2014 oil price drop). Accompanied by different set of shocks, these events had different degree of exchange rate pass-through in the Russian economy.
+\end_layout
+
+\begin_layout Standard
+There is many research done on shock 
+\shape italic
+independent
+\shape default
+ pass-through estimation made for many countries; several papers estimate it for Russia, some of them getting though controversial results due to lack of data available. This approach, in a plain setup, does not require sophisticated statistical methods, as estimates can be obtained from ARDL model.
+\end_layout
+
+\begin_layout Standard
+On the other hand, more methods have been developed for the purpose of estimation of shock-dependent exchange rate pass-through for the last 10 years. These methods appear to be applied for developed economies (Euro area, US), while, at the moment of writing this work and my personal knowledge, there is only one work estimating shock-dependent pass-through for Russia based on inference from DSGE (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Khotulev2020"
+literal "false"
+
+\end_inset
+
+). Disappointingly, there are no works for Russia that employ structural vector autoregressions, which are more data-driven and widespread in the literature.
+\end_layout
+
+\begin_layout Standard
+The purpose of this work is to estimate shock-dependent exchange rate pass-through for Russian economy using structural vector autoregression, closing a gap in the literature. In order to answer to research question — what is exchange rate pass-through for Russia conditioning on different economic shocks — I include five variables from 2003Q2 to 2020Q4 into two models, depending on CPI composition: oil price, short-term interest rate for Russia, ruble nominal effective exchange rate, Russian real GDP and CPI (full or core) in order to calculate price-to-exchange rate ratio for five structural shocks: global persistent shock, local monetary shock, local exogenous exchange rate shock, local supply shock and local demand shock. Different CPI compositions add more robustness to the results as well. I use quarterly data in order to estimate the model since there is no monthly time series for Russian output.
+\end_layout
+
+\begin_layout Standard
+In order to identify structural shocks, after estimation of vector autoregression, I apply short-run sign and zero restrictions proposed in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Arias2014"
+literal "false"
+
+\end_inset
+
+). Although signs of impulse response functions need to be guessed, this method is quite flexible and allows to precisely estimate shock-dependent exchange rate pass-through. To address a potential problem of weak identification, I estimate Bayesian VAR with uninformative Normal Inverse-Wishart prior and use identification scheme mentioned above for draws from error covariance matrix distribution.
+\end_layout
+
+\begin_layout Standard
+In general, my findings meet results from (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Khotulev2020"
+literal "false"
+
+\end_inset
+
+) for monetary and global persistent (oil) shocks. Pass-through estimate from purely exogenous exchange rate shock is comparable to shock-independent ones captured in the literature about Russia and CIS. Analysis reveals highest pass-through estimate from exchange rate shocks, while oil fluctuations, which are commonly considered as a main driver of exchange rate for Russia, have a little pass-through effect. However, pass-through is higher in Russia comparing to developed economies (US and Euro area), which is expected result.
+\end_layout
+
+\begin_layout Standard
+Another result that may be interesting for a reader is historical decomposition of Russian CPI growth rate (both full and core), which shows contribution of different macrovariables in the model to inflation volatility. There is a presence of negative effect to inflation after 2014 rouble depreciation and gradual interest rate decrease, although monetary shocks to core CPI from the beginning of 2020 and to full CPI in the last quarter of the same year become positive. Talking about COVID-19 outbreak in the first quarter of 2020, I conclude that the main drivers here were global persistent (associated with oil price) and local supply shocks, while exchange rate was cooling down consumer inflation. In the last quarter of 2020 gradual increase in oil price reduced inflation rate, while exchange rate effect appears to be positive; I associate the latter with a political incident in late summer of the same year.
+\end_layout
+
+\begin_layout Standard
+This paper is organised as follows. Section 2 guides reader through the literature on the topic of exchange rate pass-through. For convenience, I break this section into two parts: a) methods and non-CIS economies and b) Russia and CIS countries. Section 3 gives a brief econometric introduction and defines the model and identification schemes used. Section 4 describes data used in this work. Section 5 reveals results fetched from the model. Section 6 concludes.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+SECTION 2. LITERATURE REVIEW
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{section}{2}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Section 2. Literature review}
+\end_layout
+
+\end_inset
+
+ The goal of pioneering works in exchange rate pass through estimation area was mainly in determining industry-specific effects in specific economies: among others, (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Schembri1985"
+literal "false"
+
+\end_inset
+
+) examines Canadian exports, (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Menon1992, Menon1993"
+literal "false"
+
+\end_inset
+
+) — Australian exports and Imports of Motor Vehicles, (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Khosla1991, Athukorala1994"
+literal "false"
+
+\end_inset
+
+) — Japanese exports, (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Cowling1989"
+literal "false"
+
+\end_inset
+
+ — UK and West German car market, 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Athukorala1991"
+literal "false"
+
+\end_inset
+
+ — Korean exports, 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Baldwin1988, Feenstra1989, Hooper1989"
+literal "false"
+
+\end_inset
+
+) — US imports. These papers show that there is a heterogeneity in pass-through across industries as well as countries though challenging data measurement errors and model misspecifications. A huge contribution to review these attempts is made in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Menon1993, Menon1995"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Looking for exchange rate pass-through for whole economies, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Khosla1989"
+literal "false"
+
+\end_inset
+
+ estimate shock-independent ERPT to export prices for 23 countries using calculated quarterly nominal effective exchange rate for each economy and fitting OLS regressions. They find that pass-through effect varies drastically across countries: for developed economies this value is high, meanwhile developing ones experience low pass-through.
+\end_layout
+
+\begin_layout Standard
+A more advanced methods are used in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Kim1990"
+literal "false"
+
+\end_inset
+
+) — author examines pass-through to US import prices and influence of exchange rate to mark-up using a model with time-varying parameters. It is shown that a mark-up negatively correlates with US dollar exchange rate, though a direct effect of the latter to prices fell from 1980s.
+\end_layout
+
+\begin_layout Standard
+In (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Deravi1995"
+literal "false"
+
+\end_inset
+
+) a vector autoregression (VAR) is applied to fit US broad money aggregate, dollar exchange rate and consumer price index (CPI) with a main emphasis on monetary supply shock. It is underlined through causality test that there is a significant causality effect of broad money to other macrovariables. Variance analysis suggests the effects to CPI from innovations to other two variables are nearly equal after four years.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Kim1998"
+literal "false"
+
+\end_inset
+
+) employs vector error-correction model (VECM) in order to study pass-through to US import prices. This paper reveals a significant negative effect of US exchange rate appreciation to producer price index (PPI) and conducts causality test for this dependency, which confirms an influence of exchange rate. Moreover, author argues that previous works were using inefficient methods to examine ERPT.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Taylor2000
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+In his renown paper, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Taylor2000"
+literal "false"
+
+\end_inset
+
+ provides strong theoretical framework for understanding exchange rate pass-through nature. The author simulates three-equation model of individual and aggregate prices and output and shows that when the inflation is low, pricing power of firms declines as well leading to lower pass-through. Hence, if a producer wants to raise or lower their individual price due to change in costs or, equivalently, exchange rate, he or she would expect other firms stay on the remaining price level due to low inflation.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%DSGE-like papers
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Another approach of examining exchange rate pass-through is contained in literature based on general equilibrium models, although there are few ones specially structured for studies in this particular field. Mainly based on purely statistical approach, this particular paper refers only to several works of this kind, leaving the rest to the reader.
+\end_layout
+
+\begin_layout Standard
+One of the works is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Adolfson2001"
+literal "false"
+
+\end_inset
+
+), where author examines optimal policy of monetary authority under different completeness of pass-through. The main consequence of this study is that the lower pass-through is, the less important nominal economy is, as interest rate response to shocks from outside is lower and exchange rate fluctuations are higher.
+\end_layout
+
+\begin_layout Standard
+The seminal paper in this field is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Obstfeld2002"
+literal "false"
+
+\end_inset
+
+). It does not directly touch the pass-through problem, however, it is a starting point for many papers in this field. In the paper, a cooperation of monetary authorities in a two-country model is examined. The main result of this paper is that even if monetary authorities do not coordinate with each other, benefits from macroeconomic stabilization can outweigh lack of coordination, and coordination under fixed exchange rate is more preferred than one under the floating rate.
+\end_layout
+
+\begin_layout Standard
+Looking for effects of exchange rate volatility, (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Devereux2002"
+literal "false"
+
+\end_inset
+
+) develop a multi-economy new-Keynesian general equilibrium model based on the model from aforementioned paper. Authors show that fluctuations in nominal exchange rate appear to compensate pass-through to prices nominated in local currencies. It is argued that even if there is a little volatility in fundamental macroeconomic variables, fluctuations of exchange rate may be quite high. This model lacks empirical research though, constrained only by simulations with different parametrisation.
+\end_layout
+
+\begin_layout Standard
+Basing on the same foundations, an attempt to make an empirical research based on DSGE model is done in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Smets2002"
+literal "false"
+
+\end_inset
+
+), where Euro area data is used to calibrate a model and estimate exchange rate pass-through in an economy with optimal monetary policy. As a result, authors claim that under an assumption of presence of import price stickiness in the economy, its effect is similar as stickiness of domestic prices.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Pretty not DSGE
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Gagnon2004"
+literal "false"
+
+\end_inset
+
+ use Monte-Carlo approach with multi-equation model to show that there was a decline in exchange rate pass-through since 80s due to inflation stabilisation policy conducted by many central banks across the world. To find more evidence, authors fit an OLS regression with lags of exchange rate summed with foreign CPI for two subsamples individually chosen for 20 countries. Additionally, they estimate interest rate rule coefficients in order to find changes in monetary policy. Finally, authors argue that the hypothesis is confirmed.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Current Empirics
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+A new wave in studying exchange rate pass-through — use of structural vector autoregressions (SVAR) — starts from (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Hahn2003"
+literal "false"
+
+\end_inset
+
+) for Euro area macro data from 1971 to 2002. In this remarkable work, a recursive (also known as 
+\shape italic
+Cholesky
+\shape default
+) identification scheme is used in order to recover macroeconomic shocks to PPI and HICP from other different macroeconomic variables (oil price, interest rate, output gap and non-oil import prices). To address statement about pass-through decline in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Gagnon2004"
+literal "false"
+
+\end_inset
+
+), author conducts a robustness test and finds out that there was no significant change in pass-through effect for the Euro area.
+\end_layout
+
+\begin_layout Standard
+The same conclusion about decline, among other ones, is made in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Campa2005"
+literal "false"
+
+\end_inset
+
+). Searching for the pass-through effect to import prices, authors examine data for 23 countries and assert that the pass-through effect is incomplete for all countries in the short run and for overwhelming majority of them in the long run.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "CaZorzi2007"
+literal "false"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "McCarthy2007"
+literal "false"
+
+\end_inset
+
+) papers resemble previously cited (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Hahn2003"
+literal "false"
+
+\end_inset
+
+). The first work studies data for 12 developing economies and employs recursive SVAR to estimate shock-dependent ERPT; authors find that pass-through effect fades down to the distribution chain and argue that when inflation in a developing economy is low, ERPT is comparable to one of developed countries.
+\end_layout
+
+\begin_layout Standard
+On the opposite side is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "McCarthy2007"
+literal "false"
+
+\end_inset
+
+) work, where data for nine developed countries are examined applying Cholesky identification scheme to VAR. Author states that pass-through in developed economies is quite low, and inflation in the US is mainly driven by oil shocks, producer price shocks and internal CPI shocks.
+\end_layout
+
+\begin_layout Standard
+In (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Shambaugh2008"
+literal "false"
+
+\end_inset
+
+) paper author uses long run restrictions for SVAR in order to identify link between exchange rate and CPI together with import prices. Author uses data for 16 countries for the time frame from 1973 to 1999 and obtains supportive evidence that low inflation declines pass-through — for some countries, CPI growth rate does not respond to exchange rate shocks in the same magnitude as producer price index growth rate.
+\end_layout
+
+\begin_layout Standard
+Data's granularity higher than quarterly is not usually found in the studies, although (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Amstad2010"
+literal "false"
+
+\end_inset
+
+) observe monthly Swiss CPI and NEER from 1993 to 2008. This work employs event study approach to estimate an effect of monthly import price time series release to ERPT. Author underlines that this method is more suitable for policymakers due to possibility of using the most current data and does not rely on VAR restrictions, which may be controversial. The criticism of SVAR is quite questionable in this light, since the monthly data does not impair a possibility of proper identification of shocks, while the benefits of shock-dependent ERPT are higher for monetary and macroprudential authorities.
+\end_layout
+
+\begin_layout Standard
+An innovative identification method is introduced by 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "An2012"
+literal "false"
+
+\end_inset
+
+ — author employs sign identification scheme in order to obtain price-to-exchange rate ratio (
+\shape italic
+PERR
+\shape default
+, shock-dependent exchange rate pass-through), which will be described in the following Section. Author fits the model for eight developed economies and claims that for the most cases pass-through is incomplete. Another conclusion is that pass-through is higher for small-sized economies with more volatile monetary policy.
+\end_layout
+
+\begin_layout Standard
+The work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Delatte2012"
+literal "false"
+
+\end_inset
+
+ is devoted to determination of pass-through asymmetry for four countries (Germany, Japan, UK, US) from 1980 to 2009. An ARDL with nominal exchange rate changes divided into two variables (with positive and negative increments) is estimated to determine both short-run and long-run asymmetric ERPT. Author argues that pass-through is smaller during local currency appreciations.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "BrunAguerre2012"
+literal "false"
+
+\end_inset
+
+) paper's aim is to find what drives ERPT to import prices. Authors use both ECM and panel fixed effects (FE) model to catch time- and country-specific effects for 37 countries on 1980–2009 period; again, pass-through asymmetry is considered. The conclusion is that there is no evidence of pass-through declining for both developed and emerging economies, although domestic tariffs and import-to-export ratio matter.
+\end_layout
+
+\begin_layout Standard
+Monthly data of Taiwanese economy under deflation are examined in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Lin2012"
+literal "false"
+
+\end_inset
+
+). In this work, a two- and three-regime threshold autoregression (TAR) models are fit to find non-linearities in pass-through relation. It is argued that pass-through declines only when inflation is close to zero, and the link of ERPT and inflation is V-shaped. With this non-trivial result, high rates of deflation are unpleasant for an economy additionally from the side of exchange rate pass-through.
+\end_layout
+
+\begin_layout Standard
+Another work observing Asian economy is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Jiang2013"
+literal "false"
+
+\end_inset
+
+). Authors estimate SVARs with custom shock matrix in order to find PERR for China. This method is more flexible than recursive identification scheme as the shock matrix does not necessarily need to be triangular, although application of such scheme is quite situational. Authors conclude that PERRs are incomplete, which is usual for the literature in this field.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Yamada2013"
+literal "false"
+
+\end_inset
+
+) paper is devoted to study exchange rate regime effect to inflation among developing and emerging economies. Author fit treatment effects model with propensity score matching based on GDP and geographical characteristics in order to calculate between inflation targeting regime and other ones. The conclusion is that inflation targeting exchange rate regime performs at least not worse than fixed regime in terms of inflation lowering.
+\end_layout
+
+\begin_layout Standard
+Multi-currency study for 17 countries of Euro area is done by 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Bandt2014"
+literal "false"
+
+\end_inset
+
+ to estimate effect of exchange rate fluctuations to import prices for multiple trade partners. Currencies chosen are US dollar, UK pound-sterling and Chinese Renminbi. Authors estimate FE model in order to calculate ERPT and find out that in the short run pass-through is incomplete, but its completeness is confirmed fore the long run.
+\end_layout
+
+\begin_layout Standard
+In order to look for the changes in pass-through after 2008 financial crisis, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Jasova2016"
+literal "false"
+
+\end_inset
+
+ estimate 6-year rolling ERPT for both developing (11) and advanced (22 countries) economies completing their study by fitting two-way FE model. Authors assert that pass-through declined during financial crisis for developing economies, meanwhile ERPT of developed countries remained on a relatively stable level.
+\end_layout
+
+\begin_layout Standard
+In (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Comunale2017"
+literal "false"
+
+\end_inset
+
+) paper data for four Euro area countries — France, Germany, Italy and Spain — are studied to find both ERPT and PERR under the zero lower bound (ZLB) environment. Instead of short-term interest rate, authors make use of calculated 
+\shape italic
+shadow interest rates
+\shape default
+ and estimate Bayesian VAR with sign and zero restrictions. The results of the study are that pass-through is high and volatile to import prices and, in general, is dependent on shocks evolving. Moreover, authors state that the process of choosing identification scheme is quite sophisticated, and the identified shocks are true only conditional on the scheme involved.
+\end_layout
+
+\begin_layout Standard
+Both FE model and sign and zero restricted SVAR are estimated in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2017"
+literal "false"
+
+\end_inset
+
+), where authors try to analyse time- and country-specific differences in pass-through on the sample of 26 countries. It is argued that structural variables, like the first two statistical moments of inflation and exchange rate are important for time and country effect explanation, while structural shocks are crucial for explanation of macro-variable variation in time.
+\end_layout
+
+\begin_layout Standard
+A quite remarkable paper of the same collective is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+). Authors study UK economy pass-through before and during Brexit using SVAR model with sign and zero restrictions. The study shows that pound-sterling's depreciation periods during 2008 financial crisis and Brexit have different ground and discrepancy in inflation rates are caused by different shocks affecting the economy. Authors admit that set up in this fashion, a model cannot capture all the complexity of pass-through nature, although identification of shocks can help to improve relevant policy by monetary authority.
+\end_layout
+
+\begin_layout Standard
+Another work employing the same method is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "An2020"
+literal "false"
+
+\end_inset
+
+), though 
+\shape italic
+narrative
+\shape default
+ sign restrictions (simply put, signs dictated by historical events) are added. The main drivers of Japanese pass-through are examined in this study. Authors argue that narrative sign approach is more promising in terms of shock identification procedure.
+\end_layout
+
+\begin_layout Standard
+Time-varying ERPT is examined in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "LeivaLeon2019"
+literal "false"
+
+\end_inset
+
+), where authors estimate time-varying parameters (TVP) dynamic factor model and SVAR with sign restrictions for Euro area. A TVP approach is quite innovative in pass-through literature, as it is highly likely to solve problems of non-linear ERPT estimation. The paper's conclusion is that inflation is mostly driven by exogenous exchange rate shocks, though core inflation are less exposed to these fluctuations.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Colavecchio2019"
+literal "false"
+
+\end_inset
+
+ use local projection method in order to capture non-linear pass-through effects for the 19 countries in Euro area. Plainly speaking, local projections are 
+\shape italic
+h
+\shape default
+-ahead forecasts on the basis of current data. The results show that there is no complete pass-through for all the countries neither after a one year nor two years. Authors also find there is a sign and exchange rate shock size non-linearity for some countries.
+\end_layout
+
+\begin_layout Standard
+The recent work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Comunale2020"
+literal "false"
+
+\end_inset
+
+ is devoted to a comparison of Bayesian SVARs and DSGEs for the purposes of PERR estimation. This particular work is important in the sense that SVAR and DSGE models can give controversial results; hence, a policymaker needs to distinguish an appropriate aims for both setups. Author finds out that just after a shock PERR's are identical for both models, although in the long-run estimates from DSGE are higher due to endogenous response of macrovariables.
+\end_layout
+
+\begin_layout Standard
+DSGE is also employed in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "GarciaCicco2020"
+literal "false"
+
+\end_inset
+
+), where comparison of shock-independent ERPT's and PERR's is done for Chilean data. It is argued throughout the work that pass-through conditional on shocks gives a full picture of macroeconomic variables' relations and that DSGE models are helpful to generate prudent monetary policy.
+\end_layout
+
+\begin_layout Standard
+In their latest work, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Forbes2020"
+literal "false"
+
+\end_inset
+
+ estimate both SVAR and FE model for a set of 26 countries in order to review 
+\shape italic
+
+\begin_inset Quotes erd
+\end_inset
+
+shocks vs. structure
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
+ dilemma. Authors claim that both structural characteristics and shocks are important for better understanding pass-through. Also they find an evidence that monetary shocks are associated with large PERR, which made a big contribution to price fluctuations in advanced economies that are not close to the lower bound.
+\end_layout
+
+\begin_layout Standard
+All in all, there has been a shift in the literature from industry-specific studies to understanding of shock importance during exchange rate pass-through estimation. This drift is dictated not only by an evolution of methodology (this point is prevalent though), but data availability and, what is the most important, a switch to macroprudential policy. The intervention of vector autoregressions and Bayesian estimation techniques, especially sign restrictions, have given, in some sense, the second breath to the research. On the other hand, further development of DSGE models and acceptance of them by central banks globally gave an idea of how shock-dependent ERPT should look like for each country. The idea of SVAR being guided by DSGE (at least for a signs) is given in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Ortega2020"
+literal "false"
+
+\end_inset
+
+), which is a brilliant review on the topic of exchange rate pass-through estimation with a focus on Euro area and the US.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Russia and CIS
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+One of the first works exploring the Commonwealth of Independent States (CIS) is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Korhonen2006"
+literal "false"
+
+\end_inset
+
+), where authors estimate VAR models for each country-member using the data from 1999 to 2004. This work is quite disputable as, for instance, Russia and Kazakhstan have 
+\shape italic
+negative
+\shape default
+ ERPT, which is highly unlikely even considering the policy in 2000-2005. On the example of Russia, the most obvious omission in this study is that the model is fitted on the data after 1998 default, which led to huge surge in exchange rate due to risk premium shock. After this event, it seems that the ruble was underappreciated, and its exchange rate was lowering from 2000 till 2008 financial crisis together with rise in oil price. Being fitted with this data, VAR may generate biased results, as effects from several shocks are not taken into account: the influence of risk premium shock was declining together with rising oil price shock. Due to this issue, the cited work is a good example why shock-dependent ERPT is important for proper policy implications.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Oomes2005"
+literal "false"
+
+\end_inset
+
+ study the relation of inflation and money demand on the example of Russia in 1996–2004. The main focus of this work is economy dollarisation — the influence of foreign currency holdings in the country. As a side effect, authors estimate ERPT to control for influence of money aggregate to inflation.
+\end_layout
+
+\begin_layout Standard
+DSGE model for Russia and China is presented in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Sosunov2006"
+literal "false"
+
+\end_inset
+
+), where a response of exchange rate to foreign currency accumulation policy by central bank is studied. Analysis shows that low level of money in the economy for Russia in 2001–2005 is a pro-inflammatory factor. Moreover, it is underlined that the management of real exchange rate by means of currency accumulation has a little effect to it.
+\end_layout
+
+\begin_layout Standard
+The model for Russia in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Dobrynskaya2008"
+literal "false"
+
+\end_inset
+
+ is fitted on the sample from 1995 to 2002. This work employs two single-equation regressions (simple and extended ones) in order to estimate ERPT for the country. The choice of time-frame and model (OLS) there is questionable, since the surge of CPI and exchange rate after 1998 crisis probably lead to unreliable estimates, although results in the paper do not contradict economic intuition. Authors argue that exchange rate pass-through in Russia is fast, as a huge part of it comes into inflation right in one month after exchange rate shock.
+\end_layout
+
+\begin_layout Standard
+In (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Kataranova2010"
+literal "false"
+
+\end_inset
+
+), a more recent (2000–2008) data are used. Author fits different specifications of OLS models accounting for asymmetry in order to evaluate ERPT. The results are that the presence of pass-through asymmetry is confirmed for Russia, and the effect of ruble decline caused by 2008 financial crisis, indeed, was only partial, since the following ruble appreciation strengthen credibility of the local currency.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Beckmann2013"
+literal "false"
+
+\end_inset
+
+ estimate exchange rate pass-through for CIS countries on the data from 1999 to 2010. Authors obtain negative ERPT estimate from VAR model for USD-RUB pair and the same estimate close to zero for EUR-RUB pair, which contradicts reality. Authors address this issue by pointing out that this pass-through estimate is shock-independent and there is an uncontrolled effect of oil shocks.
+\end_layout
+
+\begin_layout Standard
+In (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Faryna2016"
+literal "false"
+
+\end_inset
+
+) paper author estimate bilateral panel VAR for both Russia and Ukraine to study cross-country spillovers. Author claims that depreciation of ruble causes increase in Ukrainian inflation, which follows intuition as Russian and Ukrainian economies have been quite integrated (even after 2014 political crisis this degree of integration remains high). Moreover, it is observed in this paper that inflation in Ukraine responds to USD-RUB changes higher than to USD-UAH (hryvna — the Ukrainian local currency).
+\end_layout
+
+\begin_layout Standard
+The other work of the same author is (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Faryna2016a"
+literal "false"
+
+\end_inset
+
+), which examines non-linear ERPT for Ukraine exclusively on the 2007–2016 data. As it is occurred in the literature for Russia, local currency depreciation causes more effect to inflation than its appreciation, although pass-through is higher for Ukraine.
+\end_layout
+
+\begin_layout Standard
+The latest work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Faryna2018"
+literal "false"
+
+\end_inset
+
+ studies some CIS countries, including Ukraine and, partially, Russia. This paper employs Global VAR model (VAR with equations for each country) fitted on the 2001–2016 data. This model shows a close relationship of Euro area output and output of CIS countries. An oil shocks is definitely positive for Russia, and what is more interesting, it is positive for CIS countries due to spillover effect.
+\end_layout
+
+\begin_layout Standard
+A VECM model with ERPT asymmetry is used in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Ponomarev2016"
+literal "false"
+
+\end_inset
+
+) for 2000–2012 data. Authors break time series into two sub-periods: before and after 2008 financial crisis, to achieve robustness of results. Their findings are that pass-through effect reveals fully in 6-12 month period, and this effect is incomplete.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Comunale2018"
+literal "false"
+
+\end_inset
+
+ estimate fixed effects panel data model with ERPT asymmetry for CIS countries on a 1999–2014 time-frame. Authors claim that pass-through is high for CIS countries, reaching its maximal level in one year. Moreover, they argue that there is a little evidence of asymmetric pass-through, although it doesn't apply to Russia, as this country is just partially included in the study.
+\end_layout
+
+\begin_layout Standard
+In (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Sinyakov2019"
+literal "false"
+
+\end_inset
+
+) authors calibrate a simplified multi-equation static model of small open economy in order to evaluate industry-specific asymmetry of ERPT. Their findings are that electrical appliance manufacturers and paper producers are less likely to transfer costs from exchange rate fluctuations directly to the final good prices keeping ERPT in this area low. On the opposite, textile and wholesale trading industries have very high pass-through (around 0.5–0.6). The final conclusion is that when produces are aware of competitors' actions in a specific industry, the pass-through is high.
+\end_layout
+
+\begin_layout Standard
+A comprehensive research is done by 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Khotulev2020"
+literal "false"
+
+\end_inset
+
+. In this paper, author evaluate both ERPT by means of OLS model and PERR using the Bank of Russia's DSGE model. There are five exogenous shocks in the latter model: oil price, monetary policy, country risk premium, government expenditures and reserves. A quite disputable result is that there is a huge negative PERR due to government spendings shock (-1.596), which may be a result of purely technical limitations (first-order approximation of DSGE equations).
+\end_layout
+
+\begin_layout Standard
+The evolution of pass-through literature concerning Russia and CIS is fairly limited, since the last work calculates shock-dependent ERPT. Some works include negative shock-independent ERPT for Russia, which is rather dubious for Russian structure of external trade. Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:litreview_erpt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ summarizes shock-independent pass-through estimates across the literature.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="10" columns="6">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Paper 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Currency 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Data 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Infl. aggr. 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Length 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ERPT 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Oomes2005"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1996–2004 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Short-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.4–0.5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Korhonen2006"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+USD 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1999–2004 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ULC
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+Unit labour cost.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.42 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Dobrynskaya2008"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1995–2002 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.35 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Kataranova2010"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+USD 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2000–2008 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Short-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.06–0.2 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Beckmann2013"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+USD 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1999–2010 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.17 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Ponomarev2016"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2000–2012 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Short-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.046 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Faryna2016"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+USD 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2000–2015 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI Core 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.1 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Sinyakov2019"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+(2016–2017) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.35 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Khotulev2020"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2005–2019 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.16 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Earlier shock-independent ERPT estimates for Russia.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:litreview_erpt"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+SECTION 3. METHODS
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{section}{3}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Section 3. Methods}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Theoretical Framework
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+Before going into technical details, I explain why pass-through estimation is important, and why there may not be complete pass-through (a one-to-one correspondence of exchange rate fluctuations and inflation movements). In this step, I follow (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Comunale2017"
+literal "false"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+), which use the most popular approach in the pass-through literature.
+\end_layout
+
+\begin_layout Standard
+First, consider the following aggregate pricing equation of an imported good: 
+\begin_inset Formula \begin{equation}
+	P_t^{imp} = E_t \cdot P_t^{exp, f},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $P_t^{imp}$
+\end_inset
+
+ is price of imported good, 
+\begin_inset Formula $E_t$
+\end_inset
+
+ is exchange rate and 
+\begin_inset Formula $P_t^{exp}$
+\end_inset
+
+ is foreign export price.
+\end_layout
+
+\begin_layout Standard
+Then, taking logarithm on both sides and using 
+\begin_inset Formula $P_t^{exp, f} = Markup_t + MC_t$
+\end_inset
+
+, we get: 
+\begin_inset Formula \begin{equation}
+	p_t^{imp} = e_t + markup_t + mc_t,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $p_t^{imp}$
+\end_inset
+
+ is a logarithm of import price level, 
+\begin_inset Formula $e_t$
+\end_inset
+
+ is a logarithm of exchange rate, 
+\begin_inset Formula $markup_t$
+\end_inset
+
+ is producer mark-up and 
+\begin_inset Formula $mc_t$
+\end_inset
+
+ is marginal costs. From this relation, any exchange rate fluctuation can be either fully incorporated into import price, or markup and marginal costs can be adjusted. Assuming that firms-exporters are forward-looking, and taking into account price rigidities, one expects mark-up to be adjusted over marginal costs for any macroeconomic shock.
+\end_layout
+
+\begin_layout Standard
+The same logic, indeed, can be applied to firms-importers, such as electronics and clothing stores for Russia. These firms has marginal costs mainly consisting of foreign wholesale prices of goods imported. Due to price stickiness and oligopolistic nature of the market in these industries, the firms adjust not only the final price of good, nominated in a local currency, but their mark-up. Hence, depending on the shock emerged in the economy, the pass-through can be incomplete.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Pass-through Definitions
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+A simple technique that has been widely used in the literature determining shock-in\SpecialChar softhyphen
+de\SpecialChar softhyphen
+pen\SpecialChar softhyphen
+dent ERPT (
+\shape italic
+exchange rate pass-through
+\shape default
+) is estimation of the following OLS model: 
+\begin_inset Formula \begin{equation}
+	p_t = \beta_0 + \beta^{e}_1 e_t + \beta^{e}_2 e_{t-1} + \beta^{e}_3 e_{t-2} + \beta^{e}_4 e_{t-3} + \ldots+ \varepsilon_t,
+\end{equation}
+\end_inset
+
+where ellipsis denotes other control variables. Hence, ERPT is calculated as the sum of exchange rate lags coefficients: 
+\begin_inset Formula \begin{equation}
+	ERPT_T = \sum_{j=0}^{T} \beta^e_{t-j},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $T$
+\end_inset
+
+ is an ERPT horizon. An ERPT can be characterised as 
+\shape italic
+incomplete
+\shape default
+ for a horizon 
+\begin_inset Formula $T$
+\end_inset
+
+, if 
+\begin_inset Formula $ERPT_T < 1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The most important benefit of this method is its flexibility: a researcher can specify different forms of the price equation, e.g. panel regressions for spatial data, allowing asymmetry of exchange rate effect or time/regime-dependent effects. Non-linear effects are important for studying pass-through dependence on shifts in monetary policy or structural breaks.
+\end_layout
+
+\begin_layout Standard
+At the same time, ERPT measure lacks identification of economy shocks, which is a huge shortcoming of this approach. This issue is misleading in the sense that it can result into wrong policy conclusions made by authorities: if shock-independent pass-through is measured involving the historical data with a particular set of shocks, the result cannot be applied to the further periods when the economy is exposed to other set of shocks, since ERPT will be different.
+\end_layout
+
+\begin_layout Standard
+In this work I calculate shock-dependent pass-through known in the literature as 
+\shape italic
+price-to-exchange rate
+\shape default
+ coefficient (PERR). This measure involves estimation of structural vector autoregression, either purely data-driven or derived from DSGE equations. PERR is defined as follows: 
+\begin_inset Formula \begin{equation}
+	PERR^{\text{shock}}_{T} = \frac{\sum_{t=0}^{T}IRF^{\text{shock}, e}_{t}}{\sum_{t=0}^{T}IRF_{t}^{\text{shock}, p}},
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $IRF^{\text{shock}, \text{response}}_{t}$
+\end_inset
+
+ is a value of impulse-response function calculated at time 
+\begin_inset Formula $t$
+\end_inset
+
+ for 
+\shape italic
+response
+\shape default
+ variable caused by exogenous 
+\shape italic
+shock
+\shape default
+. 
+\begin_inset Formula $e$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+ stand for exchange rate and price variables.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Econometric Model and Identification Strategies
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+I estimate two Bayesian vector autoregressions (BVAR) with five variables: oil price in US dollars, local short-term interest rate (MIACR
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+Moscow Interbank Average Credit Rate.
+\end_layout
+
+\end_inset
+
+ 31-180 days), local nominal effective exchange rate, local real GDP index and inflation aggregate (CPI or core CPI). I use two compositions of CPI (full and core) in order to capture pass-through for non-food and non-oil goods, which are mostly imported for Russia. All variables, except interest rate, are used in growth rates in the model.
+\end_layout
+
+\begin_layout Standard
+The choice of variables here is dictated mainly by (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Hahn2003"
+literal "false"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Comunale2017"
+literal "false"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "LeivaLeon2019"
+literal "false"
+
+\end_inset
+
+). Throughout the shock-dependent pass-through literature widely used variables are import/export price index, short-term interest rate, exchange rate, output and inflation aggregate. Moreover, the literature uses quarterly data used instead of monthly series due to primarily absence of monthly output data. My work also uses quarterly data, since GDP data estimates are not in free use, while usage of output proxies (e. g. manufacturing index) may lead to controversial results. In addition to this, I include oil price series, as this variable is crucial for determining exchange rate fluctuations and movement of other macrovariables in Russia. More information about data is in the following section.
+\end_layout
+
+\begin_layout Standard
+After VAR estimation a researcher gets its reduced form, which is given as follows: 
+\begin_inset Formula \begin{equation}
+	Y_t = A_1 Y_{t-1}  + A_2 Y_{t-2} + \ldots + u_t,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $Y_{t-j}$
+\end_inset
+
+ is vector of variables' values of lag 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $A_i$
+\end_inset
+
+ is matrix of coefficients at lag 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $u_t$
+\end_inset
+
+ is residual term.
+\end_layout
+
+\begin_layout Standard
+Since variance-covariance matrix 
+\begin_inset Formula $\Xi_{u_t}$
+\end_inset
+
+ is not diagonal and normalized, there is no economic interpretation of residuals 
+\begin_inset Formula $u_t$
+\end_inset
+
+. Then, a researcher has to refer to the generalized form of VAR: 
+\begin_inset Formula \begin{align}
+	B_0 Y_t &= B_1 Y_{t-1}  + B_2 Y_{t-2} + \ldots + \epsilon_t,\\
+	Y_t &= B_0^{-1}B_1 Y_{t-1}  + B_0^{-1}B_2 Y_{t-2} + \ldots + B_0^{-1} \epsilon_t,\\
+	Y_t &= B_0^{-1}B_1 Y_{t-1}  + B_0^{-1}B_2 Y_{t-2} + \ldots + u_t,
+\end{align}
+\end_inset
+
+From this result and equivalence 
+\begin_inset Formula $B_0^{-1} \epsilon_t = u_t$
+\end_inset
+
+, an idea is to specify such matrix 
+\begin_inset Formula $B_0$
+\end_inset
+
+ that a variance-covariance matrix 
+\begin_inset Formula $\Xi_{\epsilon_t} = V(B_0 u_t)$
+\end_inset
+
+ is diagonal and normalized (
+\begin_inset Formula $\Xi_{\epsilon_t} = I$
+\end_inset
+
+). Again, using 
+\begin_inset Formula $B_0^{-1} \epsilon_t = u_t$
+\end_inset
+
+ a researcher gets: 
+\begin_inset Formula \begin{equation}
+	\Xi_{u_t} = V(B_0^{-1} \epsilon_t) = B_0^{-1} V(\epsilon_t \epsilon_t') B_0^{-1'} = B_0^{-1} I B_0^{-1'} = B_0^{-1} B_0^{-1'}.
+\end{equation}
+\end_inset
+
+This result is noticeable, as it appears that 
+\begin_inset Formula $B_0^{-1} B_0^{-1'}$
+\end_inset
+
+ is a Cholesky decomposition of 
+\begin_inset Formula $\Xi_{u_t}$
+\end_inset
+
+. Then, 
+\begin_inset Formula $\displaystyle\frac{n(n-1)}{2}$
+\end_inset
+
+ restrictions are needed to exactly identify shocks.
+\end_layout
+
+\begin_layout Standard
+There are several methods to do this. The first method is the simplest one — naively apply Cholesky decomposition to variance-covariance matrix 
+\begin_inset Formula $\Xi_{u_t}$
+\end_inset
+
+, in form given above. From this, using as an example choice of variables in this work, shocks are identified as follows: 
+\begin_inset Formula \begin{equation}
+	\begin{pmatrix}
+		\epsilon^{\text{Global persistent shock}}_t\\
+		%\epsilon^{\text{Global demand shock}}_t\\
+		\epsilon^{\text{Mon. shock}}_t\\
+		\epsilon^{\text{Ex. rate shock}}_t\\
+		\epsilon^{\text{Supply shock}}_t\\
+		\epsilon^{\text{Demand shock}}_t\\
+	\end{pmatrix} = 
+	\begin{pmatrix}
+		S_{11} & 0 & 0 & 0 & 0 \\
+		S_{21} & S_{22} & 0 & 0 & 0\\
+		S_{31} & S_{32} & S_{33} & 0 & 0 \\
+		S_{41} & S_{42} & S_{43} & S_{44} & 0 \\
+		S_{51} & S_{52} & S_{53} & S_{54} & S_{55} \\
+		%S_{61} & S_{62} & S_{63} & S_{64} & S_{65} & S_{66}\\
+	\end{pmatrix} 
+	\begin{pmatrix}
+		u^{\text{Oil}}_t\\
+		%u^{\text{Imp. infl}}_t\\
+		u^{\text{Int. rate}}_t\\
+		u^{\text{NEER}}_t\\
+		u^{\text{Real GDP}}_t\\
+		u^{\text{CPI}}_t\\
+	\end{pmatrix}
+\end{equation}
+\end_inset
+
+Then, the first variable in the vector is not directly affected by any shock but one that is associated with this variable, while the last variable is affected by fluctuations of all the shocks in the model. The main drawback of this identification scheme is that it implies very stiff restrictions to the shocks, and there may not be desired order of variables that produces sensible result. For example, one can reasonably assume that ruble's exchange rate and inflation have effect to the interest rate in short-run (monetary policy rule reaction).
+\end_layout
+
+\begin_layout Standard
+In the recent literature estimating shock-dependent pass-through, a sign and zero restrictions method is widely used. A reader can refer to (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Arias2014"
+literal "false"
+
+\end_inset
+
+) for rigorous explanations of this technique, although, in a nutshell, this is a 
+\shape italic
+guess-and-verify
+\shape default
+ technique: one has to randomly generate matrix 
+\begin_inset Formula $Q$
+\end_inset
+
+ such that 
+\begin_inset Formula $QQ'$
+\end_inset
+
+ is diagonal and its product with matrix from Cholesky decomposition produces such IRF's that satisfy both sign and zero restrictions. As the model is underidentified, there are multiple matrices 
+\begin_inset Formula $Q$
+\end_inset
+
+ satisfying there restrictions. After 
+\begin_inset Formula $n$
+\end_inset
+
+ times generating the random matrices and obtaining IRF's, their median values are calculated as a result.
+\end_layout
+
+\begin_layout Standard
+Mostly, this technique is done together with Bayesian estimation of VAR instead of using OLS. This is done mostly for two purposes — lack of observations and weak identification. Many studies estimate Bayesian VAR with uninformative prior, which adds more flexibility to results. After BVAR estimation, the algorithm proposes to draw several times random estimates and generate big amount of random matrices 
+\begin_inset Formula $Q$
+\end_inset
+
+. Hence, if identification scheme — signs and zeros — are assigned properly, there exist matrices 
+\begin_inset Formula $Q$
+\end_inset
+
+ for some draws that fulfil these restrictions.
+\end_layout
+
+\begin_layout Standard
+The main drawback of this approach is that researcher has to intuitively arrange signs of response functions, which is usually non-trivial. (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Ortega2020"
+literal "false"
+
+\end_inset
+
+) advice to use DSGE models for this purpose, although data are not necessarily to match IRF produced by theoretical justifications.
+\end_layout
+
+\begin_layout Standard
+Taking some ideas from (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "An2020"
+literal "false"
+
+\end_inset
+
+) and basing the sign and zero restrictions mainly on (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+), I use identification scheme with short-run restrictions described in Table
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:signs_and_zeros"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. Note that NEER is taken with opposite sign: ruble appreciation yields NEER decrease in my data.
+\end_layout
+
+\begin_layout Standard
+I derive five structural shocks from the model: 
+\shape italic
+global persistent shock
+\shape default
+, associated with oil price fluctuations, 
+\shape italic
+exogenous exchange rate shock,
+\shape default
+ associated with domestic risk aversion (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+), 
+\shape italic
+monetary shock
+\shape default
+, associated with monetary policy, 
+\shape italic
+demand shock
+\shape default
+, associated with consumer price index fluctuations, and 
+\shape italic
+supply shock
+\shape default
+, which reflects changes in GDP.
+\end_layout
+
+\begin_layout Standard
+Global persistent shock is quite important for studying price and exchange rate fluctuations in Russia due to specific external trade structure. Supply and demand shocks are universal for any country, as well as monetary shock, which link nominal and real economy, and exchange rate shock, which is important for open economy.
+\end_layout
+
+\begin_layout Standard
+I assume oil price does not respond to any internal shock (treating Russia as small open economy), positive supply shock increases GDP and slows down CPI due to excessive supply. Positive demand shock heats up output and inflation, while the central bank fights against it by raising interest rate; foreign importers are required to purchase more local currency, hence, exchange rate declines. Positive exogenous exchange rate shock increases inflation and, as a response, the central bank raises interest rate. Finally, positive global persistent shock is associated with raise of business activity, hence, it pushes up oil price, while oil exporters bring more foreign currency into country, reducing exchange rate.
+\end_layout
+
+\begin_layout Standard
+The signs for monetary shock come from IS-LM, while supply an demand shocks are mostly dictated by AD-AS. I do not assign direction of reaction to global persistent shock for output, inflation and interest rate, as the effect may be ambiguous for inflation: imported goods can rise in price due to expensive production factors (electricity and heat) and logistics, especially for imported oil products. Along with this, I use (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Kreptsev2017"
+literal "false"
+
+\end_inset
+
+) as a source of signs from DSGE model for sanity check.
+\end_layout
+
+\begin_layout Standard
+The model's parsimony is predominantly caused by sign identification issues, while DSGE models may include dozens of variables.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+On the other hand, the process of DSGE model estimation is not the same as the same process for SVAR, as it is either calibration or frequentist/Bayesian estimation of only few deep structural parameters.
+\end_layout
+
+\end_inset
+
+ A lack of identification grows with the number of variables due to requirements of identification schemes and irrelevance of odd variables.
+\end_layout
+
+\begin_layout Standard
+In addition to this, there are no published data for Russian import prices, while almost every study uses them in their analysis. Export prices are also not used, contrary to the literature, as I assume that oil price captures export price shocks, and construction of export price time series would require much effort without necessary data.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Resizebox
+status collapsed
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+textwidth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+
+\begin_layout Standard
+!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="8" columns="6">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="none" valignment="top" special="@{}l">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="none" valignment="top" special="c@{}">
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Variable 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Supply shock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Demand shock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Monetary shock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Exchange rate 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+shock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Global persistent 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+shock
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Real GDP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+– 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+? 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+? 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI/Core 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+– 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+– 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+? 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Interest rate 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+? 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+? 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+? 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+– 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+– 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+– 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Oil price 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
++ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Identification restrictions used to recover structural shocks. Positive (negative) signs describe non-strictly positive (negative) restrictions for variable's contemporaneous and next quarter response to a particular shock. Zero indicates for no contemporaneous reaction.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:signs_and_zeros"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+SECTION 4. DATA
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{section}{2}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Section 4. Data}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I use quarterly time series of six variables from 2003Q2 to 2020Q4: oil price (Brent spot price, which is a conventional proxy variable for Urals) in USD, short-term interest rate (MIACR 31-180 days), nominal effective exchange rate, real GDP and CPI/Core CPI. Monthly data are available for all the variables, except for GDP, while use of output proxies seems unreasonable as it may distort final results, as inflation-output and exchange rate-output relations are hardly identifiable.
+\end_layout
+
+\begin_layout Standard
+The data time-frame is bounded by the first observation of the real GDP and by its last observation. There are 63 observations in total. CPI is seasonally adjusted according to X13-ARIMA-SEATS; real GDP index is available already seasonally adjusted. NEER is taken with opposite sign, as it is more convenient to work with a direct quote. See Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:variables_decription"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for data description and sources.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement b!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="12" columns="3">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="none" valignment="top" special="@{}l">
+<column alignment="left" valignment="top">
+<column alignment="none" valignment="top" special="l@{}">
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Variable 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Description 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Source 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Oil price 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Brent oil price nominated in US dollars, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+quarterly average, QoQ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Bloomberg 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Interest rate 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+MIACR 31–180 days, quarterly average. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Absent values were imputed by last available rate
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CBR 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Exchange rate 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Nominal effective exchange rate (NEER) of ruble, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Ruble appreciation = NEER decline, 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+QoQ, Central Bank of Russia methodology
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CBR 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Output 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Russian real GDP (2015Q1 = 100), 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+seasonally adjusted, QoQ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+FRED
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Inflation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Consumer price index and core consumer price index, QoQ, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+seasonally adjusted, Rosstat methodology 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Rosstat 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Description of Data and Sources
+\begin_inset Newline newline
+\end_inset
+
+ CBR = Central Bank of Russia.
+\begin_inset Newline newline
+\end_inset
+
+ FRED = Federal Reserve Economic Data.
+\begin_inset Newline newline
+\end_inset
+
+ OECD = Organization of Economic Co-operation and Development.
+\begin_inset Newline newline
+\end_inset
+
+ Rosstat = Federal State Statistics Service of Russia.
+\begin_inset Newline newline
+\end_inset
+
+ WTO = World Trade Organization.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:variables_decription"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I associate oil price fluctuations with global persistent shock (as in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+), interest rate fluctuations with monetary policy shocks, exchange rate fluctuations with exogenous exchange rate shocks, domestic product fluctuations with supply shocks and CPI fluctuations with demand shocks. 
+\begin_inset Float figure
+placement hb
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/neer_cpi.eps
+	width 80line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Time series of NEER and CPI (seasonally adjusted), growth rates.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:neer_cpi"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I do not use RUB/USD as the exchange rate, since nominal effective exchange rate is widely used in the literature, and I expect higher values of pass-through coefficients from RUB/USD. Choice of short-term interest rate variable — Moscow interbank average credit rate for credits from 31 to 180 days — is done in order to match data granularity. I do not pick RUONIA (ruble overnight index average), since this rate is too fast, while Bank of Russia's key rate cannot capture all interest rate fluctuations at all. Another option is to use yield curve of 10-year federal loan obligations (
+\shape italic
+OFZ
+\shape default
+), though MIACR seems more natural in this study and fits the literature.
+\end_layout
+
+\begin_layout Standard
+A quite intuitive fact that oil price is negatively correlated with exchange rate follows from the fact that oil producers convert their yields from convertible currencies (mostly, US dollar and Euro) to Russian ruble, which creates excessive supply of foreign currency. At the same time, ruble appreciation declines consumer prices due to the import-dependent structure of consumer basket (huge share of import in manufactured goods). These relations form a pass-through channel. This is in contrast to identification scheme used in 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+, which does not imply any restrictions to global persistent shock due to ambiguity of risk-aversion effect.
+\end_layout
+
+\begin_layout Standard
+In general, based on the correlation matrix, the Russian economy can be described by the following stylized facts: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setlength{
+\backslash
+itemsep}{0.02em}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There is a significant negative correlation of oil price and ruble exchange rate (especially, for RUB/USD and RUB/EUR); 
+\end_layout
+
+\begin_layout Enumerate
+There is a strong negative correlation of interest rate in Russia and local real GDP; 
+\end_layout
+
+\begin_layout Enumerate
+Oil price and local real GDP are positively correlated; 
+\end_layout
+
+\begin_layout Enumerate
+Exchange rate and CPI are positively correlated; 
+\end_layout
+
+\begin_layout Enumerate
+Exchange rate is more volatile than CPI. 
+\end_layout
+
+\begin_layout Standard
+Annex contains additional information about characteristics of time series. Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:correlation_variables"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ displays correlation coefficients of variables, Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:unit_roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ provides unit root tests for them. 
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 1
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+MIACR
+\end_layout
+
+\end_inset
+
+ exhibits unit root presence, although there is no visual evidence of it; hence, short-term interest rates are used in the literature without differencing.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+SECTION 5. RESULTS
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{section}{4}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{subsection}{0}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Section 5. Results}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Price-to-exchange rate ratios
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+To obtain the results, I estimate two BVARs of order 1 with Normal Inverse-Whishart prior and different compositions of CPI (full and core). The order of model is picked based on SIC (Schwartz information criterion) calculated for models up to 8 lags.
+\end_layout
+
+\begin_layout Standard
+After BVAR estimation, sign and zero restrictions algorithm is applied in order to recover orthogonal impulse-response functions. For CPI, 466,6 thousands of models are checked and 43 of them fulfil restrictions. In case of core CPI, 480,9 thousands of models are checked and 31 of them fit. IRFs for both models are in Annex (Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:irf_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:irf_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for full CPI, Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:irf_core_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset space ~
+
+\end_inset
+
+and
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:irf_core_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for core CPI). I use closest-to-median (CTM) IRF definition instead of median one, as the former describes a model that is most coherent with the data.
+\end_layout
+
+\begin_layout Standard
+PERR coefficients are calculated for two time periods: the short-run (1 quarter) and the long-run one (4 quarters). For purposes of positive analysis, historical decompositions for CPI (both full and core), exchange rate and GDP are calculated.
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:perr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ provides PERR estimations. Shock-dependent pass-through coefficients calculated from model are incomplete for all the variables for both short- and long-run. I get negative PERRs for supply and demand positive shocks, which is a usual fact for SVARs (e.
+\begin_inset space ~
+
+\end_inset
+
+g. 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.~55"
+before ""
+key "Ortega2020"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Core CPI inflation pass-through appears to be faster than for CPI, as it is expected for non-food and non-oil goods, although supply shock is quite smaller in absolute value, while for full CPI demand shock PERR takes this place. My conjecture is that core CPI is less associated with domestic output, as it consists of consumer non-oil and non-food goods, which are mostly imported for Russia. Hence, core CPI fluctuations are more closely associated with movements of nominal variables. Reaction to global persistent shock supports this, as global persistent shock (associated with oil prices in this work) heats up world export prices, since oil becomes more costly, while domestic prices are less exposed to commodity fluctuations.
+\end_layout
+
+\begin_layout Standard
+For the long-term PERRs, there are less differences between full and core CPI, although spread between full and core compositions is still huge. The same is for demand shock, which contributes less to price for full CPI. Again, shocks associated with nominal variables have bigger PERR, while values for supply shock are comparable.
+\end_layout
+
+\begin_layout Standard
+Monetary shock PERR is lower than obtained in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 9"
+before ""
+key "Khotulev2020"
+literal "false"
+
+\end_inset
+
+) for both short- and long-run. The fact of bigger pass-through estimates from DSGE is observed in the literature (e.g. 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Comunale2020"
+literal "false"
+
+\end_inset
+
+) and explained by endogenous shocks in long-run. On the same time, results for supply shocks are comparable to ones in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+). Hence, in long-run, global and demand shocks are not so influential than the rest of them for full CPI, while exchange rate and supply shocks have huge pass-through. For core CPI, all PERRs are quite huge.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="11" columns="5">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="none" valignment="top" special="@{}l">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="none" valignment="top" special="l@{}">
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Standard
+Short-run (1Q)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Standard
+Long-run (4Q)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+c
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PERR
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+(CPI)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+c
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PERR
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+(Core)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+c
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PERR
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+(CPI)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makecell
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+c
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PERR
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+(Core)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Global persistent shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.0695 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.3444 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.1584 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.4265 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Monetary shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.0439 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.1102 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.2813 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.4479 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Exchange rate shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.1459 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.1967 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.4033 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.5649 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Supply shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.2389 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.1239 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.3556 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.3907 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% & -0.2389         & -0.0239          & -0.3556         & -0.3907         
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Demand shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.0366 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.2949 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.1326 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.3542 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PERR calculated for BVAR with sign and zero restrictions. 
+\begin_inset Quotes erd
+\end_inset
+
+CPI
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes erd
+\end_inset
+
+core
+\begin_inset Quotes erd
+\end_inset
+
+ in parentheses reflect price aggregate (CPI or Core CPI) used in the model.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:perr"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Historical decomposition
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+To the purpose of retrospective analysis, Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hd_cpi_cut"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hd_core_cpi_cut"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ contain historical decompositions for CPI and core CPI growth rates observed from 2015. See Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hd_cpi_full"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hd_core_cpi_full"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ in Annex for full historical decomposition graphs.
+\end_layout
+
+\begin_layout Standard
+After 2014 ruble depreciation crisis, model captures positive effect of monetary shock to inflation, as from 2015–2016 Bank of Russia has started to gradually decrease key rate, while inflation rate has begun to slow down. Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:intrate_cpi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows dynamics of CPI and short-term interest rate. Positive IRF of monetary shock to inflation is widely known as 
+\shape italic
+price puzzle
+\shape default
+, a good description is given in (
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Sims1992"
+literal "false"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+before ""
+key "Christiano1994"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+For my models, monetary shock IRFs to CPI growth rate of both compositions show negative direct effect for all periods, as identification scheme implies non-positive response; then, there is no direct effect of monetary shock to inflation, but indirect contemporaneous effects of positive sign from other variables outweigh its contribution. Hence, I do not consider temporary negative influence of monetary shock of the same sign to inflation as related to price puzzle. The positive effect, which has appeared from 2020Q4 for full CPI and 2020Q1 for core CPI is in support to my assertion.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/intrate_cpi.eps
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Plot of MIACR (31-180 days) and CPI (full and core compositions) gr. rates.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:intrate_cpi"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+COVID-19 outbreak in 2020Q1 heated up prices in Russia, although signs of inflationary sentiments were already in 2019Q4. Negative global persistent shock, associated with drop in oil prices, and supply shock of the same sign were the main inflation risers in the first three quarters of 2020, though exchange rate shock was driving prices down. The latter can be explained by unchanged domestic risk aversion (
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 258"
+before ""
+key "Forbes2018"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Comparing the recent downturn with 2008 financial crisis, I notice the crucial difference that exchange rate shock was hugely heating up prices in 2008Q4–2009Q2. This may be an outcome of banded exchange rate adopted by Bank of Russia from 2005 to 2014 or changed risk perception of economic agents due to disbelief to local financial system and capital outflow, as during 2014–2015 ruble devaluation episode, where exchange rate shock was overwhelming.
+\end_layout
+
+\begin_layout Standard
+Another remarkable pattern is positive influence of exchange rate shocks due to political tensions to CPI. For a period of 2016–2020 it is possible to see three periods of positive influence of exchange rate shock to inflation: the last two occurrences can be associated with incidents in March 2017 (2017Q2 —2018Q2) and August 2020 (from 2020Q4), while the first one (2016Q2–Q3) could happen due to the leak of so-called 
+\begin_inset Quotes erd
+\end_inset
+
+Panama Papers
+\begin_inset Quotes erd
+\end_inset
+
+ in April 2016. Hence, exchange rate shocks are strongly associated with political conditions and Russian international affairs.
+\end_layout
+
+\begin_layout Standard
+Core CPI exhibits the same influence pattern, however, effect of exchange rate shock is still negative, though negligible, in 2020Q4. An interesting fact is that persistence and strength of shocks' influence is higher for core CPI.
+\end_layout
+
+\begin_layout Standard
+For illustrative purposes, I add historical decompositions of NEER and GDP growth rates for full CPI model (Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hd_neer_full"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hd_gdp_full"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), as the difference in decompositions of these time series between two models is negligible. Forecast error variance decomposition is presented in Annex, Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:fevd_cpi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, for both full and core CPI.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/hd_exrate_full.eps
+	width 95line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Historical decomposition of demeaned NEER gr. r. time series. Black line denotes demeaned observed NEER gr. r.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hd_neer_full"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/hd_gdp_full.eps
+	width 95line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Historical decomposition of demeaned real GDP gr. r. time series. Black line denotes demeaned observed real GDP gr. r.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hd_gdp_full"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/hd_cpi_cut.eps
+	width 95line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted), observations from 2015. Black line denotes demeaned observed CPI gr. r.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hd_cpi_cut"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/hd_core_cpi_cut.eps
+	width 95line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Historical decomposition of demeaned core CPI gr. r. time series (seasonally adjusted), observations from 2015. Black line denotes demeaned observed core CPI gr. r.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hd_core_cpi_cut"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+CONCLUSION
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Conclustion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This paper contains recent shock-dependent pass-through estimates for Russia. In order to identify structural shocks, I estimate two Bayesian VARs with uninformative prior for two different CPI compositions (full and core) and apply short-run sign and zero restrictions algorithm to draws from the models. I use oil price, nominal effective exchange rate, MIACR up to 180 days, real GDP index and CPI, full and core in different BVAR specifications. The latter four variables are often met in the literature and country-unspecific for describing effects to prices, while oil price are added, since it is substantial for Russian economy — a key world commodity exporter — to capture global shocks. SVAR approach is widely present in previous studies on pass-through estimation for different countries, as it is more parsimonious than DSGE and data-driven.
+\end_layout
+
+\begin_layout Standard
+Although pass-through in Russia is not studied sufficiently, my results are in line with few works about shock-dependent ERPT and PERR from DSGE. I find PERR of exogenous exchange shock as the highest one, while global persistent shock pass-through, associated with oil price fluctuations, is ambiguous: for full CPI it is quite small, while for core CPI, which mainly consists of imported consumer goods prices, the value is high. Overall, PERR values for core CPI are higher in long-run.
+\end_layout
+
+\begin_layout Standard
+For short-run I observe an interesting pattern: while 1-quarter pass-through for full CPI due to supply shock is high, it is negligible for core CPI, and vice versa for demand shock. My possible explanation is that there is a significant share of domestic goods prices in full CPI composition, which are more responding to output fluctuations, while short-run demand excess can be satisfied by import; for core CPI the logic is opposite: there is a huge share of imported goods in its structure, which does not immediately respond to domestic output, but demand response is very high, since core CPI goods' prices are unregulated by government.
+\end_layout
+
+\begin_layout Standard
+Talking about speed of pass-through, I assert that core CPI is faster to respond to macroeconomic shocks than full CPI, as short-run PERRs are high for the first three shocks (global, exchange rate and monetary) for the core composition. again, I associate this with government regulations on prices of goods present in full consumer basket.
+\end_layout
+
+\begin_layout Standard
+Historical decomposition of CPI time series reveal noticeable facts about influence of crises and different political events to inflation, which add robustness to the results. First, COVID-19 outbreak effect was mainly driven by global persistent and supply shocks for inflation, as intuitively expected, while exchange rate shock was driving prices down. This is in contrast to 2008 financial crisis effect, which has a different nature and was mainly driven by exchange rate shocks for Russian inflation, as during the last quarter of 2014.
+\end_layout
+
+\begin_layout Standard
+Monetary shock appears to be cooling down prices in 2016–2019 together with gradual key rate decrease by the Central Bank of Russia. This phenomenon resembles renown 
+\begin_inset Quotes erd
+\end_inset
+
+price puzzle
+\begin_inset Quotes erd
+\end_inset
+
+, which is an effect of VAR estimation on data with sharp interest rate increase, that produces invalidly positive IRF of monetary shock to inflation aggregate. My IRF appears to be negative for both short- and long-run. Moreover, the negative monetary shock effect turns to be positive in 2020, especially for core CPI. Hence, I argue that monetary shock is fully identified in my models.
+\end_layout
+
+\begin_layout Standard
+This work does not comprehensively explain all the complexities of pass-though though: first, the identification scheme used here is not universal (however, matching theory and data well), an the results are valid conditional on the strategy of structural shocks recovery. At the same time, a reader should not worry about this fact, since this scheme is widely applied in the recent literature and stems from plausible assumptions. Second, general equilibrium models allow to analyse more economic shocks, although being sophisticated and with substantial limitations. In reality, data-driven SVARs and DSGE models pursuit different goals — the latter describes an economy assuming existence of 
+\shape italic
+general equilibrium
+\shape default
+, which is a quite strong assumption, while the former model is more flexible, but may easily lead to inconsistent results by misspecification of identification assumptions. Third, vector autoregressions cannot properly capture non-linearities, like exchange rate sign asymmetry for a pass-through, which is important for Russian case.
+\end_layout
+
+\begin_layout Standard
+Further development of this work implies two directions: first, import price data for Russia can be helpful in order to capture additional substantial shocks; second, it is useful to compare the results with estimates from the same identification scheme, but implying long-run restrictions on oil price and output, although IRFs does not show any disturbance in the long-run.
+\end_layout
+
+\begin_layout Standard
+By itself, the approach used in this study can be useful for normative policy implications: qualitatively, it can identify recent shocks, so policymakers can apply more adequate tools depending on the source of fluctuations, while from quantitative point of view, the ability of forecasting can add more clarity to tendency of shock effects.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand*{
+\backslash
+newblockpunct}{
+\backslash
+addperiod
+\backslash
+space
+\backslash
+bibsentence}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linespread
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1.3
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../Sources/lit"
+options ""
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{List of References}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{table}{0}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makeatletter
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand*{
+\backslash
+thetable}{
+\backslash
+alph{table}}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand*{
+\backslash
+thefigure}{
+\backslash
+alph{figure}}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+let
+\backslash
+c@
+\end_layout
+
+\end_inset
+
+table
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+c{@}
+\end_layout
+
+\end_inset
+
+figure 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+makeatother
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+normalsize
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+linespread{0.5}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Annex
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Annex}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "app"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+begin{tabular}{rllllll}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="7" columns="7">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="none" valignment="top" special="@{}r">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="none" valignment="top" special="l@{}">
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Oil price 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+MIACR 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+GDP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Core CPI
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Oil price 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+MIACR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.37** 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.45*** 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.24 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+GDP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.43*** 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.65*** 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.25* 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.10 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.34 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.35** 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.08 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Core CPI 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.47***
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-0.17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.95***
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlation table (Pearson) of variables, growth rates where applicable.
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $^*p<0.05,\; ^{**}p<0.01,\;^{***}p<0.001$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:correlation_variables"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="7" columns="3">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="none" valignment="top" special="@{}l">
+<column alignment="left" valignment="top">
+<column alignment="none" valignment="top" special="l@{}">
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Variable 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ADF 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+PP 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Oil price, gr. r. 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-4.2347, p
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+textless
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+0.01
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-6.6924, p
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+textless
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+0.01
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Import price, gr. r. & {-4.7868, p
+\backslash
+textless{}0.01} & {-10.880, p
+\backslash
+textless{}0.01}    
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+MIACR 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-2.6818, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.30
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-2.5258, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.36
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+NEER, gr. r. 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-3.1391, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.11
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-8.9038, p
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+textless
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+0.01
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Real GDP, gr. r., SA 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-4.9839, p
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+textless
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+0.01
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-3.9216, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.02
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+CPI, gr. r., SA 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-3.3366, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.07
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-4.4526, p
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+textless
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+0.01
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Core CPI, gr. r., SA 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-3.1961, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.10
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-4.0489, p
+\begin_inset Formula $\approx$
+\end_inset
+
+0.01
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unit root tests for time series used in the model. Null hypothesis for both models: unit root, alternative hypothesis: stationarity.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:unit_roots"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\size footnotesize
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="19" columns="6">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Horizon 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Supply shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Demand shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Monetary shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Exchange rate shock 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Oil price shock
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+CPI
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+30.05 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1.43 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+2.45 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+61.12 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.95
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+17.17 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+3.16 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.16 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+52.51 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+13.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+15.35 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.28 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+18.00 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+48.41 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+13.96
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.91 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.76 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+19.73 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+47.04 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+13.56
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.69 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.90 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.32 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+46.37 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+13.72
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.54 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.92 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.43 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+45.95 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.45 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.91 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.40 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+45.70 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.53
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.40 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4.90 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.36 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+45.56 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.77
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+Core CPI
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+0.59 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.14 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+7.75 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+68.92 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+2.60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+0.40 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+14.11 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+12.86 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+62.61 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+10.03
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1.42 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+12.36 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+16.05 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+57.83 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+12.34
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1.80 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+11.75 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+18.64 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+55.70 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+12.11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1.78 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+11.56 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.17 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+54.58 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+11.91
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+6 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+1.84 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+11.48 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.69 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+53.85 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+12.15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+7 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+2.06 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+11.40 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.62 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+53.32 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+12.60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+2.33 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+11.31 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+20.39 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+52.95 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\size footnotesize
+13.01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Forecast error variance decomposition of CPI gr. r., percentage points of total variance, values from closest-to-mean model.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:fevd_cpi"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/time_series.eps
+	width 90line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Time series of variables used in the model, seasonally adjusted. Growth rates, where applicable.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:timeseries"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/irf_1.eps
+	width 90line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Impulse response functions for zero and sign identification scheme, full CPI (1).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:irf_1"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/irf_2.eps
+	width 90line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Impulse response functions for zero and sign identification scheme, full CPI (2).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:irf_2"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/irf_core_1.eps
+	width 90line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Impulse response functions for zero and sign identification scheme, core CPI (1).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:irf_core_1"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/irf_core_2.eps
+	width 90line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Impulse response functions for zero and sign identification scheme, core CPI (2).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:irf_core_2"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/hd_cpi_full.eps
+	width 95line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Historical decomposition of demeaned CPI gr. r. time series (seasonally adjusted). Black line denotes demeaned observed CPI gr. r.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hd_cpi_full"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways true
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename figures/hd_core_cpi_full.eps
+	width 95line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Argument 1
+status collapsed
+
+
+\end_inset
+
+Historical decomposition of demeaned core CPI gr. r. time series (seasonally adjusted). Black line denotes demeaned observed core CPI gr. r.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hd_core_cpi_full"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Note Note
+status open
+\begin_layout Plain Layout
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../Sources/lit"
+
+\end_inset
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

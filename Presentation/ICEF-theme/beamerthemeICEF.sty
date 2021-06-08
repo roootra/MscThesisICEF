@@ -1,0 +1,112 @@
+% ICEF Beamer Theme
+% by Artur Zmanovskii
+% derived from HSE there 
+% by Danil Fedorovykh 
+% (http://hse.ru/staff/df)
+%
+% Version 0.1b
+% June 2021
+
+%%% Loading packages useful for typesetting our slides
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\usepackage{hyperref} 
+
+\ProvidesPackage{beamerthemeICEF}[2021/06/03] % Defines the theme HSE
+
+\usefonttheme{default} % Font theme
+
+\setbeamertemplate{navigation symbols}{}    % Comment out to show nav. bar
+\setbeamertemplate{itemize items}[circle]   % Style of bullet points
+%\setbeamertemplate{theorems}[numbered]     % Number objects such as theorems and definitions
+
+%25, 158, 217
+\definecolor{ICEFturquoise}{RGB}{0, 137, 182}        % RAL 5012
+\definecolor{ICEFgreen}{RGB}{0, 184, 92}          
+\definecolor{ICEFred}{RGB}{184, 0, 46}         
+\definecolor{ICEForange}{RGB}{184, 46, 0}     
+\setbeamercolor{WhiteOnTur}{bg=ICEFturquoise,fg=white} % White on RAL 5012
+\setbeamercolor{TurOnWhite}{fg=ICEFturquoise,bg=white} % RAL 5012 on White
+
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,          % non-Latin characters in Acrobat’s bookmarks
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=ICEFturquoise,       % color of internal links (change box color with linkbordercolor)
+    citecolor=ICEFturquoise,     % color of links to bibliography
+    filecolor=ICEFturquoise,     % color of file links
+    urlcolor=ICEFturquoise       % color of external links
+}
+
+%%% Set color of different objects (see Beamer User Guide for more info)
+\usecolortheme[named=ICEFturquoise]{structure}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{frametitle}{bg=ICEFturquoise}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{headline}{bg=ICEFturquoise}
+\setbeamercolor{alerted text}{fg=ICEFred}
+\setbeamercolor{itemize item}{fg=ICEFturquoise}
+\setbeamercolor{itemize subitem}{fg=ICEFturquoise}
+\setbeamercolor{itemize subsubitem}{fg=ICEFturquoise}
+\setbeamercolor{block title example}{fg=ICEFgreen}
+\AtBeginEnvironment{exampleblock}{
+    \setbeamercolor{itemize item}{fg=ICEFgreen}
+    \setbeamercolor{itemize subitem}{fg=ICEFgreen}
+    \setbeamercolor{itemize subsubitem}{fg=ICEFgreen}
+                                 }
+\setbeamercolor{palette primary}{bg=ICEFturquoise}
+\setbeamercolor{palette primary}{fg=white}
+\setbeamercolor{palette secondary}{bg=ICEFturquoise}
+\setbeamercolor{palette secondary}{fg=white}
+\setbeamercolor{palette tertiary}{bg=ICEFturquoise}
+\setbeamercolor{palette tertiary}{fg=white}
+
+%%% Layout issues
+\setbeamertemplate{headline}[default]{} % Empty headline
+\setbeamertemplate{frametitle} % Frametitle with logo
+{
+    \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,wd=\paperwidth]{frametitle}
+      \vbox{}\vskip-0.7ex% 
+      \begin{wrapfigure}{r}{0.18\textwidth}
+        \vskip-3ex\includegraphics[width=0.12\textwidth]{ICEF-theme/ICEF-small_shr}
+      \end{wrapfigure}
+      \strut\insertframetitle
+
+      \small\strut\insertframesubtitle
+      \vskip-1ex%
+    \end{beamercolorbox}
+}
+
+\makeatletter
+\setbeamertemplate{footline} % Footline
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{WhiteOnTur}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{TurOnWhite}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,right]{WhiteOnTur}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+\addtobeamertemplate{title page}{%
+  \leavevmode%
+  \vspace{.25cm}
+  %\hbox{%
+    %\begin{beamercolorbox}[wd=\paperwidth,ht=0.3\paperheight]{frametitle}
+      \begin{center}
+        \includegraphics[height=0.18\paperheight]{ICEF-theme/ICEF-main-en} 
+        \vspace{0.015\paperheight}
+      \end{center}
+   %\end{beamercolorbox}
+   %}
+}{\vspace{3cm}}
