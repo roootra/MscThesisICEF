@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.14)  9 JUN 2021 03:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.14)  10 JUN 2021 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1614,22 +1614,18 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
  [9
 
 ]
-Overfull \hbox (6.53668pt too wide) in paragraph at lines 226--226
- [] 
- []
-
 File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 <ICEF-theme/ICEF-small_shr.png>
-
-Overfull \vbox (4.09035pt too high) detected at line 226
- []
-
-[10
+ [10
 
 ]
 File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 <ICEF-theme/ICEF-small_shr.png>
- [11
+
+Overfull \vbox (0.7879pt too high) detected at line 261
+ []
+
+[11
 
 ]
 File: ../Text/figures/hd_cpi_full.eps Graphic file (type eps)
@@ -1647,9 +1643,13 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
  [14
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 309.
+
 File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 <ICEF-theme/ICEF-small_shr.png>
- [15
+[15
 
 ]
 File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
@@ -1667,68 +1667,93 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
  [18
 
 ]
+File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
+<ICEF-theme/ICEF-small_shr.png>
+ [19
+
+]
 File: ../Text/figures/hd_core_cpi_full.eps Graphic file (type eps)
 <../Text/figures/hd_core_cpi_full.eps>
- [19
+ [20
+
+]
+File: ../Text/figures/intrate_cpi.eps Graphic file (type eps)
+<../Text/figures/intrate_cpi.eps>
+ [21
+
+]
+File: ../Text/figures/time_series.eps Graphic file (type eps)
+<../Text/figures/time_series.eps>
+ [22
 
 ]
 File: ../Text/figures/irf_1.eps Graphic file (type eps)
 <../Text/figures/irf_1.eps>
- [20
+ [23
 
 ]
 File: ../Text/figures/irf_2.eps Graphic file (type eps)
 <../Text/figures/irf_2.eps>
-
-[21
+ [24
 
 ]
 File: ../Text/figures/irf_core_1.eps Graphic file (type eps)
 <../Text/figures/irf_core_1.eps>
- [22
+ [25
 
 ]
 File: ../Text/figures/irf_core_2.eps Graphic file (type eps)
 <../Text/figures/irf_core_2.eps>
- [23
-
-]
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<use beamericonarticle.pdf>
-File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
-<ICEF-theme/ICEF-small_shr.png>
- [24
-
-]
-File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
-<ICEF-theme/ICEF-small_shr.png>
- [25
-
-
-]
-File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
-<ICEF-theme/ICEF-small_shr.png>
  [26
+
+]
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
+<ICEF-theme/ICEF-small_shr.png>
+ [27
+
+]
+File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
+<ICEF-theme/ICEF-small_shr.png>
+ [28
+
+
+]
+File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
+<ICEF-theme/ICEF-small_shr.png>
+ [29
+
+
+]
+File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
+<ICEF-theme/ICEF-small_shr.png>
+
+[30
 
 
 ]
@@ -1741,24 +1766,24 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 \tf@snm=\write9
 \openout9 = `Pres_meeting.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
  (./Pres_meeting.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 430.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 496.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
 Package rerunfilecheck Info: File `Pres_meeting.out' has not changed.
-(rerunfilecheck)             Checksum: 7605AD4052467C874C860139D5E54059;434.
+(rerunfilecheck)             Checksum: 54EBD89B9A803388DBB397E94FF2FB3C;484.
 Package logreq Info: Writing requests to 'Pres_meeting.run.xml'.
 \openout1 = `Pres_meeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32739 strings out of 479418
- 657756 string characters out of 5884584
- 1452587 words of memory out of 5000000
- 49606 multiletter control sequences out of 15000+600000
+ 32848 strings out of 479418
+ 660562 string characters out of 5884584
+ 1452892 words of memory out of 5000000
+ 49713 multiletter control sequences out of 15000+600000
  540966 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,16n,95p,1356b,4958s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Pres_meeting.pdf (26 pages).
+Output written on Pres_meeting.pdf (30 pages).

@@ -2801,7 +2801,10 @@
     <bcf:citekey order="10">Khotulev2020</bcf:citekey>
     <bcf:citekey order="11">Ortega2020</bcf:citekey>
     <bcf:citekey order="12">Arias2014</bcf:citekey>
-    <bcf:citekey order="13">Khotulev2020</bcf:citekey>
+    <bcf:citekey order="13">Forbes2018</bcf:citekey>
+    <bcf:citekey order="14">Sinyakov2019</bcf:citekey>
+    <bcf:citekey order="15">Khotulev2020</bcf:citekey>
+    <bcf:citekey order="16">Campa2005</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

@@ -16,4 +16,4 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {6}{Conclusion}{13}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Annex}{15}{0}{7}
+\beamer@sectionintoc {7}{Annex}{15}{1}{7}

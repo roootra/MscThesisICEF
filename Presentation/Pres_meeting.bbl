@@ -112,6 +112,51 @@
       \verb :Beckmann2013 - Exchange Rate Pass through in CIS Countries.pdf:PDF
       \endverb
     \endentry
+    \entry{Campa2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b4760f699aaebc1451f33a84d357d377}{%
+           family={Campa},
+           familyi={C\bibinitperiod},
+           given={José\bibnamedelima Manuel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b97b2d0e479308de0cc17a459ae4429}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Linda\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc0602d71939d2135028d0994638feb0}
+      \strng{fullhash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \strng{bibnamehash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \strng{authorbibnamehash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \strng{authornamehash}{cc0602d71939d2135028d0994638feb0}
+      \strng{authorfullhash}{b42542ec1eb7c06bfae61d7a959c78b1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide cross-country and time series evidence on the extent of exchange rate pass-through into the import prices of 23 OECD countries. We find compelling evidence of partial pass-through in the short run, especially within manufacturing industries. Over the long run, producer-currency pricing is more prevalent for many types of imported goods. Countries with higher rates of exchange rate volatility have higher pass-through elasticities, although macroeconomic variables have played a minor role in the evolution of pass-through elasticities over time. Far more important for pass-through changes in these countries have been the dramatic shifts in the composition of country import bundles.}
+      \field{issn}{0034-6535}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{Exchange {Rate} {Pass}-{Through} into {Import} {Prices}}
+      \field{volume}{87}
+      \field{year}{2005}
+      \field{pages}{679\bibrangedash 690}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1162/003465305775098189
+      \endverb
+      \verb{file}
+      \verb :Campa2005 - Exchange Rate Pass through into Import Prices.pdf:PDF
+      \endverb
+    \endentry
     \entry{Dobrynskaya2008}{inbook}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=632a7e4286fcf9eb490ca098379b85d6}{%
@@ -197,6 +242,53 @@
       \field{year}{2016}
       \verb{file}
       \verb :Faryna2016 - Exchange Rate Pass through and Cross Country Spillovers_ Some Evidence from Ukraine and Russia.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Forbes2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1602aa6f6b71dd9d568a912e76912b53}{%
+           family={Forbes},
+           familyi={F\bibinitperiod},
+           given={Kristin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2d8b359918278b81ae73192da63747b}{%
+           family={Hjortsoe},
+           familyi={H\bibinitperiod},
+           given={Ida},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc214215c60fa4330ded23088287169f}{%
+           family={Nenova},
+           familyi={N\bibinitperiod},
+           given={Tsvetelina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{883d17101c2e2c9617800109d639d897}
+      \strng{fullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{bibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authorbibnamehash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \strng{authornamehash}{883d17101c2e2c9617800109d639d897}
+      \strng{authorfullhash}{ac8f203084c5d9ff9c7832e41e9eb1d7}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of international economics}
+      \field{title}{The Shocks Matter: Improving Our Estimates of Exchange Rate Pass-through}
+      \field{volume}{114}
+      \field{year}{2018}
+      \field{pages}{255\bibrangedash 275}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.3386/w24773
+      \endverb
+      \verb{file}
+      \verb :Forbes2018 - The Shocks Matter_ Improving Our Estimates of Exchange Rate Pass through.pdf:PDF
       \endverb
     \endentry
     \entry{Kataranova2010}{article}{}

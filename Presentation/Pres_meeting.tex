@@ -72,17 +72,17 @@
 \section{Literature Review}
 \begin{frame}
 \frametitle{Literature Review}
-\framesubtitle{Russian ERPT}
+\framesubtitle{Russian unconditional ERPT}
 \begin{itemize}
 	\item Only one work \parencite{Khotulev2020} estimates shock-dependent ERPT using DSGE;
-	\item Values vary from paper to paper, ERPT is roughly 0.35--0.4 in LR. 
+	\item Values vary from paper to paper as well as data time-frame. 
 \end{itemize}
 \begin{table}[h]
 	\centering
 	\resizebox{\textwidth}{!}{
 		\begin{tabular}{llllll}
 			Paper                                   & Currency & Data         & Infl. aggr. & Length    & ERPT \\
-			\hline
+			\midrule
 			\cite{Oomes2005}       & NEER               & 1996--2004   & CPI             & Short-run & 0.4--0.5     \\
 			\cite{Korhonen2006} & USD & 1999--2004 & ULC\footnote{Unit labour cost.} & Long-run & -0.42 \\
 			\cite{Dobrynskaya2008} & NEER               & 1995--2002   & CPI             & Long-run  & 0.35         \\
@@ -92,7 +92,7 @@
 			\cite{Faryna2016}      & USD                & 2000--2015   & CPI Core        & Long-run  & 0.1          \\
 			\cite{Sinyakov2019}    & NEER               & (2016--2017) & CPI             & Long-run  & 0.35         \\
 			\cite{Khotulev2020}    & NEER               & 2005--2019   & CPI             & Long-run  & 0.16        \\
-			\hline 
+			\bottomrule
 		\end{tabular}
 	}
 	%\caption{Earlier shock-independent ERPT estimates for Russia.}
@@ -107,13 +107,13 @@
 	\begin{itemize}
 		\item Basic method --- estimation of ARDL model:
 		\begin{equation}
-			INFL_t = \alpha_0 + \alpha_1 NEER_t + \alpha_2 NEER_{t-1} + \ldots + \epsilon_t
+			INFL_t = \alpha_0 + \alpha_1 NEER_t + \alpha_2 NEER_{t-1} + \ldots + \beta'\gamma_t + \epsilon_t
 		\end{equation}
 		\item Then, unconditional exchange rate pass-through (\textbf{ERPT}) value for horizon $t$ is as follows:
 		\begin{equation}
-			\textstyle ERPT_t = \sum_{i=1}^{N} \alpha_i
+			\textstyle ERPT_h = \sum_{i=1}^{h} \alpha_i
 		\end{equation}
-		\item Main drawback --- ERPT value is shock-independent, not informative.
+		\item Main drawback --- ERPT value is unconditional, shock-independent --- not informative.
 	\end{itemize}
 \end{frame}
 
@@ -142,7 +142,7 @@
 	\begin{itemize}
 		\item Full-form VAR:
 		\begin{equation}
-			A_0{Y}_t = \tilde{\mathbf{C}} + \mathbf{A_1} Y_{t-1} + \ldots + \epsilon_t, \quad \mathbb{E}(\epsilon \epsilon') = \Sigma_\epsilon = \mathbb{I}_n.
+			\mathbf{A_0}{Y}_t = \tilde{\mathbf{C}} + \mathbf{A_1} Y_{t-1} + \ldots + \epsilon_t, \quad \mathbb{E}(\epsilon \epsilon') = \Sigma_\epsilon = \mathbb{I}_n.
 		\end{equation}
 		$\epsilon_t = \left[\epsilon^{\text{CPI}}_t, \ldots, \epsilon^{\text{OIL}}_t\right]'$ is a vector of \textit{structural} shocks at $t$, and model captures contemporaneous relations of variables.
 		\item The most common way to get matrix of structural parameters --- $A_0$ --- is to use Cholesky decomposition of covariance matrix $\Sigma_u$:
@@ -157,9 +157,9 @@
 	\frametitle{Methods}
 	\framesubtitle{Zero and sign restrictions}
 	\begin{itemize}
-	\item \parencite{Arias2014} propose to use agnostic suggestions about signs and zero values of IRF to identify shocks:
+	\item \parencite{Arias2014} proposes to use agnostic suggestions about signs and zero values of IRF to identify shocks:
 	\begin{enumerate}
-		\item Obtain $n$ draws from posterior distributions of BVAR;
+		\item Obtain $n$ draws from posterior distribution of BVAR;
 		\item For each draw generate $m$ random matrices $X_n$ and use QR decomposition to get orthonormal matrices $Q$ such that $Q'Q = I_n$. Transform $Q$ using an algorithm described in paper, if there are zero restrictions;
 		\item For each matrix $Q$ calculate $IRF_h \times Q$, where $IRF_h$ is column-stacked IRF values calculated from corresponding draw, and check whether the result satisfies zero and sign restrictions. 
 	\end{enumerate}
@@ -175,7 +175,7 @@
 \frametitle{Data}
 \framesubtitle{Variables}
 \begin{itemize}
-	\item Quarterly data from 2005Q2--2020Q4;
+	\item Quarterly data, 2005Q2--2020Q4, 63 observations;
 	\item All variables, except for interest rate, are in growth rates;
 	\item Two CPI aggregates: full and core (excl. fuel, fruits and vegetables, community transport services, utilities etc.).
 \end{itemize}
@@ -202,11 +202,13 @@
 \frametitle{Model}
 \framesubtitle{Identification scheme}
 \begin{itemize}
-	\item Two 1-lag BVAR specifications: full and core CPI for price level variable. Order is chosen based on SIC criterion. Normal inverse-Wishart prior is used;
-	\item 500 draws from posterior distribution, 1000 random $Q$ matrices for each draw.
+	\item Two 1-lag BVAR specifications: full and core CPI for price level variable. Order is chosen based on SIC criterion. Conjugate normal inverse-Wishart prior is used;
+	\item 500 draws from posterior distribution, 1000 random $Q$ matrices for each draw;
+	\item Restriction scheme is based on \parencite{Forbes2018} and \parencite{Sinyakov2019};
+	\item Sign restrictions are for contemporaneous and next quarter reaction, zero restrictions are only contemporaneous.
 	\begin{table}[h!]
 		\centering
-		\resizebox{0.95\textwidth}{!}{%
+		\resizebox{0.9\textwidth}{!}{%
 			\begin{tabular}{@{}lccccc@{}}
 				\toprule
 				Variable & \makecell{Demand \\shock} & \makecell{Supply \\shock} & \makecell{Monetary \\shock} & \makecell{Exchange rate \\shock} & \makecell{Global persistent \\shock} \\
@@ -214,12 +216,11 @@
 				CPI/Core & +   & --   & -- & + & ?   \\
 				Real GDP  & + & +   & -- & ? & ?   \\
 				Interest rate & +   & ?   & +   & + & ?   \\
-				NEER          & --   & ? & -- & + & -- \\
+				NEER          & ?   & ? & -- & + & -- \\
 				Oil price     & 0   & 0   & 0   & 0 & +  \\
 				\bottomrule
 			\end{tabular}%
 		}
-		\caption{\small + (-) describe values $\ge 0$ ($\le0$) of variable's contemporaneous and next quarter response to a particular shock. 0 indicates no contemporaneous reaction.}
 		\label{tab:signs_and_zeros}
 	\end{table}
 \end{itemize}
@@ -230,10 +231,10 @@
 \frametitle{Results}
 \framesubtitle{PERR}
 \begin{itemize}
-	\item All PERR are higher for core composition;
-	\item Exchange rate shock pass-through is the highest for both specifications;
-	\item Global shock is low for full CPI and huge for core composition;
-	\item Supply shocks are comparable for both specifications;
+	\item Almost all PERR values for core composition are higher;
+	\item Exchange rate shock pass-through is the highest in LR for both specifications;
+	\item Global shock PERR is low for full CPI and huge for core composition;
+	\item Supply shock PERRs are comparable for both specifications;
 	\item Except for supply shock, pass-through is faster for core CPI.
 \end{itemize}
 \begin{table}[h!!]
@@ -275,8 +276,12 @@
 		\item Result is comparable to \parencite{Khotulev2020} for monetary and global shocks;
 		\item PERR values are higher for Russia comparing to Euro area;
 		\item Exchange rate pass-through is higher and faster to core CPI;
-		\item Exogenous exchange rate shock leads to the highest pass-through;
-		\item COVID-19 crisis has been driven mainly by global persistent and demand shocks.
+		\item COVID-19 crisis has been driven mainly by global persistent and demand shocks;
+		\item Policy implications: 
+		\begin{enumerate}
+			\item Pass-through during exogenous ER shock is high, more aggressive exchange rate management may be beneficial;
+			\item Monetary policy vs. domestic supply trade-off: positive monetary shock cools down both prices and output in SR, but may be a source of negative supply shocks in LR.
+		\end{enumerate}
 	\end{itemize}
 \end{frame}
 
@@ -290,8 +295,9 @@
 		\begin{column}{0.49\textwidth}
 			\begin{itemize}
 				\item \hyperlink{software}{Software discussion}
-				\item \hyperlink{zero_q}{How Q matrix is constructed with zero restrictions?}
+				\item \hyperlink{zero_q}{How is Q matrix constructed with zero restrictions?}
 				\item \hyperlink{bvar}{Bayesian model specification}
+				\item \hyperlink{time_series}{Data plot}, \hyperlink{intrate_cpi}{Interest~rate~vs.~inflation~plot}
 				\item \hyperlink{fullirfs}{Full CPI IRFs},  \hyperlink{coreirfs}{Core CPI IRFs}
 				\item \hyperlink{corehd}{Core CPI HD}
 			\end{itemize}
@@ -299,6 +305,7 @@
 	\end{columns}
 \end{frame}
 
+\appendix
 \section{Annex}
 \begin{frame}[noframenumbering]{Annex}
 \framesubtitle{Software discussion}
@@ -322,7 +329,7 @@
 		\end{itemize}
 		\item R --- \href{https://github.com/roootra/ZerosignR}{\texttt{ZerosignR}} --- my implementation, which implements long-run IRF restrictions. \textit{Under development}.
 	\end{enumerate}
-	\hyperref[qa]{Return to Q\&A}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering]{Annex}
@@ -341,16 +348,28 @@
 	\begin{itemize}
 		\item Zero restrictions are held by construction.
 	\end{itemize}
-	\hyperref[qa]{Return to Q\&A}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering]{Annex}
 	\framesubtitle{Bayesian model}
 	\label{bvar}
-	\begin{enumerate}
-		\item Prior
-	\end{enumerate}
-	\hyperref[qa]{Return to Q\&A}
+	\begin{itemize}
+		\item Conjugate normal-inverse Wishart distribution for BVAR (underline for prior values):
+		\begin{equation}
+			\begin{cases}
+					\Sigma \sim \mathcal{IW}(\underline{S}, \underline{\nu})\\
+					\mathbf{B} | \Sigma  \sim \mathcal{N} (\underline{\mathbf{B}}, \Sigma \otimes (X'X))
+				\end{cases}
+		\end{equation}
+		\begin{itemize}
+			\item $\Sigma$ = error covariance matrix, $\mathcal{IW}$ = inverse-Wishart distribution, $S$ = scale matrix (pos. def.) of $\mathcal{IW}$, $\nu$ = degrees of freedom;
+			\item $\mathbf{B}$ = matrix of coefficients, $\mathcal{N}$ = normal multivariate distribution, $X$ = matrix of regressors (columns of lagged $Y$), $\otimes$ = Kronecker product;
+			\item No need for Gibbs sampler and burn-in --- parameters are derived analytically;
+			\item Can use initial $\Sigma$ from OLS.
+		\end{itemize}
+	\end{itemize}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering]{Annex}
@@ -366,8 +385,30 @@
 		\begin{itemize}
 			\item 24 quarterly observations after Bank of Russia's decision to adopt floating regime --- few for estimation of VAR, even using Bayesian approach.
 		\end{itemize}
+		\item \textit{Why don't I capture adoption effect using a separate shock?}
+		\begin{itemize}
+			\item Quite unclear how to do that in SVAR framework;
+			\item Shock vs. structure problem: can be addressed by estimating threshold VAR or TVP-VAR, but identification is cumbersome, and there are no works solving this issue.
+			%\item Need to add additional variable to the model, while pursuing parsimony;
+			%\item Chicken and egg problem: introducing a shock to understand reaction of macro variables, while needing guessing the signs of the shock to identify it;
+		\end{itemize}
 	\end{enumerate}
-\hyperref[qa]{Return to Q\&A}
+\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}  \hyperlinkslidenext{\beamergotobutton{ERPT estimation}}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Annex}
+	\hypertarget{uncerpt}{}
+	\framesubtitle{ERPT estimation}
+	\begin{itemize}
+		\item À-la \parencite{Campa2005} --- ARDL model with NEER as exchange rate, GDP and oil as proxies:
+	\begin{equation}
+		CPI_t = c + \sum_{i=0}^4 \alpha_i NEER_{t-i} + \sum_{i=0}^2 \beta_i GDP_{t-i}  + \sum_{i=0}^2 \gamma_i OIL_{t-i} + \varepsilon_t.
+	\end{equation}
+		\item Short-run (2Q) ERPT: $\sum_{i=0}^1 \beta_i = 0.199$ (p<0.0001);
+		\item Long-run (4Q) ERPT: $\sum_{i=0}^3 \beta_i = 0.272$ (p<0.0001);
+		\item Roughly speaking, LR ERPT is half as much as LR PERR for any shock.
+	\end{itemize}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering]
@@ -378,6 +419,29 @@
 		\caption[]{Hist. decomp. of demeaned NEER gr. r. time series, core CPI.}
 		\label{fig:hd_cpi_core}
 	\end{figure}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+	\label{intrate_cpi}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=1\linewidth]{../Text/figures/intrate_cpi}
+		\caption[]{Time series of interest rate and growth rates of full and core CPI compositions.}
+		\label{fig:intrate_cpi}
+	\end{figure}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+	\label{time_series}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=1\linewidth]{../Text/figures/time_series}
+		\caption[]{Time series of variables used, growth rates except for interest rate.}
+		\label{fig:time_series}
+	\end{figure}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering]
@@ -388,6 +452,7 @@
 		\caption[]{Impulse response functions of full model, CTM (1).}
 		\label{fig:irf_1}
 	\end{figure}
+\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}} \hyperlinkslidenext{\beamergotobutton{Continue...}}
 \end{frame}
 
 \begin{frame}[noframenumbering]
@@ -397,7 +462,7 @@
 		\caption[]{Impulse response functions of full model, CTM (2).}
 		\label{fig:irf_2}
 	\end{figure}
-\hyperref[qa]{Return to Q\&A}
+\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering]
@@ -408,6 +473,7 @@
 		\caption[]{Impulse response functions of core model, CTM (1).}
 		\label{fig:irf_core_1}
 	\end{figure}
+\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}} \hyperlinkslidenext{\beamergotobutton{Continue...}}
 \end{frame}
 
 \begin{frame}[noframenumbering]
@@ -417,7 +483,7 @@
 		\caption[]{Impulse response functions of core model, CTM (2).}
 		\label{fig:irf_core_2}
 	\end{figure}
-\hyperref[qa]{Return to Q\&A}
+\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
 
 \begin{frame}[noframenumbering, allowframebreaks]
