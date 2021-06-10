@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.14)  10 JUN 2021 01:04
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.14)  10 JUN 2021 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,9 +1278,20 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algoframe=\box130
 \algocf@algobox=\box131
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 50.
+
 \@quotelevel=\count485
 \@quotereset=\count486
-
 (./Pres_meeting.aux)
 \openout1 = `Pres_meeting.aux'.
 
@@ -1555,7 +1566,7 @@ Package biblatex Info: Reference segment=0 on input line 50.
 File: ICEF-theme/ICEF-main-en.png Graphic file (type bmp)
 <ICEF-theme/ICEF-main-en.png>
 
-Overfull \vbox (40.72348pt too high) detected at line 52
+Overfull \vbox (76.71754pt too high) detected at line 52
  []
 
 [1
@@ -1566,13 +1577,13 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
  [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1622,7 +1633,7 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 <ICEF-theme/ICEF-small_shr.png>
 
-Overfull \vbox (0.7879pt too high) detected at line 261
+Overfull \vbox (0.7879pt too high) detected at line 262
  []
 
 [11
@@ -1645,7 +1656,7 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 309.
+(hyperref)                removing `\translate ' on input line 311.
 
 File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 <ICEF-theme/ICEF-small_shr.png>
@@ -1766,11 +1777,11 @@ File: ICEF-theme/ICEF-small_shr.png Graphic file (type bmp)
 \tf@snm=\write9
 \openout9 = `Pres_meeting.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
  (./Pres_meeting.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 498.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
 Package rerunfilecheck Info: File `Pres_meeting.out' has not changed.
 (rerunfilecheck)             Checksum: 54EBD89B9A803388DBB397E94FF2FB3C;484.
 Package logreq Info: Writing requests to 'Pres_meeting.run.xml'.
@@ -1778,10 +1789,10 @@ Package logreq Info: Writing requests to 'Pres_meeting.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32848 strings out of 479418
- 660562 string characters out of 5884584
- 1452892 words of memory out of 5000000
- 49713 multiletter control sequences out of 15000+600000
+ 32850 strings out of 479418
+ 660585 string characters out of 5884584
+ 1453140 words of memory out of 5000000
+ 49715 multiletter control sequences out of 15000+600000
  540966 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,16n,95p,1356b,4958s stack positions out of 5000i,500n,10000p,200000b,80000s

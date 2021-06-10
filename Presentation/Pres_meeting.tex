@@ -42,8 +42,8 @@
 \usepackage[linesnumbered]{algorithm2e} %boxed
 
 %%% Author and speech
-\title[ERPT in Russia]{Determining Exchange Rate Pass-through in Russia} 
-\author[Artur Zmanovskii]{Artur Zmanovskii}
+\title[ERPT in Russia]{Determining Exchange Rate Pass-through in~Russia\\ \vspace{0.2cm} \small{Master Thesis}} 
+\author[Artur Zmanovskii]{Artur Zmanovskii\\\vspace{0.2cm}\footnotesize{Supervisor: U. Peiris, PhD. }}
 \institute[ICEF]{Higher School of Economics \\ International College of Econonomics and Finance}
 \date{10th June 2021}
 
@@ -63,8 +63,9 @@
 \framesubtitle{Justification}
 \begin{itemize}
 	\item Price stability in an open economy depends on import prices $\Rightarrow$ local price level is subject to exchange rate fluctuations;
-	\item In general, there is no one-to-one correspondence: producers along the distribution chain may adjust their markup to mitigate exchange rate shock;
-	\item Russia has been exposed to numerous different macroeconomic shocks, especially oil price fluctuations\\$\Rightarrow$ it is crucial to estimate shock-dependent exchange rate pass-through.
+	\item There is no one-to-one correspondence: producers along the distribution chain may adjust their markup to mitigate exchange rate shock;
+	\item Russia has been exposed to numerous different macroeconomic shocks, especially oil price fluctuations\\$\Rightarrow$ it is crucial to estimate shock-dependent exchange rate pass-through;
+	\item In general, exchange rate pass-through value is an \textit{elasticity} of price level to exchange rate fluctuations. 
 \end{itemize}
 \end{frame}
 
@@ -72,7 +73,7 @@
 \section{Literature Review}
 \begin{frame}
 \frametitle{Literature Review}
-\framesubtitle{Russian unconditional ERPT}
+\framesubtitle{Russian ERPT from different sources}
 \begin{itemize}
 	\item Only one work \parencite{Khotulev2020} estimates shock-dependent ERPT using DSGE;
 	\item Values vary from paper to paper as well as data time-frame. 
@@ -109,7 +110,7 @@
 		\begin{equation}
 			INFL_t = \alpha_0 + \alpha_1 NEER_t + \alpha_2 NEER_{t-1} + \ldots + \beta'\gamma_t + \epsilon_t
 		\end{equation}
-		\item Then, unconditional exchange rate pass-through (\textbf{ERPT}) value for horizon $t$ is as follows:
+		\item Then, unconditional exchange rate pass-through (\textbf{ERPT}) value for horizon $h$ is as follows:
 		\begin{equation}
 			\textstyle ERPT_h = \sum_{i=1}^{h} \alpha_i
 		\end{equation}
@@ -231,7 +232,7 @@
 \frametitle{Results}
 \framesubtitle{PERR}
 \begin{itemize}
-	\item Almost all PERR values for core composition are higher;
+	\item Almost all PERR values for core composition are larger;
 	\item Exchange rate shock pass-through is the highest in LR for both specifications;
 	\item Global shock PERR is low for full CPI and huge for core composition;
 	\item Supply shock PERRs are comparable for both specifications;
@@ -294,6 +295,7 @@
 		\end{column}
 		\begin{column}{0.49\textwidth}
 			\begin{itemize}
+				\item \hyperlink{reception}{Reception of reviews}
 				\item \hyperlink{software}{Software discussion}
 				\item \hyperlink{zero_q}{How is Q matrix constructed with zero restrictions?}
 				\item \hyperlink{bvar}{Bayesian model specification}
@@ -307,6 +309,45 @@
 
 \appendix
 \section{Annex}
+\begin{frame}[noframenumbering]{Annex}
+	\framesubtitle{Reception of reviews}
+	\label{reception}
+	\begin{enumerate}
+		\item \textit{Why didn't I estimate unconditional ERPT?}
+		\begin{itemize}
+			\item Shock-dependent ERPT (PERR) is not studied well for Russia;
+			\item Unconditional ERPT requires discussion about specification of model and choice of data --- a whole separate dissertation would have been written;
+		\end{itemize}
+		\item \textit{Why didn't I split time series to periods before/after adoption of floating regime?}
+		\begin{itemize}
+			\item 24 quarterly observations after Bank of Russia's decision to adopt floating regime --- few for estimation of VAR, even using Bayesian approach.
+		\end{itemize}
+		\item \textit{Why don't I capture adoption effect using a separate shock?}
+		\begin{itemize}
+			\item Quite unclear how to do that in SVAR framework;
+			\item Shock vs. structure problem: can be addressed by estimating threshold VAR or TVP-VAR, but identification is cumbersome, and there are no works solving this issue.
+			%\item Need to add additional variable to the model, while pursuing parsimony;
+			%\item Chicken and egg problem: introducing a shock to understand reaction of macro variables, while needing guessing the signs of the shock to identify it;
+		\end{itemize}
+	\end{enumerate}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}  \hyperlinkslidenext{\beamergotobutton{ERPT estimation}}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Annex}
+	\hypertarget{uncerpt}{}
+	\framesubtitle{ERPT estimation}
+	\begin{itemize}
+		\item À-la \parencite{Campa2005} --- ARDL model with NEER as exchange rate, GDP and oil as proxies:
+		\begin{equation}
+			CPI_t = c + \sum_{i=0}^4 \alpha_i NEER_{t-i} + \sum_{i=0}^2 \beta_i GDP_{t-i}  + \sum_{i=0}^2 \gamma_i OIL_{t-i} + \varepsilon_t.
+		\end{equation}
+		\item Short-run (2Q) ERPT: $\sum_{i=0}^1 \beta_i = 0.199$ (p<0.0001);
+		\item Long-run (4Q) ERPT: $\sum_{i=0}^3 \beta_i = 0.272$ (p<0.0001);
+		\item Roughly speaking, LR ERPT is half as much as LR PERR for any shock.
+	\end{itemize}
+	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
+\end{frame}
+
 \begin{frame}[noframenumbering]{Annex}
 \framesubtitle{Software discussion}
 	\label{software}
@@ -368,45 +409,6 @@
 			\item No need for Gibbs sampler and burn-in --- parameters are derived analytically;
 			\item Can use initial $\Sigma$ from OLS.
 		\end{itemize}
-	\end{itemize}
-	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Annex}
-	\framesubtitle{Reception of reviews}
-	\label{reception}
-	\begin{enumerate}
-		\item \textit{Why didn't I estimate unconditional ERPT?}
-		\begin{itemize}
-			\item Shock-dependent ERPT (PERR) is not studied well for Russia;
-			\item Unconditional ERPT requires discussion about specification of model and choice of data --- a whole separate dissertation would have been written;
-		\end{itemize}
-		\item \textit{Why didn't I split time series to periods before/after adoption of floating regime?}
-		\begin{itemize}
-			\item 24 quarterly observations after Bank of Russia's decision to adopt floating regime --- few for estimation of VAR, even using Bayesian approach.
-		\end{itemize}
-		\item \textit{Why don't I capture adoption effect using a separate shock?}
-		\begin{itemize}
-			\item Quite unclear how to do that in SVAR framework;
-			\item Shock vs. structure problem: can be addressed by estimating threshold VAR or TVP-VAR, but identification is cumbersome, and there are no works solving this issue.
-			%\item Need to add additional variable to the model, while pursuing parsimony;
-			%\item Chicken and egg problem: introducing a shock to understand reaction of macro variables, while needing guessing the signs of the shock to identify it;
-		\end{itemize}
-	\end{enumerate}
-\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}  \hyperlinkslidenext{\beamergotobutton{ERPT estimation}}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Annex}
-	\hypertarget{uncerpt}{}
-	\framesubtitle{ERPT estimation}
-	\begin{itemize}
-		\item À-la \parencite{Campa2005} --- ARDL model with NEER as exchange rate, GDP and oil as proxies:
-	\begin{equation}
-		CPI_t = c + \sum_{i=0}^4 \alpha_i NEER_{t-i} + \sum_{i=0}^2 \beta_i GDP_{t-i}  + \sum_{i=0}^2 \gamma_i OIL_{t-i} + \varepsilon_t.
-	\end{equation}
-		\item Short-run (2Q) ERPT: $\sum_{i=0}^1 \beta_i = 0.199$ (p<0.0001);
-		\item Long-run (4Q) ERPT: $\sum_{i=0}^3 \beta_i = 0.272$ (p<0.0001);
-		\item Roughly speaking, LR ERPT is half as much as LR PERR for any shock.
 	\end{itemize}
 	\hyperlinkpresentationend{\beamerreturnbutton{Return to Q\&A}}
 \end{frame}
